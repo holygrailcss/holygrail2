@@ -1,0 +1,294 @@
+@import '../abstract/_all';
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-inlineflex {
+  display: inline-flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.content-start {
+  justify-content: flex-start;
+}
+
+.content-end {
+  justify-content: flex-end;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-sp-between {
+  justify-content: space-between;
+}
+
+.content-sp-around {
+  justify-content: space-around;
+}
+
+.content-sp-evenly {
+  justify-content: space-evenly;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.align-middle {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-multi-top {
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.align-multi-bottom {
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.align-multi-center {
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.align-multi-between {
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.align-multi-around {
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.align-multi-stretch {
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sticky-bottom {
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  padding: 0 $padding-global $padding-global;
+  bottom: 0;
+}
+
+.xs\:text-center {
+  @media (max-width: #{$break-sm - 1}) {
+    text-align: center;
+  }
+}
+
+.sm\:text-center {
+  @media (max-width: #{$break-sm - 1}) {
+    text-align: center;
+  }
+}
+
+.md\:text-center {
+  @media (max-width: #{$break-md - 1}) {
+    text-align: center;
+  }
+}
+
+.lg\:text-center {
+  @media (max-width: #{$break-lg - 1}) {
+    text-align: center;
+  }
+}
+
+.sm\:min-text-center {
+  @media (min-width: $break-sm) {
+    text-align: center;
+  }
+}
+
+.md\:min-text-center {
+  @media (min-width: $break-md) {
+    text-align: center;
+  }
+}
+
+.lg\:min-text-center {
+  @media (min-width: $break-lg) {
+    text-align: center;
+  }
+}
+
+.xs\:text-left {
+  @media (max-width: #{$break-sm - 1}) {
+    text-align: left;
+  }
+}
+
+.sm\:text-left {
+  @media (max-width: #{$break-sm - 1}) {
+    text-align: left;
+  }
+}
+
+.md\:text-left {
+  @media (max-width: #{$break-md - 1}) {
+    text-align: left;
+  }
+}
+
+.lg\:text-left {
+  @media (max-width: #{$break-lg - 1}) {
+    text-align: left;
+  }
+}
+
+.sm\:min-text-left {
+  @media (min-width: $break-sm) {
+    text-align: left;
+  }
+}
+
+.md\:min-text-left {
+  @media (min-width: $break-md) {
+    text-align: left;
+  }
+}
+
+.lg\:min-text-left {
+  @media (min-width: $break-lg) {
+    text-align: left;
+  }
+}
+
+.xs\:text-right {
+  @media (max-width: #{$break-sm - 1}) {
+    text-align: right;
+  }
+}
+
+.sm\:text-right {
+  @media (max-width: #{$break-sm - 1}) {
+    text-align: right;
+  }
+}
+
+.md\:text-right {
+  @media (max-width: #{$break-md - 1}) {
+    text-align: right;
+  }
+}
+
+.lg\:text-right {
+  @media (max-width: #{$break-lg - 1}) {
+    text-align: right;
+  }
+}
+
+.sm\:min-text-right {
+  @media (min-width: $break-sm) {
+    text-align: right;
+  }
+}
+
+.md\:min-text-right {
+  @media (min-width: $break-md) {
+    text-align: right;
+  }
+}
+
+.lg\:min-text-right {
+  @media (min-width: $break-lg) {
+    text-align: right;
+  }
+}
+
+.sm\:min-content-end {
+  @media (min-width: $break-sm) {
+    justify-content: flex-end;
+  }
+}
+
+.sm\:align-middle {
+  @media (min-width: $break-sm) {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+.md\:align-middle {
+  @media (min-width: $break-md) {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,58 @@
+@import '../abstract/_all';
+
+.tag-warning {
+  background-color: $c-warning;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.tag-info {
+  background-color: $c-info;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.tag-valid {
+  background-color: $c-valid;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.tag-alert {
+  background-color: $c-alert;
+  color: $c-primary;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.tag-feel {
+  background-color: $c-feel;
+  color: $c-primary;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.tag-limited {
+  background-color: $c-primary;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.tag-new {
+  color: $c-primary;
+  font-style: normal;
+  line-height: 10px;
+  top: 10px;
+  right: -30px;
+  position: absolute;
+}

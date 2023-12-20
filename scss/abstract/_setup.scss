@@ -1,0 +1,385 @@
+$espaciados: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112, 128, 160);
+$c-white: #fff !default;
+$c-black: #000 !default;
+$c-dark-grey: #8e8e8e !default;
+$c-middle-grey: #e3e3e3 !default;
+$c-light-grey: #f0f0f0 !default;
+$c-primary: #1a1a1a !default;
+$c-secondary: #1a1a1a !default;
+$c-accent: #b40016 !default;
+$c-error: #b40016 !default;
+$c-sale: #b40016 !default;
+$c-info: #1a32a4 !default;
+$c-valid: #76ae4a !default;
+$c-warning: #ffc700 !default;
+$c-feel: #fb9962 !default;
+$c-feel-dark: #c94c07 !default;
+$c-feel-light: #fccbb0 !default;
+$c-limited: #000 !default;
+$c-success: #76ae4a !default;
+$c-alert: #ffc700 !default;
+$c-facebook: #1977f3 !default;
+$c-google: #4285f4 !default;
+$c-naver: #03cf5d !default;
+$c-wechat: #2dc100 !default;
+$bg-light: #f0f0f0 !default;
+$bg-dark: #000 !default;
+$bg-black: #000 !default;
+$c-bg-light: #000 !default;
+$c-bg-dark: #fff !default;
+$white-smoke: #f0f0f0 !default;
+$primary: #1a1a1a !default;
+$primary-guide: #363636 !default;
+$secondary-guide: #6759bb !default;
+$ternary-guide: #6759bb !default;
+$list-disc-color: #1a1a1a !default;
+$c-tier-silver: #e3e3e3 !default;
+$c-tier-platinum: #9dbddc !default;
+$c-tier-gold: #e0b279 !default;
+$text-sm: 12px;
+$text-md: 13px;
+$text-lg: 13px;
+$btn-radius: 0 !default;
+$obj-radius: 0 !default;
+$form-radius: 0 !default;
+$btn-line-height: 1 !default;
+$btn-padding: 13px !default;
+$btn-text-mini: 12px !default;
+$btn-text-small: 14px !default;
+$btn-text-medium: 14px !default;
+$btn-text-large: 14px !default;
+$btn-text-xlarge: 16px !default;
+$btn-text-full: 14px !default;
+$btn-text-r: 12px !default;
+$btn-text-m: 12px !default;
+$tabs-text: 12px !default;
+$font-weight-secondary-light: 300 !default;
+$font-weight-secondary-medium: 400 !default;
+$font-weight-secondary-bold: 700 !default;
+$totalCols: 12 !default;
+$totalColsXl: 24 !default;
+$padding-global: 8px !default;
+$padding-mobile: 24px !default;
+$padding-desktop: 40px !default;
+$padding-button: 8px !default;
+$height-inputs: 48px !default;
+$text-input-m: 12px !default;
+$text-input-d: 12px !default;
+$container: 800px !default;
+$container-2: 700px !default;
+$container-3: 900px !default;
+$container-4: 356px !default;
+$container-5: 800px !default;
+$container-6: 442px !default;
+$container-7: 595px !default;
+$container-8: 395px !default;
+$container-9: 798px !default;
+$container-10: 200px !default;
+$container-11: 1080px !default;
+$container-12: 1080px !default;
+$container-full: 1500px !default;
+$height-xs: 60px !default;
+$height-sm: 100px !default;
+$height-md: 350px !default;
+$height-lg: 400px !default;
+$height-xl: 450px !default;
+$height-full: 100vh !default;
+$height-home: calc(100vh - 80px) !default;
+$transition: 278ms !default;
+$min-width: 320px !default;
+$min-vw: 320px !default;
+$max-vw: 1500px !default;
+$svg-size: 16px;
+$fs: 'font-size';
+$lh: 'line-height';
+$headers: (
+  tit-m: (
+    14px,
+    14px,
+    16px,
+    16px,
+    1.2,
+    'medium',
+  ),
+) !default;
+$minheaders: (
+  tit-m: (
+    14px,
+    16px,
+    1.2,
+    'medium',
+  ),
+  tit-s: (
+    13px,
+    13px,
+    1.2,
+    'medium',
+  ),
+  tit-xs: (
+    12px,
+    12px,
+    1.2,
+    'regular',
+  ),
+  tit-xs-b: (
+    12px,
+    12px,
+    1.2,
+    'bold',
+  ),
+  sub-xs: (
+    11px,
+    11px,
+    1.2,
+    'regular',
+  ),
+  /* ttu */ p-m:
+    (
+      12px,
+      12px,
+      1.2,
+      'regular',
+    ),
+  p-s: (
+    12px,
+    12px,
+    1.2,
+    'regular',
+  ),
+  /* desaparece y pasa a ser --> p-m ❌ */ p-xs:
+    (
+      11px,
+      11px,
+      1.2,
+      'regular',
+    ),
+  p-tag: (
+    10px,
+    10px,
+    1.3,
+    'regular',
+  ),
+  p-m-b: (
+    12px,
+    13px,
+    1.2,
+    'bold',
+  ),
+  /*  ❌ */ p-m-m:
+    (
+      12px,
+      13px,
+      1.2,
+      'medium',
+    ),
+  /*desaparece y pasa a ser p-m❌ */ p-xs-b:
+    (
+      11px,
+      12px,
+      1.3,
+      'bold',
+    ),
+  /* desaparece y pasa a ser sub-xs ❌ */ p-xxs-b:
+    (
+      9px,
+      9px,
+      1.3,
+      'bold',
+    ),
+) !default;
+$headersFixers: (
+  12: (
+    12px,
+    1.5,
+  ),
+  14: (
+    14px,
+    1.5,
+  ),
+  16: (
+    16px,
+    1.5,
+  ),
+  18: (
+    18px,
+    1.5,
+  ),
+  20: (
+    20px,
+    1.5,
+  ),
+  24: (
+    24px,
+    1.5,
+  ),
+) !default;
+$headersFluids: (
+  2: (
+    40px,
+    100px,
+    0.9,
+  ),
+  1: (
+    60px,
+    160px,
+    0.8,
+  ),
+) !default;
+$heights: (
+  height-xs: (
+    80px,
+    80px,
+  ),
+  height-sm: (
+    100px,
+    100px,
+  ),
+  height-128: (
+    128px,
+    128px,
+  ),
+  height-md: (
+    350px,
+    350px,
+  ),
+  height-lg: (
+    400px,
+    400px,
+  ),
+  height-xl: (
+    450px,
+    450px,
+  ),
+  height-full: (
+    100vh,
+    100vh,
+  ),
+  height-big: (
+    300px,
+    500px,
+  ),
+  height-medium: (
+    200px,
+    400px,
+  ),
+  height-mini: (
+    100px,
+    300px,
+  ),
+  height-home: (
+    calc(100vh - 80px),
+    calc(100vh - 80px),
+  ),
+) !default;
+$mg: 'margin';
+$margin: () !default;
+$mx: 'margin';
+$margin-x: () !default;
+$my: 'margin';
+$margin-y: () !default;
+$mt: 'margin-top';
+$margin-top: (
+  mtr-128: (
+    64px,
+    128px,
+    128px,
+    128px,
+  ),
+) !default;
+$mr: 'margin-right';
+$margin-right: () !default;
+$mb: 'margin-bottom';
+$margin-bottom: (
+  mbr-24: (
+    16px,
+    24px,
+    24px,
+    24px,
+  ),
+  mbr-32: (
+    24px,
+    32px,
+    32px,
+    32px,
+  ),
+  mbr-64: (
+    32px,
+    64px,
+    64px,
+    64px,
+  ),
+  mbr-128: (
+    64px,
+    128px,
+    128px,
+    128px,
+  ),
+  mbr-20-40: (
+    20px,
+    40px,
+    40px,
+    40px,
+  ),
+) !default;
+$ml: 'margin-left';
+$margin-left: () !default;
+$p: 'padding';
+$padding: (
+  p-body: (
+    16px,
+    16px,
+    40px,
+    40px,
+  ),
+) !default;
+$py: 'padding';
+$padding-y: () !default;
+$px: 'padding';
+$padding-x: () !default;
+$pt: 'padding-top';
+$padding-top: (
+  ptr-120: (
+    64px,
+    64px,
+    120px,
+    120px,
+  ),
+  ptr-128: (
+    64px,
+    64px,
+    128px,
+    128px,
+  ),
+) !default;
+$pb: 'padding-bottom';
+$padding-bottom: (
+  pbr-128: (
+    64px,
+    64px,
+    128px,
+    128px,
+  ),
+) !default;
+$pl: 'padding-left';
+$padding-left: (
+  pl-body: (
+    16px,
+    16px,
+    40px,
+    40px,
+  ),
+) !default;
+$pr: 'padding-right';
+$padding-right: (
+  pr-body: (
+    16px,
+    16px,
+    40px,
+    40px,
+  ),
+) !default;
+
+//@include space($breakpoints, $padding-top, $pt);
+//@include space($breakpoints, $padding-left, $pl);
+//@include space($breakpoints, $padding-bottom, $pb);
+//@include space($breakpoints, $padding-right, $pr);
