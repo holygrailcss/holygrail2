@@ -11,9 +11,9 @@
 
 Una libreria agnostica y libreria de componentes html y scss. 
 
-[npm-url]: https://www.npmjs.com/package/holygrailcss
+[npm-url]: https://www.npmjs.com/package/holygrail2
 [github-action-url]: https://github.com/ant-design/ant-design/actions?query=workflow%3A%22%E2%9C%85+test%22
-[download-url]: https://npmjs.org/package/holygrailcss
+[download-url]: https://npmjs.org/package/holygrail2
 
 
 </div>
@@ -41,11 +41,11 @@ Una libreria agnostica y libreria de componentes html y scss.
 ## 📦 Install
 
 ```bash
-npm install holygrailcss
+npm install holygrail2
 ```
 
 ```bash
-yarn add holygrailcss
+yarn add holygrail2
 ```
 
 ## 🔨 Usage
@@ -58,7 +58,7 @@ yarn add holygrailcss
 
 ## 🌍 Internationalization
 
-Dozens of languages are supported in `holygrailcss`
+Dozens of languages are supported in `holygrail2`
 
 ## 🔗 Links
 
@@ -69,11 +69,11 @@ Dozens of languages are supported in `holygrailcss`
 
 Use Gitpod, a free online dev environment for GitHub for create your website.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/holygrailcss/holysite)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/holygrail2/holysite)
 
 
 Or clone locally:
-[https://www.jsdelivr.com/package/npm/holygrailcss](https://www.jsdelivr.com/package/npm/holygrailcss)
+[https://www.jsdelivr.com/package/npm/holygrail2](https://www.jsdelivr.com/package/npm/holygrail2)
 
 Feel free to raise an issue or submit a pull request.
 
@@ -81,7 +81,7 @@ Feel free to raise an issue or submit a pull request.
 Or clone locally:
 
 ```bash
-$ gh repo clone holygrailcss/holysite
+$ gh repo clone holygrail2/holysite
 $ cd holysite
 $ npm install
 $ npm run docs

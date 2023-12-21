@@ -1,6 +1,6 @@
 {
-    "name": "holygrailcss",
-    "version": "2.2.52",
+    "name": "holygrail2",
+    "version": "1.0.0",
     "description": "A minimal, responsive, style-agnostic CSS framework.",
     "main": "scss/style.scss",
     "directories": {
@@ -24,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/holygrailcss/holygrail.git"
+        "url": "git+https://github.com/holygrail2/holygrail.git"
     },
     "devDependencies": {
         "open": "^9.1.0",
@@ -44,15 +44,15 @@
         "style-agnostic",
         "framework",
         "toolkit",
-        "holygrailcss"
+        "holygrail2"
     ],
     "author": "Manuel Ruiz",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/holygrailcss/holygrail/issues",
+        "url": "https://github.com/holygrail2/holygrail/issues",
         "email": "dev@digitalstrategy.es"
     },
-    "homepage": "https://holygrailcss.github.io/",
+    "homepage": "https://holygrail2.netlify.app/guide",
     "dependencies": {
         "stylelint": "^15.10.2"
     }

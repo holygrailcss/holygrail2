@@ -1413,13 +1413,6 @@ input[type=number] {
   min-height: 200px;
   margin: 20px auto;
 }
-.guide .bg-dark {
-  background-color: #363636;
-  color: #fff;
-}
-.guide .bg-dark a {
-  color: #fff;
-}
 .guide .title-zone {
   color: #000;
   margin-bottom: 20px;

@@ -109,7 +109,7 @@ label {
     width: 8px;
   }
   &:not(.is-multiple) {
-    height: 48px;
+    height: 40px;
   }
   &:not(.is-multiple, .is-loading)::after {
     border-color: $c-primary;
@@ -206,7 +206,7 @@ label {
       font-size: $text-input-m;
       @media (min-width: $break-sm) {
         padding: 14px 2px;
-        height: 48px;
+        height: 40px;
         font-size: $text-input-d;
       }
       opacity: 0;
@@ -229,7 +229,7 @@ label {
       @media (min-width: $break-sm) {
         width: 120px;
         padding: 14px 2px;
-        height: 48px;
+        height: 40px;
       }
     }
     .btn-secondary-rd {
@@ -307,7 +307,7 @@ label {
   position: absolute;
   top: 0;
   min-width: 50px;
-  height: 48px;
+  height: 40px;
   box-sizing: border-box;
   display: table;
   span {

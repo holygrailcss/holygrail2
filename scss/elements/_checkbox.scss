@@ -143,7 +143,7 @@
 .checkbox-item-2 {
   display: inline-block;
   text-align: center;
-  margin: 10px 10px 0 0;
+  margin: 0;
 
   [type='checkbox']:not(:checked) + label,
   [type='checkbox']:checked + label {
@@ -255,7 +255,7 @@
     height: 14px;
     left: 0;
     border: none;
-    border: 1px solid $c-dark-grey;
+    border: 1px solid $c-primary;
     outline: 0;
     display: inline-block;
     vertical-align: top;
