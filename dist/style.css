@@ -6838,7 +6838,7 @@ ul.list-disc {
 }
 ul.list-disc li {
   position: relative;
-  padding: 8px 16px;
+  padding: 0 16px;
 }
 ul.list-disc li::after {
   background-color: #1a1a1a;
@@ -6895,7 +6895,6 @@ ul.list-inline-clear li::after {
 
 ul.list-clear li {
   list-style: none;
-  margin: 8px 0;
 }
 ul.list-clear li::after {
   display: none;

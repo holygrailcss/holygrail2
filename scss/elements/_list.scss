@@ -10,7 +10,7 @@ ul.list-disc {
 
   li {
     position: relative;
-    padding: $padding-global $padding-global * 2;
+    padding: 0 $padding-global * 2;
 
     &::after {
       background-color: $list-disc-color;
@@ -79,7 +79,6 @@ ul.list-inline-clear {
 ul.list-clear {
   li {
     list-style: none;
-    margin: $padding-global 0;
 
     &::after {
       display: none;
