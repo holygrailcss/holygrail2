@@ -1568,7 +1568,7 @@ svg-icon.ico-feel path {
   height: 16px;
   border-radius: 50%;
   font-size: 10px;
-  background-color: #1a1a1a;
+  background-color: #000;
   color: #fff;
   text-align: center;
   line-height: 1.6;
@@ -2166,11 +2166,11 @@ p {
 p.b {
   font-family: arial, sans-serif;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #000;
 }
 
 a {
-  color: #1a1a1a;
+  color: #000;
   text-decoration: none;
 }
 
@@ -2181,12 +2181,12 @@ a {
 .h5 span,
 .h6 span,
 .p1 span {
-  color: #1a1a1a;
+  color: #000;
 }
 
 b,
 mark {
-  color: #1a1a1a;
+  color: #000;
 }
 
 .secondary {
@@ -2829,7 +2829,7 @@ mark {
 }
 .is-through::after {
   content: "";
-  background-color: #1a1a1a;
+  background-color: #000;
   width: 100%;
   position: absolute;
   bottom: 50%;
@@ -2842,7 +2842,7 @@ mark {
 }
 
 .c-primary {
-  color: #1a1a1a;
+  color: #000;
 }
 
 .c-black {
@@ -2939,7 +2939,7 @@ mark {
 
 .bg-light {
   background-color: #f0f0f0;
-  color: #1a1a1a;
+  color: #000;
 }
 
 .bg-cream {
@@ -2967,11 +2967,11 @@ mark {
 }
 
 .bg-primary {
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 
 .bg-secondary {
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 
 .bg-accent {
@@ -3376,11 +3376,11 @@ strong {
 }
 
 .border-b2 {
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #000;
 }
 
 .border-t2 {
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid #000;
 }
 
 .flex-vcenter {
@@ -3799,7 +3799,7 @@ strong {
 }
 
 b {
-  color: #1a1a1a;
+  color: #000;
 }
 
 .ttc {
@@ -4006,7 +4006,7 @@ b {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: #1a1a1a;
+  color: #000;
   display: box;
   display: flexbox;
   display: flex;
@@ -4038,7 +4038,7 @@ b {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #1a1a1a;
+  background: #000;
   transform: translateX(-50%);
 }
 .line-scrolldown::after {
@@ -4049,7 +4049,7 @@ b {
   width: 1px;
   height: 0;
   border-radius: 2px;
-  background: #1a1a1a;
+  background: #000;
   transform: translateX(-50%);
   animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
 }
@@ -4070,7 +4070,7 @@ b {
   justify-content: center;
   flex-flow: row nowrap;
   padding: 16px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   margin-top: 16px;
 }
 .marketing-spot svg-icon {
@@ -4123,7 +4123,7 @@ b {
   margin-top: 16px;
   text-align: center;
   background-color: #ffc700;
-  color: #1a1a1a;
+  color: #000;
 }
 
 .banner-feel {
@@ -4135,7 +4135,7 @@ b {
   margin-top: 16px;
   text-align: center;
   background-color: #fb9962;
-  color: #1a1a1a;
+  color: #000;
 }
 
 .banner-limited {
@@ -4153,7 +4153,7 @@ b {
 input:is([type=button], [type=submit], [type=reset]),
 input[type=file]::file-selector-button,
 button {
-  color: #1a1a1a;
+  color: #000;
 }
 
 .btn {
@@ -4190,7 +4190,7 @@ button {
   cursor: not-allowed;
 }
 .has-light .btn {
-  color: #1a1a1a;
+  color: #000;
   border-color: #fff;
   background-color: #fff;
 }
@@ -4224,19 +4224,19 @@ button {
   width: max-content;
 }
 .btn.btn-feel-invert {
-  color: #1a1a1a;
+  color: #000;
   background-color: transparent;
   border: 1px solid #fb9962;
 }
 .btn.btn-feel-invert svg g {
-  fill: #1a1a1a;
-  stroke: #1a1a1a;
+  fill: #000;
+  stroke: #000;
 }
 .btn.btn-feel-invert svg circle {
-  stroke: #1a1a1a;
+  stroke: #000;
 }
 .btn.btn-feel-invert:focus, .btn.btn-feel-invert.focus, .btn.btn-feel-invert:hover, .btn.btn-feel-invert.hover, .btn.btn-feel-invert:active, .btn.btn-feel-invert.active {
-  color: #1a1a1a;
+  color: #000;
   opacity: 1;
   border-color: rgba(251, 153, 98, 0.5);
 }
@@ -4349,8 +4349,8 @@ button {
 
 .btn-primary {
   color: #fff;
-  background-color: #1a1a1a;
-  border: 1px solid #1a1a1a;
+  background-color: #000;
+  border: 1px solid #000;
 }
 .btn-primary svg g {
   fill: #fff;
@@ -4385,19 +4385,19 @@ button {
   fill: #8e8e8e;
 }
 .has-light .btn-primary {
-  color: #1a1a1a;
+  color: #000;
   background-color: #fff;
   border: 1px solid #fff;
 }
 .has-light .btn-primary svg g {
-  fill: #1a1a1a;
-  stroke: #1a1a1a;
+  fill: #000;
+  stroke: #000;
 }
 .has-light .btn-primary svg circle {
-  stroke: #1a1a1a;
+  stroke: #000;
 }
 .has-light .btn-primary svg path {
-  fill: #1a1a1a;
+  fill: #000;
 }
 .has-light .btn-primary:focus, .has-light .btn-primary.focus, .has-light .btn-primary:hover, .has-light .btn-primary.hover, .has-light .btn-primary:active, .has-light .btn-primary.active {
   color: #fff;
@@ -4423,22 +4423,22 @@ button {
 }
 
 .btn-secondary {
-  color: #1a1a1a;
+  color: #000;
   background-color: #fff;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .btn-secondary svg g {
-  fill: #1a1a1a;
-  stroke: #1a1a1a;
+  fill: #000;
+  stroke: #000;
 }
 .btn-secondary svg circle {
-  stroke: #1a1a1a;
+  stroke: #000;
 }
 .btn-secondary svg path {
-  fill: #1a1a1a;
+  fill: #000;
 }
 .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:hover, .btn-secondary.hover, .btn-secondary:active, .btn-secondary.active {
-  color: #1a1a1a;
+  color: #000;
   background-color: #fff;
   border: 1px solid #8e8e8e;
   opacity: 1;
@@ -4513,7 +4513,7 @@ button {
   fill: #fff;
 }
 .btn-phantom:focus, .btn-phantom.focus, .btn-phantom:hover, .btn-phantom.hover, .btn-phantom:active, .btn-phantom.active {
-  color: #1a1a1a;
+  color: #000;
   background-color: transparent;
   border: 1px solid #8e8e8e;
   opacity: 1;
@@ -4537,21 +4537,21 @@ button {
 }
 
 .btn-primary-feel {
-  color: #1a1a1a;
+  color: #000;
   background-color: #fb9962;
 }
 .btn-primary-feel svg g {
-  fill: #1a1a1a;
-  stroke: #1a1a1a;
+  fill: #000;
+  stroke: #000;
 }
 .btn-primary-feel svg circle {
-  stroke: #1a1a1a;
+  stroke: #000;
 }
 .btn-primary-feel svg path {
-  fill: #1a1a1a;
+  fill: #000;
 }
 .btn-primary-feel:focus, .btn-primary-feel.focus, .btn-primary-feel:hover, .btn-primary-feel.hover, .btn-primary-feel:active, .btn-primary-feel.active {
-  color: #1a1a1a;
+  color: #000;
   opacity: 1;
   background-color: rgba(251, 153, 98, 0.6);
 }
@@ -4570,20 +4570,20 @@ button {
 }
 
 .btn-secondary-feel {
-  color: #1a1a1a;
+  color: #000;
   background-color: #fff;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .btn-secondary-feel svg g {
-  fill: #1a1a1a;
-  stroke: #1a1a1a;
+  fill: #000;
+  stroke: #000;
 }
 .btn-secondary-feel svg circle {
-  stroke: #1a1a1a;
+  stroke: #000;
 }
 .btn-secondary-feel:focus, .btn-secondary-feel.focus, .btn-secondary-feel:hover, .btn-secondary-feel.hover, .btn-secondary-feel:active, .btn-secondary-feel.active {
   opacity: 1;
-  color: #1a1a1a;
+  color: #000;
   border: 1px solid #8e8e8e;
   background-color: #fff;
 }
@@ -4613,20 +4613,20 @@ button {
 }
 
 .btn-tertiary {
-  color: #1a1a1a;
+  color: #000;
   background-color: #fff;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .btn-tertiary svg g {
-  fill: #1a1a1a;
-  stroke: #1a1a1a;
+  fill: #000;
+  stroke: #000;
 }
 .btn-tertiary svg circle {
-  stroke: #1a1a1a;
+  stroke: #000;
 }
 .btn-tertiary:focus, .btn-tertiary.focus, .btn-tertiary:hover, .btn-tertiary.hover, .btn-tertiary:active, .btn-tertiary.active {
   opacity: 1;
-  color: #1a1a1a;
+  color: #000;
   border: 1px solid #8e8e8e;
   background-color: #fff;
 }
@@ -4658,20 +4658,20 @@ button {
 .btn-text {
   background-color: transparent;
   border-color: transparent;
-  color: #1a1a1a;
+  color: #000;
 }
 
 .btn-invert {
-  color: #1a1a1a;
+  color: #000;
   background-color: transparent;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .btn-invert:focus, .btn-invert.focus, .btn-invert:hover, .btn-invert.hover, .btn-invert:active, .btn-invert.active {
   opacity: 0.6;
 }
 
 .btn-invert-light {
-  color: #1a1a1a;
+  color: #000;
   background-color: transparent;
   border: 1px solid #e3e3e3;
 }
@@ -4683,8 +4683,8 @@ button {
 }
 
 .btn-default {
-  background-color: #1a1a1a;
-  border: 1px solid #1a1a1a;
+  background-color: #000;
+  border: 1px solid #000;
   color: #fff;
 }
 
@@ -4703,7 +4703,7 @@ button {
   border: none;
   text-align: left;
   text-decoration: none;
-  color: #1a1a1a;
+  color: #000;
   background-color: transparent;
   padding: 0;
   border-radius: 0;
@@ -4741,7 +4741,7 @@ button {
   width: 40px;
   max-width: initial;
   height: 40px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   border-radius: 50px;
   align-content: center;
   justify-content: center;
@@ -4788,7 +4788,7 @@ button {
 .btn-google,
 .has-light .btn-google {
   background-color: #fff;
-  color: #1a1a1a;
+  color: #000;
   border: 1px solid #fff;
 }
 .btn-google svg-icon,
@@ -5001,7 +5001,7 @@ button {
   opacity: 1;
 }
 .btn-anim:disabled svg path, .btn-anim[disabled] svg path, .btn-anim.disabled svg path {
-  fill: rgba(26, 26, 26, 0.6);
+  fill: rgba(0, 0, 0, 0.6);
 }
 
 .is-loading.btn-anim .btn-submit {
@@ -5015,8 +5015,8 @@ button {
 
 .no-focus:focus {
   color: #fff;
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
+  background-color: #000;
+  border-color: #000;
 }
 
 .btn-loading svg {
@@ -5043,22 +5043,22 @@ button {
 .btn-social-login.disabled {
   filter: invert(1);
   background: #fff;
-  color: #1a1a1a;
+  color: #000;
   cursor: default;
 }
 .btn-social-login.disabled svg path {
-  fill: #1a1a1a;
+  fill: #000;
 }
 
 .btn-feel {
   background-color: #fb9962;
   border: 1px solid #fb9962;
-  color: #1a1a1a;
+  color: #000;
 }
 .btn-feel:hover, .btn-feel.hover, .btn-feel:focus, .btn-feel.focus {
   background-color: #fccbb0;
   border: 1px solid #fccbb0;
-  color: #1a1a1a;
+  color: #000;
   opacity: 1;
 }
 .btn-feel[disabled], .btn-feel:disabled, .btn-feel.disabled {
@@ -5070,12 +5070,12 @@ button {
 .has-light .btn-feel {
   background-color: #fb9962;
   border: 1px solid #fb9962;
-  color: #1a1a1a;
+  color: #000;
 }
 .has-light .btn-feel:hover, .has-light .btn-feel.hover, .has-light .btn-feel:focus, .has-light .btn-feel.focus {
   background-color: #fccbb0;
   border: 1px solid #fccbb0;
-  color: #1a1a1a;
+  color: #000;
   opacity: 1;
 }
 .has-light .btn-feel[disabled], .has-light .btn-feel:disabled, .has-light .btn-feel.disabled {
@@ -5092,7 +5092,7 @@ button {
   gap: 8px;
   padding: 13px;
   border: none;
-  background-color: rgba(26, 26, 26, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   transition: all 0.4s ease-in-out;
 }
@@ -5100,7 +5100,7 @@ button {
   fill: #fff;
 }
 .btn-world:hover, .btn-world.hover, .btn-world:focus, .btn-world.focus {
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border: none;
 }
 .btn-world .btn-world-left {
@@ -5134,7 +5134,7 @@ button {
 .btn.btn-secondary-rd {
   font-size: 12px;
   border-radius: 0;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   padding: 9px 2px 4px;
   height: 32px;
   min-width: 100px;
@@ -5197,7 +5197,7 @@ button {
   position: absolute;
   content: "";
   height: 1px;
-  background-color: #1a1a1a;
+  background-color: #000;
   width: 16px;
   transform: rotate(136deg);
   left: 4px;
@@ -5210,12 +5210,12 @@ button {
   height: 1px;
   top: 10px;
   transform: rotate(50deg);
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 .checkbox-item [type=checkbox]:not(:checked) + label,
 .checkbox-item [type=checkbox]:checked + label {
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
   cursor: pointer;
   font-weight: normal;
   font-size: 12px;
@@ -5228,21 +5228,20 @@ button {
 .checkbox-item [type=checkbox]:checked + label::before {
   position: absolute;
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 14px;
+  height: 14px;
   left: 0;
   border: none;
-  border: 1px solid #8e8e8e;
+  border: 1px solid #000;
   outline: 0;
   display: inline-block;
   vertical-align: top;
-  margin: 0 10px 0 0;
 }
 .checkbox-item [type=checkbox]:not(:checked) + label span,
 .checkbox-item [type=checkbox]:checked + label span {
   display: initial;
   vertical-align: top;
-  margin: 5px 0 0;
+  margin: 0;
   line-height: 16px;
   min-height: 20px;
   padding-left: 0;
@@ -5272,9 +5271,9 @@ button {
 .checkbox-item [type=checkbox]:not(:checked) + label .icon,
 .checkbox-item [type=checkbox]:checked + label .icon {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  color: #1a1a1a;
+  top: 0;
+  left: 2px;
+  color: #000;
   transition: all 0.2s;
 }
 .checkbox-item [type=checkbox]:not(:checked) + label .icon {
@@ -5294,7 +5293,7 @@ button {
 }
 .checkbox-item.color-filter [type=checkbox]:not(:checked) + label span,
 .checkbox-item.color-filter [type=checkbox]:checked + label span {
-  padding-left: 24px;
+  padding-left: 14px;
 }
 
 .checkbox-item-2 {
@@ -5320,10 +5319,10 @@ button {
   content: "";
   width: 62px;
   height: 26px;
-  border-radius: 30px;
+  border-radius: 0;
   left: 0;
   border: none;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   outline: 0;
   display: inline-block;
   vertical-align: top;
@@ -5333,7 +5332,7 @@ button {
 .checkbox-item-2 [type=checkbox]:checked + label span {
   display: inline-block;
   vertical-align: top;
-  margin: 5px 0 0;
+  margin: 0;
   line-height: 16px;
   padding-left: 70px;
   min-height: 20px;
@@ -5352,17 +5351,17 @@ button {
   line-height: normal;
 }
 .checkbox-item-2 .checkbox-circle {
-  background: #1a1a1a;
+  background: #000;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 0;
 }
 .checkbox-item-2 [type=checkbox]:not(:checked) + label .checkbox-circle,
 .checkbox-item-2 [type=checkbox]:checked + label .checkbox-circle {
   position: absolute;
   top: 3px;
   left: 6px;
-  color: #1a1a1a;
+  color: #000;
   transition: all 0.2s;
 }
 .checkbox-item-2 [type=checkbox]:not(:checked) + label .checkbox-circle {
@@ -5398,8 +5397,8 @@ button {
   position: absolute;
   box-sizing: border-box;
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   left: 0;
   border: none;
   border: 1px solid #8e8e8e;
@@ -5407,13 +5406,13 @@ button {
   display: inline-block;
   vertical-align: top;
   margin: 0 10px 0 0;
-  border-radius: 50%;
+  border-radius: 0;
 }
 .checkbox-radio [type=radio]:not(:checked) + label span,
 .checkbox-radio [type=radio]:checked + label span {
   display: inline-block;
   vertical-align: top;
-  margin: 5px 0 0;
+  margin: 0;
   line-height: 16px;
   padding-left: 32px;
   min-height: 20px;
@@ -5434,12 +5433,12 @@ button {
 .checkbox-radio [type=radio]:not(:checked) + label .ico-radio,
 .checkbox-radio [type=radio]:checked + label .ico-radio {
   position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 10px;
-  height: 10px;
-  background-color: #1a1a1a;
-  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 0;
   transition: all 0.2s;
 }
 .checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
@@ -5459,14 +5458,14 @@ button {
 }
 .checkbox-item-text span {
   position: relative;
-  margin-left: 40px;
-  min-height: 48px;
+  margin-left: 30px;
+  min-height: 40px;
 }
 
 .checkbox-item-box {
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 14px;
+  height: 14px;
 }
 
 .checkbox-item-img {
@@ -5490,7 +5489,7 @@ button {
   position: absolute;
   content: "";
   height: 1px;
-  background-color: #1a1a1a;
+  background-color: #000;
   width: 16px;
   transform: rotate(136deg);
   left: 4px;
@@ -5503,7 +5502,7 @@ button {
   height: 1px;
   top: 10px;
   transform: rotate(50deg);
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 .checkbox-item-img [type=checkbox] + label::after,
 .checkbox-item-img [type=checkbox] + label::after {
@@ -5523,7 +5522,7 @@ button {
   width: 100%;
   aspect-ratio: 3/4;
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
   cursor: pointer;
   font-weight: normal;
   font-size: 12px;
@@ -5534,7 +5533,7 @@ button {
 .checkbox-item-img [type=checkbox]:checked + label span {
   display: initial;
   vertical-align: top;
-  margin: 5px 0 0;
+  margin: 0;
   line-height: 16px;
   min-height: 20px;
   padding-left: 0;
@@ -5568,8 +5567,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: scale(1) translate(-50%, calc(-50% - 40px));
-  color: #1a1a1a;
+  transform: scale(1) translate(-50%, calc(-50% - 30px));
+  color: #000;
   transition: all 0.2s;
 }
 .checkbox-item-img input[type=checkbox] {
@@ -5581,18 +5580,18 @@ button {
 }
 .checkbox-item-img [type=checkbox]:checked + label .icon {
   opacity: 1;
-  transform: scale(1) translate(-50%, calc(-50% - 40px));
+  transform: scale(1) translate(-50%, calc(-50% - 30px));
 }
 .checkbox-item-img .checkbox-item [type=checkbox]:checked + label .icon {
   opacity: 1;
-  transform: scale(1) translate(-50%, calc(-50% - 40px));
+  transform: scale(1) translate(-50%, calc(-50% - 30px));
 }
 .checkbox-item-img [type=checkbox]:checked + label {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .checkbox-item-img [type=checkbox]:not(:checked) + label .icon {
   opacity: 0;
-  transform: scale(0) translate(-50%, calc(-50% - 40px));
+  transform: scale(0) translate(-50%, calc(-50% - 30px));
 }
 .checkbox-item-img [type=checkbox]:not(:checked) + label {
   border: 1px solid transparent;
@@ -5606,7 +5605,7 @@ button {
 }
 .checkbox-item-img.color-filter [type=checkbox]:not(:checked) + label span,
 .checkbox-item-img.color-filter [type=checkbox]:checked + label span {
-  padding-left: 24px;
+  padding-left: 14px;
 }
 .checkbox-item-img img {
   width: 100%;
@@ -5629,7 +5628,7 @@ button {
   display: none;
 }
 .check-no.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 
 .check-center.checkbox-radio [type=radio]:checked + label::before, .check-center.checkbox-radio [type=radio]:not(:checked) + label::before {
@@ -5644,17 +5643,17 @@ button {
   margin-top: -5px;
 }
 .check-center .box3-content {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .check-center.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 
 .check-bleed.checkbox-radio [type=radio]:checked + label::before, .check-bleed.checkbox-radio [type=radio]:not(:checked) + label::before {
   left: 0;
 }
 .check-bleed.checkbox-radio [type=radio]:checked + label .ico-radio, .check-bleed.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
-  left: 7px;
+  left: 4px;
 }
 
 .check-top.checkbox-radio [type=radio]:checked + label::before, .check-top.checkbox-radio [type=radio]:not(:checked) + label::before {
@@ -5667,10 +5666,10 @@ button {
   left: 23px;
 }
 .check-top .box3-content {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .check-top.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 
 .check-clear.checkbox-radio [type=radio]:checked + label::before, .check-clear.checkbox-radio [type=radio]:not(:checked) + label::before {
@@ -5680,13 +5679,13 @@ button {
 }
 .check-clear.checkbox-radio [type=radio]:checked + label .ico-radio, .check-clear.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
   top: 23px;
-  left: 7px;
+  left: 4px;
 }
 .check-clear .box3-content {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .check-clear.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 
 .checkbox-card .checkbox-card-label {
@@ -5708,14 +5707,14 @@ button {
 }
 .checkbox-card [type=radio]:checked + .checkbox-card-label, .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .has-light .checkbox-card {
   color: #fff;
 }
 .has-light .checkbox-card .checkbox-card-label {
   border: 1px solid #8e8e8e;
-  background: #1a1a1a;
+  background: #000;
 }
 .has-light .checkbox-card [type=radio]:checked + .checkbox-card-label, .has-light .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
@@ -5723,7 +5722,7 @@ button {
 }
 
 .is-active.checkbox-radio .border-1 {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
 }
 .is-active.checkbox-radio [type=radio] + label .ico-radio {
   opacity: 1;
@@ -5784,9 +5783,12 @@ button {
   color: #fff;
 }
 
-.checkbox-item [type=checkbox]:not(:checked) + label::before,
-.checkbox-item [type=checkbox]:checked + label::before {
+.checkbox-item [type=checkbox]:not(:checked) + label::before {
   background-color: #fff;
+}
+
+.checkbox-item [type=checkbox]:checked + label::before {
+  background-color: #000;
 }
 
 .form {
@@ -5817,7 +5819,7 @@ fieldset[disabled] .form-control {
   vertical-align: top;
   height: 40px;
   box-sizing: border-box;
-  color: #1a1a1a;
+  color: #000;
   max-width: 100%;
   width: 100%;
   font-size: 12px;
@@ -5840,7 +5842,7 @@ fieldset[disabled] .form-control {
 .select select:focus {
   outline: none;
   border: 1px solid transparent;
-  border-color: #1a1a1a;
+  border-color: #000;
   border-width: 0 0 1px 0;
 }
 
@@ -5883,11 +5885,11 @@ label {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 13px;
+  left: 0;
   z-index: 1;
 }
 .select::after {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   border-radius: 0;
   border-right: 0;
   border-top: 0;
@@ -5906,7 +5908,7 @@ label {
   height: 48px;
 }
 .select:not(.is-multiple, .is-loading)::after {
-  border-color: #1a1a1a;
+  border-color: #000;
 }
 .select select::-ms-expand {
   display: none;
@@ -5916,17 +5918,17 @@ label {
   border-color: #f0f0f0;
 }
 .select select:not([multiple]) {
-  padding-right: 45px;
+  padding-right: 30px;
 }
 .select select[multiple] {
   height: auto;
   padding: 0;
 }
 .select select[multiple] option {
-  padding: 0 40px;
+  padding: 0 0;
 }
 .select:not(.is-multiple, .is-loading):hover::after {
-  border-color: #1a1a1a;
+  border-color: #000;
 }
 .select.select-label select {
   padding-left: 100px;
@@ -5989,7 +5991,7 @@ label {
 }
 .select.select-secondary-rd select {
   border-radius: 0;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   padding: 6px 2px 4px;
   min-width: 100px;
   text-align: center;
@@ -6055,7 +6057,7 @@ label {
   border-radius: 0;
   background: none;
   padding-right: 40px;
-  border-color: #1a1a1a;
+  border-color: #000;
 }
 .select.select-size select:hover {
   opacity: 0.6;
@@ -6079,7 +6081,7 @@ label {
   border-right: 1px solid transparent;
   background-color: transparent;
   padding-left: 0;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #000;
 }
 
 .input-notouch {
@@ -6236,7 +6238,7 @@ label {
 .error-zone select:-webkit-autofill:hover,
 .error-zone select:-webkit-autofill:focus {
   border: 1px solid #e3e3e3;
-  -webkit-text-fill-color: #1a1a1a;
+  -webkit-text-fill-color: #000;
   box-shadow: 0 0 0 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -6386,7 +6388,7 @@ label {
   padding: 12px 0 4px;
   height: auto;
   border: none;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #000;
 }
 .input-line-v2 .input::input-placeholder {
   font-family: arial, sans-serif;
@@ -6447,7 +6449,7 @@ label {
 .has-light .form-input-prefix select:-webkit-autofill:focus {
   border: 1px solid #fff;
   -webkit-text-fill-color: #fff;
-  box-shadow: 0 0 0 1000px #1a1a1a inset;
+  box-shadow: 0 0 0 1000px #000 inset;
 }
 .has-light .form-input-label .input,
 .has-light .form-input-label .textarea,
@@ -6562,7 +6564,7 @@ a:hover {
 }
 .link4::after {
   content: "";
-  background-color: #1a1a1a;
+  background-color: #000;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -6589,7 +6591,7 @@ a:hover {
   color: #fff;
 }
 .inner-button::after {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   border-radius: 0;
   border-right: 0;
   border-top: 0;
@@ -6798,14 +6800,9 @@ ul.list-disc li a::after {
   bottom: 7px;
 }
 
-ul.list-inline {
-  margin: 0;
-  padding: 0;
-}
 ul.list-inline li {
   display: inline-flex;
   padding: 0 4px;
-  margin: 0;
 }
 ul.list-inline li::after {
   display: none;
@@ -6884,7 +6881,7 @@ ul.list-mini > li.is-missing::after {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #1a1a1a;
+  background-color: #000;
   border-radius: 0;
   margin-top: -1px;
   transform: none;
@@ -6893,7 +6890,7 @@ ul.list-mini > li::after {
   content: "";
   width: 2px;
   height: 2px;
-  background-color: #1a1a1a;
+  background-color: #000;
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -6916,7 +6913,7 @@ ul.list-mini > li::after {
   left: 0;
 }
 .list-box.is-active, .list-box:hover {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   opacity: 1;
   cursor: pointer;
 }
@@ -7009,7 +7006,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   min-width: 8px;
   height: 8px;
   border-radius: 0;
-  background-color: #1a1a1a;
+  background-color: #000;
   transition: all 0.2s ease;
 }
 
@@ -7050,17 +7047,17 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 .tabs li a:hover,
 .tabs li span:hover {
-  border-bottom-color: #1a1a1a;
+  border-bottom-color: #000;
   border-bottom-width: 2px;
   padding-bottom: 16px;
-  color: #1a1a1a;
+  color: #000;
   cursor: pointer;
 }
 .tabs li.is-active a, .tabs li.is-active span {
-  border-bottom-color: #1a1a1a;
+  border-bottom-color: #000;
   border-bottom-width: 2px;
   padding-bottom: 16px;
-  color: #1a1a1a;
+  color: #000;
   font-family: arial, sans-serif;
   font-weight: 900;
 }
@@ -7097,7 +7094,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 .tabs-list li span:hover::after {
   content: "";
   width: 100%;
-  background: #1a1a1a;
+  background: #000;
   height: 2px;
   position: absolute;
   bottom: -4px;
@@ -7106,7 +7103,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 .tabs-list li.is-active span::after {
   content: "";
   width: 100%;
-  background: #1a1a1a;
+  background: #000;
   height: 2px;
   position: absolute;
   bottom: -4px;
@@ -7137,7 +7134,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 .tabs-gray a:hover,
 .tabs-gray span:hover {
-  color: #1a1a1a;
+  color: #000;
   cursor: pointer;
 }
 
@@ -7164,7 +7161,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   opacity: 0.5;
   border: none;
   padding: 6px 8px 8px;
-  color: #1a1a1a;
+  color: #000;
 }
 .tabs-mini li:first-child a::after {
   content: "";
@@ -7221,7 +7218,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 
 .tag-alert {
   background-color: #ffc700;
-  color: #1a1a1a;
+  color: #000;
   padding: 6px;
   line-height: 1;
   display: inline-block;
@@ -7229,14 +7226,14 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 
 .tag-feel {
   background-color: #fb9962;
-  color: #1a1a1a;
+  color: #000;
   padding: 6px;
   line-height: 1;
   display: inline-block;
 }
 
 .tag-limited {
-  background-color: #1a1a1a;
+  background-color: #000;
   color: #fff;
   padding: 6px;
   line-height: 1;
@@ -7244,7 +7241,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 
 .tag-new {
-  color: #1a1a1a;
+  color: #000;
   font-style: normal;
   line-height: 10px;
   top: 10px;
@@ -7264,7 +7261,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   z-index: 10;
   padding: 8px;
   padding-right: 24px;
-  color: #1a1a1a;
+  color: #000;
 }
 .tooltip-sm::after {
   content: "";
@@ -7334,7 +7331,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   z-index: 10;
   padding: 8px;
   padding-right: 24px;
-  color: #1a1a1a;
+  color: #000;
 }
 .tooltip-sm-temp::after {
   content: "";
@@ -7551,7 +7548,7 @@ ul.list-clear li.list-box:last-child {
   left: -1px;
 }
 .list-box.is-active, .list-box:hover {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #000;
   opacity: 1;
   cursor: pointer;
 }
@@ -8057,7 +8054,7 @@ ul.list-clear li.list-box:last-child {
   appearance: initial;
 }
 .card9 .card9-sizes button:hover {
-  background-color: #1a1a1a;
+  background-color: #000;
   color: #fff;
   cursor: pointer;
 }
@@ -9689,7 +9686,7 @@ div.card9-wrap .rat-content:hover .card9-add {
 .hg-bread .hg-bread-line div {
   width: 42px;
   height: 1px;
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 .hg-bread .hg-bread-title {
   line-height: 1;

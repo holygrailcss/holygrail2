@@ -502,7 +502,7 @@ input[type=number] {
 }
 
 .var-b-c-primary::before {
-  content: "#1a1a1a";
+  content: "#000";
   display: inline-block;
 }
 
@@ -512,7 +512,7 @@ input[type=number] {
 }
 
 .var-b-c-secondary::before {
-  content: "#1a1a1a";
+  content: "#000";
   display: inline-block;
 }
 
@@ -697,11 +697,11 @@ input[type=number] {
 }
 
 .bg-c-primary {
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 
 .bg-c-secondary {
-  background-color: #1a1a1a;
+  background-color: #000;
 }
 
 .bg-c-accent {
