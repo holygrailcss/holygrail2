@@ -2393,37 +2393,79 @@ mark {
 }
 
 @media (min-width: 1px) {
-  .tit-m {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-  }
-  .tit-s {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.2;
-  }
-  .tit-xs {
+  .title-l {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
   }
-  .tit-xs-b {
+  .title-l-b {
     font-family: arial, sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
   }
-  .sub-xs {
+  .title-m {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 11px;
     line-height: 1.2;
   }
+  .title-s {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .title-xs {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .text-l {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .text-m {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .tit-m {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-s {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-xs {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .p-m-b {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
   .p-m {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m-m {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -2441,59 +2483,81 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-tag {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 1.3;
-  }
-  .p-m-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 1.2;
-  }
-  .p-m-m {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.2;
-  }
   .p-xs-b {
     font-family: arial, sans-serif;
     font-weight: 900;
     font-size: 11px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
   .p-xxs-b {
     font-family: arial, sans-serif;
     font-weight: 900;
-    font-size: 9px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .p-tag {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 8px;
     line-height: 1.3;
+  }
+  .sub-xs {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.2;
   }
 }
 @media (min-width: 992px) {
-  .tit-m {
-    font-size: 16px;
-    line-height: 1.2;
-  }
-  .tit-s {
-    font-size: 13px;
-    line-height: 1.2;
-  }
-  .tit-xs {
+  .title-l {
     font-size: 12px;
     line-height: 1.2;
   }
-  .tit-xs-b {
+  .title-l-b {
     font-size: 12px;
     line-height: 1.2;
   }
-  .sub-xs {
+  .title-m {
     font-size: 11px;
     line-height: 1.2;
   }
+  .title-s {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .title-xs {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .text-l {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .text-m {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .tit-m {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-s {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-xs {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .p-m-b {
+    font-size: 12px;
+    line-height: 1.2;
+  }
   .p-m {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m-m {
     font-size: 12px;
     line-height: 1.2;
   }
@@ -2505,25 +2569,21 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
+  .p-xs-b {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .p-xxs-b {
+    font-size: 11px;
+    line-height: 1.2;
+  }
   .p-tag {
     font-size: 10px;
     line-height: 1.3;
   }
-  .p-m-b {
-    font-size: 13px;
+  .sub-xs {
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-m-m {
-    font-size: 13px;
-    line-height: 1.2;
-  }
-  .p-xs-b {
-    font-size: 12px;
-    line-height: 1.3;
-  }
-  .p-xxs-b {
-    font-size: 9px;
-    line-height: 1.3;
   }
 }
 @media (min-width: 1px) {
