@@ -1,34 +1,71 @@
 @import '../abstract/_all';
 $input-padding-x: 14px;
 $input-padding-y: 14px;
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 1px solid $c-primary;
-}
+
 .form {
   width: 100%;
 }
+
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
   background-color: transparent;
   opacity: 1;
 }
+
+.input,
+.textarea,
+.select select {
+  border: 1px solid transparent;
+  border-color: $c-middle-grey;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  appearance: none;
+  align-items: center;
+  box-shadow: none;
+  display: inline-flex;
+  justify-content: flex-start;
+  padding: 8px 0;
+  position: relative;
+  vertical-align: top;
+  height: 40px;
+  box-sizing: border-box;
+
+  color: $c-primary;
+  max-width: 100%;
+  width: 100%;
+  font-size: $text-input-m;
+  line-height: 1;
+  @media (min-width: $break-sm) {
+    font-size: $text-input-d;
+  }
+  &.validation-error {
+    border-color: $c-error;
+  }
+  &:focus {
+    outline: none;
+
+    border: 1px solid transparent;
+    border-color: $c-primary;
+    border-width: 0 0 1px 0;
+  }
+}
+
+input::input-placeholder {
+  color: $c-middle-grey;
+  transform: translate3d(0, 0, 0);
+}
+
 .textarea {
-  height: 100px;
-  padding: 10px;
+  min-height: 100px;
+  padding: 16px;
   box-sizing: border-box;
 }
+
 label {
   font-size: $text-md;
 }
-select {
-  background-color: $c-white;
-  border-color: $c-middle-grey;
-  border-radius: $form-radius;
-  color: $c-primary;
-}
+
 .select {
   max-width: 100%;
   appearance: none;
@@ -66,7 +103,7 @@ select {
     pointer-events: none;
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 4px;
     transform: rotate(-45deg);
     transform-origin: center;
     width: 8px;
@@ -181,7 +218,7 @@ select {
     &.select:not(.is-multiple) {
       height: 32px;
       @media (min-width: $break-sm) {
-        height: 48px;
+        height: 40px;
       }
     }
     &.select select:not(.is-multiple),
@@ -220,7 +257,6 @@ select {
     }
     select {
       border-radius: $obj-radius;
-      padding-left: 16px;
       background: none;
       padding-right: 40px;
       border-color: $c-primary;
@@ -230,35 +266,7 @@ select {
     }
   }
 }
-.input,
-.textarea,
-.select select {
-  border: 1px solid transparent;
-  appearance: none;
-  align-items: center;
-  box-shadow: none;
-  display: inline-flex;
-  justify-content: flex-start;
-  padding: 14px 16px;
-  position: relative;
-  vertical-align: top;
-  border-radius: $form-radius;
-  height: 48px;
-  box-sizing: border-box;
-  background-color: transparent;
-  border-color: $c-middle-grey;
-  color: $c-primary;
-  max-width: 100%;
-  width: 100%;
-  font-size: $text-input-m;
-  line-height: 1;
-  @media (min-width: $break-sm) {
-    font-size: $text-input-d;
-  }
-  &.validation-error {
-    border-color: $c-error;
-  }
-}
+
 .validation-error-messages {
   color: $c-error;
   font-weight: 500;
@@ -279,64 +287,14 @@ select {
   padding-left: 0;
   border-bottom: 1px solid $c-primary;
 }
+
 .input-notouch {
   @include font-regular;
   pointer-events: none;
   border-color: $c-middle-grey;
   padding: 24px 0;
 }
-.inputmini {
-  //todo revisar
-  border-color: $c-middle-grey;
-  color: $c-primary;
-  max-width: 100%;
-  width: 58px;
-  align-items: center;
-  border: 1px solid $c-middle-grey;
-  box-shadow: none;
-  display: inline-flex;
-  height: 34px;
-  font-size: $text-md;
-  margin-left: 10px;
-  text-align: center;
-  justify-content: flex-start;
-  line-height: 1.5;
-  padding: calc(0.375em - 1px) calc(0.625em - 1px) calc(0.375em - 1px) calc(0.625em - 1px);
-  position: relative;
-  vertical-align: top;
-}
-.input-btn {
-  .input {
-    display: inline-block;
-    width: calc(60% - 100px);
-  }
-  .btn {
-    display: inline-block;
-    height: 48px;
-    margin-left: -3px;
-    width: 100px;
-  }
-}
-.input-gray {
-  padding-left: 40px;
-  background: rgb(0 0 0 / 5%);
-  border-radius: $obj-radius;
-  border: none;
-}
-input::input-placeholder {
-  color: $c-middle-grey;
-  transform: translate3d(0, 0, 0);
-}
-.checkbox-text {
-  float: left;
-  label {
-    display: inline-block;
-  }
-  input {
-    display: inline-block;
-    margin-right: 10px;
-  }
-}
+
 .info-text {
   color: $c-dark-grey;
   margin-top: 4px;
@@ -344,7 +302,6 @@ input::input-placeholder {
   float: left;
 }
 .form-text {
-  right: 16px;
   right: 0;
   left: auto;
   position: absolute;
@@ -372,8 +329,10 @@ input::input-placeholder {
   label {
     font-size: $text-input-d;
   }
+
   font-family: $font-family-form;
   position: relative;
+
   .validation-error-messages {
     width: calc(100% - 40px);
   }
@@ -407,7 +366,7 @@ input::input-placeholder {
   & > label,
   & > textarea {
     font-family: $font-family-form;
-    padding: 16px;
+    padding: 16px 0;
     font-weight: normal;
   }
   & > label {
@@ -440,7 +399,7 @@ input::input-placeholder {
     padding-bottom: calc(#{$input-padding-y} / 3 + 3px);
   }
   & input:not(:placeholder-shown) ~ label {
-    padding-top: calc(#{$input-padding-y} / 3 + 1px);
+    padding-top: 0;
     padding-bottom: calc(#{$input-padding-y} / 3);
     font-size: $text-sm;
     color: $c-dark-grey;
@@ -478,7 +437,7 @@ input::input-placeholder {
     &.btn,
     & > input,
     & > label {
-      padding-left: $btn-padding * 3;
+      padding-left: $btn-padding * 2;
     }
     .form-icon {
       top: 0;
@@ -491,7 +450,7 @@ input::input-placeholder {
       right: auto;
       left: 0;
       box-sizing: border-box;
-      margin: 0 15px;
+      margin: 0;
       cursor: pointer;
       align-items: center;
       display: inline-flex;
@@ -518,7 +477,7 @@ input::input-placeholder {
       right: 0;
       left: auto;
       box-sizing: border-box;
-      margin: 0 15px;
+      margin: 0;
       cursor: pointer;
       align-items: center;
       display: inline-flex;
@@ -542,7 +501,7 @@ input::input-placeholder {
     color: $c-error !important;
   }
   .input {
-    border: 1px solid $c-error;
+    border-bottom: 1px solid $c-error;
   }
   .input-prefix :nth-child(1)::placeholder {
     color: $c-error;
@@ -556,6 +515,7 @@ input::input-placeholder {
     }
   }
 }
+
 .ok-input {
   .input,
   label,
@@ -563,10 +523,10 @@ input::input-placeholder {
     color: $c-success !important;
   }
   .input {
-    border: 1px solid $c-success;
+    border-bottom: 1px solid $c-success;
     color: $c-success;
   }
-  .input-prefix :nth-child(1)::placeholder {
+  .input-prefix:nth-child(1)::placeholder {
     color: $c-success;
   }
   .input-line {
@@ -577,111 +537,12 @@ input::input-placeholder {
     color: $c-success;
   }
 }
+
 .disabled-input {
   pointer-events: none;
   opacity: 0.4;
 }
-.form-input-label {
-  font-family: $font-family-form;
-  position: relative;
-  margin-bottom: 24px;
-  & > input,
-  & > label {
-    font-family: $font-family-form;
-    padding: 16px;
-    font-weight: normal;
-  }
-  & > label {
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    font-weight: normal;
-    margin-top: 1px;
-    margin-bottom: 0;
-    line-height: 1.1;
-    color: $c-dark-grey;
-    border-radius: $btn-radius;
-    transition: all 0.1s ease-in-out;
-    pointer-events: none;
-  }
-  & input::input-placeholder {
-    color: transparent;
-  }
-  & input:input-placeholder {
-    color: transparent;
-  }
-  & input::placeholder {
-    color: transparent;
-  }
-  & input:not(:placeholder-shown) {
-    padding-top: calc(#{$input-padding-y} + #{$input-padding-y} * (2 / 3));
-    padding-bottom: calc(#{$input-padding-y} / 3 + 3px);
-  }
-  & input:not(:placeholder-shown) ~ label {
-    padding-top: calc(#{$input-padding-y} / 3 + 1px);
-    padding-bottom: calc(#{$input-padding-y} / 3);
-    font-size: $text-sm;
-    color: $c-dark-grey;
-  }
-  & input::-webkit-list-button,
-  & input::-webkit-calendar-picker-indicator {
-    display: none;
-    opacity: 0;
-  }
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-    border: 1px solid $c-middle-grey;
-    -webkit-text-fill-color: $c-primary;
-    box-shadow: 0 0 0 1000px $c-white inset;
-    transition: background-color 5000s ease-in-out 0s;
-  }
-  &.input-line .input {
-    border: none;
-  }
-}
-//deprecated
-.form-input-prefix {
-  display: flex;
-  .input-prefix {
-    width: 52px;
-    display: inline-block;
-    margin-right: 8px;
-  }
-  .input-prefix .input {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-  .form-input-label,
-  .form-input-label-2 {
-    display: inline-block;
-    width: calc(100% - 60px);
-  }
-}
-.form-prefix {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  > :not(.select):nth-child(1) {
-    flex: 0 0 75px;
-  }
-  > :nth-child(2) {
-    flex: 5 0 130px;
-  }
-  > .btn {
-    flex: 1 0 auto;
-  }
-}
+
 .input-line-v2 {
   position: relative;
   display: flex;
@@ -706,16 +567,7 @@ input::input-placeholder {
     overflow: hidden;
   }
 }
-@supports (-ms-ime-align: auto) {
-  .form-input-label-2 > label {
-    display: none;
-  }
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-input-label-2 > label {
-    display: none;
-  }
-}
+
 .has-light {
   .form-input-label input,
   .form-input-label-2 input {
@@ -775,22 +627,6 @@ input::input-placeholder {
     }
   }
 }
-@supports (-ms-ime-align: auto) {
-  .form-input-label > label {
-    display: none;
-  }
-  .formlabel input:-ms-input-placeholder {
-    color: $c-dark-grey;
-  }
-}
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-input-label > label {
-    display: none;
-  }
-  .formlabel input:-ms-input-placeholder {
-    color: $c-dark-grey !important;
-  }
-}
 
 .form-postcode {
   flex-wrap: wrap;
@@ -809,6 +645,41 @@ input::input-placeholder {
   }
 }
 
+.form-prefix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  > :not(.select):nth-child(1) {
+    flex: 0 0 75px;
+  }
+  > :nth-child(2) {
+    flex: 5 0 130px;
+  }
+  > .btn {
+    flex: 1 0 auto;
+  }
+}
+
+// a eliminar activate-user---input-phone-combo----itxphoneaccountcreation
+.form-input-prefix {
+  display: flex;
+  .input-prefix {
+    width: 52px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .input-prefix .input {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .form-input-label,
+  .form-input-label-2 {
+    display: inline-block;
+    width: calc(100% - 60px);
+  }
+}
+//a eliminar pickup component
 .form-input-mobile {
   position: absolute;
   z-index: 1;
@@ -817,4 +688,21 @@ input::input-placeholder {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@supports (-ms-ime-align: auto) {
+  .form-input-label-2 > label {
+    display: none;
+  }
+  .formlabel input:-ms-input-placeholder {
+    color: $c-dark-grey;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-input-label-2 > label {
+    display: none;
+  }
+  .formlabel input:-ms-input-placeholder {
+    color: $c-dark-grey !important;
+  }
 }
