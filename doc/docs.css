@@ -1873,4 +1873,8 @@ pre[class*=language-] {
   align-items: center;
 }
 
+.g-16 {
+  gap: 16px;
+}
+
 /*# sourceMappingURL=docs.css.map */
