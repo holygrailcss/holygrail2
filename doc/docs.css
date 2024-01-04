@@ -1786,7 +1786,7 @@ pre[class*=language-] {
 
 .grid-6-docs {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 0;
 }
 .grid-6-docs div:nth-child(6n+3),
@@ -1800,6 +1800,22 @@ pre[class*=language-] {
 .grid-6-docs div:nth-child(6n+1),
 .grid-6-docs div:nth-child(6n+3),
 .grid-6-docs div:nth-child(6n+5) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.grid-2-docs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0;
+}
+.grid-2-docs div {
+  border-bottom: 1px solid #f6f6f6;
+  padding: 6px;
+}
+.grid-2-docs div:nth-child(6n+1),
+.grid-2-docs div:nth-child(6n+3),
+.grid-2-docs div:nth-child(6n+5) {
   font-size: 14px;
   font-weight: bold;
 }

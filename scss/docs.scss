@@ -601,13 +601,31 @@ pre[class*='language-'] {
 
 .grid-6-docs {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 0;
 
   div:nth-child(6n + 3),
   div:nth-child(6n + 4) {
     background-color: #eaeaea;
   }
+
+  div {
+    border-bottom: 1px solid #f6f6f6;
+    padding: 6px;
+  }
+
+  div:nth-child(6n + 1),
+  div:nth-child(6n + 3),
+  div:nth-child(6n + 5) {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.grid-2-docs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0;
 
   div {
     border-bottom: 1px solid #f6f6f6;
