@@ -4224,14 +4224,15 @@ button {
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
   vertical-align: middle;
   justify-content: center;
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 13px;
+  padding: 12px;
   background-color: transparent;
+  height: 40px;
   font-family: arial, sans-serif;
   font-weight: 500;
 }
@@ -4275,7 +4276,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 13px;
+  padding: 12px;
 }
 .btn.btn-separate svg {
   margin-left: 8px;
@@ -4327,7 +4328,7 @@ button {
   margin-right: 8px;
   white-space: nowrap;
   cursor: pointer;
-  padding: 6.5px;
+  padding: 6px;
 }
 .btn-xs:active, .btn-xs:focus, .btn-xs:visited {
   outline: none;
@@ -4342,13 +4343,11 @@ button {
   height: 40px;
   padding-right: 16px;
   padding-left: 16px;
-  font-size: 14px;
 }
 
 .btn--medium {
   padding-right: 40px;
   padding-left: 40px;
-  font-size: 14px;
   max-width: 272px;
   width: 100%;
   height: 40px;
@@ -4366,7 +4365,7 @@ button {
 @media (min-width: 768px) {
   .btn--mini-rd {
     padding: 16px;
-    font-size: 14px;
+    font-size: 12px;
     height: 40px;
   }
 }
@@ -4378,7 +4377,7 @@ button {
   width: 100%;
   padding-right: 56px;
   padding-left: 56px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .btn--xlarge {
@@ -4389,7 +4388,7 @@ button {
   min-height: 40px;
   min-width: 200px;
   max-width: 400px;
-  padding: 13px;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -4399,7 +4398,7 @@ button {
   width: 100%;
   padding-right: 16px;
   padding-left: 16px;
-  font-size: 14px;
+  font-size: 12px;
   height: 40px;
 }
 
@@ -5030,7 +5029,7 @@ button {
   margin: 0 auto;
 }
 .btn-group-inline .btn {
-  display: inline-block;
+  display: inline-flex;
   width: auto;
   min-width: 200px;
   margin: 0 8px;
@@ -5150,7 +5149,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 13px;
+  padding: 12px;
   border: none;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -6324,7 +6323,7 @@ label {
 .error-zone .has-ico-pre.btn,
 .error-zone .has-ico-pre > input,
 .error-zone .has-ico-pre > label {
-  padding-left: 26px;
+  padding-left: 24px;
 }
 .form-input-label-2.has-ico-pre .form-icon,
 .form-input-label-2 .has-ico-pre .form-icon,
@@ -6359,13 +6358,13 @@ label {
 .error-zone .has-ico-post.btn,
 .error-zone .has-ico-post > input,
 .error-zone .has-ico-post > label {
-  padding-right: 39px;
+  padding-right: 36px;
 }
 .form-input-label-2.has-ico-post .form-icon,
 .form-input-label-2 .has-ico-post .form-icon,
 .error-zone.has-ico-post .form-icon,
 .error-zone .has-ico-post .form-icon {
-  padding: 13px;
+  padding: 12px;
   top: 0;
   right: 0;
   left: auto;
@@ -10292,12 +10291,12 @@ div.card9-wrap .rat-content:hover .card9-add {
   right: initial;
 }
 .is-rtl .has-ico-post.btn, .is-rtl .has-ico-post > input, .is-rtl .has-ico-post > label {
-  padding-right: 13px;
-  padding-left: 42px;
+  padding-right: 12px;
+  padding-left: 40px;
 }
 .is-rtl .has-ico-pre.btn, .is-rtl .has-ico-pre > input, .is-rtl .has-ico-pre > label {
-  padding-left: 13px;
-  padding-right: 46px;
+  padding-left: 12px;
+  padding-right: 44px;
 }
 .is-rtl .link-svg-pre,
 .is-rtl button.link-line.link-svg-pre {
