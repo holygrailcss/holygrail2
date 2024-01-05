@@ -1432,11 +1432,13 @@
                 <div>.only-mobile </div>
                 <div> inline-block en mobile</div>
                 <div>.only-mobile-flex </div>
-                <div> Visible Sólo en desktop a partir de sm</div>
+                <div> Visible Sólo a partir de sm</div>
                 <div>.only-desktop </div>
                 <div> Flex en desktop a partir de sm</div>
                 <div>.only-desktop-flex </div>
                 <div> Flex en desktop a partir de sm</div>
+                <div>.sm:hidden </div>
+                <div> display :hidden max width sm </div>
                 <div class="bold bg-blue"> Textuales </div>
                 <div  class="bold bg-blue"></div>
                 <div > .text-center </div>
@@ -1446,24 +1448,31 @@
                 <div > .text-right</div>
                 <div > Alineación derecha</div>
                 <div >.text-justify</div>
-                <div > Texto justificado
-            </div>
+                <div > Texto justificado </div>
+                <div >.font-l</div>
+                <div > font-light </div>
+                <div >.font-r</div>
+                <div > font-regular </div>
+                <div >.font-b</div>
+                <div > font-bold </div>
+                <div >.font-sb</div>
+                <div > font-semibold </div>
                 <div >.has-ellipsis</div>
-                <div > Imagen centrada al medio con cover
+                <div > elipsis básica
             </div>
                 <div class="bold bg-blue">Helpers  Background </div>
                 <div  class="bold bg-blue"></div>
                 <div >.bg-cover</div>
-                <div > Imagen centrada al medio con cover
+                <div > background cover
             </div>
                 <div >.bg-line</div>
-                <div > Imagen centrada al medio con cover
-            </div>
+                <div > Linea </div>
                 <div > .reverse</div>
-                <div > .sm:reverse .md:reverse .lg:reverse
-            </div>
+                <div > .sm: .md: .lg:reverse </div>
+                <div > .smmax:reverse</div>
+                <div > reverse hasta sm </div>
                 <div>.video-cover </div>
-                <div>Posicionamiento mediante absolutes 50%</div>
+                <div> centrado con absolutes 50%</div>
               </div>
             </div>
             <div class="col-xs-4">
@@ -1484,28 +1493,28 @@
                 <div>position relative al 100%</div>
                 <div>.w-max </div>
                 <div> max-content</div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="grid-2-docs text-12-r">
                 <div class="bold bg-blue"> Border </div>
                 <div  class="bold bg-blue"></div>
                 <div>.hr</div>
                 <div> línea normal</div>
                 <div>.border-1 </div>
-                <div>border: 1px solid $c-middle-grey</div>
+                <div>1px solid $c-middle-grey</div>
                 <div>.border-t </div>
-                <div>border-top: 1px solid $c-middle-grey</div>
+                <div>top 1px  $c-middle-grey</div>
                 <div>.border-b </div>
-                <div>border-bottom: 1px solid $c-middle-grey;</div>
+                <div>bottom 1px  $c-middle-grey;</div>
                 <div>.border-l </div>
-                <div>border-left: 1px solid $c-middle-grey</div>
+                <div>left 1px  $c-middle-grey</div>
                 <div>.border-r </div>
-                <div>border-right: 1px solid $c-middle-grey;</div>
+                <div>right 1px  $c-middle-grey;</div>
                 <div>.border-b2 </div>
-                <div>border-bottom: 1px solid $c-primary</div>
+                <div>bottom 1px  $c-primary</div>
                 <div>.border-t2 </div>
-                <div>border-top: 1px solid $c-primary</div>
+                <div>top 1px  $c-primary</div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="grid-2-docs text-12-r">
                 <div class="bold bg-blue"> Flex </div>
                 <div  class="bold bg-blue"></div>
                 <div>.d-inline </div>
@@ -1513,7 +1522,7 @@
                 <div>.svg-iflex</div>
                 <div> descripcion</div>
                 <div>.flex-vcenter </div>
-                <div>centrado vertical, incluso si tenemos iconos</div>
+                <div>centrado verticall forced</div>
                 <div>.flex-1 </div>
                 <div>flex: 1 1 0%</div>
                 <div>.flex-auto </div>
@@ -1522,6 +1531,22 @@
                 <div>flex: 0 1 auto</div>
                 <div>.flex-none </div>
                 <div>flex: none</div>
+                <div class="bold bg-blue"> Especiales </div>
+                <div  class="bold bg-blue"></div>
+                <div>.sm:mb-16 </div>
+                <div>sm 16px desde sm</div>
+                <div>.smmax:mb-16 </div>
+                <div>sm 16px hasta sm</div>
+                <div>.sm:order-last </div>
+                <div>    order: 3;</div>
+                <div>.reverse (.sm:reverse)  </div>
+                <div>    wrap-reverse</div>
+                <div>.absolute-middle </div>
+                <div>    centrado con absolute  </div>
+                <div>.is-invert </div>
+                <div>   inversion </div>
+                <div>.p-stick </div>
+                <div>    position sticky top0  </div>
               </div>
             </div>
           </div>

@@ -656,6 +656,10 @@ input[type=number] {
   }
 }
 
+.container-10 {
+  max-width: 200px;
+}
+
 .container-11 {
   margin: 0 auto;
   padding: 0 24px;
@@ -1330,6 +1334,18 @@ input[type=number] {
   margin: 0 auto;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
 .grid-8 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -1343,30 +1359,28 @@ input[type=number] {
   border: 1px solid #eaeaea;
 }
 
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 16px;
-}
-
 @media (min-width: 768px) {
   .grid-2-desktop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 16px;
     align-items: end;
+  }
+}
+
+@media (min-width: 768px) {
+  .sm\:grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sm\:grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
   }
 }
 
@@ -3094,6 +3108,40 @@ mark {
   background-size: cover;
 }
 
+.bold {
+  font-family: arial, sans-serif;
+  font-weight: 900;
+}
+
+.semibold {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+
+b {
+  color: #000;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+.p-relative {
+  position: relative;
+}
+
 .banner-zone {
   display: flex;
   align-items: center;
@@ -3238,6 +3286,14 @@ hr {
   background-color: #8e8e8e;
 }
 
+.block-right {
+  margin-left: auto;
+}
+
+.block-left {
+  margin-right: auto;
+}
+
 @media (max-width: 767px) {
   .sm\:hidden {
     display: none !important;
@@ -3286,6 +3342,12 @@ hr {
   }
 }
 
+@media (max-width: 767px) {
+  .smmax\:mb-16 {
+    margin-bottom: 16px;
+  }
+}
+
 @media (max-width: 991px) {
   .mdmax\:mb-16 {
     margin-bottom: 16px;
@@ -3322,30 +3384,6 @@ hr {
   }
 }
 
-@media (max-width: 767px) {
-  .smmax\:mb-16 {
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  .smmax\:mb-20 {
-    margin-bottom: 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .smmax\:mb-24 {
-    margin-bottom: 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .smmax\:mb-42 {
-    margin-bottom: 42px;
-  }
-}
-
 @media (min-width: 768px) {
   .sm\:order-last {
     order: 3;
@@ -3369,33 +3407,25 @@ hr {
 }
 
 @media (max-width: 767px) {
-  .sm\:reverse {
+  .smmax\:reverse {
     flex-wrap: wrap-reverse;
   }
 }
 
 @media (max-width: 991px) {
-  .md\:reverse {
+  .mdmax\:reverse {
     flex-wrap: wrap-reverse;
   }
 }
 
 @media (max-width: 1279px) {
-  .lg\:reverse {
+  .lgmax\:reverse {
     flex-wrap: wrap-reverse;
   }
 }
 
-.block-right {
-  margin-left: auto;
-}
-
-.block-left {
-  margin-right: auto;
-}
-
 @media (max-width: 991px) {
-  .md\:px-48 {
+  .mdmax\:px-48 {
     padding-left: 48px;
     padding-right: 48px;
   }
@@ -3504,6 +3534,18 @@ strong {
 
 @media (max-width: 767px) {
   .p-view\:sm {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .smmax\:p-view {
     background-color: #fff;
     position: absolute;
     width: 100%;
@@ -3823,6 +3865,10 @@ strong {
   overflow: hidden;
 }
 
+.max-vw-35 {
+  max-width: 35vw;
+}
+
 .reset-body {
   margin-left: -16px;
   margin-right: -16px;
@@ -3846,40 +3892,6 @@ strong {
     margin-left: -16px;
     margin-right: -16px;
   }
-}
-
-.bold {
-  font-family: arial, sans-serif;
-  font-weight: 900;
-}
-
-.semibold {
-  font-family: arial, sans-serif;
-  font-weight: 700;
-}
-
-b {
-  color: #000;
-}
-
-.ttc {
-  text-transform: capitalize;
-}
-
-.margin-auto {
-  margin: 0 auto;
-}
-
-.fl-left {
-  float: left;
-}
-
-.fl-right {
-  float: right;
-}
-
-.p-relative {
-  position: relative;
 }
 
 @media (max-width: 767px) {

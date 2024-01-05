@@ -153,6 +153,37 @@
   background-size: cover;
 }
 
+.bold {
+  @include font-bold;
+}
+
+.semibold {
+  @include font-semibold;
+}
+b {
+  color: $c-secondary;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+.p-relative {
+  position: relative;
+}
+
 .banner-zone {
   display: flex;
   align-items: center;
@@ -279,6 +310,13 @@ hr {
     background-color: $c-dark-grey;
   }
 }
+.block-right {
+  margin-left: auto;
+}
+.block-left {
+  margin-right: auto;
+}
+
 .sm\:hidden {
   @media (max-width: #{$break-sm - 1}) {
     display: none !important;
@@ -299,6 +337,7 @@ hr {
     display: none !important;
   }
 }
+
 .sm\:visible {
   @media (min-width: $break-sm) {
     display: none !important;
@@ -317,6 +356,12 @@ hr {
 .xl\:visible {
   @media (min-width: $break-xl) {
     display: none !important;
+  }
+}
+
+.smmax\:mb-16 {
+  @media (max-width: #{$break-sm - 1}) {
+    margin-bottom: 16px;
   }
 }
 .mdmax\:mb-16 {
@@ -349,26 +394,7 @@ hr {
     margin-bottom: 42px;
   }
 }
-.smmax\:mb-16 {
-  @media (max-width: #{$break-sm - 1}) {
-    margin-bottom: 16px;
-  }
-}
-.smmax\:mb-20 {
-  @media (max-width: #{$break-sm - 1}) {
-    margin-bottom: 24px;
-  }
-}
-.smmax\:mb-24 {
-  @media (max-width: #{$break-sm - 1}) {
-    margin-bottom: 24px;
-  }
-}
-.smmax\:mb-42 {
-  @media (max-width: #{$break-sm - 1}) {
-    margin-bottom: 42px;
-  }
-}
+
 .sm\:order-last {
   @media (min-width: $break-sm) {
     order: 3;
@@ -384,31 +410,28 @@ hr {
     order: 3;
   }
 }
+
 .reverse {
   flex-wrap: wrap-reverse;
 }
-.sm\:reverse {
+
+.smmax\:reverse {
   @media (max-width: #{$break-sm - 1}) {
     flex-wrap: wrap-reverse;
   }
 }
-.md\:reverse {
+.mdmax\:reverse {
   @media (max-width: #{$break-md - 1}) {
     flex-wrap: wrap-reverse;
   }
 }
-.lg\:reverse {
+.lgmax\:reverse {
   @media (max-width: #{$break-lg - 1}) {
     flex-wrap: wrap-reverse;
   }
 }
-.block-right {
-  margin-left: auto;
-}
-.block-left {
-  margin-right: auto;
-}
-.md\:px-48 {
+
+.mdmax\:px-48 {
   @media (max-width: #{$break-md - 1}) {
     padding-left: 48px;
     padding-right: 48px;
@@ -497,6 +520,7 @@ strong {
   bottom: 0;
 }
 .p-view\:sm {
+  // a sustiuir
   @media (max-width: #{$break-sm - 1}) {
     background-color: $c-white;
     position: absolute;
@@ -507,6 +531,19 @@ strong {
     bottom: 0;
   }
 }
+
+.smmax\:p-view {
+  @media (max-width: #{$break-sm - 1}) {
+    background-color: $c-white;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
 .text-faded {
   opacity: 0.5;
 }
@@ -744,6 +781,9 @@ strong {
 .o-hidden {
   overflow: hidden;
 }
+.max-vw-35 {
+  max-width: 35vw;
+}
 
 .reset-body {
   margin-left: -16px;
@@ -769,37 +809,6 @@ strong {
   }
 }
 
-.bold {
-  @include font-bold;
-}
-
-.semibold {
-  @include font-semibold;
-}
-b {
-  color: $c-secondary;
-}
-
-.ttc {
-  text-transform: capitalize;
-}
-
-.margin-auto {
-  margin: 0 auto;
-}
-
-.fl-left {
-  float: left;
-}
-
-.fl-right {
-  float: right;
-}
-
-.p-relative {
-  position: relative;
-}
-
 .sm\:reset-body {
   @media (max-width: #{$break-sm - 1}) {
     margin-left: -16px;
@@ -811,8 +820,4 @@ b {
   @media (max-width: #{$break-sm - 1}) {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.max-vw-35{
-  max-width: 35vw;
 }
