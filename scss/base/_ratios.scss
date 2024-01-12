@@ -72,11 +72,11 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(133.25% + 126px);
+    padding-top: calc(133.25% + 86px);
     background-color: $c-white;
 
     @media (min-width: 992px) {
-      padding-top: calc(133.25% + 144px);
+      padding-top: calc(133.25% + 86px);
     }
   }
 
@@ -93,11 +93,11 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(133.25% + 126px);
+    padding-top: calc(133.25% + 86px);
     background-color: $c-white;
 
     @media (min-width: 992px) {
-      padding-top: calc(133.25% + 144px);
+      padding-top: calc(133.25% + 86px);
     }
   }
 
@@ -154,11 +154,11 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(66.6667% + 126px);
+    padding-top: calc(66.6667% + 86px);
     background-color: $c-white;
 
     @media (min-width: $break-sm) {
-      padding-top: calc(66.6667% + 144px);
+      padding-top: calc(66.6667% + 86px);
     }
   }
 
@@ -183,7 +183,7 @@
     }
   }
   &.hidden-image::before {
-    padding-top: 126px;
+    padding-top: 86px;
   }
 
   &::marker {
@@ -223,7 +223,7 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(64.66667% + 126px);
+    padding-top: calc(64.66667% + 86px);
     background-color: $c-white;
 
     .p-view {
@@ -231,11 +231,11 @@
     }
 
     @media (min-width: #{$break-md}) {
-      padding-top: calc(62.9% + 144px);
+      padding-top: calc(62.9% + 86px);
     }
 
     @media (min-width: #{$break-lg}) {
-      padding-top: calc(64.7% + 144px);
+      padding-top: calc(64.7% + 86px);
     }
   }
 

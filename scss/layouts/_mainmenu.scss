@@ -1,0 +1,120 @@
+@import '../abstract/_all';
+
+.mn-mainmenu {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  position: relative;
+  overflow: auto;
+  padding-bottom: 150px;
+  @media (min-width: 768px) {
+    max-width: 400px;
+    padding-bottom: 0;
+  }
+  .mn-mainbar {
+    .tabs ul {
+      justify-content: center;
+      align-items: center;
+      &.mn-list-item li:first-child a,
+      &.mn-list-item li:first-child span {
+        padding: 8px 20px 8px 20px;
+      }
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+        &.mn-list-item li:first-child a,
+        &.mn-list-item li:first-child span {
+          padding: 8px 20px 8px 0px;
+        }
+      }
+    }
+  }
+  .mn-list-item {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list-check {
+    li a {
+      position: relative;
+      list-style: none;
+      line-height: 1;
+    }
+    li.is-active {
+     & > a {
+        &::before {
+          content: '';
+          position: absolute;
+          top: calc(50% - 2px);
+          margin-left: -10px;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          background-color: #000;
+        }
+      }
+    }
+    .has-light & {
+      li.is-active {
+        a {
+          &::before {
+            content: '';
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .mn-wrap-overlay {
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+  .tabs {
+    ul.mn-list-item {
+      li:first-child {
+        a,
+        span {
+          padding: 8px 20px 8px 0;
+        }
+      }
+    }
+  }
+
+  .mn-footer {
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+    bottom: 0;
+    background-color: white;
+  }
+  .mn-search-zone {
+    display: grid;
+  }
+  .mn-mainbar-cesta {
+    padding: 10px;
+    text-align: right;
+  }
+}
+
+.is-rtl{
+  .mn-mainmenu .list-check li.is-active a::before {
+    margin-right: -8px;
+}
+@media (min-width: 768px){ 
+.mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child a,
+ .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child span {
+    padding: 8px 0px 8px 20px;
+}
+}
+
+}

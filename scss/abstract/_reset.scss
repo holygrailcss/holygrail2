@@ -122,3 +122,12 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+:root {
+  --line-width: 1px;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+    --line-width: 0.5px;
+    --line-width-negative: -0.5px;
+  }
+}

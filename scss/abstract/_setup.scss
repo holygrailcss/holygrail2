@@ -1,4 +1,4 @@
-$espaciados: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112,120, 128, 160);
+$espaciados: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112, 120, 128, 160);
 $c-white: #fff !default;
 $c-black: #000 !default;
 $c-dark-grey: #8e8e8e !default;
@@ -79,6 +79,35 @@ $container-10: 200px !default;
 $container-11: 1080px !default;
 $container-12: 1080px !default;
 $container-full: 1500px !default;
+
+
+
+$xcontainer-10:200px !default;
+$xcontainer-4: 356px !default;
+$xcontainer-8: 395px !default;
+$xcontainer-6: 442px !default;
+
+$xcontainer-7: 595px !default;
+
+$xcontainer-2: 700px !default;
+$xcontainer-9: 798px !default;
+$xcontainer:   800px !default;
+$xcontainer-5: 800px !default;
+$xcontainer-3: 900px !default;
+
+
+
+
+
+
+
+$xcontainer-11: 1080px !default;
+$xcontainer-12: 1080px !default;
+$xcontainer-full: 1500px !default;
+
+
+
+
 $height-xs: 60px !default;
 $height-sm: 100px !default;
 $height-md: 350px !default;
@@ -93,8 +122,10 @@ $max-vw: 1500px !default;
 $svg-size: 16px;
 $fs: 'font-size';
 $lh: 'line-height';
+
+
 $headers: (
-  tit-m: (
+  titularbase-m: (
     14px,
     14px,
     16px,

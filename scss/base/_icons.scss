@@ -1,4 +1,5 @@
 @import '../abstract/_all';
+$w-plus: 10px;
 .ico-big {
   width: 48px;
   height: 48px;
@@ -159,4 +160,61 @@ svg-icon.ico-pre {
   margin: 0 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+.icon-plus {
+  position: relative;
+  width: $w-plus;
+  height: $w-plus;
+  &:after,
+  &:before {
+    width: $w-plus;
+    height: var(--line-width);
+    position: absolute;
+    content: '';
+    background-color: $c-primary;
+    transform-origin: center;
+  }
+  &:after {
+    top: 5px;
+    left: 0;
+    transform: rotate(90deg);
+  }
+  &:before {
+    top: 5px;
+    left: 0;
+  }
+  .is-active & {
+    &:after {
+      top: 5px;
+      left: 0;
+      transform: rotate(0deg);
+    }
+  }
+  .has-light & {
+    &:after,
+    &:before {
+      background-color: $c-white;
+    }
+  }
+}
+.icon-close {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  @media (min-width: 768px) {
+    left: 32px;
+  }
+  &:after,
+  &:before {
+    width: 11px;
+    height: var(--line-width);
+    position: absolute;
+    content: '';
+    background-color: $c-primary;
+    transform-origin: center;
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
 }

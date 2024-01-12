@@ -61,7 +61,7 @@
   }
 
   .card9-wrap-details {
-    min-height: 126px;
+    min-height: 100px;
     position: absolute;
     bottom: 1px;
     left: 0;
@@ -70,7 +70,7 @@
 
     @media (min-width: $break-md) {
       padding: 0;
-      min-height: 144px;
+      min-height: 100px;
     }
   }
 
@@ -330,6 +330,8 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 
 .card9-contents {
+  padding-top: 10px;
+  padding-bottom: 10px;
   .product-view-info {
     display: flex;
     flex-wrap: wrap;
