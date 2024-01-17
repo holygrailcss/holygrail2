@@ -67,10 +67,10 @@ $tooltip-width: 320px;
   width: max-content;
   position: relative;
   padding-left: 16px;
+  padding-top: 1px;
 
   div {
     position: absolute;
-    border-radius: 50%;
     overflow: hidden;
     top: 3px;
     left: 0;
@@ -145,7 +145,7 @@ $tooltip-width: 320px;
 
 .tooltip-sm-old::after {
   top: -6px;
-  right: 18px;
+  right: 3px;
   content: '';
   position: absolute;
   border-top: 1px solid $c-middle-grey;

@@ -17,7 +17,7 @@ fieldset[disabled] .form-control {
 .textarea,
 .select select {
   border: var(--line-width) solid transparent;
-  border-color: $c-middle-grey;
+  border-color: $c-primary;
   border-width: 0 0 var(--line-width) 0;
   border-radius: 0;
   appearance: none;

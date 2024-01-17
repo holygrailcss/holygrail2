@@ -5612,7 +5612,7 @@ button {
   pointer-events: none;
   filter: grayscale(1);
   background-color: #e3e3e3;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
   cursor: not-allowed;
@@ -5635,7 +5635,7 @@ button {
   pointer-events: none;
   filter: grayscale(1);
   background-color: #e3e3e3;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
 }
@@ -5654,7 +5654,7 @@ button {
 .btn.btn-feel-invert {
   color: #000;
   background-color: transparent;
-  border: var(--line-width) solid #fb9962;
+  border: 1px solid #fb9962;
 }
 .btn.btn-feel-invert svg g {
   fill: #000;
@@ -5780,7 +5780,7 @@ button {
   padding-bottom: 6px;
   justify-content: center;
   align-items: flex-start;
-  border-bottom: var(--line-width) solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .btn--full {
@@ -5798,7 +5798,7 @@ button {
 .btn-primary {
   color: #fff;
   background-color: #000;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-primary svg g {
   fill: #fff;
@@ -5813,12 +5813,12 @@ button {
 .btn-primary:focus, .btn-primary.focus, .btn-primary:hover, .btn-primary.hover, .btn-primary:active, .btn-primary.active {
   color: #fff;
   background-color: #8e8e8e;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   opacity: 1;
 }
 .btn-primary[disabled], .btn-primary:disabled, .btn-primary.disabled {
   background-color: #e3e3e3;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
 }
@@ -5835,7 +5835,7 @@ button {
 .has-light .btn-primary {
   color: #000;
   background-color: #fff;
-  border: var(--line-width) solid #fff;
+  border: 1px solid #fff;
 }
 .has-light .btn-primary svg g {
   fill: #000;
@@ -5850,7 +5850,7 @@ button {
 .has-light .btn-primary:focus, .has-light .btn-primary.focus, .has-light .btn-primary:hover, .has-light .btn-primary.hover, .has-light .btn-primary:active, .has-light .btn-primary.active {
   color: #fff;
   background-color: #8e8e8e;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   opacity: 1;
 }
 .has-light .btn-primary:focus svg g, .has-light .btn-primary.focus svg g, .has-light .btn-primary:hover svg g, .has-light .btn-primary.hover svg g, .has-light .btn-primary:active svg g, .has-light .btn-primary.active svg g {
@@ -5865,7 +5865,7 @@ button {
 }
 .has-light .btn-primary[disabled], .has-light .btn-primary:disabled, .has-light .btn-primary.disabled {
   background-color: #e3e3e3;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
 }
@@ -5873,7 +5873,7 @@ button {
 .btn-secondary {
   color: #000;
   background-color: #fff;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-secondary svg g {
   fill: #000;
@@ -5888,12 +5888,12 @@ button {
 .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:hover, .btn-secondary.hover, .btn-secondary:active, .btn-secondary.active {
   color: #000;
   background-color: #fff;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   opacity: 1;
 }
 .btn-secondary[disabled], .btn-secondary:disabled, .btn-secondary.disabled {
   background-color: #fff;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
 }
@@ -5910,7 +5910,7 @@ button {
 .has-light .btn-secondary {
   color: #fff;
   background-color: transparent;
-  border: var(--line-width) solid #fff;
+  border: 1px solid #fff;
 }
 .has-light .btn-secondary svg g {
   fill: #fff;
@@ -5925,7 +5925,7 @@ button {
 .has-light .btn-secondary:focus, .has-light .btn-secondary.focus, .has-light .btn-secondary:hover, .has-light .btn-secondary.hover, .has-light .btn-secondary:active, .has-light .btn-secondary.active {
   color: #fff;
   background-color: #8e8e8e;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   opacity: 1;
 }
 .has-light .btn-secondary:focus svg g, .has-light .btn-secondary.focus svg g, .has-light .btn-secondary:hover svg g, .has-light .btn-secondary.hover svg g, .has-light .btn-secondary:active svg g, .has-light .btn-secondary.active svg g {
@@ -5940,7 +5940,7 @@ button {
 }
 .has-light .btn-secondary[disabled], .has-light .btn-secondary:disabled, .has-light .btn-secondary.disabled {
   background-color: transparent;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   color: #8e8e8e;
   opacity: 1;
 }
@@ -5948,7 +5948,7 @@ button {
 .btn-phantom {
   color: #fff;
   background-color: transparent;
-  border: var(--line-width) solid #fff;
+  border: 1px solid #fff;
 }
 .btn-phantom svg g {
   fill: #fff;
@@ -5963,7 +5963,7 @@ button {
 .btn-phantom:focus, .btn-phantom.focus, .btn-phantom:hover, .btn-phantom.hover, .btn-phantom:active, .btn-phantom.active {
   color: #000;
   background-color: transparent;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   opacity: 1;
 }
 
@@ -5971,7 +5971,7 @@ button {
   height: 40px;
   color: #fff;
   background-color: #000;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-limited svg g {
   fill: #fff;
@@ -6006,7 +6006,7 @@ button {
 .btn-primary-feel:disabled, .btn-primary-feel[disabled], .btn-primary-feel.disabled {
   pointer-events: none;
   cursor: default;
-  border: var(--line-width) solid #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
   color: #8e8e8e !important;
   background-color: #e3e3e3 !important;
   filter: none;
@@ -6014,13 +6014,13 @@ button {
 }
 .btn-primary-feel:disabled svg-icon, .btn-primary-feel[disabled] svg-icon, .btn-primary-feel.disabled svg-icon {
   background-color: #e3e3e3 !important;
-  border: var(--line-width) solid #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
 }
 
 .btn-secondary-feel {
   color: #000;
   background-color: #fff;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-secondary-feel svg g {
   fill: #000;
@@ -6032,13 +6032,13 @@ button {
 .btn-secondary-feel:focus, .btn-secondary-feel.focus, .btn-secondary-feel:hover, .btn-secondary-feel.hover, .btn-secondary-feel:active, .btn-secondary-feel.active {
   opacity: 1;
   color: #000;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   background-color: #fff;
 }
 .btn-secondary-feel:disabled, .btn-secondary-feel[disabled], .btn-secondary-feel.disabled {
   pointer-events: none;
   cursor: default;
-  border: var(--line-width) solid #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
   color: #8e8e8e !important;
   background-color: #e3e3e3 !important;
   filter: none;
@@ -6046,7 +6046,7 @@ button {
 }
 .btn-secondary-feel:disabled svg-icon, .btn-secondary-feel[disabled] svg-icon, .btn-secondary-feel.disabled svg-icon {
   background-color: #e3e3e3 !important;
-  border: var(--line-width) solid #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
 }
 .has-light .btn-secondary-feel {
   color: #fff;
@@ -6056,14 +6056,14 @@ button {
 .has-light .btn-secondary-feel:focus, .has-light .btn-secondary-feel.focus, .has-light .btn-secondary-feel:hover, .has-light .btn-secondary-feel.hover, .has-light .btn-secondary-feel:active, .has-light .btn-secondary-feel.active {
   opacity: 1;
   color: #fff;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   background-color: #8e8e8e;
 }
 
 .btn-tertiary {
   color: #000;
   background-color: #fff;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-tertiary svg g {
   fill: #000;
@@ -6075,13 +6075,13 @@ button {
 .btn-tertiary:focus, .btn-tertiary.focus, .btn-tertiary:hover, .btn-tertiary.hover, .btn-tertiary:active, .btn-tertiary.active {
   opacity: 1;
   color: #000;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   background-color: #fff;
 }
 .btn-tertiary:disabled, .btn-tertiary[disabled], .btn-tertiary.disabled {
   pointer-events: none;
   cursor: default;
-  border: var(--line-width) solid #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
   color: #8e8e8e !important;
   background-color: #e3e3e3 !important;
   filter: none;
@@ -6089,7 +6089,7 @@ button {
 }
 .btn-tertiary:disabled svg-icon, .btn-tertiary[disabled] svg-icon, .btn-tertiary.disabled svg-icon {
   background-color: #e3e3e3 !important;
-  border: var(--line-width) solid #e3e3e3 !important;
+  border: 1px solid #e3e3e3 !important;
 }
 .has-light .btn-tertiary {
   color: #fff;
@@ -6099,7 +6099,7 @@ button {
 .has-light .btn-tertiary:focus, .has-light .btn-tertiary.focus, .has-light .btn-tertiary:hover, .has-light .btn-tertiary.hover, .has-light .btn-tertiary:active, .has-light .btn-tertiary.active {
   opacity: 1;
   color: #fff;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
   background-color: #8e8e8e;
 }
 
@@ -6112,7 +6112,7 @@ button {
 .btn-invert {
   color: #000;
   background-color: transparent;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-invert:focus, .btn-invert.focus, .btn-invert:hover, .btn-invert.hover, .btn-invert:active, .btn-invert.active {
   opacity: 0.6;
@@ -6121,7 +6121,7 @@ button {
 .btn-invert-light {
   color: #000;
   background-color: transparent;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
 }
 .btn-invert-light:focus, .btn-invert-light.focus, .btn-invert-light:hover, .btn-invert-light:active, .btn-invert-light.active {
   opacity: 0.6;
@@ -6132,14 +6132,14 @@ button {
 
 .btn-default {
   background-color: #000;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
   color: #fff;
 }
 
 .btn-blue {
   background-color: #1a32a4;
   color: #fff;
-  border: var(--line-width) solid #1a32a4;
+  border: 1px solid #1a32a4;
 }
 .btn-blue:focus, .btn-blue.focus, .btn-blue:hover, .btn-blue.hover, .btn-blue:visited, .btn-blue:active, .btn-blue.active {
   color: #fff;
@@ -6237,11 +6237,11 @@ button {
 .has-light .btn-google {
   background-color: #fff;
   color: #000;
-  border: var(--line-width) solid #fff;
+  border: 1px solid #fff;
 }
 .btn-google svg-icon,
 .has-light .btn-google svg-icon {
-  top: var(--line-width);
+  top: 1px;
 }
 .btn-google:focus, .btn-google.focus, .btn-google:hover, .btn-google.hover, .btn-google:visited, .btn-google:active, .btn-google.active,
 .has-light .btn-google:focus,
@@ -6251,14 +6251,14 @@ button {
 .has-light .btn-google:visited,
 .has-light .btn-google:active,
 .has-light .btn-google.active {
-  border: var(--line-width) solid #f0f0f0;
+  border: 1px solid #f0f0f0;
   opacity: 1;
 }
 
 .btn-facebook {
   background-color: #1977f3;
   color: #fff;
-  border: var(--line-width) solid #1977f3;
+  border: 1px solid #1977f3;
 }
 .btn-facebook svg-icon {
   background-color: transparent;
@@ -6269,19 +6269,19 @@ button {
 .btn-facebook:focus, .btn-facebook.focus, .btn-facebook:hover, .btn-facebook.hover, .btn-facebook:visited, .btn-facebook:active, .btn-facebook.active {
   opacity: 1;
   background-color: #1977f3;
-  border: var(--line-width) solid #1977f3;
+  border: 1px solid #1977f3;
 }
 .has-light .btn-facebook {
   background-color: #1977f3;
   color: #fff;
-  border: var(--line-width) solid #1977f3;
+  border: 1px solid #1977f3;
 }
 
 .btn-apple,
 .has-light .btn-apple {
   background-color: #000;
   color: #fff;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-apple:focus, .btn-apple.focus, .btn-apple:hover, .btn-apple.hover, .btn-apple:visited, .btn-apple:active, .btn-apple.active,
 .has-light .btn-apple:focus,
@@ -6293,14 +6293,14 @@ button {
 .has-light .btn-apple.active {
   opacity: 1;
   background-color: #8e8e8e;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
 }
 
 .btn-apple-secondary,
 .has-light .btn-apple-secondary {
   background-color: #fff;
   color: #000;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
 }
 .btn-apple-secondary:focus, .btn-apple-secondary.focus, .btn-apple-secondary:hover, .btn-apple-secondary.hover, .btn-apple-secondary:visited, .btn-apple-secondary:active, .btn-apple-secondary.active,
 .has-light .btn-apple-secondary:focus,
@@ -6312,7 +6312,7 @@ button {
 .has-light .btn-apple-secondary.active {
   opacity: 1;
   background-color: #fff;
-  border: var(--line-width) solid #8e8e8e;
+  border: 1px solid #8e8e8e;
 }
 
 .btn-naver,
@@ -6320,7 +6320,7 @@ button {
   background-color: #03cf5d;
   color: #fff;
   padding-left: 40px;
-  border: var(--line-width) solid #03cf5d;
+  border: 1px solid #03cf5d;
 }
 .btn-naver:focus, .btn-naver.focus, .btn-naver:hover, .btn-naver.hover, .btn-naver:visited, .btn-naver:active, .btn-naver.active,
 .has-light .btn-naver:focus,
@@ -6332,7 +6332,7 @@ button {
 .has-light .btn-naver.active {
   opacity: 1;
   background-color: #03cf5d;
-  border: var(--line-width) solid #03cf5d;
+  border: 1px solid #03cf5d;
 }
 
 .btn-wechat,
@@ -6340,7 +6340,7 @@ button {
   background-color: #2dc100;
   color: #fff;
   padding-left: 40px;
-  border: var(--line-width) solid #2dc100;
+  border: 1px solid #2dc100;
 }
 .btn-wechat:focus, .btn-wechat.focus, .btn-wechat:hover, .btn-wechat.hover, .btn-wechat:visited, .btn-wechat:active, .btn-wechat.active,
 .has-light .btn-wechat:focus,
@@ -6352,7 +6352,7 @@ button {
 .has-light .btn-wechat.active {
   opacity: 1;
   background-color: #03cf5d;
-  border: var(--line-width) solid #2dc100;
+  border: 1px solid #2dc100;
 }
 
 .btn-block {
@@ -6500,35 +6500,35 @@ button {
 
 .btn-feel {
   background-color: #fb9962;
-  border: var(--line-width) solid #fb9962;
+  border: 1px solid #fb9962;
   color: #000;
 }
 .btn-feel:hover, .btn-feel.hover, .btn-feel:focus, .btn-feel.focus {
   background-color: #fccbb0;
-  border: var(--line-width) solid #fccbb0;
+  border: 1px solid #fccbb0;
   color: #000;
   opacity: 1;
 }
 .btn-feel[disabled], .btn-feel:disabled, .btn-feel.disabled {
   background-color: #e3e3e3;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
 }
 .has-light .btn-feel {
   background-color: #fb9962;
-  border: var(--line-width) solid #fb9962;
+  border: 1px solid #fb9962;
   color: #000;
 }
 .has-light .btn-feel:hover, .has-light .btn-feel.hover, .has-light .btn-feel:focus, .has-light .btn-feel.focus {
   background-color: #fccbb0;
-  border: var(--line-width) solid #fccbb0;
+  border: 1px solid #fccbb0;
   color: #000;
   opacity: 1;
 }
 .has-light .btn-feel[disabled], .has-light .btn-feel:disabled, .has-light .btn-feel.disabled {
   background-color: #e3e3e3;
-  border: var(--line-width) solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   color: #8e8e8e;
   opacity: 1;
 }
@@ -6582,7 +6582,7 @@ button {
 .btn.btn-secondary-rd {
   font-size: 12px;
   border-radius: 0;
-  border: var(--line-width) solid #000;
+  border: 1px solid #000;
   padding: 9px 2px 4px;
   height: 32px;
   min-width: 100px;
@@ -6606,7 +6606,7 @@ button {
 .has-light .btn-phantom {
   color: #fff;
   background-color: transparent;
-  border: var(--line-width) solid #fff;
+  border: 1px solid #fff;
 }
 .has-light .btn-primary-feel:hover, .has-light .btn-primary-feel.hover, .has-light .btn-primary-feel:focus, .has-light .btn-primary-feel.focus {
   background-color: rgba(251, 153, 98, 0.6);
@@ -7254,7 +7254,7 @@ fieldset[disabled] .form-control {
 .textarea,
 .select select {
   border: var(--line-width) solid transparent;
-  border-color: #e3e3e3;
+  border-color: #000;
   border-width: 0 0 var(--line-width) 0;
   border-radius: 0;
   appearance: none;
@@ -8727,7 +8727,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 .store-state div {
   position: absolute;
-  border-radius: 50%;
   overflow: hidden;
   top: 3px;
   left: 0;
@@ -8798,7 +8797,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 
 .tooltip-sm-old::after {
   top: -6px;
-  right: 18px;
+  right: 3px;
   content: "";
   position: absolute;
   border-top: 1px solid #e3e3e3;
