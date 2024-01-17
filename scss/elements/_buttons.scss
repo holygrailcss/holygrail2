@@ -44,7 +44,7 @@ button {
     pointer-events: none;
     filter: grayscale(1);
     background-color: $c-middle-grey;
-    border: 1px solid $c-middle-grey;
+    border: var(--line-width) solid $c-middle-grey;
     color: $c-dark-grey;
     opacity: 1;
     cursor: not-allowed;
@@ -78,7 +78,7 @@ button {
       pointer-events: none;
       filter: grayscale(1);
       background-color: $c-middle-grey;
-      border: 1px solid $c-middle-grey;
+      border: var(--line-width) solid $c-middle-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
@@ -102,7 +102,7 @@ button {
   &.btn-feel-invert {
     color: $c-primary;
     background-color: transparent;
-    border: 1px solid $c-feel;
+    border: var(--line-width) solid $c-feel;
     svg {
       g {
         fill: $c-primary;
@@ -245,7 +245,7 @@ button {
   padding-bottom: 6px;
   justify-content: center;
   align-items: flex-start;
-  border-bottom: 1px solid $c-primary;
+  border-bottom: var(--line-width) solid $c-primary;
 }
 
 .btn--full {
@@ -263,7 +263,7 @@ button {
 .btn-primary {
   color: $c-white;
   background-color: $c-primary;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
 
   svg {
     g {
@@ -286,7 +286,7 @@ button {
   &.active {
     color: $c-white;
     background-color: $c-dark-grey;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
     opacity: 1;
   }
 
@@ -294,7 +294,7 @@ button {
   &:disabled,
   &.disabled {
     background-color: $c-middle-grey;
-    border: 1px solid $c-middle-grey;
+    border: var(--line-width) solid $c-middle-grey;
     color: $c-dark-grey;
     opacity: 1;
 
@@ -316,7 +316,7 @@ button {
   .has-light & {
     color: $c-primary;
     background-color: $c-white;
-    border: 1px solid $c-white;
+    border: var(--line-width) solid $c-white;
 
     svg {
       g {
@@ -340,7 +340,7 @@ button {
     &.active {
       color: $c-white;
       background-color: $c-dark-grey;
-      border: 1px solid $c-dark-grey;
+      border: var(--line-width) solid $c-dark-grey;
       opacity: 1;
 
       svg {
@@ -362,7 +362,7 @@ button {
     &:disabled,
     &.disabled {
       background-color: $c-middle-grey;
-      border: 1px solid $c-middle-grey;
+      border: var(--line-width) solid $c-middle-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
@@ -372,7 +372,7 @@ button {
 .btn-secondary {
   color: $c-primary;
   background-color: $c-white;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
 
   svg {
     g {
@@ -395,7 +395,7 @@ button {
   &.active {
     color: $c-primary;
     background-color: $c-white;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
     opacity: 1;
   }
 
@@ -403,7 +403,7 @@ button {
   &:disabled,
   &.disabled {
     background-color: $c-white;
-    border: 1px solid $c-middle-grey;
+    border: var(--line-width) solid $c-middle-grey;
     color: $c-dark-grey;
     opacity: 1;
 
@@ -425,7 +425,7 @@ button {
   .has-light & {
     color: $c-white;
     background-color: transparent;
-    border: 1px solid $c-white;
+    border: var(--line-width) solid $c-white;
 
     svg {
       g {
@@ -449,7 +449,7 @@ button {
     &.active {
       color: $c-white;
       background-color: $c-dark-grey;
-      border: 1px solid $c-dark-grey;
+      border: var(--line-width) solid $c-dark-grey;
       opacity: 1;
 
       svg {
@@ -471,7 +471,7 @@ button {
     &:disabled,
     &.disabled {
       background-color: transparent;
-      border: 1px solid $c-dark-grey;
+      border: var(--line-width) solid $c-dark-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
@@ -481,7 +481,7 @@ button {
 .btn-phantom {
   color: $c-white;
   background-color: transparent;
-  border: 1px solid $c-white;
+  border: var(--line-width) solid $c-white;
 
   svg {
     g {
@@ -505,7 +505,7 @@ button {
   &.active {
     color: $c-primary;
     background-color: transparent;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
     opacity: 1;
   }
 }
@@ -514,7 +514,7 @@ button {
   height: 40px;
   color: $c-white;
   background-color: $c-limited;
-  border: 1px solid $c-limited;
+  border: var(--line-width) solid $c-limited;
 
   svg {
     g {
@@ -565,14 +565,14 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 1px solid $c-middle-grey !important;
+    border: var(--line-width) solid $c-middle-grey !important;
     color: $c-dark-grey !important;
     background-color: $c-middle-grey !important;
     filter: none;
     opacity: 1;
     svg-icon {
       background-color: $c-middle-grey !important;
-      border: 1px solid $c-middle-grey !important;
+      border: var(--line-width) solid $c-middle-grey !important;
     }
   }
 }
@@ -580,7 +580,7 @@ button {
 .btn-secondary-feel {
   color: $c-primary;
   background-color: $c-white;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
 
   svg {
     g {
@@ -601,7 +601,7 @@ button {
   &.active {
     opacity: 1;
     color: $c-primary;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
     background-color: $c-white;
   }
 
@@ -610,14 +610,14 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 1px solid $c-middle-grey !important;
+    border: var(--line-width) solid $c-middle-grey !important;
     color: $c-dark-grey !important;
     background-color: $c-middle-grey !important;
     filter: none;
     opacity: 1;
     svg-icon {
       background-color: $c-middle-grey !important;
-      border: 1px solid $c-middle-grey !important;
+      border: var(--line-width) solid $c-middle-grey !important;
     }
   }
 
@@ -634,7 +634,7 @@ button {
     &.active {
       opacity: 1;
       color: $c-white;
-      border: 1px solid $c-dark-grey;
+      border: var(--line-width) solid $c-dark-grey;
       background-color: $c-dark-grey;
     }
   }
@@ -643,7 +643,7 @@ button {
 .btn-tertiary {
   color: $c-primary;
   background-color: $c-white;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
 
   svg {
     g {
@@ -664,7 +664,7 @@ button {
   &.active {
     opacity: 1;
     color: $c-primary;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
     background-color: $c-white;
   }
 
@@ -673,14 +673,14 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 1px solid $c-middle-grey !important;
+    border: var(--line-width) solid $c-middle-grey !important;
     color: $c-dark-grey !important;
     background-color: $c-middle-grey !important;
     filter: none;
     opacity: 1;
     svg-icon {
       background-color: $c-middle-grey !important;
-      border: 1px solid $c-middle-grey !important;
+      border: var(--line-width) solid $c-middle-grey !important;
     }
   }
 
@@ -697,7 +697,7 @@ button {
     &.active {
       opacity: 1;
       color: $c-white;
-      border: 1px solid $c-dark-grey;
+      border: var(--line-width) solid $c-dark-grey;
       background-color: $c-dark-grey;
     }
   }
@@ -712,7 +712,7 @@ button {
 .btn-invert {
   color: $c-primary;
   background-color: transparent;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
 
   &:focus,
   &.focus,
@@ -727,7 +727,7 @@ button {
 .btn-invert-light {
   color: $c-primary;
   background-color: transparent;
-  border: 1px solid $c-middle-grey;
+  border: var(--line-width) solid $c-middle-grey;
 
   &:focus,
   &.focus,
@@ -746,14 +746,14 @@ button {
 
 .btn-default {
   background-color: $c-primary;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
   color: $c-white;
 }
 
 .btn-blue {
   background-color: $c-info;
   color: $c-white;
-  border: 1px solid $c-info;
+  border: var(--line-width) solid $c-info;
   &:focus,
   &.focus,
   &:hover,
@@ -883,10 +883,10 @@ button {
 .has-light .btn-google {
   background-color: $c-white;
   color: $c-primary;
-  border: 1px solid $c-white;
+  border: var(--line-width) solid $c-white;
 
   svg-icon {
-    top: 1px;
+    top: var(--line-width);
   }
 
   &:focus,
@@ -896,7 +896,7 @@ button {
   &:visited,
   &:active,
   &.active {
-    border: 1px solid $c-light-grey;
+    border: var(--line-width) solid $c-light-grey;
     opacity: 1;
   }
 }
@@ -904,7 +904,7 @@ button {
 .btn-facebook {
   background-color: $c-facebook;
   color: $c-white;
-  border: 1px solid $c-facebook;
+  border: var(--line-width) solid $c-facebook;
 
   svg-icon {
     background-color: transparent;
@@ -923,13 +923,13 @@ button {
   &.active {
     opacity: 1;
     background-color: $c-facebook;
-    border: 1px solid $c-facebook;
+    border: var(--line-width) solid $c-facebook;
   }
 
   .has-light & {
     background-color: $c-facebook;
     color: $c-white;
-    border: 1px solid $c-facebook;
+    border: var(--line-width) solid $c-facebook;
   }
 }
 
@@ -937,7 +937,7 @@ button {
 .has-light .btn-apple {
   background-color: $c-black;
   color: $c-white;
-  border: 1px solid $c-black;
+  border: var(--line-width) solid $c-black;
 
   &:focus,
   &.focus,
@@ -948,7 +948,7 @@ button {
   &.active {
     opacity: 1;
     background-color: $c-dark-grey;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
   }
 }
 
@@ -956,7 +956,7 @@ button {
 .has-light .btn-apple-secondary {
   background-color: $c-white;
   color: $c-black;
-  border: 1px solid $c-black;
+  border: var(--line-width) solid $c-black;
   &:focus,
   &.focus,
   &:hover,
@@ -966,7 +966,7 @@ button {
   &.active {
     opacity: 1;
     background-color: $c-white;
-    border: 1px solid $c-dark-grey;
+    border: var(--line-width) solid $c-dark-grey;
   }
 }
 
@@ -975,7 +975,7 @@ button {
   background-color: $c-naver;
   color: $c-white;
   padding-left: 40px;
-  border: 1px solid $c-naver;
+  border: var(--line-width) solid $c-naver;
 
   &:focus,
   &.focus,
@@ -986,7 +986,7 @@ button {
   &.active {
     opacity: 1;
     background-color: $c-naver;
-    border: 1px solid $c-naver;
+    border: var(--line-width) solid $c-naver;
   }
 }
 
@@ -995,7 +995,7 @@ button {
   background-color: $c-wechat;
   color: $c-white;
   padding-left: 40px;
-  border: 1px solid $c-wechat;
+  border: var(--line-width) solid $c-wechat;
 
   &:focus,
   &.focus,
@@ -1006,7 +1006,7 @@ button {
   &.active {
     opacity: 1;
     background-color: $c-naver;
-    border: 1px solid $c-wechat;
+    border: var(--line-width) solid $c-wechat;
   }
 }
 
@@ -1186,7 +1186,7 @@ button {
 
 .btn-feel {
   background-color: $c-feel;
-  border: 1px solid $c-feel;
+  border: var(--line-width) solid $c-feel;
   color: $c-primary;
 
   &:hover,
@@ -1194,7 +1194,7 @@ button {
   &:focus,
   &.focus {
     background-color: $c-feel-light;
-    border: 1px solid $c-feel-light;
+    border: var(--line-width) solid $c-feel-light;
     color: $c-primary;
     opacity: 1;
   }
@@ -1203,14 +1203,14 @@ button {
   &:disabled,
   &.disabled {
     background-color: $c-middle-grey;
-    border: 1px solid $c-middle-grey;
+    border: var(--line-width) solid $c-middle-grey;
     color: $c-dark-grey;
     opacity: 1;
   }
 
   .has-light & {
     background-color: $c-feel;
-    border: 1px solid $c-feel;
+    border: var(--line-width) solid $c-feel;
     color: $c-primary;
 
     &:hover,
@@ -1218,7 +1218,7 @@ button {
     &:focus,
     &.focus {
       background-color: $c-feel-light;
-      border: 1px solid $c-feel-light;
+      border: var(--line-width) solid $c-feel-light;
       color: $c-primary;
       opacity: 1;
     }
@@ -1227,7 +1227,7 @@ button {
     &:disabled,
     &.disabled {
       background-color: $c-middle-grey;
-      border: 1px solid $c-middle-grey;
+      border: var(--line-width) solid $c-middle-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
@@ -1292,7 +1292,7 @@ button {
 .btn.btn-secondary-rd {
   font-size: $text-input-d;
   border-radius: $btn-radius;
-  border: 1px solid $c-primary;
+  border: var(--line-width) solid $c-primary;
   padding: 9px 2px 4px;
   height: 32px;
   min-width: 100px;
@@ -1316,7 +1316,7 @@ button {
   .btn-phantom {
     color: $c-white;
     background-color: transparent;
-    border: 1px solid $c-white;
+    border: var(--line-width) solid $c-white;
   }
 
   .btn-primary-feel {

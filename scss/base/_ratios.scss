@@ -260,3 +260,20 @@
     background-color: transparent;
   }
 }
+
+.sk-load-34 {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 139%;
+    background-color: $c-white;
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}

@@ -184,6 +184,13 @@ b {
   position: relative;
 }
 
+.p-absolute {
+  position: absolute;
+}
+.t-0 {
+  top: 0;
+}
+
 .banner-zone {
   display: flex;
   align-items: center;
@@ -230,8 +237,7 @@ b {
   transform: translate(-50%, -50%);
 }
 
-.img-cover{
-
+.img-cover {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -239,10 +245,9 @@ b {
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  img{
+  img {
     max-width: initial;
   }
-
 }
 .center-absolute {
   position: absolute;

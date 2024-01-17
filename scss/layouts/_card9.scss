@@ -7,7 +7,7 @@
 
   .color-wrap {
     position: relative;
-    padding: 0 0 8px;
+    padding: 0 0 0;
   }
 
   .card9-image {
@@ -332,13 +332,11 @@ div.card9-wrap .rat-content:hover .card9-add {
 .card9-contents {
   padding-top: 8px;
   padding-bottom: 8px;
-  
+
   .product-view-info {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-
-
   }
   .tag-wrapper {
     width: 100%;

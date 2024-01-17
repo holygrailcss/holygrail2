@@ -45,7 +45,7 @@
       line-height: 1;
     }
     li.is-active {
-     & > a {
+      & > a {
         &::before {
           content: '';
           position: absolute;
@@ -106,15 +106,14 @@
   }
 }
 
-.is-rtl{
+.is-rtl {
   .mn-mainmenu .list-check li.is-active a::before {
     margin-right: -8px;
-}
-@media (min-width: 768px){ 
-.mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child a,
- .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child span {
-    padding: 8px 0px 8px 20px;
-}
-}
-
+  }
+  @media (min-width: 768px) {
+    .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child a,
+    .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child span {
+      padding: 8px 0px 8px 20px;
+    }
+  }
 }

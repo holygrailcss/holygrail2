@@ -56,6 +56,20 @@
   }
 }
 
+.container-total {
+  margin-right: 0;
+  margin-left: 0;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .container-total {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .container-bleed {
   padding-right: 0;
   padding-left: 0;
@@ -331,14 +345,12 @@
   column-gap: 16px;
 }
 
-.colgap-16{
+.colgap-16 {
   column-gap: 16px;
 }
-.colgap-8{
+.colgap-8 {
   column-gap: 8px;
 }
-
-
 
 .grid-4 {
   display: grid;
