@@ -23,7 +23,7 @@
 
       font-size: 12px;
       cursor: pointer;
-      padding: 8px 20px 8px 20px;
+      padding: 0px 20px 8px 20px;
     }
 
     &.is-active a,
@@ -72,6 +72,18 @@
 
 
 
+}
+
+.has-light{
+  .tabs{
+    &.is-active a,
+    &.is-active span {
+      &::after {
+        background-color: $c-white;
+      }
+    }
+
+  }
 }
 
 .tabs-list,
