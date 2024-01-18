@@ -13,9 +13,9 @@
 
         "open:guide": "open guide/index.html",
         "docs": "sass scss/docs.scss doc/docs.css --style expanded ",
-        "build": "sass scss/style.scss dist/style.css  && sass scss/docs.scss doc/docs.css   --style expanded ",
-        "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css  &&  sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
-     
+        "build": "sass scss/style.scss dist/style.css  && sass scss/docs.scss doc/docs.css   --style expanded && node add-name-version-package.js",
+        "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css && node add-name-version-package.js &&  sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
+
         "lint": "stylelint 'scss/**/*.?(s)css'",
         "lint2": "stylelint 'scss/*.?(s)css'",
         "lint:fix": "stylelint --fix 'scss/**/*.?(s)css'",
