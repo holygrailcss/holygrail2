@@ -956,10 +956,10 @@ input[type=number] {
   word-wrap: break-word;
 }
 .paddingbox-left .filas:nth-child(1) .item-1::after {
-  content: "16px";
+  content: "20px";
 }
 .paddingbox-left .filas:nth-child(1) .item-2::after {
-  content: "16px";
+  content: "20px";
 }
 .paddingbox-left .filas:nth-child(1) .item-3::after {
   content: "40px";
@@ -994,10 +994,10 @@ input[type=number] {
   word-wrap: break-word;
 }
 .paddingbox-right .filas:nth-child(1) .item-1::after {
-  content: "16px";
+  content: "20px";
 }
 .paddingbox-right .filas:nth-child(1) .item-2::after {
-  content: "16px";
+  content: "20px";
 }
 .paddingbox-right .filas:nth-child(1) .item-3::after {
   content: "40px";

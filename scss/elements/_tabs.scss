@@ -46,7 +46,7 @@
   }
 
   &.tabs-resetfirst ul li:first-child a {
-    padding: 8px 20px 12px 0px;
+    padding: 0px 20px 8px 0px;
   }
 
   &.is-center ul {
@@ -69,20 +69,16 @@
       flex-grow: 1;
     }
   }
-
-
-
 }
 
-.has-light{
-  .tabs{
-    &.is-active a,
-    &.is-active span {
+.has-light {
+  .tabs {
+    .is-active a,
+    .is-active span {
       &::after {
         background-color: $c-white;
       }
     }
-
   }
 }
 
