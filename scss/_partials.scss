@@ -11,9 +11,12 @@
 @import 'base/ratios';
 
 @import 'base/types';
-@import 'base/helpers';
+
 @import 'base/_extras';
 @import 'base/spacing';
+@import 'base/helpers';
+
+@import 'base/guide';
 
 @import 'elements/animated';
 @import 'elements/banners';

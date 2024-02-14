@@ -493,7 +493,8 @@
     display: none;
   }
 
-  &.checkbox-radio [type='radio']:checked + label .border-1 {
+  &.checkbox-radio [type='radio']:checked + label .border-1,
+  &.checkbox-radio [type='radio']:checked + label .border-1-grey {
     border: 1px solid $c-primary;
   }
 }
@@ -518,6 +519,11 @@
     padding-left: calc(14px + 16px);
   }
 
+  &.checkbox-radio [type='radio']:checked + label .border-1-grey,
+  &.checkbox-radio [type='radio']:checked + label .border-1-grey {
+    border: 1px solid $c-primary;
+  }
+  &.checkbox-radio [type='radio']:checked + label .border-1,
   &.checkbox-radio [type='radio']:checked + label .border-1 {
     border: 1px solid $c-primary;
   }
@@ -553,7 +559,8 @@
     padding-left: calc(14px + 16px);
   }
 
-  &.checkbox-radio [type='radio']:checked + label .border-1 {
+  &.checkbox-radio [type='radio']:checked + label .border-1,
+  &.checkbox-radio [type='radio']:checked + label .border-1-grey {
     border: 1px solid $c-primary;
   }
 }
@@ -576,7 +583,8 @@
     padding-left: calc(14px + 16px);
   }
 
-  &.checkbox-radio [type='radio']:checked + label .border-1 {
+  &.checkbox-radio [type='radio']:checked + label .border-1,
+  &.checkbox-radio [type='radio']:checked + label .border-1-grey {
     border: 1px solid $c-primary;
   }
 }
@@ -625,7 +633,8 @@
 }
 
 .is-active {
-  &.checkbox-radio .border-1 {
+  &.checkbox-radio .border-1,
+  &.checkbox-radio .border-1-grey {
     border: 1px solid $c-primary;
   }
 
@@ -719,4 +728,8 @@
 
 .checkbox-item [type='checkbox']:checked + label::before {
   background-color: #000;
+}
+
+.check-center.checkbox-radio [type='radio']:checked + label .border-1-grey {
+  border: 1px solid #292929;
 }

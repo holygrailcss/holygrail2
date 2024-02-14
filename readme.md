@@ -121,3 +121,4 @@ Developed with ❤️ from Barcelona to the world
 
 
 
+    "version": "1.0.53",

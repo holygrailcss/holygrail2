@@ -3,11 +3,17 @@
 .tabs {
   ul {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+
     margin: 0;
     flex-grow: 1;
     flex-shrink: 0;
+    &.content-start {
+      justify-content: flex-start;
+    }
+
+    &.content-center {
+      align-items: center;
+    }
   }
 
   li {
@@ -15,7 +21,8 @@
     margin: 0;
 
     a,
-    span {
+    span,
+    button {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,7 +34,8 @@
     }
 
     &.is-active a,
-    &.is-active span {
+    &.is-active span,
+    &.is-active button {
       position: relative;
 
       &::after {

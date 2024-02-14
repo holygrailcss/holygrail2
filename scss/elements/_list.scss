@@ -187,9 +187,9 @@ ul.list-mini {
 
 .list-button {
   position: relative;
-  padding: 16px;
-  background: $c-white;
-  border-bottom: var(--line-width) solid $c-middle-grey;
+  padding: 16px 0;
+  border-bottom: var(--line-width) solid transparent;
+
   cursor: pointer;
   opacity: 1;
 
@@ -203,12 +203,11 @@ ul.list-mini {
 
   &.list-secondary,
   &.list-secundary {
-    background-color: $c-middle-grey;
-    padding-left: 42px;
+    background-color: transparent;
+    padding-left: 16px;
   }
   &.list-tertiary {
-    background-color: $c-light-grey;
-    padding-left: 64px;
+    padding-left: 32px;
 
     svg-icon {
       left: 20px;

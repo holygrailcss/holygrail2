@@ -134,7 +134,7 @@ $tooltip-width: 320px;
 
 .tooltip-sm-old {
   top: 36px;
-  right: 8px;
+  right: 0;
   background-color: $c-white;
   border: 1px solid $c-middle-grey;
   position: absolute;
@@ -157,7 +157,7 @@ $tooltip-width: 320px;
 }
 
 .tooltip-close {
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: var(--line-width) solid $c-primary;
   width: 100%;
   position: absolute;
   top: 0;

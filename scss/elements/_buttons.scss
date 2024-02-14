@@ -288,6 +288,7 @@ button {
     background-color: $c-dark-grey;
     border: 1px solid $c-dark-grey;
     opacity: 1;
+    cursor: pointer;
   }
 
   &[disabled],
@@ -642,8 +643,9 @@ button {
 
 .btn-tertiary {
   color: $c-primary;
-  background-color: $c-white;
-  border: 1px solid $c-primary;
+  background-color: transparent;
+  border: 1px solid transparent;
+  height: auto;
 
   svg {
     g {
@@ -663,9 +665,11 @@ button {
   &:active,
   &.active {
     opacity: 1;
-    color: $c-primary;
-    border: 1px solid $c-dark-grey;
-    background-color: $c-white;
+    color: $c-dark-grey;
+    border: 1px solid transparent;
+    background-color: transparent;
+
+    cursor: pointer;
   }
 
   &:disabled,
@@ -673,20 +677,20 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 1px solid $c-middle-grey !important;
+    border: 1px solid transparent !important;
     color: $c-dark-grey !important;
-    background-color: $c-middle-grey !important;
+    background-color: transparent !important;
     filter: none;
     opacity: 1;
     svg-icon {
-      background-color: $c-middle-grey !important;
-      border: 1px solid $c-middle-grey !important;
+      background-color: transparent !important;
+      border: 1px solid transparent !important;
     }
   }
 
   .has-light & {
     color: $c-white;
-    border-color: $c-white;
+    border-color: transparent;
     background-color: transparent;
 
     &:focus,
@@ -696,9 +700,9 @@ button {
     &:active,
     &.active {
       opacity: 1;
-      color: $c-white;
-      border: 1px solid $c-dark-grey;
-      background-color: $c-dark-grey;
+      color: $c-dark-grey;
+      border: 1px solid transparent;
+      background-color: transparent;
     }
   }
 }

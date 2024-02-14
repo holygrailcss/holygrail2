@@ -19,7 +19,7 @@
   overflow: hidden;
   background-color: $c-white;
   z-index: 1002;
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: var(--line-width) solid $c-dark-grey;
 
   @media (min-width: $break-sm) {
     height: 72px;
@@ -111,7 +111,7 @@
   right: 0;
   bottom: 0;
   background-color: $c-white;
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: var(--line-width) solid $c-primary;
 }
 
 .header-cart-list {

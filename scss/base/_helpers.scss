@@ -466,29 +466,39 @@ strong {
 }
 
 .bb-line {
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: var(--line-width) solid $c-middle-grey;
 }
 .border-1 {
-  border: 1px solid $c-middle-grey;
+  border: var(--line-width) solid $c-primary;
+}
+.border-1-grey {
+  border: var(--line-width) solid $c-middle-grey;
+}
+.border-1-light {
+  border: var(--line-width) solid $c-light-grey;
 }
 .border-t {
-  border-top: 1px solid $c-middle-grey;
-}
-.border-b {
-  border-bottom: 1px solid $c-middle-grey;
-}
-.border-l {
-  border-left: 1px solid $c-middle-grey;
+  border-top: var(--line-width) solid $c-primary;
 }
 .border-r {
-  border-right: 1px solid $c-middle-grey;
+  border-right: var(--line-width) solid $c-primary;
 }
+.border-b {
+  border-bottom: var(--line-width) solid $c-primary;
+}
+.border-l {
+  border-left: var(--line-width) solid $c-primary;
+}
+
 .border-b2 {
   border-top: none;
-  border-bottom: 1px solid $c-primary;
+  border-bottom: var(--line-width) solid $c-primary;
 }
 .border-t2 {
-  border-top: 1px solid $c-primary;
+  border-top: var(--line-width) solid $c-primary;
+}
+.border-r2 {
+  border-right: var(--line-width) solid $c-primary;
 }
 .flex-vcenter {
   display: flex;
@@ -692,6 +702,10 @@ strong {
 .flex-grow-0 {
   flex-grow: 0;
 }
+
+.d-block {
+  display: block;
+}
 .d-inline {
   display: inline;
 }
@@ -806,8 +820,8 @@ strong {
 }
 
 .reset-body {
-  margin-left: -16px;
-  margin-right: -16px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $break-md) {
     margin-left: -40px;
@@ -883,5 +897,47 @@ strong {
   }
   &::-webkit-scrollbar-thumb:window-inactive {
     background: #999;
+  }
+}
+
+
+
+
+.min-scrollcustom-x.has-dark {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $c-middle-grey;
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $c-primary;
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: $c-primary;
+  }
+}
+
+
+.leading-1 {
+  line-height: 1;
+}
+
+.tag-product {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  .is-rtl & {
+    right: 0;
+    left: inherit;
   }
 }

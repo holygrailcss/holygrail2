@@ -29,3 +29,121 @@
     opacity: 0.6;
   }
 }
+
+.stories-list {
+  &:last-child {
+    border-bottom: var(--line-width) solid transparent;
+  }
+
+  padding: 16px 0;
+  border-bottom: var(--line-width) solid $c-primary;
+
+  display: flex;
+  .stories-item-1 {
+    width: 10%;
+    min-width: 40px;
+  }
+  .stories-item-2 {
+    width: 80%;
+    gap: 16px;
+
+    div {
+      margin-bottom: 8px;
+    }
+
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }
+  .stories-item-3 {
+    width: 10%;
+    gap: 16px;
+  }
+  @media (min-width: $break-lg) {
+    padding: 16px;
+
+    &:last-child {
+      border-bottom: var(--line-width) solid $c-primary;
+    }
+
+    border-bottom: var(--line-width) solid $c-primary;
+
+    .stories-item-1 {
+      width: 10%;
+    }
+    .stories-item-2 {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      column-gap: 16px;
+      width: 80%;
+
+      div {
+        margin-bottom: 0;
+      }
+    }
+    .stories-item-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 16px;
+      width: 10%;
+    }
+  }
+}
+
+.stories-grid {
+  .grid-12 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;
+    max-width: 100%;
+    @media (min-width: $break-md) {
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: 16px;
+    }
+    @media (min-width: $break-lg) {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 16px;
+    }
+  }
+  .grid-8 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8px;
+    max-width: 100%;
+    @media (min-width: $break-md) {
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 16px;
+    }
+    @media (min-width: $break-lg) {
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: 16px;
+    }
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    max-width: 100%;
+    @media (min-width: $break-md) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 16px;
+    }
+    @media (min-width: $break-lg) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 16px;
+    }
+  }
+}
+
+.stories-zoom {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  padding: 24px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-margin-m-20, 20px);
+  border-radius: 56px;
+  background: var(--Background-primary-bg-primary, #000);
+}

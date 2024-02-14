@@ -163,20 +163,14 @@
     border: 5px solid #3f0 !important;
   }
 }
-@mixin debug-all() {
-  @include debug-divs;
-  @include debug-links;
-  @include debug-forms;
-  @include debug-fine;
-  @include debug-types;
-}
-@mixin debug-types($headers) {
-  @for $i from 1 through length($headers) {
-    .#{nth(map-keys($headers), $i)} {
+
+@mixin debug-types($minheaders) {
+  @for $i from 1 through length($minheaders) {
+    .#{nth(map-keys($minheaders), $i)} {
       position: relative;
       border: 1px solid #96c3ac;
       &::after {
-        content: '#{nth(map-keys($headers), $i)} ' !important;
+        content: '#{nth(map-keys($minheaders), $i)} ' !important;
         position: absolute;
         background-color: red;
         opacity: 1;
@@ -189,4 +183,11 @@
       }
     }
   }
+}
+
+@mixin debug-all() {
+  @include debug-divs;
+  @include debug-links;
+  @include debug-forms;
+  @include debug-fine;
 }

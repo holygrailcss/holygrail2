@@ -131,3 +131,8 @@ input[type='number'] {
     --line-width-negative: -0.5px;
   }
 }
+
+button {
+  padding-inline: 0;
+  padding-block: 0;
+}

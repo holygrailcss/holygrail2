@@ -93,7 +93,7 @@
   .check-center.check-bleed.checkbox-radio [type='radio']:checked + label .ico-radio,
   .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
     left: initial;
-    right: 7px;
+    right: 5px;
   }
   .btn {
     &.btn-separate {
@@ -174,9 +174,9 @@
     }
     [type='checkbox']:not(:checked) + label .icon,
     [type='checkbox']:checked + label .icon {
-      right: 5px;
+      right: 2px;
       left: auto;
-      top: 4px;
+      top: 3px;
     }
     .ma-wrapper-terms-inner {
       span,
@@ -208,7 +208,7 @@
     &.checkbox-radio [type='radio']:checked + label .ico-radio,
     &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
       left: 0;
-      right: 23px;
+      right: 21px;
     }
     .box3-content {
       padding-left: 0;
@@ -262,7 +262,7 @@
   .select {
     &.select-box {
       select {
-        padding: 0 8px 0 16px;
+        padding: 1px 8px 0 20px;
       }
       &::after {
         left: 6px;
@@ -395,12 +395,12 @@
   .list-button {
     &.list-secundary,
     &.list-secondary {
-      padding-left: 16px;
-      padding-right: 42px;
+      padding-left: 0;
+      padding-right: 16px;
     }
     &.list-tertiary {
-      padding-left: 16px;
-      padding-right: 64px;
+      padding-left: 0;
+      padding-right: 32px;
     }
   }
   .tabs-mini {
@@ -476,5 +476,17 @@
       top: 47px;
       right: 20px;
     }
+  }
+
+  .box3-top {
+    padding-right: 16px;
+    padding-left: 0;
+  }
+
+  .checkbox-item [type='checkbox']:not(:checked) + label .icon,
+  .checkbox-item [type='checkbox']:checked + label .icon {
+    right: 2px;
+    left: auto;
+    top: 3px;
   }
 }

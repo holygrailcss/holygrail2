@@ -112,13 +112,17 @@
 }
 
 .container-4 {
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: $padding-global * 2;
+  padding-left: $padding-global * 2;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  width: 90%;
-  max-width: $container-4;
+  width: 100%;
+  max-width: $container-6;
+
+  @media (min-width: $break-sm) {
+    max-width: $container-4;
+  }
 }
 
 // join life style
@@ -268,11 +272,13 @@
 }
 
 @for $i from 5 through $colBreakpointscols {
-  @for $c from 1 through $totalColsXl {
-    .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
-      -webkit-box-flex: 0;
-      flex: 0 0 math.percentage(math.div($c, $totalColsXl));
-      max-width: math.percentage(math.div($c, $totalColsXl));
+  @media (min-width: nth(map-values($breakpointscols), $i)) {
+    @for $c from 1 through $totalColsXl {
+      .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
+        -webkit-box-flex: 0;
+        flex: 0 0 math.percentage(math.div($c, $totalColsXl));
+        max-width: math.percentage(math.div($c, $totalColsXl));
+      }
     }
   }
 }

@@ -58,3 +58,51 @@
     padding-left: #{$espaciado}px;
   }
 }
+
+.sm\:mb-0 {
+  @media (min-width: $break-sm) {
+    margin-bottom: 0;
+  }
+}
+
+.md\:mb-0 {
+  @media (min-width: $break-md) {
+    margin-bottom: 0;
+  }
+}
+
+.lg\:mb-0 {
+  @media (min-width: $break-lg) {
+    margin-bottom: 0;
+  }
+}
+
+.xl\:mb-0 {
+  @media (min-width: $break-xl) {
+    margin-bottom: 0;
+  }
+}
+
+.sm\:mt-0 {
+  @media (min-width: $break-sm) {
+    margin-top: 0;
+  }
+}
+
+.md\:mt-0 {
+  @media (min-width: $break-md) {
+    margin-top: 0;
+  }
+}
+
+.lg\:mt-0 {
+  @media (min-width: $break-lg) {
+    margin-top: 0;
+  }
+}
+
+.xl\:mt-0 {
+  @media (min-width: $break-xl) {
+    margin-top: 0;
+  }
+}
