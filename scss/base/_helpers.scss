@@ -900,9 +900,6 @@ strong {
   }
 }
 
-
-
-
 .min-scrollcustom-x.has-dark {
   overflow: auto;
   &::-webkit-scrollbar {
@@ -925,7 +922,6 @@ strong {
   }
 }
 
-
 .leading-1 {
   line-height: 1;
 }
@@ -941,3 +937,18 @@ strong {
     left: inherit;
   }
 }
+
+.m--1{
+  margin-top: -1px;
+}
+
+
+.is-active.btn-secondary{
+  background-color: $c-primary;
+
+  color: $c-white;
+  background-color: $c-primary;
+  border: 1px solid $c-primary;
+
+}
+

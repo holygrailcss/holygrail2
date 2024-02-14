@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.0.78
+  Versión: 1.0.82
 */
 @charset "UTF-8";
 *,
@@ -5553,12 +5553,35 @@ strong {
   background: #999;
 }
 
+.min-scrollcustom-x.has-dark {
+  overflow: auto;
+  /* Track */
+  /* Handle */
+}
+.min-scrollcustom-x.has-dark::-webkit-scrollbar {
+  height: 5px;
+}
+.min-scrollcustom-x.has-dark::-webkit-scrollbar-track {
+  background: #e3e3e3;
+  -webkit-border-radius: 10px;
+  border-radius: 0px;
+}
+.min-scrollcustom-x.has-dark::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #000;
+}
+.min-scrollcustom-x.has-dark::-webkit-scrollbar-thumb:window-inactive {
+  background: #000;
+}
+
 .leading-1 {
   line-height: 1;
 }
 
 .tag-product {
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
 }
@@ -7994,7 +8017,6 @@ label {
   margin-top: 0;
   padding-top: 2px;
   margin-bottom: 4px;
-  width: calc(100% - 50px);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
