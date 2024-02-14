@@ -1349,3 +1349,15 @@ button {
     }
   }
 }
+
+
+.is-active.btn-secondary{
+  background-color: $c-primary;
+
+  color: $c-white;
+  background-color: $c-primary;
+  border: 1px solid $c-primary;
+
+}
+
+
