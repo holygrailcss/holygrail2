@@ -943,6 +943,13 @@ strong {
 }
 
 
+.btn-group-bleed{
+  .btn-group{
+    margin-top: -1px;
+  }
+
+}
+
 .is-active.btn-secondary{
   background-color: $c-primary;
 
