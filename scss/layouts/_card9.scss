@@ -7,7 +7,7 @@
 
   .color-wrap {
     position: relative;
-    padding: 0 0 0;
+    padding: 0 ;
   }
 
   .card9-image {
@@ -28,6 +28,10 @@
     right: 16px;
     transition: opacity 275ms ease;
     opacity: 0;
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
   }
 
   .card9-sizes {
@@ -63,7 +67,6 @@
   .card9-wrap-details {
     min-height: 100px;
     position: absolute;
-    bottom: 1px;
     left: 0;
     z-index: 3;
     width: 100%;
@@ -340,11 +343,5 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
   .tag-wrapper {
     width: 100%;
-  }
-}
-
-.card9-add {
-  @media (max-width: 1280px) {
-    display: none;
   }
 }

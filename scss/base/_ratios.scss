@@ -72,11 +72,11 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(133.25% + 86px);
+    padding-top: calc(133.25% + 74px);
     background-color: $c-white;
 
     @media (min-width: 992px) {
-      padding-top: calc(133.25% + 86px);
+      padding-top: calc(133.25% + 74px);
     }
   }
 
@@ -93,11 +93,11 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(133.25% + 86px);
+    padding-top: calc(133.25% + 74px);
     background-color: $c-white;
 
     @media (min-width: 992px) {
-      padding-top: calc(133.25% + 86px);
+      padding-top: calc(133.25% + 74px);
     }
   }
 
@@ -154,11 +154,11 @@
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(66.6667% + 86px);
+    padding-top: calc(66.6667% + 74px);
     background-color: $c-white;
 
     @media (min-width: $break-sm) {
-      padding-top: calc(66.6667% + 86px);
+      padding-top: calc(66.6667% + 74px);
     }
   }
 
@@ -183,7 +183,7 @@
     }
   }
   &.hidden-image::before {
-    padding-top: 86px;
+    padding-top: 74px;
   }
 
   &::marker {
@@ -219,11 +219,11 @@
 .sk-load9 {
   position: relative;
 
-  &:before {
+  &::before {
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(64.66667% + 86px);
+    padding-top: calc(64.6667% + 74px);
     background-color: $c-white;
 
     .p-view {
@@ -231,11 +231,11 @@
     }
 
     @media (min-width: #{$break-md}) {
-      padding-top: calc(62.9% + 86px);
+      padding-top: calc(62.9% + 74px);
     }
 
     @media (min-width: #{$break-lg}) {
-      padding-top: calc(64.7% + 86px);
+      padding-top: calc(64.7% + 74px);
     }
   }
 
@@ -250,12 +250,12 @@
 }
 
 .grid-wrap-custom {
-  .sk-load:before,
-  .sk-load1:before,
-  .sk-load2:before,
-  .sk-load3:before,
-  .sk-load5:before,
-  .sk-load6:before,
+  .sk-load::before,
+  .sk-load1::before,
+  .sk-load2::before,
+  .sk-load3::before,
+  .sk-load5::before,
+  .sk-load6::before,
   .p-view {
     background-color: transparent;
   }
@@ -339,23 +339,6 @@ $bg-skload: $c-middle-grey;
     content: '';
     width: 100%;
     aspect-ratio: 2 / 1;
-    background-color: $bg-skload;
-  }
-
-  &::marker {
-    display: none;
-    content: '';
-  }
-}
-
-.sk-load_1-1 {
-  position: relative;
-
-  &::before {
-    display: block;
-    content: '';
-    width: 100%;
-    aspect-ratio: 1 / 1;
     background-color: $bg-skload;
   }
 

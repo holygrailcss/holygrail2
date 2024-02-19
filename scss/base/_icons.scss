@@ -165,8 +165,8 @@ svg-icon.ico-pre {
   position: relative;
   width: $w-plus;
   height: $w-plus;
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     width: $w-plus;
     height: var(--line-width);
     position: absolute;
@@ -174,25 +174,25 @@ svg-icon.ico-pre {
     background-color: $c-primary;
     transform-origin: center;
   }
-  &:after {
+  &::after {
     top: 5px;
     left: 0;
     transform: rotate(90deg);
   }
-  &:before {
+  &::before {
     top: 5px;
     left: 0;
   }
   .is-active & {
-    &:after {
+    &::after {
       top: 5px;
       left: 0;
       transform: rotate(0deg);
     }
   }
   .has-light & {
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       background-color: $c-white;
     }
   }
@@ -204,8 +204,8 @@ svg-icon.ico-pre {
   @media (min-width: 768px) {
     left: 32px;
   }
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     width: 11px;
     height: var(--line-width);
     position: absolute;
@@ -214,7 +214,7 @@ svg-icon.ico-pre {
     transform-origin: center;
     transform: rotate(45deg);
   }
-  &:before {
+  &::before {
     transform: rotate(-45deg);
   }
 }

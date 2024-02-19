@@ -58,10 +58,6 @@ input::input-placeholder {
   box-sizing: border-box;
 }
 
-label {
-  font-size: $text-md;
-}
-
 .select {
   max-width: 100%;
   appearance: none;
@@ -125,7 +121,7 @@ label {
     padding: 0;
   }
   select[multiple] option {
-    padding: 0 0;
+    padding: 0;
   }
   &:not(.is-multiple, .is-loading):hover::after {
     border-color: $c-primary;

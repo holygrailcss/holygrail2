@@ -24,7 +24,7 @@
         justify-content: flex-start;
         &.mn-list-item li:first-child a,
         &.mn-list-item li:first-child span {
-          padding: 8px 20px 8px 0px;
+          padding: 8px 20px 8px 0;
         }
       }
     }
@@ -113,7 +113,7 @@
   @media (min-width: 768px) {
     .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child a,
     .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child span {
-      padding: 8px 0px 8px 20px;
+      padding: 8px 0 8px 20px;
     }
   }
 }

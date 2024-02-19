@@ -30,7 +30,7 @@
 
       font-size: 12px;
       cursor: pointer;
-      padding: 0px 20px 8px 20px;
+      padding:0 20px 8px;
     }
 
     &.is-active a,
@@ -54,7 +54,7 @@
   }
 
   &.tabs-resetfirst ul li:first-child a {
-    padding: 0px 20px 8px 0px;
+    padding:0 20px 8px 0;
   }
 
   &.is-center ul {
