@@ -625,7 +625,7 @@ $spriteHeight: 400;
   bottom: 10%;
 }
 
-@mixin rgba($property, $background: #000000, $opacity: 0.75, $mix: white) {
+@mixin rgba($property, $background: $c-primary, $opacity: 0.75, $mix: white) {
   #{$property}: mix($background, $mix, $opacity * 100%);
   #{$property}: rgba($background, $opacity);
 }

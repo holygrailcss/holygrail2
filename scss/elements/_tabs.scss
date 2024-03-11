@@ -22,20 +22,19 @@
 
     a,
     span,
-    button {
+    .tab {
       display: flex;
       justify-content: center;
       align-items: center;
       vertical-align: top;
 
-      font-size: 12px;
       cursor: pointer;
       padding: 0 20px 8px;
     }
 
     &.is-active a,
     &.is-active span,
-    &.is-active button {
+    &.is-active .tab {
       position: relative;
 
       &::after {
@@ -55,6 +54,82 @@
 
   &.tabs-resetfirst ul li:first-child a {
     padding: 0 20px 8px 0;
+  }
+
+  &.is-center ul {
+    justify-content: center;
+  }
+
+  &.is-around ul {
+    justify-content: space-around;
+
+    li {
+      flex: 1;
+    }
+  }
+
+  .list-equal {
+    display: flex;
+    align-items: flex-end;
+
+    li {
+      flex-grow: 1;
+    }
+  }
+}
+
+.tabs-inline {
+  ul {
+    display: flex;
+
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    &.content-start {
+      justify-content: flex-start;
+    }
+
+    &.content-center {
+      align-items: center;
+    }
+  }
+
+  li {
+    display: block;
+    margin: 0;
+
+    a,
+    span,
+    .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: top;
+
+      cursor: pointer;
+    }
+
+    &.is-active a,
+    &.is-active span,
+    &.is-active .tab {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: $c-primary;
+        bottom: 0;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.tabs-resetfirst ul li:first-child a {
   }
 
   &.is-center ul {

@@ -22,6 +22,9 @@ svg-icon {
     align-items: center;
     justify-content: center;
   }
+  path {
+    fill: $c-primary;
+  }
   &.c-invert {
     fill: $c-white;
   }
@@ -47,6 +50,14 @@ svg-icon {
     }
   }
 }
+.icon-white {
+  svg-icon {
+    path {
+      fill: $c-white;
+    }
+  }
+}
+
 .has-light {
   svg {
     path {
@@ -216,5 +227,10 @@ svg-icon.ico-pre {
   }
   &::before {
     transform: rotate(-45deg);
+  }
+}
+.checkbox-item {
+  path {
+    fill: white;
   }
 }

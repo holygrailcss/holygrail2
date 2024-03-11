@@ -145,5 +145,5 @@
   align-items: flex-start;
   gap: var(--Spacing-margin-m-20, 20px);
   border-radius: 56px;
-  background: var(--Background-primary-bg-primary, #000);
+  background: var(--Background-primary-bg-primary, $c-primary);
 }

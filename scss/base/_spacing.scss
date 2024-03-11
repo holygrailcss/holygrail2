@@ -11,8 +11,7 @@
   }
 
   .mx-#{$espaciado} {
-    margin-left: #{$espaciado}px;
-    margin-right: #{$espaciado}px;
+    margin-inline:#{$espaciado}px;
   }
 
   .my-#{$espaciado} {
@@ -36,8 +35,7 @@
   }
 
   .px-#{$espaciado} {
-    padding-left: #{$espaciado}px;
-    padding-right: #{$espaciado}px;
+    padding-inline: #{$espaciado}px;
   }
 
   .py-#{$espaciado} {
@@ -104,5 +102,53 @@
 .xl\:mt-0 {
   @media (min-width: $break-xl) {
     margin-top: 0;
+  }
+}
+
+.sm\:pr-0 {
+  @media (min-width: $break-sm) {
+    padding-right: 0;
+  }
+}
+
+.md\:pr-0 {
+  @media (min-width: $break-md) {
+    padding-right: 0;
+  }
+}
+
+.lg\:pr-0 {
+  @media (min-width: $break-lg) {
+    padding-right: 0;
+  }
+}
+
+.xl\:pr-0 {
+  @media (min-width: $break-xl) {
+    padding-right: 0;
+  }
+}
+
+.sm\:pl-0 {
+  @media (min-width: $break-sm) {
+    padding-left: 0;
+  }
+}
+
+.md\:pl-0 {
+  @media (min-width: $break-md) {
+    padding-left: 0;
+  }
+}
+
+.lg\:pl-0 {
+  @media (min-width: $break-lg) {
+    padding-left: 0;
+  }
+}
+
+.xl\:pl-0 {
+  @media (min-width: $break-xl) {
+    padding-left: 0;
   }
 }

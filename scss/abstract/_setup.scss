@@ -28,7 +28,7 @@ $bg-black: #000 !default;
 $c-bg-light: #000 !default;
 $c-bg-dark: #fff !default;
 $white-smoke: #f0f0f0 !default;
-$primary: #1a1a1a !default;
+$primary: #000000 !default;
 $primary-guide: #363636 !default;
 $secondary-guide: #6759bb !default;
 $ternary-guide: #6759bb !default;
@@ -69,7 +69,7 @@ $text-input-d: 12px !default;
 $container: 800px !default;
 $container-2: 700px !default;
 $container-3: 900px !default;
-$container-4: 356px !default;
+$container-4: 360px !default;
 $container-5: 800px !default;
 $container-6: 442px !default;
 $container-7: 595px !default;
@@ -81,7 +81,7 @@ $container-12: 1080px !default;
 $container-full: 1500px !default;
 
 $xcontainer-10: 200px !default;
-$xcontainer-4: 356px !default;
+$xcontainer-4: 360px !default;
 $xcontainer-8: 395px !default;
 $xcontainer-6: 442px !default;
 
@@ -109,6 +109,7 @@ $min-width: 320px !default;
 $min-vw: 320px !default;
 $max-vw: 1500px !default;
 $svg-size: 16px;
+$tooltip-padding: 8px;
 $fs: 'font-size';
 $lh: 'line-height';
 
@@ -295,7 +296,7 @@ $margin-bottom: (
     24px,
   ),
   mbr-32: (
-    24px,
+    16px,
     32px,
     32px,
     32px,

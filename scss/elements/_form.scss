@@ -134,22 +134,22 @@ input::input-placeholder {
   &.select-box {
     height: auto;
     select {
-      background-color: $c-middle-grey;
+      background-color: $c-white;
       min-width: 24px;
       width: 100%;
       height: 24px;
-      padding: 1px 20px 0 8px;
+      border: 1px solid $c-primary;
+      padding: 2px 20px 0 8px;
       font-size: $text-input-d;
       border-radius: $form-radius;
-      border: none;
       text-align: center;
     }
     &::after {
       display: block;
-      right: 6px;
+      right: 10px;
       width: 5px;
       height: 5px;
-      margin-top: -5px;
+      margin-top: -4px;
     }
   }
   &.select-flat,
@@ -371,7 +371,8 @@ input::input-placeholder {
     margin-top: var(--line-width);
     margin-bottom: 0;
     line-height: 1.1;
-    color: $c-dark-grey;
+    color: $c-primary;
+    opacity: 0.6;
     border-radius: $obj-radius;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
@@ -392,7 +393,17 @@ input::input-placeholder {
   & input:not(:placeholder-shown) ~ label {
     padding-top: 1px;
     padding-bottom: calc(#{$input-padding-y} / 3);
-    font-size: $text-sm;
+    font-size: 9px;
+    color: $c-dark-grey;
+  }
+  & input:focus {
+    padding-top: calc(#{$input-padding-y} + #{$input-padding-y} * (2 / 3));
+    padding-bottom: 14px;
+  }
+  & input:focus ~ label {
+    padding-top: 1px;
+    padding-bottom: calc(#{$input-padding-y} / 3);
+    font-size: 9px;
     color: $c-dark-grey;
   }
   & input::-webkit-list-button,

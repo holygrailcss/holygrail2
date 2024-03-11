@@ -269,7 +269,7 @@
     vertical-align: top;
     margin: 0;
     line-height: 16px;
-    padding-left: 32px;
+    padding-left: 24px;
     min-height: 20px;
   }
 
@@ -727,9 +727,9 @@
 }
 
 .checkbox-item [type='checkbox']:checked + label::before {
-  background-color: #000;
+  background-color: $c-primary;
 }
 
 .check-center.checkbox-radio [type='radio']:checked + label .border-1-grey {
-  border: 1px solid #292929;
+  border: 1px solid $c-primary;
 }

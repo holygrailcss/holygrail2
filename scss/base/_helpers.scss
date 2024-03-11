@@ -5,12 +5,7 @@
 .c-black {
   color: $c-black;
 }
-.c-dark-grey.is-through::after {
-  background-color: $c-dark-grey;
-}
-.c-feel-dark.is-through::after {
-  background-color: $c-feel-dark;
-}
+
 .c-dark-grey {
   color: $c-dark-grey;
 }
@@ -436,7 +431,7 @@ hr {
   font-size: 12px;
 }
 strong {
-  color: $primary;
+  color: $c-primary;
   font-family: $font-family-a-b;
 }
 .bb-line {
@@ -508,7 +503,6 @@ strong {
   }
 }
 .p-view {
-  background-color: $c-white;
   position: absolute;
   width: 100%;
   top: 0;
@@ -519,7 +513,6 @@ strong {
 .p-view\:sm {
   // a sustiuir
   @media (max-width: #{$break-sm - 1}) {
-    background-color: $c-white;
     position: absolute;
     width: 100%;
     top: 0;
@@ -530,7 +523,6 @@ strong {
 }
 .smmax\:p-view {
   @media (max-width: #{$break-sm - 1}) {
-    background-color: $c-white;
     position: absolute;
     width: 100%;
     top: 0;
@@ -899,4 +891,8 @@ strong {
 .sidebar-overflow {
   height: 100vh;
   overflow: auto;
+}
+
+.is-through {
+  text-decoration: line-through;
 }

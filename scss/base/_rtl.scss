@@ -1,4 +1,5 @@
 @import '../abstract/_all';
+
 .is-rtl {
   .fl-left {
     float: right;
@@ -425,43 +426,7 @@
       padding-left: 8px;
     }
   }
-  .tooltip-sm {
-    left: calc(50% - 16px);
-    right: auto;
-    padding-left: $tooltip-padding + 16px;
-    padding-right: $tooltip-padding * 2;
-    &::after {
-      right: auto;
-      left: $tooltip-dist;
-    }
-    &.tooltip-tr,
-    &.tooltip-br {
-      right: calc(50% - 16px);
-      left: auto;
-      &::after {
-        left: auto;
-        right: $tooltip-dist;
-      }
-    }
-    .close {
-      right: auto;
-      left: $tooltip-padding;
-    }
-  }
-  .tooltip-sm-temp {
-    left: -8px;
-    right: auto;
-    padding-left: $tooltip-padding + 16px;
-    padding-right: $tooltip-padding * 2;
-    &::after {
-      right: auto;
-      left: $tooltip-dist;
-    }
-    .close-temp {
-      right: auto;
-      left: $tooltip-padding;
-    }
-  }
+
   .tag-new {
     right: auto;
     left: -30px;
