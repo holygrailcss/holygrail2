@@ -828,7 +828,7 @@ button {
   word-wrap: break-word;
 }
 .marginbox-bottom .filas:nth-child(2) .item-1::after {
-  content: "24px";
+  content: "16px";
 }
 .marginbox-bottom .filas:nth-child(2) .item-2::after {
   content: "32px";

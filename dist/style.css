@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.14
+  Versión: 1.1.15
 */
 @charset "UTF-8";
 *,
@@ -3221,8 +3221,7 @@ mark {
 }
 
 .mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-inline: 0px;
 }
 
 .my-0 {
@@ -3251,8 +3250,7 @@ mark {
 }
 
 .px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-inline: 0px;
 }
 
 .py-0 {
@@ -3281,8 +3279,7 @@ mark {
 }
 
 .mx-2 {
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-inline: 2px;
 }
 
 .my-2 {
@@ -3311,8 +3308,7 @@ mark {
 }
 
 .px-2 {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-inline: 2px;
 }
 
 .py-2 {
@@ -3341,8 +3337,7 @@ mark {
 }
 
 .mx-4 {
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-inline: 4px;
 }
 
 .my-4 {
@@ -3371,8 +3366,7 @@ mark {
 }
 
 .px-4 {
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-inline: 4px;
 }
 
 .py-4 {
@@ -3401,8 +3395,7 @@ mark {
 }
 
 .mx-8 {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-inline: 8px;
 }
 
 .my-8 {
@@ -3431,8 +3424,7 @@ mark {
 }
 
 .px-8 {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-inline: 8px;
 }
 
 .py-8 {
@@ -3461,8 +3453,7 @@ mark {
 }
 
 .mx-12 {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-inline: 12px;
 }
 
 .my-12 {
@@ -3491,8 +3482,7 @@ mark {
 }
 
 .px-12 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-inline: 12px;
 }
 
 .py-12 {
@@ -3521,8 +3511,7 @@ mark {
 }
 
 .mx-16 {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-inline: 16px;
 }
 
 .my-16 {
@@ -3551,8 +3540,7 @@ mark {
 }
 
 .px-16 {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-inline: 16px;
 }
 
 .py-16 {
@@ -3581,8 +3569,7 @@ mark {
 }
 
 .mx-20 {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-inline: 20px;
 }
 
 .my-20 {
@@ -3611,8 +3598,7 @@ mark {
 }
 
 .px-20 {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-inline: 20px;
 }
 
 .py-20 {
@@ -3641,8 +3627,7 @@ mark {
 }
 
 .mx-24 {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-inline: 24px;
 }
 
 .my-24 {
@@ -3671,8 +3656,7 @@ mark {
 }
 
 .px-24 {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-inline: 24px;
 }
 
 .py-24 {
@@ -3701,8 +3685,7 @@ mark {
 }
 
 .mx-32 {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-inline: 32px;
 }
 
 .my-32 {
@@ -3731,8 +3714,7 @@ mark {
 }
 
 .px-32 {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-inline: 32px;
 }
 
 .py-32 {
@@ -3761,8 +3743,7 @@ mark {
 }
 
 .mx-40 {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-inline: 40px;
 }
 
 .my-40 {
@@ -3791,8 +3772,7 @@ mark {
 }
 
 .px-40 {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-inline: 40px;
 }
 
 .py-40 {
@@ -3821,8 +3801,7 @@ mark {
 }
 
 .mx-48 {
-  margin-left: 48px;
-  margin-right: 48px;
+  margin-inline: 48px;
 }
 
 .my-48 {
@@ -3851,8 +3830,7 @@ mark {
 }
 
 .px-48 {
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
 }
 
 .py-48 {
@@ -3881,8 +3859,7 @@ mark {
 }
 
 .mx-56 {
-  margin-left: 56px;
-  margin-right: 56px;
+  margin-inline: 56px;
 }
 
 .my-56 {
@@ -3911,8 +3888,7 @@ mark {
 }
 
 .px-56 {
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-inline: 56px;
 }
 
 .py-56 {
@@ -3941,8 +3917,7 @@ mark {
 }
 
 .mx-64 {
-  margin-left: 64px;
-  margin-right: 64px;
+  margin-inline: 64px;
 }
 
 .my-64 {
@@ -3971,8 +3946,7 @@ mark {
 }
 
 .px-64 {
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-inline: 64px;
 }
 
 .py-64 {
@@ -4001,8 +3975,7 @@ mark {
 }
 
 .mx-72 {
-  margin-left: 72px;
-  margin-right: 72px;
+  margin-inline: 72px;
 }
 
 .my-72 {
@@ -4031,8 +4004,7 @@ mark {
 }
 
 .px-72 {
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-inline: 72px;
 }
 
 .py-72 {
@@ -4061,8 +4033,7 @@ mark {
 }
 
 .mx-80 {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-inline: 80px;
 }
 
 .my-80 {
@@ -4091,8 +4062,7 @@ mark {
 }
 
 .px-80 {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-inline: 80px;
 }
 
 .py-80 {
@@ -4121,8 +4091,7 @@ mark {
 }
 
 .mx-96 {
-  margin-left: 96px;
-  margin-right: 96px;
+  margin-inline: 96px;
 }
 
 .my-96 {
@@ -4151,8 +4120,7 @@ mark {
 }
 
 .px-96 {
-  padding-left: 96px;
-  padding-right: 96px;
+  padding-inline: 96px;
 }
 
 .py-96 {
@@ -4181,8 +4149,7 @@ mark {
 }
 
 .mx-112 {
-  margin-left: 112px;
-  margin-right: 112px;
+  margin-inline: 112px;
 }
 
 .my-112 {
@@ -4211,8 +4178,7 @@ mark {
 }
 
 .px-112 {
-  padding-left: 112px;
-  padding-right: 112px;
+  padding-inline: 112px;
 }
 
 .py-112 {
@@ -4241,8 +4207,7 @@ mark {
 }
 
 .mx-120 {
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-inline: 120px;
 }
 
 .my-120 {
@@ -4271,8 +4236,7 @@ mark {
 }
 
 .px-120 {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-inline: 120px;
 }
 
 .py-120 {
@@ -4301,8 +4265,7 @@ mark {
 }
 
 .mx-128 {
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-inline: 128px;
 }
 
 .my-128 {
@@ -4331,8 +4294,7 @@ mark {
 }
 
 .px-128 {
-  padding-left: 128px;
-  padding-right: 128px;
+  padding-inline: 128px;
 }
 
 .py-128 {
@@ -4361,8 +4323,7 @@ mark {
 }
 
 .mx-160 {
-  margin-left: 160px;
-  margin-right: 160px;
+  margin-inline: 160px;
 }
 
 .my-160 {
@@ -4391,8 +4352,7 @@ mark {
 }
 
 .px-160 {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-inline: 160px;
 }
 
 .py-160 {
@@ -5522,6 +5482,29 @@ strong {
   .sm\:grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.min-scrollcustom {
+  overflow: auto;
+  /* Track */
+  /* Handle */
+}
+.min-scrollcustom::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.min-scrollcustom::-webkit-scrollbar-track {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 0;
+}
+.min-scrollcustom::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #999;
+}
+.min-scrollcustom::-webkit-scrollbar-thumb:window-inactive {
+  background: #999;
 }
 
 .min-scrollcustom-y {

@@ -793,6 +793,30 @@ strong {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.scrollcustom {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 0;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #999;
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: #999;
+  }
+}
+
 .min-scrollcustom-y {
   overflow: auto;
   &::-webkit-scrollbar {
