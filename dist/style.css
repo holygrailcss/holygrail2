@@ -9020,7 +9020,8 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   align-items: center;
   vertical-align: top;
   cursor: pointer;
-  padding: 0 20px 8px;
+  padding: 0 20px 0;
+  line-height: 1;
 }
 .tabs li.is-active a, .tabs li.is-active span, .tabs li.is-active .tab {
   position: relative;
@@ -9031,13 +9032,13 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   width: 4px;
   height: 4px;
   background-color: #000;
-  bottom: 0;
+  bottom: -8px;
 }
 .tabs li::after {
   display: none;
 }
 .tabs.tabs-resetfirst ul li:first-child a {
-  padding: 0 20px 8px 0;
+  padding: 0 20px 0 0;
 }
 .tabs.is-center ul {
   justify-content: center;

@@ -29,7 +29,8 @@
       vertical-align: top;
 
       cursor: pointer;
-      padding: 0 20px 8px;
+      padding: 0 20px 0;
+      line-height: 1;
     }
 
     &.is-active a,
@@ -43,7 +44,7 @@
         width: 4px;
         height: 4px;
         background-color: $c-primary;
-        bottom: 0;
+        bottom: -8px;
       }
     }
 
@@ -53,7 +54,7 @@
   }
 
   &.tabs-resetfirst ul li:first-child a {
-    padding: 0 20px 8px 0;
+    padding: 0 20px 0 0;
   }
 
   &.is-center ul {

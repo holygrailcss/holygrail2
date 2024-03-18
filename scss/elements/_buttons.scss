@@ -39,8 +39,8 @@ button {
   &.disabled {
     pointer-events: none;
     filter: grayscale(1);
-    background-color: $c-middle-grey;
-    border: 1px solid $c-middle-grey;
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
     color: $c-dark-grey;
     opacity: 1;
     cursor: not-allowed;
@@ -69,8 +69,8 @@ button {
       cursor: default;
       pointer-events: none;
       filter: grayscale(1);
-      background-color: $c-middle-grey;
-      border: 1px solid $c-middle-grey;
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
