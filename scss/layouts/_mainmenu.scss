@@ -16,16 +16,9 @@
     .tabs ul {
       justify-content: center;
       align-items: center;
-      &.mn-list-item li:first-child a,
-      &.mn-list-item li:first-child span {
-        padding: 8px 20px 8px 20px;
-      }
+
       @media (min-width: 768px) {
         justify-content: flex-start;
-        &.mn-list-item li:first-child a,
-        &.mn-list-item li:first-child span {
-          padding: 8px 20px 8px 0;
-        }
       }
     }
   }
@@ -77,17 +70,6 @@
     right: 0;
     bottom: 0;
     z-index: 1000;
-  }
-
-  .tabs {
-    ul.mn-list-item {
-      li:first-child {
-        a,
-        span {
-          padding: 8px 20px 8px 0;
-        }
-      }
-    }
   }
 
   .mn-footer {

@@ -19,7 +19,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: $btn-padding;
+  padding: 16px 8px;
   background-color: transparent;
   height: $height-btn;
   @include font-regular;
@@ -33,6 +33,7 @@ button {
     text-decoration: none;
     opacity: 0.6;
     outline: none;
+    cursor: pointer;
   }
   &[disabled],
   &:disabled,
@@ -79,10 +80,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $btn-padding;
-    svg {
-      margin-left: 8px;
-    }
+    padding: 16px 32px;
+
     &.btn--mini,
     &.btn--small {
       width: max-content;
@@ -218,7 +217,7 @@ button {
   display: flex;
   font-size: 11px;
   line-height: 1;
-  padding-bottom: 6px;
+  padding: 6px;
   justify-content: center;
   align-items: flex-start;
   border-bottom: 1px solid $c-primary;
@@ -759,8 +758,7 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: $btn-radius;
-    margin-top: -3px;
-    margin-right: 12px;
+    margin-top: -2px;
     top: 0;
     left: 1px;
     div {
@@ -842,6 +840,9 @@ button {
     background-color: $c-dark-grey;
     border: 1px solid $c-dark-grey;
   }
+  svg-icon path {
+    fill: $c-white;
+  }
 }
 .btn-apple-secondary,
 .has-light .btn-apple-secondary {
@@ -877,6 +878,9 @@ button {
     background-color: $c-naver;
     border: 1px solid $c-naver;
   }
+  svg-icon path {
+    fill: $c-white;
+  }
 }
 .btn-wechat,
 .has-light .btn-wechat {
@@ -894,6 +898,9 @@ button {
     opacity: 1;
     background-color: $c-naver;
     border: 1px solid $c-wechat;
+  }
+  svg-icon path {
+    fill: $c-white;
   }
 }
 .btn-block {
@@ -1089,7 +1096,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: $btn-padding;
+  padding: 16px 32px;
   border: none;
   background-color: rgba($c-primary, 0.4);
   color: $c-white;

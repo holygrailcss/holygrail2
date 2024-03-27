@@ -1,9 +1,11 @@
 $espaciados: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112, 120, 128, 160);
 $c-white: #fff !default;
 $c-black: #000 !default;
-$c-dark-grey: #8e8e8e !default;
-$c-middle-grey: #e3e3e3 !default;
+
+$c-dark-grey: #666666 !default;
+$c-middle-grey: #a9a9a9 !default;
 $c-light-grey: #f0f0f0 !default;
+
 $c-primary: #000 !default;
 $c-secondary: #000 !default;
 $c-accent: #b40016 !default;
@@ -12,9 +14,19 @@ $c-sale: #b40016 !default;
 $c-info: #1a32a4 !default;
 $c-valid: #76ae4a !default;
 $c-warning: #ffc700 !default;
-$c-feel: #fb9962 !default;
-$c-feel-dark: #c94c07 !default;
-$c-feel-light: #fccbb0 !default;
+
+$c-primary-3: rgba(0, 0, 0, 0.3);
+$c-primary-15: rgba(0, 0, 0, 0.15);
+$c-primary-30: rgba(0, 0, 0, 0.3);
+$c-primary-60: rgba(0, 0, 0, 0.6);
+$c-primary-97: rgba(0, 0, 0, 0.97);
+
+$c-secondary-3: rgba(255, 255, 255, 0.3);
+$c-secondary-15: rgba(255, 255, 255, 0.15);
+$c-secondary-30: rgba(255, 255, 255, 0.3);
+$c-secondary-60: rgba(255, 255, 255, 0.6);
+$c-secondary-97: rgba(255, 255, 255, 0.97);
+
 $c-limited: #000 !default;
 $c-success: #76ae4a !default;
 $c-alert: #ffc700 !default;
@@ -33,9 +45,14 @@ $primary-guide: #363636 !default;
 $secondary-guide: #6759bb !default;
 $ternary-guide: #6759bb !default;
 $list-disc-color: #1a1a1a !default;
+
+$c-feel: #000000 !default;
+$c-feel-light: #f0f0f0 !default;
+$c-feel-dark: #a9a9a9 !default;
 $c-tier-silver: #e3e3e3 !default;
-$c-tier-platinum: #9dbddc !default;
-$c-tier-gold: #e0b279 !default;
+$c-tier-platinum: #99b0c5 !default;
+$c-tier-gold: #dcbe99 !default;
+
 $text-sm: 12px;
 $text-md: 13px;
 $text-lg: 13px;
@@ -377,8 +394,3 @@ $padding-right: (
     40px,
   ),
 ) !default;
-
-//@include space($breakpoints, $padding-top, $pt);
-//@include space($breakpoints, $padding-left, $pl);
-//@include space($breakpoints, $padding-bottom, $pb);
-//@include space($breakpoints, $padding-right, $pr);

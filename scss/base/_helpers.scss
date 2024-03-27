@@ -455,6 +455,10 @@ strong {
 .border-b {
   border-bottom: var(--line-width) solid $c-primary;
 }
+
+.border-b-grey {
+  border-bottom: var(--line-width) solid $c-light-grey;
+}
 .border-l {
   border-left: var(--line-width) solid $c-primary;
 }
@@ -919,4 +923,40 @@ strong {
 
 .is-through {
   text-decoration: line-through;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.bg-primary-3 {
+  background-color: $c-primary-3;
+}
+.bg-primary-15 {
+  background-color: $c-primary-15;
+}
+.bg-primary-30 {
+  background-color: $c-primary-30;
+}
+.bg-primary-60 {
+  background-color: $c-primary-60;
+}
+.bg-primary-97 {
+  background-color: $c-primary-97;
+}
+
+.bg-secondary-3 {
+  background-color: $c-secondary-3;
+}
+.bg-secondary-15 {
+  background-color: $c-secondary-15;
+}
+.bg-secondary-30 {
+  background-color: $c-secondary-30;
+}
+.bg-secondary-60 {
+  background-color: $c-secondary-60;
+}
+.bg-secondary-97 {
+  background-color: $c-secondary-97;
 }
