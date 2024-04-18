@@ -16,7 +16,8 @@ $w-plus: 10px;
   }
 }
 // soporte para estilos de color iconos con el componente svg-icon
-svg-icon {
+svg-icon,
+svg-icon2 {
   div {
     display: flex;
     align-items: center;
@@ -51,7 +52,8 @@ svg-icon {
   }
 }
 .icon-white {
-  svg-icon {
+  svg-icon,
+  svg-icon2 {
     path {
       fill: $c-white;
     }
@@ -167,7 +169,9 @@ svg-icon {
   }
 }
 svg-icon.ico-post,
-svg-icon.ico-pre {
+svg-icon.ico-pre,
+svg-icon2.ico-post,
+svg-icon2.ico-pre {
   margin: 0 16px;
   top: 50%;
   transform: translateY(-50%);

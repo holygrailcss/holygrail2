@@ -506,7 +506,8 @@ button {
     background-color: $c-middle-grey !important;
     filter: none;
     opacity: 1;
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       background-color: $c-middle-grey !important;
       border: 1px solid $c-middle-grey !important;
     }
@@ -546,7 +547,8 @@ button {
     background-color: $c-middle-grey !important;
     filter: none;
     opacity: 1;
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       background-color: $c-middle-grey !important;
       border: 1px solid $c-middle-grey !important;
     }
@@ -602,7 +604,8 @@ button {
     background-color: transparent !important;
     filter: none;
     opacity: 1;
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       background-color: transparent !important;
       border: 0 solid transparent !important;
     }
@@ -752,7 +755,8 @@ button {
   box-shadow:
     0 1px 1px rgb(0 0 0 / 16.8%),
     0 0 1px rgb(0 0 0 / 8.4%);
-  svg-icon {
+  svg-icon,
+  svg-icon2 {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -783,7 +787,8 @@ button {
   background-color: $c-white;
   color: $c-primary;
   border: 1px solid $c-white;
-  svg-icon {
+  svg-icon,
+  svg-icon2 {
     top: 1px;
   }
   &:focus,
@@ -801,7 +806,8 @@ button {
   background-color: $c-facebook;
   color: $c-white;
   border: 1px solid $c-facebook;
-  svg-icon {
+  svg-icon,
+  svg-icon2 {
     background-color: transparent;
     path {
       fill: $c-white;
@@ -840,7 +846,8 @@ button {
     background-color: $c-dark-grey;
     border: 1px solid $c-dark-grey;
   }
-  svg-icon path {
+  svg-icon path,
+  svg-icon2 path {
     fill: $c-white;
   }
 }
@@ -878,7 +885,8 @@ button {
     background-color: $c-naver;
     border: 1px solid $c-naver;
   }
-  svg-icon path {
+  svg-icon path,
+  svg-icon2 path {
     fill: $c-white;
   }
 }
@@ -899,7 +907,8 @@ button {
     background-color: $c-naver;
     border: 1px solid $c-wechat;
   }
-  svg-icon path {
+  svg-icon path,
+  svg-icon2 path {
     fill: $c-white;
   }
 }
@@ -1127,7 +1136,8 @@ button {
     margin-top: -1px;
   }
 }
-.btn-svg svg-icon {
+.btn-svg svg-icon,
+.btn-svg svg-icon2 {
   display: flex;
   align-content: center;
   justify-content: center;

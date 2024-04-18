@@ -98,7 +98,8 @@
   }
   .btn {
     &.btn-separate {
-      svg-icon {
+      svg-icon,
+      svg-icon2 {
         transform: scaleX(-1);
       }
     }
@@ -130,7 +131,8 @@
   .btn-social {
     padding-right: 48px;
     padding-left: 0;
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       right: 1px;
       left: auto;
       margin-right: 0;
@@ -292,12 +294,14 @@
       }
     }
     &.has-ico-post {
-      svg-icon {
+      svg-icon,
+      svg-icon2 {
         position: absolute;
         right: 0;
       }
       .validation-error-messages {
-        svg-icon {
+        svg-icon,
+        svg-icon2 {
           position: relative;
         }
       }
@@ -322,7 +326,8 @@
         left: 0;
       }
       .validation-error-messages {
-        svg-icon {
+        svg-icon,
+        svg-icon2 {
           position: relative;
         }
       }
@@ -334,7 +339,8 @@
         left: auto;
       }
       .validation-error-messages {
-        svg-icon {
+        svg-icon,
+        svg-icon2 {
           position: relative;
         }
       }
@@ -367,7 +373,8 @@
     &::after {
       left: 0;
     }
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       left: auto;
       right: 0;
     }
@@ -379,7 +386,8 @@
     &::after {
       right: 0;
     }
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       right: auto;
       left: 0;
     }
@@ -412,14 +420,16 @@
   .header-account-back {
     left: auto;
     right: 0;
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       svg {
         transform: rotate(180deg);
       }
     }
   }
   .validation-error-messages {
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       padding-right: 0;
       padding-left: 8px;
     }

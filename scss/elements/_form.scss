@@ -34,7 +34,7 @@ fieldset[disabled] .form-control {
   color: $c-primary;
   max-width: 100%;
   width: 100%;
-
+  background-color: transparent;
   &.validation-error {
     border-color: $c-error;
   }
@@ -573,12 +573,15 @@ input::input-placeholder {
   .form-input-label-2 input {
     background-color: transparent;
   }
+
   input,
   label {
     color: $c-white;
   }
   .form-input-label,
-  .form-input-prefix {
+  .form-input-label-2,
+  .form-input-prefix,
+  .form-prefix {
     & > label {
       color: $c-white;
     }

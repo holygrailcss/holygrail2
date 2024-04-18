@@ -263,6 +263,7 @@ button {
   animation: scale-down-top 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+/* functional */
 .var-a-break-xs::after {
   display: inline-block;
   content: "break-xs";
@@ -599,7 +600,7 @@ button {
 }
 
 .var-b-c-accent::before {
-  content: "#b40016";
+  content: "#ed0f2b";
   display: inline-block;
 }
 
@@ -609,7 +610,7 @@ button {
 }
 
 .var-b-c-error::before {
-  content: "#b40016";
+  content: "#ed0f2b";
   display: inline-block;
 }
 
@@ -619,7 +620,7 @@ button {
 }
 
 .var-b-c-sale::before {
-  content: "#b40016";
+  content: "#ffce4e";
   display: inline-block;
 }
 
@@ -639,7 +640,7 @@ button {
 }
 
 .var-b-c-valid::before {
-  content: "#76ae4a";
+  content: "#12882c";
   display: inline-block;
 }
 
@@ -649,7 +650,7 @@ button {
 }
 
 .var-b-c-warning::before {
-  content: "#ffc700";
+  content: "#ffce4e";
   display: inline-block;
 }
 
@@ -699,7 +700,7 @@ button {
 }
 
 .var-b-c-success::before {
-  content: "#76ae4a";
+  content: "#12882c";
   display: inline-block;
 }
 
@@ -709,7 +710,7 @@ button {
 }
 
 .var-b-c-alert::before {
-  content: "#ffc700";
+  content: "#ffce4e";
   display: inline-block;
 }
 
@@ -782,15 +783,15 @@ button {
 }
 
 .bg-c-accent {
-  background-color: #b40016;
+  background-color: #ed0f2b;
 }
 
 .bg-c-error {
-  background-color: #b40016;
+  background-color: #ed0f2b;
 }
 
 .bg-c-sale {
-  background-color: #b40016;
+  background-color: #ffce4e;
 }
 
 .bg-c-info {
@@ -798,11 +799,11 @@ button {
 }
 
 .bg-c-valid {
-  background-color: #76ae4a;
+  background-color: #12882c;
 }
 
 .bg-c-warning {
-  background-color: #ffc700;
+  background-color: #ffce4e;
 }
 
 .bg-c-feel {
@@ -822,11 +823,11 @@ button {
 }
 
 .bg-c-success {
-  background-color: #76ae4a;
+  background-color: #12882c;
 }
 
 .bg-c-alert {
-  background-color: #ffc700;
+  background-color: #ffce4e;
 }
 
 .bg-c-facebook {

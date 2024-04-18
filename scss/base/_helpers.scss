@@ -103,6 +103,9 @@
 .bg-black {
   background-color: $c-black;
 }
+.bg-sale {
+  background-color: $c-sale;
+}
 .bg-error {
   background-color: $c-error;
 }
@@ -206,6 +209,14 @@ b {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.max-ellipsis {
+  max-width: 250px;
+
+  @media (min-width: $break-sm) {
+    max-width: 500px;
+  }
+}
 .video-cover {
   position: absolute;
   top: 50%;
@@ -263,7 +274,8 @@ hr {
   &.ico-l {
     display: flex;
     align-items: center;
-    svg-icon {
+    svg-icon,
+    svg-icon2 {
       margin-right: 16px;
     }
   }
@@ -352,41 +364,7 @@ hr {
     display: none !important;
   }
 }
-.smmax\:mb-16 {
-  @media (max-width: #{$break-sm - 1}) {
-    margin-bottom: 16px;
-  }
-}
-.mdmax\:mb-16 {
-  @media (max-width: #{$break-md - 1}) {
-    margin-bottom: 16px;
-  }
-}
-.mdmax\:mb-20 {
-  @media (max-width: #{$break-md - 1}) {
-    margin-bottom: 24px;
-  }
-}
-.mdmax\:mb-24 {
-  @media (max-width: #{$break-md - 1}) {
-    margin-bottom: 24px;
-  }
-}
-.mdmax\:mb-32 {
-  @media (max-width: #{$break-md - 1}) {
-    margin-bottom: 32px;
-  }
-}
-.mdmax\:mb-40 {
-  @media (max-width: #{$break-md - 1}) {
-    margin-bottom: 40px;
-  }
-}
-.mdmax\:mb-42 {
-  @media (max-width: #{$break-md - 1}) {
-    margin-bottom: 42px;
-  }
-}
+
 .sm\:order-last {
   @media (min-width: $break-sm) {
     order: 3;
@@ -959,4 +937,9 @@ strong {
 }
 .bg-secondary-97 {
   background-color: $c-secondary-97;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
 }

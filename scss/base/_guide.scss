@@ -234,16 +234,7 @@
   .guide-icon-top {
     display: inline-block;
   }
-  .resize-container {
-    position: relative;
-    min-height: 400px;
-    display: flex;
-    padding: 50px 0;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
+
   .mini-box {
     background: #eaeaea;
     width: 100px;
