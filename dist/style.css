@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.51
+  Versión: 1.1.53
 */
 @charset "UTF-8";
 *,
@@ -6197,7 +6197,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 16px 8px;
+  padding: 8px 32px;
   background-color: transparent;
   height: 40px;
   font-family: arial, sans-serif;
@@ -6244,7 +6244,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 32px;
+  padding: 8px 32px;
 }
 .btn.btn-separate.btn--mini, .btn.btn-separate.btn--small {
   width: max-content;
@@ -6466,8 +6466,8 @@ button {
   fill: #fff;
 }
 .has-light .btn-primary[disabled], .has-light .btn-primary:disabled, .has-light .btn-primary.disabled {
-  background-color: #a9a9a9;
-  border: 1px solid #a9a9a9;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
   color: #666666;
   opacity: 1;
 }
@@ -6494,8 +6494,8 @@ button {
   opacity: 1;
 }
 .btn-secondary[disabled], .btn-secondary:disabled, .btn-secondary.disabled {
-  background-color: #fff;
-  border: 1px solid #a9a9a9;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
   color: #666666;
   opacity: 1;
 }
@@ -6541,8 +6541,8 @@ button {
   fill: #fff;
 }
 .has-light .btn-secondary[disabled], .has-light .btn-secondary:disabled, .has-light .btn-secondary.disabled {
-  background-color: transparent;
-  border: 1px solid #666666;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
   color: #666666;
   opacity: 1;
 }
@@ -6608,9 +6608,9 @@ button {
 .btn-primary-feel:disabled, .btn-primary-feel[disabled], .btn-primary-feel.disabled {
   pointer-events: none;
   cursor: default;
-  border: 1px solid #a9a9a9 !important;
-  color: #666666 !important;
-  background-color: #a9a9a9 !important;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: #666666;
   filter: none;
   opacity: 1;
 }
@@ -6643,9 +6643,9 @@ button {
 .btn-secondary-feel:disabled, .btn-secondary-feel[disabled], .btn-secondary-feel.disabled {
   pointer-events: none;
   cursor: default;
-  border: 1px solid #a9a9a9 !important;
-  color: #666666 !important;
-  background-color: #a9a9a9 !important;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: #666666;
   filter: none;
   opacity: 1;
 }
@@ -6689,9 +6689,9 @@ button {
 .btn-tertiary:disabled, .btn-tertiary[disabled], .btn-tertiary.disabled {
   pointer-events: none;
   cursor: default;
-  border: 0 solid transparent !important;
-  color: #666666 !important;
-  background-color: transparent !important;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: #666666;
   filter: none;
   opacity: 1;
 }
@@ -7077,12 +7077,13 @@ button {
   transform: translateY(40px);
 }
 .btn-anim:disabled, .btn-anim[disabled], .btn-anim.disabled {
-  background-color: #a9a9a9;
+  background-color: #f0f0f0;
+  color: #a9a9a9;
   border-color: transparent;
   opacity: 1;
 }
 .btn-anim:disabled svg path, .btn-anim[disabled] svg path, .btn-anim.disabled svg path {
-  fill: rgba(0, 0, 0, 0.6);
+  fill: #a9a9a9;
 }
 
 .is-loading.btn-anim .btn-submit {
@@ -7947,6 +7948,15 @@ fieldset[disabled] .form-control {
   border: var(--line-width) solid transparent;
   border-color: #000;
   border-width: 0 0 var(--line-width) 0;
+}
+.inputdisabled, .input.disabled,
+.textareadisabled,
+.textarea.disabled,
+.select selectdisabled,
+.select select.disabled {
+  pointer-events: none;
+  border-color: #a9a9a9;
+  color: #a9a9a9;
 }
 
 input::input-placeholder {

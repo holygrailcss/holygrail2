@@ -19,7 +19,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 16px 8px;
+  padding: 8px 32px;
   background-color: transparent;
   height: $height-btn;
   @include font-regular;
@@ -80,7 +80,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 32px;
+    padding: 8px 32px;
 
     &.btn--mini,
     &.btn--small {
@@ -322,8 +322,8 @@ button {
     &[disabled],
     &:disabled,
     &.disabled {
-      background-color: $c-middle-grey;
-      border: 1px solid $c-middle-grey;
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
@@ -359,8 +359,8 @@ button {
   &[disabled],
   &:disabled,
   &.disabled {
-    background-color: $c-white;
-    border: 1px solid $c-middle-grey;
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
     color: $c-dark-grey;
     opacity: 1;
     svg {
@@ -418,8 +418,8 @@ button {
     &[disabled],
     &:disabled,
     &.disabled {
-      background-color: transparent;
-      border: 1px solid $c-dark-grey;
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
       color: $c-dark-grey;
       opacity: 1;
     }
@@ -501,9 +501,9 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 1px solid $c-middle-grey !important;
-    color: $c-dark-grey !important;
-    background-color: $c-middle-grey !important;
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
     filter: none;
     opacity: 1;
     svg-icon,
@@ -542,9 +542,9 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 1px solid $c-middle-grey !important;
-    color: $c-dark-grey !important;
-    background-color: $c-middle-grey !important;
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
     filter: none;
     opacity: 1;
     svg-icon,
@@ -599,9 +599,9 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    border: 0 solid transparent !important;
-    color: $c-dark-grey !important;
-    background-color: transparent !important;
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
     filter: none;
     opacity: 1;
     svg-icon,
@@ -996,12 +996,13 @@ button {
   &:disabled,
   &[disabled],
   &.disabled {
-    background-color: $c-middle-grey;
+    background-color: $c-light-grey;
+    color: $c-middle-grey;
     border-color: transparent;
     opacity: 1;
     svg {
       path {
-        fill: rgba($c-primary, $alpha: 0.6);
+        fill: $c-middle-grey;
       }
     }
   }

@@ -45,6 +45,13 @@ fieldset[disabled] .form-control {
     border-color: $c-primary;
     border-width: 0 0 var(--line-width) 0;
   }
+
+  &disabled,
+  &.disabled {
+    pointer-events: none;
+    border-color: $c-middle-grey;
+    color: $c-middle-grey;
+  }
 }
 
 input::input-placeholder {
