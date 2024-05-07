@@ -1,4 +1,5 @@
 @import '../abstract/_all';
+
 .c-primary {
   color: $c-primary;
 }
@@ -415,6 +416,7 @@ strong {
 .bb-line {
   border-bottom: var(--line-width) solid $c-middle-grey;
 }
+
 .border-1 {
   border: var(--line-width) solid $c-primary;
 }
@@ -447,6 +449,15 @@ strong {
 .border-t2 {
   border-top: var(--line-width) solid $c-primary;
 }
+
+.border-15 {
+  border: var(--line-width) solid $c-primary-15;
+}
+
+.border-b-15 {
+  border-bottom: var(--line-width) solid $c-primary-15;
+}
+
 .border-r2 {
   border-right: var(--line-width) solid $c-primary;
 }
@@ -622,9 +633,7 @@ strong {
 .arrow-right {
   float: right;
 }
-.h-50 {
-  height: 50px;
-}
+
 .w-100 {
   width: 100%;
 }

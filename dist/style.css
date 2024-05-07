@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.43
+  Versión: 1.1.51
 */
 @charset "UTF-8";
 *,
@@ -1511,8 +1511,16 @@ button {
   height: auto;
 }
 
+.h-16 {
+  height: 16px;
+}
+
 .h-40 {
   height: 40px;
+}
+
+.h-50 {
+  height: 50px;
 }
 
 .h-100 {
@@ -5159,6 +5167,14 @@ strong {
   border-top: var(--line-width) solid #000;
 }
 
+.border-15 {
+  border: var(--line-width) solid rgba(0, 0, 0, 0.15);
+}
+
+.border-b-15 {
+  border-bottom: var(--line-width) solid rgba(0, 0, 0, 0.15);
+}
+
 .border-r2 {
   border-right: var(--line-width) solid #000;
 }
@@ -5395,10 +5411,6 @@ strong {
 
 .arrow-right {
   float: right;
-}
-
-.h-50 {
-  height: 50px;
 }
 
 .w-100 {
@@ -6086,7 +6098,8 @@ strong {
   padding: 16px;
   border: 1px solid #000;
 }
-.marketing-spot svg-icon {
+.marketing-spot svg-icon,
+.marketing-spot svg-icon2 {
   margin-right: 8px;
   z-index: -1;
 }
@@ -6406,8 +6419,8 @@ button {
   cursor: pointer;
 }
 .btn-primary[disabled], .btn-primary:disabled, .btn-primary.disabled {
-  background-color: #a9a9a9;
-  border: 1px solid #a9a9a9;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
   color: #666666;
   opacity: 1;
 }
@@ -7185,7 +7198,8 @@ button {
   margin-top: -1px;
 }
 
-.btn-svg svg-icon {
+.btn-svg svg-icon,
+.btn-svg svg-icon2 {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -11682,12 +11696,12 @@ div.card9-wrap .rat-content:hover .card9-add {
 .is-rtl .checkbox-item [type=checkbox]:not(:checked) + label,
 .is-rtl .checkbox-item [type=checkbox]:checked + label {
   padding-left: 0;
-  padding-right: 40px;
+  padding-right: 24px;
 }
 .is-rtl .checkbox-item [type=checkbox]:not(:checked) + label span.theta,
 .is-rtl .checkbox-item [type=checkbox]:checked + label span.theta {
   padding-left: 0;
-  padding-right: 40px;
+  padding-right: 24px;
 }
 .is-rtl .checkbox-item [type=checkbox]:not(:checked) + label .icon,
 .is-rtl .checkbox-item [type=checkbox]:checked + label .icon {
@@ -11754,6 +11768,9 @@ div.card9-wrap .rat-content:hover .card9-add {
 .is-rtl .form-input-label-2.datalist .validation-error-messages svg {
   left: auto;
 }
+.is-rtl .form-prefix input {
+  text-align: right;
+}
 .is-rtl .select.select-box select {
   padding: 1px 8px 0 20px;
 }
@@ -11817,12 +11834,12 @@ div.card9-wrap .rat-content:hover .card9-add {
   right: initial;
 }
 .is-rtl .has-ico-post.btn, .is-rtl .has-ico-post > input, .is-rtl .has-ico-post > label {
-  padding-right: 12px;
-  padding-left: 40px;
+  padding-right: 0;
+  padding-left: 24px;
 }
 .is-rtl .has-ico-pre.btn, .is-rtl .has-ico-pre > input, .is-rtl .has-ico-pre > label {
-  padding-left: 12px;
-  padding-right: 44px;
+  padding-left: 0;
+  padding-right: 28px;
 }
 .is-rtl .link-svg-pre,
 .is-rtl button.link-line.link-svg-pre {

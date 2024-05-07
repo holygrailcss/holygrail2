@@ -164,13 +164,13 @@
     [type='checkbox']:not(:checked) + label,
     [type='checkbox']:checked + label {
       padding-left: 0;
-      padding-right: 40px;
+      padding-right: 24px;
     }
     [type='checkbox']:not(:checked) + label span,
     [type='checkbox']:checked + label span {
       &.theta {
         padding-left: 0;
-        padding-right: 40px;
+        padding-right: 24px;
       }
     }
     [type='checkbox']:not(:checked) + label .icon,
@@ -260,6 +260,12 @@
       }
     }
   }
+  .form-prefix {
+    input {
+      text-align: right;
+    }
+  }
+
   .select {
     &.select-box {
       select {
@@ -354,16 +360,16 @@
     &.btn,
     & > input,
     & > label {
-      padding-right: $btn-padding;
-      padding-left: $btn-padding * 2 + $svg-size;
+      padding-right: 0;
+      padding-left: $btn-padding * 2;
     }
   }
   .has-ico-pre {
     &.btn,
     & > input,
     & > label {
-      padding-left: $btn-padding;
-      padding-right: $btn-padding * 2 + $svg-size + 4px;
+      padding-left: 0;
+      padding-right: $btn-padding * 2 + 4px;
     }
   }
   .link-svg-pre,
