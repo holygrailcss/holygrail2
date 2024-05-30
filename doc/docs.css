@@ -1390,6 +1390,11 @@ button {
   padding-right: 20px;
 }
 
+.is-rtl .mini-site-main {
+  padding-right: 200px;
+  padding-left: 20px;
+}
+
 .tag-color-wrap .wrap-item {
   position: relative;
   width: 100%;

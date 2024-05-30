@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.53
+  Versión: 1.1.60
 */
 @charset "UTF-8";
 *,
@@ -791,6 +791,11 @@ button {
   .container-12 {
     padding: 0 8px;
   }
+}
+
+.container-375 {
+  width: 100%;
+  max-width: 375px;
 }
 
 .container-body {
@@ -6176,6 +6181,20 @@ strong {
   color: #fff;
 }
 
+.banner-app {
+  position: fixed;
+  z-index: 10005;
+  left: auto;
+  right: auto;
+  bottom: 0;
+}
+@media (min-width: 768px) {
+  .banner-app {
+    bottom: 0;
+    left: 96px;
+  }
+}
+
 /* functional */
 input:is([type=button], [type=submit], [type=reset]),
 input[type=file]::file-selector-button,
@@ -8004,7 +8023,7 @@ input::input-placeholder {
   border-top: 0;
   content: " ";
   height: 8px;
-  margin-top: -6px;
+  margin-top: -8px;
   pointer-events: none;
   position: absolute;
   top: 50%;
@@ -10266,6 +10285,48 @@ ul.list-clear li.list-box:last-child {
 }
 
 /* functional */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.toast {
+  background-color: #000;
+  border-top: var(--line-width) solid #ffffff;
+  bottom: 0;
+  color: #fff;
+  left: 0px;
+  opacity: 0;
+  position: fixed;
+  right: 0px;
+  transform: translateY(100%);
+  width: 100%;
+  z-index: 2000;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 992px) {
+  .toast {
+    border: var(--line-width) solid #ffffff;
+    bottom: 32px;
+    left: 40px;
+    max-width: 400px;
+    right: 40px;
+  }
+}
+.toast.appear {
+  animation: appear 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-iteration-count: 1;
+}
+.is-rtl .toast {
+  direction: rtl;
+}
+
+/* functional */
 .row1-wrap {
   overflow: hidden;
 }
@@ -11300,23 +11361,23 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
 }
 .is-rtl .select select:not([multiple]) {
-  padding-right: 16px;
-  padding-left: 45px;
+  padding-right: 0;
+  padding-left: 20px;
 }
 .is-rtl .select-size select:not([multiple]) {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 0;
+  padding-left: 20px;
 }
 .is-rtl .select:not(.is-multiple, .is-loading)::after {
   right: inherit;
-  left: 20px;
+  left: 0;
 }
 .is-rtl .select.select-label select {
   padding-right: 100px;
 }
 .is-rtl .select.select-label label {
   left: inherit;
-  right: 16px;
+  right: 0;
 }
 .is-rtl .select:not(.is-multiple, .is-loading).select-box::after {
   left: 8px;
@@ -11661,30 +11722,39 @@ div.card9-wrap .rat-content:hover .card9-add {
 .is-rtl .btn.btn-world .btn-world-right {
   transform: rotateY(180deg);
 }
+.is-rtl .btn-group > :not(:first-child, :last-child) {
+  border-radius: 0;
+  margin-right: -1px;
+  margin-left: 0px;
+}
 .is-rtl .btn-group .btn:first-child() {
   border-radius: 0 0 0 0;
 }
 .is-rtl .btn-group .btn:last-child() {
   border-radius: 0 0 0 0;
 }
+.is-rtl .btn-group [class^=btn--]:last-child,
+.is-rtl .btn-group [class*=" btn--"]:last-child {
+  margin-right: -1px;
+  margin-left: 0px;
+  outline: none;
+}
 .is-rtl .btn-social-login svg {
   margin-right: 0;
   margin-left: 8px;
 }
 .is-rtl .btn-social {
-  padding-right: 48px;
-  padding-left: 0;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .is-rtl .btn-social svg-icon,
 .is-rtl .btn-social svg-icon2 {
   right: 1px;
   left: auto;
-  margin-right: 0;
-  margin-left: 16px;
 }
 .is-rtl .btn-social.btn-google {
-  padding-right: 60px;
-  padding-left: 0;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .is-rtl .btn-social.btn-naver {
   padding-right: 80px;

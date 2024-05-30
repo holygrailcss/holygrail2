@@ -66,3 +66,15 @@
   background-color: $bg-black;
   color: $c-white;
 }
+
+.banner-app {
+  position: fixed;
+  z-index: 10005;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  @media (min-width: 768px) {
+    bottom: 0;
+    left: 96px;
+  }
+}
