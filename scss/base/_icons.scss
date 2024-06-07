@@ -26,6 +26,13 @@ svg-icon2 {
   path {
     fill: $c-primary;
   }
+
+  &.i-arrow {
+    .is-rtl & {
+      transform: scaleX(-1);
+    }
+  }
+
   &.c-invert {
     fill: $c-white;
   }

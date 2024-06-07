@@ -19,7 +19,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 8px 32px;
+  padding: 10px 32px 8px 32px;
   background-color: transparent;
   height: $height-btn;
   @include font-regular;
@@ -750,11 +750,8 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: $c-white;
   position: relative;
-  box-shadow:
-    0 1px 1px rgb(0 0 0 / 16.8%),
-    0 0 1px rgb(0 0 0 / 8.4%);
+
   svg-icon,
   svg-icon2 {
     display: flex;
@@ -763,8 +760,9 @@ button {
     align-items: center;
     border-radius: $btn-radius;
     margin-top: -2px;
-    top: 0;
-    left: 1px;
+    top: 13px;
+    left: 16px;
+    position: absolute;
     div {
       display: flex;
     }
@@ -786,11 +784,8 @@ button {
 .has-light .btn-google {
   background-color: $c-white;
   color: $c-primary;
-  border: 1px solid $c-white;
-  svg-icon,
-  svg-icon2 {
-    top: 1px;
-  }
+  border: var(--line-width) solid $c-primary;
+
   &:focus,
   &.focus,
   &:hover,
@@ -798,7 +793,7 @@ button {
   &:visited,
   &:active,
   &.active {
-    border: 1px solid $c-light-grey;
+    border: var(--line-width) solid $c-light-grey;
     opacity: 1;
   }
 }
@@ -1209,6 +1204,7 @@ button {
 .btn-grid {
   display: grid;
   grid-gap: 0;
+  padding-inline: 1px;
   .btn {
     border: 1px solid $c-primary;
     margin-left: -1px;

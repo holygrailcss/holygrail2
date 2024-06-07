@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.60
+  Versión: 1.1.66
 */
 @charset "UTF-8";
 *,
@@ -1661,6 +1661,10 @@ svg-icon path,
 svg-icon2 path {
   fill: #000;
 }
+.is-rtl svg-icon.i-arrow,
+.is-rtl svg-icon2.i-arrow {
+  transform: scaleX(-1);
+}
 svg-icon.c-invert,
 svg-icon2.c-invert {
   fill: #fff;
@@ -2897,6 +2901,126 @@ mark {
   }
 }
 /* todo una vez incluida */
+.fluid-3-l {
+  font-family: arial, sans-serif;
+  font-weight: 100;
+}
+.fluid-3-l {
+  font-size: 20px;
+  line-height: 0.9;
+}
+@media (min-width: 320px) {
+  .fluid-3-l {
+    font-size: calc(
+                20px + 10 *
+                  ((100vw - 320px) / 1180)
+              );
+    line-height: 0.9;
+  }
+}
+@media (min-width: 1500px) {
+  .fluid-3-l {
+    font-size: 30px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-3-r {
+  font-family: arial, sans-serif;
+  font-weight: 500;
+}
+.fluid-3-r {
+  font-size: 20px;
+  line-height: 0.9;
+}
+@media (min-width: 320px) {
+  .fluid-3-r {
+    font-size: calc(
+                20px + 10 *
+                  ((100vw - 320px) / 1180)
+              );
+    line-height: 0.9;
+  }
+}
+@media (min-width: 1500px) {
+  .fluid-3-r {
+    font-size: 30px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-3-m {
+  font-family: arial, sans-serif;
+  font-weight: 500;
+}
+.fluid-3-m {
+  font-size: 20px;
+  line-height: 0.9;
+}
+@media (min-width: 320px) {
+  .fluid-3-m {
+    font-size: calc(
+                20px + 10 *
+                  ((100vw - 320px) / 1180)
+              );
+    line-height: 0.9;
+  }
+}
+@media (min-width: 1500px) {
+  .fluid-3-m {
+    font-size: 30px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-3-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-3-sb {
+  font-size: 20px;
+  line-height: 0.9;
+}
+@media (min-width: 320px) {
+  .fluid-3-sb {
+    font-size: calc(
+                20px + 10 *
+                  ((100vw - 320px) / 1180)
+              );
+    line-height: 0.9;
+  }
+}
+@media (min-width: 1500px) {
+  .fluid-3-sb {
+    font-size: 30px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-3-b {
+  font-family: arial, sans-serif;
+  font-weight: 900;
+}
+.fluid-3-b {
+  font-size: 20px;
+  line-height: 0.9;
+}
+@media (min-width: 320px) {
+  .fluid-3-b {
+    font-size: calc(
+                20px + 10 *
+                  ((100vw - 320px) / 1180)
+              );
+    line-height: 0.9;
+  }
+}
+@media (min-width: 1500px) {
+  .fluid-3-b {
+    font-size: 30px;
+    line-height: 0.9;
+  }
+}
+
 .fluid-2-l {
   font-family: arial, sans-serif;
   font-weight: 100;
@@ -6187,9 +6311,11 @@ strong {
   left: auto;
   right: auto;
   bottom: 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .banner-app {
+    max-width: 375px;
     bottom: 0;
     left: 96px;
   }
@@ -6216,7 +6342,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 8px 32px;
+  padding: 10px 32px 8px 32px;
   background-color: transparent;
   height: 40px;
   font-family: arial, sans-serif;
@@ -6835,9 +6961,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #fff;
   position: relative;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.168), 0 0 1px rgba(0, 0, 0, 0.084);
 }
 .btn-social svg-icon,
 .btn-social svg-icon2 {
@@ -6847,8 +6971,9 @@ button {
   align-items: center;
   border-radius: 0;
   margin-top: -2px;
-  top: 0;
-  left: 1px;
+  top: 13px;
+  left: 16px;
+  position: absolute;
 }
 .btn-social svg-icon div,
 .btn-social svg-icon2 div {
@@ -6867,13 +6992,7 @@ button {
 .has-light .btn-google {
   background-color: #fff;
   color: #000;
-  border: 1px solid #fff;
-}
-.btn-google svg-icon,
-.btn-google svg-icon2,
-.has-light .btn-google svg-icon,
-.has-light .btn-google svg-icon2 {
-  top: 1px;
+  border: var(--line-width) solid #000;
 }
 .btn-google:focus, .btn-google.focus, .btn-google:hover, .btn-google.hover, .btn-google:visited, .btn-google:active, .btn-google.active,
 .has-light .btn-google:focus,
@@ -6883,7 +7002,7 @@ button {
 .has-light .btn-google:visited,
 .has-light .btn-google:active,
 .has-light .btn-google.active {
-  border: 1px solid #f0f0f0;
+  border: var(--line-width) solid #f0f0f0;
   opacity: 1;
 }
 
@@ -7285,6 +7404,7 @@ button {
 .btn-grid {
   display: grid;
   grid-gap: 0;
+  padding-inline: 1px;
 }
 .btn-grid .btn {
   border: 1px solid #000;
@@ -11712,10 +11832,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   left: initial;
   right: 5px;
 }
-.is-rtl .btn.btn-separate svg-icon,
-.is-rtl .btn.btn-separate svg-icon2 {
-  transform: scaleX(-1);
-}
 .is-rtl .btn.btn-world .btn-world-center {
   text-align: right;
 }
@@ -11749,16 +11865,8 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 .is-rtl .btn-social svg-icon,
 .is-rtl .btn-social svg-icon2 {
-  right: 1px;
+  right: 16px;
   left: auto;
-}
-.is-rtl .btn-social.btn-google {
-  padding-right: 32px;
-  padding-left: 32px;
-}
-.is-rtl .btn-social.btn-naver {
-  padding-right: 80px;
-  padding-left: 0;
 }
 .is-rtl .checkbox-item [type=checkbox]:not(:checked),
 .is-rtl .checkbox-item [type=checkbox]:checked {
