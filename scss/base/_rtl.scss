@@ -265,6 +265,10 @@
           left: auto;
         }
       }
+
+      &::after {
+        left: 4px;
+      }
     }
   }
   .form-prefix {
@@ -280,7 +284,7 @@
       }
       &::after {
         left: 6px;
-        right: auto;
+        right: inherit;
       }
     }
     &.select-flat {

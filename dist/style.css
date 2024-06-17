@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.66
+  Versión: 1.1.67
 */
 @charset "UTF-8";
 *,
@@ -7078,7 +7078,7 @@ button {
 .has-light .btn-naver {
   background-color: #03cf5d;
   color: #fff;
-  padding-left: 40px;
+  padding-inline: 40px;
   border: 1px solid #03cf5d;
 }
 .btn-naver:focus, .btn-naver.focus, .btn-naver:hover, .btn-naver.hover, .btn-naver:visited, .btn-naver:active, .btn-naver.active,
@@ -7104,7 +7104,7 @@ button {
 .has-light .btn-wechat {
   background-color: #2dc100;
   color: #fff;
-  padding-left: 40px;
+  padding-inline: 40px;
   border: 1px solid #2dc100;
 }
 .btn-wechat:focus, .btn-wechat.focus, .btn-wechat:hover, .btn-wechat.hover, .btn-wechat:visited, .btn-wechat:active, .btn-wechat.active,
@@ -9951,6 +9951,23 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   transform: rotate(0deg);
   transition: 0.6s;
 }
+.form-input-label.datalist::after,
+.form-input-label-2.datalist::after {
+  border: 1px solid #000;
+  border-radius: 0;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  height: 8px;
+  margin-top: -8px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  width: 8px;
+}
 .form-input-label.datalist .validation-error-messages,
 .form-input-label-2.datalist .validation-error-messages {
   color: #ed0f2b;
@@ -11955,6 +11972,10 @@ div.card9-wrap .rat-content:hover .card9-add {
 .is-rtl .form-input-label.datalist .validation-error-messages svg,
 .is-rtl .form-input-label-2.datalist .validation-error-messages svg {
   left: auto;
+}
+.is-rtl .form-input-label.datalist::after,
+.is-rtl .form-input-label-2.datalist::after {
+  left: 4px;
 }
 .is-rtl .form-prefix input {
   text-align: right;

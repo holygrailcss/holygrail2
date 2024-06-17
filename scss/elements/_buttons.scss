@@ -867,7 +867,7 @@ button {
 .has-light .btn-naver {
   background-color: $c-naver;
   color: $c-white;
-  padding-left: 40px;
+  padding-inline: 40px;
   border: 1px solid $c-naver;
   &:focus,
   &.focus,
@@ -889,7 +889,7 @@ button {
 .has-light .btn-wechat {
   background-color: $c-wechat;
   color: $c-white;
-  padding-left: 40px;
+  padding-inline: 40px;
   border: 1px solid $c-wechat;
   &:focus,
   &.focus,
