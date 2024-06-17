@@ -345,6 +345,18 @@ $margin-bottom: (
     40px,
     40px,
   ),
+  mbr-16-32: (
+    16px,
+    16px,
+    32px,
+    32px,
+  ),
+  mbr-8-24: (
+    8px,
+    8px,
+    24px,
+    24px,
+  ),
 ) !default;
 $ml: 'margin-left';
 $margin-left: () !default;
@@ -375,14 +387,86 @@ $padding-top: (
     128px,
     128px,
   ),
+  ptr-160: (
+    64px,
+    64px,
+    160px,
+    160px,
+  ),
+  ptr-136: (
+    48px,
+    48px,
+    136px,
+    136px,
+  ),
+  ptr-20-120: (
+    20px,
+    20px,
+    120px,
+    120px,
+  ),
+  ptr-112: (
+    80px,
+    80px,
+    112px,
+    112px,
+  ),
+  ptr-80: (
+    48px,
+    48px,
+    80px,
+    80px,
+  ),
+  ptr-64: (
+    32px,
+    32px,
+    64px,
+    64px,
+  ),
+  ptr-24: (
+    16px,
+    16px,
+    24px,
+    24px,
+  ),
 ) !default;
 $pb: 'padding-bottom';
 $padding-bottom: (
+  pbr-136: (
+    64px,
+    64px,
+    136px,
+    136px,
+  ),
   pbr-128: (
     64px,
     64px,
     128px,
     128px,
+  ),
+  pbr-120: (
+    64px,
+    64px,
+    120px,
+    120px,
+  ),
+  pbr-112: (
+    80px,
+    80px,
+    112px,
+    112px,
+  ),
+  pbr-96: (
+    64px,
+    64px,
+    96px,
+    96px,
+  ),
+  pbr-24: (
+    16px,
+    16px,
+    24px,
+    24px,
   ),
 ) !default;
 $pl: 'padding-left';

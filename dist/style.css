@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.1.67
+  Versión: 1.1.68
 */
 @charset "UTF-8";
 *,
@@ -11985,7 +11985,7 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 .is-rtl .select.select-box::after {
   left: 6px;
-  right: auto;
+  right: inherit;
 }
 .is-rtl .select.select-flat label {
   left: auto;
