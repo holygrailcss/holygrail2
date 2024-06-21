@@ -1678,6 +1678,7 @@ button {
 }
 
 .mini-site-main {
+  max-width: 1440px;
   padding-left: 200px;
   padding-right: 20px;
 }
@@ -1799,6 +1800,18 @@ pre[class*=language-] {
   background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
 }
 .grid-8-docs:nth-child(odd) {
+  background-color: #fff; /* Cambia el color de fondo de las filas impares */
+}
+
+.grid-5-docs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Opcional: Estilos para filas impares */
+}
+.grid-5-docs:nth-child(even) {
+  background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+}
+.grid-5-docs:nth-child(odd) {
   background-color: #fff; /* Cambia el color de fondo de las filas impares */
 }
 
