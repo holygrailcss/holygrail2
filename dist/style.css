@@ -6622,15 +6622,8 @@ button {
   background-color: #fff;
   border: 1px solid #000;
 }
-.btn-secondary svg g {
-  fill: #000;
-  stroke: #000;
-}
 .btn-secondary svg circle {
   stroke: #000;
-}
-.btn-secondary svg path {
-  fill: #000;
 }
 .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:hover, .btn-secondary.hover, .btn-secondary:active, .btn-secondary.active {
   color: #000;
@@ -6956,7 +6949,6 @@ button {
 .btn-social {
   height: 40px;
   cursor: pointer;
-  border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;

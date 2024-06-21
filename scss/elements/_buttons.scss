@@ -335,14 +335,11 @@ button {
   border: 1px solid $c-primary;
   svg {
     g {
-      fill: $c-primary;
-      stroke: $c-primary;
     }
     circle {
       stroke: $c-primary;
     }
     path {
-      fill: $c-primary;
     }
   }
   &:focus,
@@ -745,7 +742,7 @@ button {
 .btn-social {
   height: 40px;
   cursor: pointer;
-  border: none;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
