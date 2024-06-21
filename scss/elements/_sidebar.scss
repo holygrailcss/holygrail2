@@ -8,7 +8,7 @@ $sidebar-width: 425px;
   background: $c-white;
   width: 100%;
   max-width: $sidebar-width;
-  top: 0px;
+  top: 0;
   right: 0;
   height: 100%;
   transition: transform 0.5s ease;
@@ -45,9 +45,9 @@ $sidebar-width: 425px;
 
 // Añadimos los estilos solo si la sidebar es custom para no romper las demás maquetas
 .sidebar-close.sidebar-custom-close {
-  padding: 24px 0px 56px 0px;
+  padding: 24px 0 56px 0;
   position: sticky;
-  top: 0px;
+  top: 0;
   display: flex;
   justify-content: flex-end;
 }

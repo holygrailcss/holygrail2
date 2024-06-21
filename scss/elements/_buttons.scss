@@ -148,7 +148,8 @@ button {
   }
 }
 .btn--mini {
-  padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1 $padding-global * 3;
+  padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1
+    $padding-global * 3;
   font-size: $btn-text-mini;
   min-width: 50px;
   padding-left: $padding-global;

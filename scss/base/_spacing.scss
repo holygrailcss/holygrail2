@@ -1,4 +1,10 @@
+@import '../abstract/_breakpoints';
 @import '../abstract/_all';
+
+$break-sm: 576px !default;
+$break-md: 768px !default;
+$break-lg: 992px !default;
+$break-xl: 1200px !default;
 
 .margin-auto {
   margin: 0 auto;

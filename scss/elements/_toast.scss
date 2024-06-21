@@ -13,20 +13,20 @@
 
 .toast {
   background-color: $c-primary;
-  border-top: var(--line-width) solid #ffffff;
+  border-top: var(--line-width) solid #fff;
   bottom: 0;
   color: $c-white;
-  left: 0px;
+  left: 0;
   opacity: 0;
   position: fixed;
-  right: 0px;
+  right: 0;
   transform: translateY(100%);
   width: 100%;
   z-index: 2000;
   transition: all 0.3s ease-in-out;
 
   @media (min-width: $break-md) {
-    border: var(--line-width) solid #ffffff;
+    border: var(--line-width) solid #fff;
     bottom: 32px;
     left: 40px;
     max-width: 400px;

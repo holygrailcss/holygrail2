@@ -1,8 +1,21 @@
 @use 'sass:math';
 @import 'breakpoints';
 
+// Define los puntos de ruptura si no están definidos
+$break-sm: 576px !default;
+$break-md: 768px !default;
+$break-lg: 992px !default;
+$break-xl: 1200px !default;
+$min-vw: 320px !default;
+$max-vw: 1500px !default;
+
 @mixin background-alpha($color: $color-white, $alpha: 1) {
-  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+  background-color: hsla(
+    hue($color),
+    saturation($color),
+    lightness($color),
+    $alpha
+  );
 }
 
 @mixin user-select($select) {
@@ -59,25 +72,25 @@
 }
 
 @mixin fonters($param) {
-  @if $param== 'light' {
+  @if $param == 'light' {
     @include font-light;
-  } @else if $param== 'regular' {
+  } @else if $param == 'regular' {
     @include font-regular;
-  } @else if $param== 'medium' {
+  } @else if $param == 'medium' {
     @include font-medium;
-  } @else if $param== 'bold' {
+  } @else if $param == 'bold' {
     @include font-bold;
-  } @else if $param== 'regular2' {
+  } @else if $param == 'regular2' {
     @include font-2-regular;
-  } @else if $param== 'medium2' {
+  } @else if $param == 'medium2' {
     @include font-2-medium;
-  } @else if $param== 'bold2' {
+  } @else if $param == 'bold2' {
     @include font-2-bold;
-  } @else if $param== 'regular3' {
+  } @else if $param == 'regular3' {
     @include font-3-regular;
-  } @else if $param== 'medium3' {
+  } @else if $param == 'medium3' {
     @include font-3-medium;
-  } @else if $param== 'bold3' {
+  } @else if $param == 'bold3' {
     @include font-3-bold;
   }
 }
@@ -90,31 +103,31 @@
       .text-#{$name}-r {
         @include fonters(regular);
 
-        #{$cssattr }: $fontsize;
+        #{$cssattr}: $fontsize;
         line-height: $fontheight;
       }
       .text-#{$name}-m {
         @include fonters(medium);
 
-        #{$cssattr }: $fontsize;
+        #{$cssattr}: $fontsize;
         line-height: $fontheight;
       }
       .text-#{$name}-b {
         @include fonters(bold);
 
-        #{$cssattr }: $fontsize;
+        #{$cssattr}: $fontsize;
         line-height: $fontheight;
       }
       .text-#{$name}-2r {
         @include fonters('regular2');
 
-        #{$cssattr }: $fontsize;
+        #{$cssattr}: $fontsize;
         line-height: $fontheight;
       }
       .text-#{$name}-2b {
         @include fonters('bold2');
 
-        #{$cssattr }: $fontsize;
+        #{$cssattr}: $fontsize;
         line-height: $fontheight;
       }
     }
@@ -122,7 +135,7 @@
 }
 
 @mixin random-bgr() {
-  background: rgb(random(255) random(255) random(255));
+  background: rgb(random(255), random(255), random(255));
 }
 
 @mixin fixed-bgr() {
@@ -148,7 +161,7 @@
       .fluid-#{$name}-l {
         @include font-light;
 
-        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
           & {
             font-size: $min-font-size;
             line-height: $u5;
@@ -172,7 +185,7 @@
       .fluid-#{$name}-r {
         @include font-regular;
 
-        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
           & {
             font-size: $min-font-size;
             line-height: $u5;
@@ -192,10 +205,11 @@
           }
         }
       }
+
       .fluid-#{$name}-m {
         @include font-medium;
 
-        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
           & {
             font-size: $min-font-size;
             line-height: $u5;
@@ -219,7 +233,7 @@
       .fluid-#{$name}-sb {
         @include font-semibold;
 
-        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
           & {
             font-size: $min-font-size;
             line-height: $u5;
@@ -243,7 +257,7 @@
       .fluid-#{$name}-b {
         @include font-bold;
 
-        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
           & {
             font-size: $min-font-size;
             line-height: $u5;
@@ -301,8 +315,8 @@
     overflow: hidden;
 
     .container-fluid {
-      margin-left: -#{math.div($margin, 2)}+ px;
-      margin-right: -#{math.div($margin, 2)}+ px;
+      margin-left: -#{math.div($margin, 2)} + px;
+      margin-right: -#{math.div($margin, 2)} + px;
       padding: 0 math.div($margin, 2) + px 0 math.div($margin, 2) + px;
     }
 
@@ -357,11 +371,11 @@
         $fontheight: nth($fsize, 5);
         $fontweight: nth($fsize, 6);
         .#{$name} {
-          @if nth(map-values($breakpoints), $i) ==1px {
+          @if nth(map-values($breakpoints), $i) == 1px {
             @include fonters($fontweight);
           }
 
-          #{$cssattr }: $fontsize;
+          #{$cssattr}: $fontsize;
           line-height: $fontheight;
         }
       }
@@ -375,7 +389,7 @@
       @each $name, $pad in $paddings {
         $padding: nth($pad, $i);
         .#{$name} {
-          #{$cssattr }: $padding;
+          #{$cssattr}: $padding;
         }
       }
     }
@@ -483,13 +497,13 @@
 }
 
 @mixin media($consulta) {
-  $media-max-xs: '(max-width : 480px)';
-  $media-max-sm: '(max-width : 767px)';
-  $media-max-md: '(max-width : 991px)';
-  $media-max-lg: '(max-width : 1279px)';
+  $media-max-xs: '(max-width: 480px)';
+  $media-max-sm: '(max-width: 767px)';
+  $media-max-md: '(max-width: 991px)';
+  $media-max-lg: '(max-width: 1279px)';
 
-  $media-xxs: '(min-width : 300px)';
-  $media-xs: '(min-width : 480px)';
+  $media-xxs: '(min-width: 300px)';
+  $media-xs: '(min-width: 480px)';
   $media-sm: '(min-width: 768px)';
   $media-md: '(min-width: 992px)';
   $media-md-2: '(min-width: 1025px)';
@@ -500,64 +514,64 @@
   $landscape: '(min-width: 992px) and (max-width: 1279px)';
   $landscape-2: '(min-width: 1280px) and (max-width: 1560px)';
 
-  @if $consulta==xxs {
-    @media #{$media-xxs} {
+  @if $consulta == xxs {
+    @media #{unquote($media-xxs)} {
       @content;
     }
-  } @else if $consulta==max-xs {
-    @media #{$media-max-xs} {
+  } @else if $consulta == max-xs {
+    @media #{unquote($media-max-xs)} {
       @content;
     }
-  } @else if $consulta==max-sm {
-    @media #{$media-max-sm} {
+  } @else if $consulta == max-sm {
+    @media #{unquote($media-max-sm)} {
       @content;
     }
-  } @else if $consulta==max-md {
-    @media #{$media-max-md} {
+  } @else if $consulta == max-md {
+    @media #{unquote($media-max-md)} {
       @content;
     }
-  } @else if $consulta==max-lg {
-    @media #{$media-max-lg} {
+  } @else if $consulta == max-lg {
+    @media #{unquote($media-max-lg)} {
       @content;
     }
-  } @else if $consulta==xs {
-    @media #{$media-xs} {
+  } @else if $consulta == xs {
+    @media #{unquote($media-xs)} {
       @content;
     }
-  } @else if $consulta==sm {
-    @media #{$media-sm} {
+  } @else if $consulta == sm {
+    @media #{unquote($media-sm)} {
       @content;
     }
-  } @else if $consulta==md {
-    @media #{$media-md} {
+  } @else if $consulta == md {
+    @media #{unquote($media-md)} {
       @content;
     }
-  } @else if $consulta==md-2 {
-    @media #{$media-md-2} {
+  } @else if $consulta == md-2 {
+    @media #{unquote($media-md-2)} {
       @content;
     }
-  } @else if $consulta==lg {
-    @media #{$media-lg} {
+  } @else if $consulta == lg {
+    @media #{unquote($media-lg)} {
       @content;
     }
-  } @else if $consulta==xl {
-    @media #{$media-xl} {
+  } @else if $consulta == xl {
+    @media #{unquote($media-xl)} {
       @content;
     }
-  } @else if $consulta==xxl {
-    @media #{$media-xxl} {
+  } @else if $consulta == xxl {
+    @media #{unquote($media-xxl)} {
       @content;
     }
-  } @else if $consulta==portrait {
-    @media #{$portrait} {
+  } @else if $consulta == portrait {
+    @media #{unquote($portrait)} {
       @content;
     }
-  } @else if $consulta==land {
-    @media #{$landscape} {
+  } @else if $consulta == land {
+    @media #{unquote($landscape)} {
       @content;
     }
-  } @else if $consulta==land-2 {
-    @media #{$landscape-2} {
+  } @else if $consulta == land-2 {
+    @media #{unquote($landscape-2)} {
       @content;
     }
   } @else if $consulta == retina {
@@ -642,11 +656,11 @@ $spriteHeight: 400;
         $fontheight: nth($fsize, 3);
         $fontweight: nth($fsize, 4);
         .#{$name} {
-          @if nth(map-values($minbreakpoints), $i) ==1px {
+          @if nth(map-values($minbreakpoints), $i) == 1px {
             @include fonters($fontweight);
           }
 
-          #{$cssattr }: $fontsize;
+          #{$cssattr}: $fontsize;
           line-height: $fontheight;
         }
       }

@@ -275,7 +275,7 @@ ul.list-breadcrumb li {
     padding-left: 20px;
     margin-left: 6px;
     color: $c-dark-grey;
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       width: 11px;
@@ -285,39 +285,39 @@ ul.list-breadcrumb li {
       top: 2px;
       left: -5px;
     }
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       width: 1px;
       height: 100%;
       border-left: 1px dashed black;
       top: 12px;
-      left: 0px;
+      left: 0;
     }
     &.state-1 {
       color: $c-primary;
-      &:before {
+      &::before {
         content: '';
         border-left: 1px solid black;
       }
-      &:after {
+      &::after {
         border: 1px solid black;
         background-color: black;
       }
     }
     &.state-2 {
       color: $c-primary;
-      &:before {
+      &::before {
         content: '';
         border-left: 1px dashed black;
       }
-      &:after {
+      &::after {
         border: 1px solid black;
         background-color: black;
       }
     }
     &:last-child {
-      &:before {
+      &::before {
         content: '';
         border: none;
       }
@@ -328,17 +328,17 @@ ul.list-breadcrumb li {
       position: relative;
       padding-right: 20px;
       margin-right: 4px;
-      &:after {
+      &::after {
         right: -5px;
       }
-      &:before {
+      &::before {
         border-left: none;
         border-right: 1px dashed black;
         top: 12px;
-        right: 0px;
+        right: 0;
       }
       &:last-child {
-        &:before {
+        &::before {
           content: '';
           border: none;
         }

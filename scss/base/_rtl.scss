@@ -86,21 +86,30 @@
       padding-right: #{$espaciado}px;
     }
   }
-  .check-center.check-bleed.checkbox-radio [type='radio']:checked + label::before,
-  .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked) + label::before {
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:checked
+    + label::before,
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:not(:checked)
+    + label::before {
     left: initial;
     right: 0;
   }
-  .check-center.check-bleed.checkbox-radio [type='radio']:checked + label .ico-radio,
-  .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:checked
+    + label
+    .ico-radio,
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:not(:checked)
+    + label
+    .ico-radio {
     left: initial;
     right: 5px;
   }
   .btn {
     &.btn-separate {
-      svg-icon,
-      svg-icon2 {
-      }
+      // svg-icon, svg-icon2 {
+      // }
     }
     &.btn-world {
       .btn-world-center {
@@ -115,14 +124,14 @@
     & > :not(:first-child, :last-child) {
       border-radius: 0;
       margin-right: -1px;
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     .btn {
-      &:first-child() {
+      &:first-child {
         border-radius: 0 $btn-radius $btn-radius 0;
       }
-      &:last-child() {
+      &:last-child {
         border-radius: $btn-radius 0 0 $btn-radius;
       }
     }
@@ -131,7 +140,7 @@
   .btn-group [class^='btn--']:last-child,
   .btn-group [class*=' btn--']:last-child {
     margin-right: -1px;
-    margin-left: 0px;
+    margin-left: 0;
     outline: none;
   }
   .btn-social-login {
@@ -149,10 +158,10 @@
       right: 16px;
       left: auto;
     }
-    &.btn-google {
-    }
-    &.btn-naver {
-    }
+    // &.btn-google {
+    // }
+    // &.btn-naver {
+    // }
   }
   .checkbox-item {
     [type='checkbox']:not(:checked),
@@ -471,12 +480,5 @@
   .box3-top {
     padding-right: 16px;
     padding-left: 0;
-  }
-
-  .checkbox-item [type='checkbox']:not(:checked) + label .icon,
-  .checkbox-item [type='checkbox']:checked + label .icon {
-    right: 2px;
-    left: auto;
-    top: 3px;
   }
 }

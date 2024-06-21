@@ -1,9 +1,9 @@
 @use 'sass:math';
-@import 'abstract/reset.scss';
+@import 'abstract/reset';
 
-@import 'base/_animations.scss';
+@import 'base/_animations';
 
-@import 'abstract/_all.scss';
+@import 'abstract/_all';
 
 $variable-colors: (
   c-white: #{$c-white},
@@ -28,7 +28,7 @@ $variable-colors: (
   c-facebook: #{$c-facebook},
   c-google: #{$c-google},
   c-naver: #{$c-naver},
-  c-wechat: #{$c-wechat},
+  c-wechat: #{$c-wechat}
 );
 $variable-list: (
   break-xs: #{$break-xs},
@@ -56,7 +56,7 @@ $variable-list: (
   font-primary-weight-bold: #{$font-weight-bold},
   font-secondary-weight-light: #{$font-weight-secondary-light},
   font-secondary-weight-medium: #{$font-weight-secondary-medium},
-  xl: 1500px,
+  xl: 1500px
 );
 
 $variabletotals: length($variable-list);

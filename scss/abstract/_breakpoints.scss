@@ -1,20 +1,20 @@
 $minbreakpoints: (
   xs: 1px,
-  md: 992px,
+  md: 992px
 ) !default;
 
 $breakpoints: (
   xs: 1px,
   sm: 768px,
   md: 992px,
-  lg: 1280px,
+  lg: 1280px
 ) !default;
 $breakpointscols: (
   xs: 1px,
   sm: 768px,
   md: 992px,
   lg: 1280px,
-  xl: 1440px,
+  xl: 1440px
 ) !default;
 
 $colBreakpoints: length($breakpoints) !default;
