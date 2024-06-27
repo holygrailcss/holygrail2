@@ -1722,10 +1722,6 @@ svg-icon2 div {
   align-items: center;
   justify-content: center;
 }
-svg-icon path,
-svg-icon2 path {
-  fill: #000;
-}
 .is-rtl svg-icon.i-arrow,
 .is-rtl svg-icon2.i-arrow {
   transform: scaleX(-1);

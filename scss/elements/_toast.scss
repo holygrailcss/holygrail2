@@ -11,8 +11,11 @@
   }
 }
 
+
 .toast {
-  background-color: $c-primary;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
   border-top: var(--line-width) solid #fff;
   bottom: 0;
   color: $c-white;
@@ -24,13 +27,19 @@
   width: 100%;
   z-index: 2000;
   transition: all 0.3s ease-in-out;
+  padding: 12px 20px;
+  gap: 20px;
 
-  @media (min-width: $break-md) {
+  @media (min-width: $break-sm) {
+
+    transform: translate(100% , -50%);
     border: var(--line-width) solid #fff;
     bottom: 32px;
-    left: 40px;
-    max-width: 400px;
-    right: 40px;
+    left: 50%;
+    max-width: 375px;
+ 
+    margin-left: calc( -375px / 2);
+
   }
 
   &.appear {
@@ -40,5 +49,7 @@
 
   .is-rtl & {
     direction: rtl;
+    right: 50%;
+    margin-right: calc( -375px / 2);
   }
 }

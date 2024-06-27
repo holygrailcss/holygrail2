@@ -952,6 +952,55 @@ button {
     }
   }
 }
+
+
+.btn-selector {
+  position: relative;
+  display: flex;
+
+  & > :not(:first-child, :last-child) {
+    border-radius: 0;
+    margin-left: -1px;
+  }
+  [class^='btn--'],
+  [class*=' btn--'] {
+    border-color: $c-middle-grey;
+    color: $c-dark-grey;
+    position: relative;
+    border-radius: 0;
+    float: left;
+    margin-right: 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-left: -1px;
+      outline: none;
+    }
+    &:hover {
+      color: $c-black;
+      border-color: $c-black;
+      z-index: 11;
+    }
+
+  }
+  .btn {
+    border-radius: 0;
+    &:first-child {
+      border-radius: $btn-radius 0 0 $btn-radius;
+    }
+    &:last-child {
+      border-radius: 0 $btn-radius $btn-radius 0;
+    }
+  }
+  .is-active{
+    background: transparent;
+    color: #000;
+    border-color: #000;
+    z-index: 10;
+  }
+}
+
 .btn-group > .btn {
   flex: 1;
 }

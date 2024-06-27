@@ -181,20 +181,35 @@ $heights: (
   height-mini: ( 100px, 300px ), 
   height-home: ( calc(100vh - 80px), calc(100vh - 80px) )
 ) !default;
+
 $mg: 'margin';
-$margin: () !default;
 $mx: 'margin';
-$margin-x: () !default;
 $my: 'margin';
-$margin-y: () !default;
 $mt: 'margin-top';
+$mr: 'margin-right';
+$mb: 'margin-bottom';
+
+$p: 'padding';
+$py: 'padding';
+$px: 'padding';
+$pt: 'padding-top';
+$pl: 'padding-left';
+$pb: 'padding-bottom';
+$ml: 'margin-left';
+
+$padding-y: () !default;
+$padding-x: () !default;
+$margin: () !default;
+$margin-x: () !default;
+$margin-y: () !default;
+$margin-left: () !default;
+$margin-right: () !default;
+
 /* prettier-ignore */
 $margin-top: (
   mtr-128: ( 64px, 128px, 128px, 128px )
 ) !default;
-$mr: 'margin-right';
-$margin-right: () !default;
-$mb: 'margin-bottom';
+
 /* prettier-ignore */
 $margin-bottom: (
   mbr-24: ( 16px, 24px, 24px, 24px ), 
@@ -205,23 +220,12 @@ $margin-bottom: (
   mbr-16-32: ( 16px, 16px, 32px, 32px ),
   mbr-8-24: ( 8px, 8px, 24px, 24px )
 ) !default;
-$ml: 'margin-left';
-$margin-left: () !default;
-$p: 'padding';
+
 /* prettier-ignore */
 $padding: (
-  p-body: (
-    20px,
-    20px,
-    40px,
-    40px
-  )
+  p-body: ( 20px, 20px, 40px, 40px )
 ) !default;
-$py: 'padding';
-$padding-y: () !default;
-$px: 'padding';
-$padding-x: () !default;
-$pt: 'padding-top';
+
 /* prettier-ignore */
 $padding-top: (
   ptr-120: ( 64px, 64px, 120px, 120px ),
@@ -234,7 +238,7 @@ $padding-top: (
   ptr-64: ( 32px, 32px, 64px, 64px ), 
   ptr-24: ( 16px, 16px, 24px, 24px )
 ) !default;
-$pb: 'padding-bottom';
+
 /* prettier-ignore */
 $padding-bottom: (
   pbr-136: ( 64px, 64px, 136px, 136px ), 
@@ -244,7 +248,7 @@ $padding-bottom: (
   pbr-96: ( 64px, 64px, 96px, 96px ),
   pbr-24: ( 16px, 16px, 24px, 24px )
 ) !default;
-$pl: 'padding-left';
+
 /* prettier-ignore */
 $padding-left: (
   pl-body: ( 20px, 20px, 40px, 40px )
