@@ -431,3 +431,20 @@
 .grid-2-wide {
   grid-column: span 2;
 }
+
+.grid-3-6-8 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6px;
+  max-width: 100%;
+
+  @media (min-width: $break-md) {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 16px;
+  }
+
+  @media (min-width: $break-lg) {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 16px;
+  }
+}

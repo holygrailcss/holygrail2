@@ -79,6 +79,89 @@
   }
 }
 
+
+.tabs2 {
+  ul {
+    display: flex;
+
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    &.content-start {
+      justify-content: flex-start;
+    }
+
+    &.content-center {
+      align-items: center;
+    }
+  }
+
+  li {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding-block: 8px;
+    list-style: none;
+
+    a,
+    span,
+    .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: top;
+
+      cursor: pointer;
+      padding-inline: 20px;
+      line-height: 1;
+    }
+
+
+    &.is-active  {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: #000;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+      }
+    }
+
+
+  }
+
+  &.tabs-resetfirst ul li:first-child a {
+    padding: 0 20px 0 0;
+  }
+
+  &.is-center ul {
+    justify-content: center;
+  }
+
+  &.is-around ul {
+    justify-content: space-around;
+
+    li {
+      flex: 1;
+    }
+  }
+
+  .list-equal {
+    display: flex;
+    align-items: flex-end;
+
+    li {
+      flex-grow: 1;
+    }
+  }
+}
+
+
 .tabs-inline {
   ul {
     display: flex;
@@ -98,6 +181,9 @@
   li {
     display: block;
     margin: 0;
+    &::after {
+      display: none;
+    }
 
     a,
     span,
@@ -124,13 +210,84 @@
         bottom: 0;
       }
     }
+  }
+
+  &.tabs-resetfirst ul li:first-child a {
+  }
+
+  &.is-center ul {
+    justify-content: center;
+  }
+
+  &.is-around ul {
+    justify-content: space-around;
+
+    li {
+      flex: 1;
+    }
+  }
+
+  .list-equal {
+    display: flex;
+    align-items: flex-end;
+
+    li {
+      flex-grow: 1;
+    }
+  }
+}
+
+.tabs-inline {
+  ul {
+    display: flex;
+
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    &.content-start {
+      justify-content: flex-start;
+    }
+
+    &.content-center {
+      align-items: center;
+    }
+  }
+
+  li {
+    display: block;
+    margin: 0;
+
+    a,
+    span,
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: top;
+
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    &.is-active a,
+    &.is-active span,
+    &.is-active button {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: $c-primary;
+        bottom: 0;
+      }
+    }
 
     &::after {
       display: none;
     }
-  }
-
-  &.tabs-resetfirst ul li:first-child a {
   }
 
   &.is-center ul {

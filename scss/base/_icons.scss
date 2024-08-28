@@ -46,6 +46,11 @@ svg-icon2 {
       fill: $c-error;
     }
   }
+  &.ico-error.ico-reset {
+    path {
+      fill: $c-primary;
+    }
+  }
   &.ico-success {
     path {
       fill: $c-valid;

@@ -81,7 +81,6 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 8px 32px;
-
     &.btn--mini,
     &.btn--small {
       width: max-content;
@@ -743,13 +742,11 @@ button {
 .btn-social {
   height: 40px;
   cursor: pointer;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
-
   svg-icon,
   svg-icon2 {
     display: flex;
@@ -783,7 +780,6 @@ button {
   background-color: $c-white;
   color: $c-primary;
   border: var(--line-width) solid $c-primary;
-
   &:focus,
   &.focus,
   &:hover,
@@ -952,24 +948,28 @@ button {
     }
   }
 }
-
-
 .btn-selector {
   position: relative;
   display: flex;
-
   & > :not(:first-child, :last-child) {
     border-radius: 0;
     margin-left: -1px;
   }
   [class^='btn--'],
   [class*=' btn--'] {
+    height: initial;
     border-color: $c-middle-grey;
-    color: $c-dark-grey;
+    color: $c-middle-grey;
     position: relative;
     border-radius: 0;
     float: left;
     margin-right: 0;
+    &.is-active {
+      background-color: transparent;
+      color: $c-black;
+      border-color: $c-black;
+      z-index: 10;
+    }
     &:first-child {
       margin-left: 0;
     }
@@ -982,7 +982,6 @@ button {
       border-color: $c-black;
       z-index: 11;
     }
-
   }
   .btn {
     border-radius: 0;
@@ -993,11 +992,43 @@ button {
       border-radius: 0 $btn-radius $btn-radius 0;
     }
   }
-  .is-active{
+  .is-active {
     background: transparent;
     color: #000;
     border-color: #000;
     z-index: 10;
+  }
+}
+.btn-selector-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  &.btn-selector .btn {
+    border-radius: 0;
+    white-space: normal;
+    min-height: 50px;
+    flex: none;
+    max-width: 70px;
+    padding-inline: 4px;
+    min-width: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+[lang^="zh"],//chino
+[lang^="zn"],//chino
+[lang^="ko"] //coreano ko-KR
+{
+  .btn-selector-wrap {
+    &.btn-selector .btn {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+    }
   }
 }
 
@@ -1256,5 +1287,29 @@ button {
     border: 1px solid $c-primary;
     margin-left: -1px;
     margin-top: -1px;
+  }
+}
+
+.btn--color {
+  width: 16px;
+  height: 16px;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &.is-active {
+    padding-bottom: 8px;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+    }
   }
 }
