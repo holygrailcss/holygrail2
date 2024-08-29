@@ -1313,3 +1313,93 @@ button {
     }
   }
 }
+
+.btn-square {
+  color: $c-white;
+  background-color: $c-secondary-30;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    color: $c-white;
+    background-color: $c-dark-grey;
+    border: 1px solid $c-dark-grey;
+    opacity: 1;
+    cursor: pointer;
+  }
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
+    opacity: 1;
+    svg {
+      g {
+        fill: $c-dark-grey;
+        stroke: $c-dark-grey;
+      }
+      circle {
+        stroke: $c-dark-grey;
+      }
+      path {
+        fill: $c-dark-grey;
+      }
+    }
+  }
+  .has-light & {
+    color: $c-primary;
+    background-color: $c-white;
+    border: 1px solid $c-white;
+    svg {
+      g {
+        fill: $c-primary;
+        stroke: $c-primary;
+      }
+      circle {
+        stroke: $c-primary;
+      }
+      path {
+        fill: $c-primary;
+      }
+    }
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      color: $c-white;
+      background-color: $c-dark-grey;
+      border: 1px solid $c-dark-grey;
+      opacity: 1;
+      svg {
+        g {
+          fill: $c-white;
+          stroke: $c-white;
+        }
+        circle {
+          stroke: $c-white;
+        }
+        path {
+          fill: $c-white;
+        }
+      }
+    }
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
+      color: $c-dark-grey;
+      opacity: 1;
+    }
+  }
+}
