@@ -55,7 +55,7 @@
   .search-bar {
     position: relative;
   }
-  .search-bar:after {
+  .search-bar::after {
     position: absolute;
     bottom: -4px;
     left: 50%;

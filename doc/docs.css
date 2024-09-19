@@ -234,32 +234,26 @@ button {
 }
 
 .slide-in {
-  -webkit-animation: slide-right 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-out {
-  -webkit-animation: slide-left 300ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: slide-left 300ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out both;
   animation: fade-in 300ms ease-in-out both;
 }
 
 .fade-out {
-  -webkit-animation: fade-out 150ms ease-in-out both;
   animation: fade-out 150ms ease-in-out both;
 }
 
 .expand-top {
-  -webkit-animation: scale-up-top 700ms ease-in-out both;
   animation: scale-up-top 700ms ease-in-out both;
 }
 
 .collapse-top {
-  -webkit-animation: scale-down-top 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-down-top 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -1679,8 +1673,13 @@ button {
 
 .mini-site-main {
   max-width: 1440px;
-  padding-left: 200px;
+  padding-left: 20px;
   padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .mini-site-main {
+    padding-left: 200px;
+  }
 }
 
 .is-rtl .mini-site-main {
@@ -1691,8 +1690,11 @@ button {
 .tag-color-wrap .wrap-item {
   position: relative;
   width: 100%;
+  min-width: 100px;
+  max-width: 100px;
   margin: 10px 10px 0 0;
   padding: 5px;
+  float: left;
   box-shadow: 0 9px 25px rgba(0, 0, 0, 0.15);
 }
 .tag-color-wrap .wrap-item::after {
@@ -1728,8 +1730,12 @@ button {
 .site-menu-mobile {
   background-color: #000;
   position: fixed;
-  height: 100vh;
-  width: 60px;
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+}
+.site-menu-mobile a {
+  float: left;
 }
 
 pre[class*=language-] {
@@ -1775,6 +1781,11 @@ pre[class*=language-] {
   font-weight: bold;
 }
 
+.grid-7-docs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 .grid-2-docs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1794,25 +1805,34 @@ pre[class*=language-] {
 .grid-8-docs {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  /* Opcional: Estilos para filas impares */
 }
 .grid-8-docs:nth-child(even) {
-  background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+  background-color: #f7f6f6;
 }
 .grid-8-docs:nth-child(odd) {
-  background-color: #fff; /* Cambia el color de fondo de las filas impares */
+  background-color: #fff;
 }
 
 .grid-5-docs {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* Opcional: Estilos para filas impares */
 }
 .grid-5-docs:nth-child(even) {
-  background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+  background-color: #f7f6f6;
 }
 .grid-5-docs:nth-child(odd) {
-  background-color: #fff; /* Cambia el color de fondo de las filas impares */
+  background-color: #fff;
+}
+
+.grid-6-docs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-6-docs:nth-child(even) {
+  background-color: #f7f6f6;
+}
+.grid-6-docs:nth-child(odd) {
+  background-color: #fff;
 }
 
 .grid-24-docs {

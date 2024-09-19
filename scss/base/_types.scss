@@ -78,15 +78,12 @@ mark {
 
 @include typesFixers($headersFixers, $fs);
 @include mintypes($minbreakpoints, $minheaders, $fs);
-@include types($breakpoints, $headers, $fs); /* todo una vez incluida */
+@include types($breakpoints, $headers, $fs);
 
 @include typesFluids($headersFluids);
 
-//
-
 .text-light,
 .font-light {
-  // 2
   @include font-light;
 }
 .text-regular,

@@ -1,10 +1,7 @@
 @use 'sass:math';
 @import 'abstract/reset';
-
 @import 'base/_animations';
-
 @import 'abstract/_all';
-
 $variable-colors: (
   c-white: #{$c-white},
   c-black: #{$c-black},
@@ -58,10 +55,8 @@ $variable-list: (
   font-secondary-weight-medium: #{$font-weight-secondary-medium},
   xl: 1500px
 );
-
 $variabletotals: length($variable-list);
 $variablecolors: length($variable-colors);
-
 @for $i from 1 through $variabletotals {
   .var-a-#{nth(map-keys($variable-list), $i)} {
     &::after {
@@ -76,7 +71,6 @@ $variablecolors: length($variable-colors);
     }
   }
 }
-
 @for $i from 1 through $variablecolors {
   .var-a-#{nth(map-keys($variable-colors), $i)} {
     &::before {
@@ -91,13 +85,11 @@ $variablecolors: length($variable-colors);
     }
   }
 }
-
 @for $i from 1 through $variablecolors {
   .bg-#{nth(map-keys($variable-colors), $i)} {
     background-color: #{nth(map-values($variable-colors), $i)};
   }
 }
-
 @mixin tablas($spacingArray, $spacingName, $totalItems) {
   @each $name, $value in $spacingArray {
     $i: index(($spacingArray), ($name $value));
@@ -203,7 +195,6 @@ $variablecolors: length($variable-colors);
 @mixin muestraArray($nombreArray, $nombreClase, $totalItems) {
   @each $name, $value in $nombreArray {
     $i: index($nombreArray, $name $value);
-
     .#{$nombreClase} {
       .filas:nth-child(#{$i}) {
         .item {
@@ -211,7 +202,6 @@ $variablecolors: length($variable-colors);
             content: '#{$name}';
           }
         }
-
         @for $j from 1 through $totalItems {
           .item-#{$j} {
             &::after {
@@ -223,7 +213,6 @@ $variablecolors: length($variable-colors);
     }
   }
 }
-
 @include tablas($margin, 'marginbox', 2);
 @include tablas($margin-y, 'marginbox-y', 2);
 @include tablas($margin-x, 'marginbox-x', 2);
@@ -238,11 +227,9 @@ $variablecolors: length($variable-colors);
 @include tablas($padding-left, 'paddingbox-left', 2);
 @include tablas($padding-bottom, 'paddingbox-bottom', 2);
 @include tablas($padding-right, 'paddingbox-right', 2);
-
 @include muestraArray($heights, 'heights', 2);
 @include muestraArray($headersFluids, 'fluids', 3);
 @include muestraArray($minheaders, 'minheaders', 4);
-
 .font-family-a {
   &::after {
     content: '' + $font-family-a-r;
@@ -263,10 +250,12 @@ $variablecolors: length($variable-colors);
 }
 .mini-site-main {
   max-width: 1440px;
-  padding-left: 200px;
+  padding-left: 20px;
   padding-right: 20px;
+  @media (min-width: $break-sm) {
+    padding-left: 200px;
+  }
 }
-
 .is-rtl {
   .mini-site-main {
     padding-right: 200px;
@@ -277,10 +266,12 @@ $variablecolors: length($variable-colors);
   .wrap-item {
     position: relative;
     width: 100%;
+    min-width: 100px;
+    max-width: 100px;
     margin: 10px 10px 0 0;
     padding: 5px;
-    box-shadow: 0 9px 25px rgb(0 0 0 / 15%);
-
+    float: left;
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.15);
     &::after {
       position: absolute;
       margin-top: -50px;
@@ -296,7 +287,6 @@ $variablecolors: length($variable-colors);
       font-size: 12px;
       margin-top: -40px;
       left: 0;
-
       color: white;
       bottom: 27px;
     }
@@ -304,7 +294,6 @@ $variablecolors: length($variable-colors);
       height: 100px;
       margin: 0;
       position: relative;
-
       &::after {
         font-size: 12px;
         position: absolute;
@@ -314,14 +303,16 @@ $variablecolors: length($variable-colors);
     }
   }
 }
-
 .site-menu-mobile {
   background-color: #000;
   position: fixed;
-  height: 100vh;
-  width: 60px;
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+  a {
+    float: left;
+  }
 }
-
 pre[class*='language-'] {
   margin: 20px 0;
 }
@@ -335,47 +326,45 @@ pre[class*='language-'] {
 .filas {
   line-height: 2;
 }
-
 .item {
   white-space: nowrap;
 }
 .bg-docs {
   background: #fafafa;
 }
-
 .grid-6-docs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0;
-
   div:nth-child(6n + 3),
   div:nth-child(6n + 4) {
     background-color: #eaeaea;
   }
-
   div {
     border-bottom: 1px solid #f6f6f6;
     padding: 6px;
   }
-
   div:nth-child(6n + 1),
   div:nth-child(6n + 3),
   div:nth-child(6n + 5) {
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+.grid-7-docs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .grid-2-docs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0;
-
   div {
     border-bottom: 1px solid #f6f6f6;
     padding: 6px;
   }
-
   div:nth-child(6n + 1),
   div:nth-child(6n + 3),
   div:nth-child(6n + 5) {
@@ -383,48 +372,48 @@ pre[class*='language-'] {
     font-weight: bold;
   }
 }
-
 .grid-8-docs {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-
   &:nth-child(even) {
-    background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+    background-color: #f7f6f6;
   }
-
-  /* Opcional: Estilos para filas impares */
   &:nth-child(odd) {
-    background-color: #fff; /* Cambia el color de fondo de las filas impares */
+    background-color: #fff;
   }
 }
-
 .grid-5-docs {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
   &:nth-child(even) {
-    background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+    background-color: #f7f6f6;
   }
-
-  /* Opcional: Estilos para filas impares */
   &:nth-child(odd) {
-    background-color: #fff; /* Cambia el color de fondo de las filas impares */
+    background-color: #fff;
   }
 }
 
+.grid-6-docs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  &:nth-child(even) {
+    background-color: #f7f6f6;
+  }
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
+}
 .grid-24-docs {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   gap: 16px;
   align-items: start;
 }
-
 .grid-9-docs {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   border-bottom: 1px dashed #d8d8d8;
   border-left: 1px dashed #d8d8d8;
-
   align-items: start;
   div {
     padding: 10px;
@@ -436,13 +425,11 @@ pre[class*='language-'] {
     align-items: center;
   }
 }
-
 .grid-88-docs {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   border-bottom: 1px dashed #d8d8d8;
   border-left: 1px dashed #d8d8d8;
-
   align-items: start;
   div {
     padding: 10px;
@@ -454,13 +441,11 @@ pre[class*='language-'] {
     align-items: center;
   }
 }
-
 .grid-4-docs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px dashed #d8d8d8;
   border-left: 1px dashed #d8d8d8;
-
   align-items: start;
   & > div {
     padding: 10px;
@@ -472,7 +457,6 @@ pre[class*='language-'] {
     align-items: center;
   }
 }
-
 .g-16 {
   gap: 16px;
 }

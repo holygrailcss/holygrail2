@@ -357,7 +357,7 @@
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .colgap-16 {
@@ -372,6 +372,9 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-gap-8 {
+  gap: 8px;
+}
 .grid-gap-16 {
   gap: 16px;
 }

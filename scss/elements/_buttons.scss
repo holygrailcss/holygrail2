@@ -334,8 +334,6 @@ button {
   background-color: $c-white;
   border: 1px solid $c-primary;
   svg {
-    g {
-    }
     circle {
       stroke: $c-primary;
     }
@@ -687,6 +685,7 @@ button {
   background-color: transparent;
   padding: 0;
   border-radius: $btn-radius;
+  height: auto;
   .has-light & {
     color: $c-white;
     background-color: transparent;
@@ -959,7 +958,7 @@ button {
   [class*=' btn--'] {
     height: initial;
     border-color: $c-middle-grey;
-    color: $c-middle-grey;
+    color: $c-primary;
     position: relative;
     border-radius: 0;
     float: left;
@@ -969,6 +968,13 @@ button {
       color: $c-black;
       border-color: $c-black;
       z-index: 10;
+    }
+
+    &.disabled,
+    &:disabled {
+      background-color: transparent;
+      color: $c-middle-grey;
+      border-color: $c-middle-grey;
     }
     &:first-child {
       margin-left: 0;
@@ -1019,8 +1025,10 @@ button {
     vertical-align: middle;
   }
 }
-[lang^="zh"],//chino
-[lang^="zn"],//chino
+[lang^="zh"],
+//chino
+[lang^="zn"],
+//chino
 [lang^="ko"] //coreano ko-KR
 {
   .btn-selector-wrap {
@@ -1031,7 +1039,6 @@ button {
     }
   }
 }
-
 .btn-group > .btn {
   flex: 1;
 }
@@ -1289,19 +1296,15 @@ button {
     margin-top: -1px;
   }
 }
-
 .btn--color {
   width: 16px;
   height: 16px;
   position: relative;
-
   &:hover {
     opacity: 0.6;
   }
-
   &.is-active {
     padding-bottom: 8px;
-
     &:after {
       position: absolute;
       left: 0;
@@ -1313,22 +1316,18 @@ button {
     }
   }
 }
-
 .btn-square {
-  color: $c-white;
   background-color: $c-secondary-30;
   border: none;
   width: 20px;
   height: 20px;
   padding: 2px;
-
   &:focus,
   &.focus,
   &:hover,
   &.hover,
   &:active,
   &.active {
-    color: $c-white;
     background-color: $c-dark-grey;
     border: 1px solid $c-dark-grey;
     opacity: 1;

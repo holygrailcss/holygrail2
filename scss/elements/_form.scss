@@ -194,12 +194,12 @@ input::input-placeholder {
       background: none;
       height: 32px;
       font-size: $text-input-m;
+      opacity: 0;
       @media (min-width: $break-sm) {
         padding: 14px 2px;
         height: 40px;
         font-size: $text-input-d;
       }
-      opacity: 0;
       &:hover {
         opacity: 0;
       }
@@ -656,7 +656,6 @@ input::input-placeholder {
     flex: 1 0 auto;
   }
 }
-// a eliminar activate-user---input-phone-combo----itxphoneaccountcreation
 .form-input-prefix {
   display: flex;
   .input-prefix {

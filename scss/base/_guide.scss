@@ -9,7 +9,6 @@
     min-height: 200px;
     margin: 20px auto;
   }
-
   .title-zone {
     color: $c-primary;
     margin-bottom: 20px;
@@ -36,8 +35,6 @@
     img {
       padding-top: 20px;
     }
-  }
-  .list-clear {
   }
   .guide-title {
     color: #878787;
@@ -75,13 +72,11 @@
     text-decoration: none;
     opacity: 0.6;
   }
-
   table {
     width: 100%;
     max-width: 100%;
     border-collapse: collapse;
     caption-side: bottom;
-
     text-align: left;
     th:nth-child(1) {
       width: 150px;
@@ -130,7 +125,6 @@
     width: 40px;
     height: 40px;
     padding: 4px;
-
     border: 1px solid black;
   }
   .item-i {
@@ -234,7 +228,6 @@
   .guide-icon-top {
     display: inline-block;
   }
-
   .mini-box {
     background: #eaeaea;
     width: 100px;

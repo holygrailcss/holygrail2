@@ -7,8 +7,6 @@
   bottom: 0;
   right: 0;
   color: $c-primary;
-  display: box;
-  display: flexbox;
   display: flex;
   opacity: 1;
   -webkit-box-align: end;
@@ -16,10 +14,9 @@
   align-items: flex-end;
   transition: opacity 0.3s ease;
   z-index: 6;
-}
-
-.arrow-cover svg {
-  animation: bounce 0.8s infinite alternate;
+  svg {
+    animation: bounce 0.8s infinite alternate;
+  }
 }
 
 .line-scrolldown {
