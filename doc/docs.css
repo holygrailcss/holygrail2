@@ -1893,6 +1893,11 @@ pre[class*=language-] {
   align-items: center;
 }
 
+.grid-5-docs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .g-16 {
   gap: 16px;
 }

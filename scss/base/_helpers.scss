@@ -528,6 +528,14 @@ strong {
 .text-faded {
   opacity: 0.5;
 }
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -996,4 +1004,8 @@ strong {
   color: white;
   mix-blend-mode: difference;
   background-blend-mode: difference;
+}
+
+.border-c-middle {
+  border-color: $c-middle-grey;
 }

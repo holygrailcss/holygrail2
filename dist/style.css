@@ -1,7 +1,7 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.2.17
+  Versión: 1.2.24
 */
 @charset "UTF-8";
 *,
@@ -5561,6 +5561,14 @@ strong {
   opacity: 0.5;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -6141,6 +6149,10 @@ strong {
   color: white;
   mix-blend-mode: difference;
   background-blend-mode: difference;
+}
+
+.border-c-middle {
+  border-color: #a9a9a9;
 }
 
 /* prettier-ignore */
@@ -8918,25 +8930,29 @@ input::input-placeholder {
 .error-zone input::placeholder {
   color: transparent;
 }
-.form-input-label-2 input:not(:placeholder-shown),
-.error-zone input:not(:placeholder-shown) {
+.form-input-label-2 input:not(:placeholder-shown), .form-input-label-2 textarea:not(:placeholder-shown),
+.error-zone input:not(:placeholder-shown),
+.error-zone textarea:not(:placeholder-shown) {
   padding-top: calc(14px + 14px * (2 / 3));
   padding-bottom: 14px;
 }
-.form-input-label-2 input:not(:placeholder-shown) ~ label,
-.error-zone input:not(:placeholder-shown) ~ label {
+.form-input-label-2 input:not(:placeholder-shown) ~ label, .form-input-label-2 textarea:not(:placeholder-shown) ~ label,
+.error-zone input:not(:placeholder-shown) ~ label,
+.error-zone textarea:not(:placeholder-shown) ~ label {
   padding-top: 1px;
   padding-bottom: calc(14px / 3);
   font-size: 9px;
   color: #666666;
 }
-.form-input-label-2 input:focus,
-.error-zone input:focus {
+.form-input-label-2 input:focus, .form-input-label-2 textarea:focus,
+.error-zone input:focus,
+.error-zone textarea:focus {
   padding-top: calc(14px + 14px * (2 / 3));
   padding-bottom: 14px;
 }
-.form-input-label-2 input:focus ~ label,
-.error-zone input:focus ~ label {
+.form-input-label-2 input:focus ~ label, .form-input-label-2 textarea:focus ~ label,
+.error-zone input:focus ~ label,
+.error-zone textarea:focus ~ label {
   padding-top: 1px;
   padding-bottom: calc(14px / 3);
   font-size: 9px;
@@ -11082,7 +11098,7 @@ ul.list-clear li.list-box:last-child {
   right: 0;
   transform: translateY(100%);
   width: 100%;
-  z-index: 2000;
+  z-index: 3000;
   transition: all 0.3s ease;
   padding: 12px 20px;
   gap: 20px;
