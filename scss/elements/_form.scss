@@ -370,13 +370,10 @@ input::input-placeholder {
     transition: all 0.1s ease-in-out;
     pointer-events: none;
   }
-  & input::input-placeholder {
-    color: transparent;
-  }
-  & input:input-placeholder {
-    color: transparent;
-  }
-  & input::placeholder {
+
+  & input::placeholder,
+  & input::input-placeholder,
+  & input:input-placeholder  {
     color: transparent;
   }
   & input:not(:placeholder-shown),
