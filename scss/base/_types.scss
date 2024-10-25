@@ -21,10 +21,10 @@ samp {
 .select,
 select {
   @include font-regular;
-  font-size: $text-input-m;
+  font-size: 14px;
   line-height: 1.3;
   @media (min-width: $break-sm) {
-    font-size: $text-input-d;
+    font-size: 14px;
   }
 }
 
