@@ -1319,9 +1319,16 @@ button {
 .btn-square {
   background-color: $c-secondary-30;
   border: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   padding: 2px;
+
+  @media (min-width: $break-sm) {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+  }
+
   &:focus,
   &.focus,
   &:hover,

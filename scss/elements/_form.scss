@@ -48,7 +48,7 @@ fieldset[disabled] .form-control {
   }
 }
 input::input-placeholder {
-  color: $c-middle-grey;
+  color: transparent;
   transform: translate3d(0, 0, 0);
 }
 .textarea {
@@ -371,11 +371,16 @@ input::input-placeholder {
     pointer-events: none;
   }
 
-  & input::placeholder,
-  & input::input-placeholder,
-  & input:input-placeholder  {
+  & input::input-placeholder {
     color: transparent;
   }
+  & input:input-placeholder {
+    color: transparent;
+  }
+  & input::placeholder {
+    color: transparent;
+  }
+
   & input:not(:placeholder-shown),
   & textarea:not(:placeholder-shown) {
     padding-top: calc(#{$input-padding-y} + #{$input-padding-y} * (2 / 3));
@@ -566,6 +571,7 @@ input::input-placeholder {
     overflow: hidden;
   }
 }
+
 .has-light {
   .form-input-label input,
   .form-input-label-2 input {

@@ -119,6 +119,10 @@
   background-color: $c-success;
   color: $c-white;
 }
+.bg-feel {
+  background-color: $c-feel;
+  color: $c-white;
+}
 .bg-warning {
   background-color: $c-warning;
 }
@@ -129,9 +133,7 @@
 .bg-alert {
   background-color: $c-alert;
 }
-.bg-feel {
-  background-color: $c-feel;
-}
+
 .bg-dark {
   background-color: $bg-black;
   color: $c-bg-dark;

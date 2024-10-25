@@ -1,7 +1,12 @@
 
 /*
   Paquete: holygrail2
-  Versión: 1.2.24
+  Versión: 1.2.27
+*/
+
+/*
+  Paquete: holygrail2
+  Versión: 1.2.27
 */
 @charset "UTF-8";
 *,
@@ -5054,6 +5059,11 @@ mark {
   color: #fff;
 }
 
+.bg-feel {
+  background-color: #000000;
+  color: #fff;
+}
+
 .bg-warning {
   background-color: #ffce4e;
 }
@@ -5064,10 +5074,6 @@ mark {
 
 .bg-alert {
   background-color: #ffce4e;
-}
-
-.bg-feel {
-  background-color: #000000;
 }
 
 .bg-dark {
@@ -6631,7 +6637,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 10px 32px 8px 32px;
+  padding: 10px 16px 8px 16px;
   background-color: transparent;
   height: 40px;
   font-family: arial, sans-serif;
@@ -7810,9 +7816,16 @@ button {
 .btn-square {
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   padding: 2px;
+}
+@media (min-width: 768px) {
+  .btn-square {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+  }
 }
 .btn-square:focus, .btn-square.focus, .btn-square:hover, .btn-square.hover, .btn-square:active, .btn-square.active {
   background-color: #666666;
@@ -8580,7 +8593,7 @@ fieldset[disabled] .form-control {
 }
 
 input::input-placeholder {
-  color: #a9a9a9;
+  color: transparent;
   transform: translate3d(0, 0, 0);
 }
 
