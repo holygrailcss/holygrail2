@@ -28,12 +28,13 @@
   }
 }
 .stories-list {
-  &:last-child {
-    border-bottom: var(--line-width) solid transparent;
-  }
   padding: 16px 0;
   border-bottom: var(--line-width) solid $c-primary;
   display: flex;
+  &:last-child {
+    border-bottom: var(--line-width) solid transparent;
+  }
+
   .stories-item-1 {
     width: 10%;
     min-width: 40px;
@@ -54,10 +55,11 @@
   }
   @media (min-width: $break-lg) {
     padding: 16px;
+    border-bottom: var(--line-width) solid $c-primary;
     &:last-child {
       border-bottom: var(--line-width) solid $c-primary;
     }
-    border-bottom: var(--line-width) solid $c-primary;
+
     .stories-item-1 {
       width: 10%;
     }

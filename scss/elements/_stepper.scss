@@ -1,0 +1,47 @@
+@use 'sass:math';
+@import '../abstract/_all';
+
+.stepper {
+  align-items: center;
+  border: 0.5px solid $c-primary;
+  display: flex;
+  height: 32px;
+
+  width: 94px;
+}
+
+.stepper-btn {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.stepper-btn:active {
+  background-color: #ddd;
+}
+
+.stepper-input {
+  border: none;
+  height: 30px;
+  outline: none;
+  text-align: center;
+  width: 28px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}

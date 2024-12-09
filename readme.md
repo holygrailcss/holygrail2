@@ -108,6 +108,12 @@ npm install -g npm-check-updates
 ncu -u
 ```
 
+
+Es importante inicializar el setup de los elementos
+
+
+
+
 ## 🤝 Contribuciones [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ¡Siéntete libre de abrir un issue o enviar un pull request!

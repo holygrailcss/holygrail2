@@ -249,3 +249,33 @@ svg-icon2.ico-pre {
     fill: white;
   }
 }
+
+.plus-icon {
+  position: relative;
+  width: 9px;
+  height: 9px;
+
+  &:after {
+    position: absolute;
+    left: 4px;
+    content: '';
+    background-color: $c-primary;
+    width: 1px;
+    height: 9px;
+  }
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    content: '';
+    background-color: $c-primary;
+    height: 1px;
+    width: 9px;
+  }
+}
+
+.minus-icon {
+  width: 9px;
+  height: 1px;
+  background-color: $c-primary;
+}

@@ -969,7 +969,6 @@ button {
       border-color: $c-black;
       z-index: 10;
     }
-
     &.disabled,
     &:disabled {
       background-color: transparent;
@@ -1297,8 +1296,8 @@ button {
   }
 }
 .btn--color {
-  width: 16px;
-  height: 16px;
+  width: 42px;
+  height: 42px;
   position: relative;
   &:hover {
     opacity: 0.6;
@@ -1317,28 +1316,35 @@ button {
   }
 }
 .btn-square {
-  background-color: $c-secondary-30;
   border: none;
-  width: 15px;
-  height: 15px;
-  padding: 2px;
-
-  @media (min-width: $break-sm) {
-    width: 18px;
-    height: 18px;
-    padding: 2px;
+  width: 37px;
+  height: 37px;
+  padding: 12px;
+  svg {
+    position: relative;
+    z-index: 15;
   }
-
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $c-secondary-30;
+    width: 19px;
+    height: 19px;
+  }
   &:focus,
   &.focus,
   &:hover,
   &.hover,
   &:active,
   &.active {
-    background-color: $c-dark-grey;
-    border: 1px solid $c-dark-grey;
+    &:after {
+      content: '';
+      background-color: $c-dark-grey;
+      border: 1px solid $c-dark-grey;
+      opacity: 1;
+      cursor: pointer;
+    }
     opacity: 1;
-    cursor: pointer;
   }
   &[disabled],
   &:disabled,
@@ -1348,6 +1354,8 @@ button {
     color: $c-dark-grey;
     opacity: 1;
     svg {
+      position: relative;
+      z-index: 15;
       g {
         fill: $c-dark-grey;
         stroke: $c-dark-grey;
@@ -1361,20 +1369,27 @@ button {
     }
   }
   .has-light & {
-    color: $c-primary;
-    background-color: $c-white;
-    border: 1px solid $c-white;
+    border: none;
+    width: 37px;
+    height: 37px;
+    padding: 12px;
+    &.btn {
+      background-color: transparent;
+    }
+
     svg {
-      g {
-        fill: $c-primary;
-        stroke: $c-primary;
-      }
-      circle {
-        stroke: $c-primary;
-      }
+      position: relative;
+      z-index: 15;
       path {
         fill: $c-primary;
       }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $c-secondary-30;
+      width: 19px;
+      height: 19px;
     }
     &:focus,
     &.focus,
@@ -1382,22 +1397,14 @@ button {
     &.hover,
     &:active,
     &.active {
-      color: $c-white;
-      background-color: $c-dark-grey;
-      border: 1px solid $c-dark-grey;
-      opacity: 1;
-      svg {
-        g {
-          fill: $c-white;
-          stroke: $c-white;
-        }
-        circle {
-          stroke: $c-white;
-        }
-        path {
-          fill: $c-white;
-        }
+      &:after {
+        content: '';
+        background-color: $c-dark-grey;
+        border: 1px solid $c-dark-grey;
+        opacity: 1;
+        cursor: pointer;
       }
+      opacity: 1;
     }
     &[disabled],
     &:disabled,
@@ -1406,6 +1413,20 @@ button {
       border: 1px solid $c-light-grey;
       color: $c-dark-grey;
       opacity: 1;
+      svg {
+        position: relative;
+        z-index: 15;
+        g {
+          fill: $c-dark-grey;
+          stroke: $c-dark-grey;
+        }
+        circle {
+          stroke: $c-dark-grey;
+        }
+        path {
+          fill: $c-dark-grey;
+        }
+      }
     }
   }
 }
