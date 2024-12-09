@@ -21,6 +21,7 @@ samp {
 .select,
 select {
   @include font-regular;
+
   font-size: 14px;
   line-height: 1.3;
   @media (min-width: $break-sm) {

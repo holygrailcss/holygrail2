@@ -17,7 +17,7 @@ $drawer-width-sm: 425px;
     transform: translateX(100%);
   }
 }
-// Animaciones para RTL
+
 @keyframes opendrawerRTL {
   from {
     transform: translateX(-100%);
@@ -51,7 +51,7 @@ $drawer-width-sm: 425px;
   }
 }
 .drawer-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 50%);
   height: 100%;
   left: 0;
   opacity: 0;
@@ -92,7 +92,7 @@ $drawer-width-sm: 425px;
   display: flex;
 }
 .drawer-sm {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 20%);
   max-width: 424px;
   right: 0;
   top: 0;
@@ -101,7 +101,7 @@ $drawer-width-sm: 425px;
   width: 100%;
 }
 .drawer-xl {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 20%);
   max-width: 720px;
   right: 0;
   top: 0;

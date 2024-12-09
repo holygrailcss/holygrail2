@@ -3,7 +3,6 @@
   Paquete: holygrail2
   Versión: 1.2.45
 */
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -1956,7 +1955,7 @@ svg-icon2.ico-pre {
   width: 9px;
   height: 9px;
 }
-.plus-icon:after {
+.plus-icon::after {
   position: absolute;
   left: 4px;
   content: "";
@@ -1964,7 +1963,7 @@ svg-icon2.ico-pre {
   width: 1px;
   height: 9px;
 }
-.plus-icon:before {
+.plus-icon::before {
   position: absolute;
   left: 0;
   top: 4px;
@@ -6052,7 +6051,6 @@ strong {
   margin-left: auto;
 }
 
-/*  Todos los idiomas que no tienen uppercase porque son Capital sensitive, lo dejamos en minúsculas */
 [lang^=de] body,
 [lang^=zh] body,
 [lang^=zo] body,
@@ -6065,7 +6063,7 @@ strong {
 [lang^=bg] body,
 [lang^=ar] body,
 [lang^=nl] body {
-  font-family: Helvetica, "Arial", sans-serif !important;
+  font-family: Helvetica, Arial, sans-serif !important;
 }
 [lang^=de] .ttu,
 [lang^=de] .btn-primary,
@@ -6141,7 +6139,7 @@ strong {
 [lang^=uk] body,
 [lang^=bg] body,
 [lang^=ar] body {
-  font-family: Helvetica, "Arial", sans-serif !important;
+  font-family: Helvetica, Arial, sans-serif !important;
 }
 
 .no-scroll-x {
@@ -6661,7 +6659,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 10px 16px 8px 16px;
+  padding: 10px 16px 8px;
   background-color: transparent;
   height: 40px;
   font-family: arial, sans-serif;
@@ -7827,7 +7825,7 @@ button {
 .btn--color.is-active {
   padding-bottom: 8px;
 }
-.btn--color.is-active:after {
+.btn--color.is-active::after {
   position: absolute;
   left: 0;
   bottom: -4px;
@@ -7847,7 +7845,7 @@ button {
   position: relative;
   z-index: 15;
 }
-.btn-square:after {
+.btn-square::after {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
@@ -7857,7 +7855,7 @@ button {
 .btn-square:focus, .btn-square.focus, .btn-square:hover, .btn-square.hover, .btn-square:active, .btn-square.active {
   opacity: 1;
 }
-.btn-square:focus:after, .btn-square.focus:after, .btn-square:hover:after, .btn-square.hover:after, .btn-square:active:after, .btn-square.active:after {
+.btn-square:focus::after, .btn-square.focus::after, .btn-square:hover::after, .btn-square.hover::after, .btn-square:active::after, .btn-square.active::after {
   content: "";
   background-color: #666666;
   border: 1px solid #666666;
@@ -7900,7 +7898,7 @@ button {
 .has-light .btn-square svg path {
   fill: #000;
 }
-.has-light .btn-square:after {
+.has-light .btn-square::after {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
@@ -7910,7 +7908,7 @@ button {
 .has-light .btn-square:focus, .has-light .btn-square.focus, .has-light .btn-square:hover, .has-light .btn-square.hover, .has-light .btn-square:active, .has-light .btn-square.active {
   opacity: 1;
 }
-.has-light .btn-square:focus:after, .has-light .btn-square.focus:after, .has-light .btn-square:hover:after, .has-light .btn-square.hover:after, .has-light .btn-square:active:after, .has-light .btn-square.active:after {
+.has-light .btn-square:focus::after, .has-light .btn-square.focus::after, .has-light .btn-square:hover::after, .has-light .btn-square.hover::after, .has-light .btn-square:active::after, .has-light .btn-square.active::after {
   content: "";
   background-color: #666666;
   border: 1px solid #666666;
@@ -9418,7 +9416,7 @@ input::input-placeholder {
   padding-bottom: 4.6666666667px;
 }
 .form-input-select select {
-  padding: 16px 0 8px 0;
+  padding: 16px 0 8px;
 }
 .form-input-select label {
   color: #666666;
@@ -10741,10 +10739,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 
 .checkbox-box {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
 }
 
 .checkbox-radio.checkbox-box label {
@@ -12288,10 +12283,7 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 .mn-mainmenu .mn-list-item {
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 16px 80px;
   justify-content: space-between;
   align-items: center;
 }
@@ -12317,10 +12309,7 @@ div.card9-wrap .rat-content:hover .card9-add {
 .mn-mainmenu .mn-wrap-overlay {
   position: fixed;
   background-color: #000;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: 1000;
 }
 .mn-mainmenu .mn-footer {
@@ -12513,9 +12502,9 @@ div.card9-wrap .rat-content:hover .card9-add {
   padding: 24px 16px;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--Spacing-margin-m-20, 20px);
+  gap: 20px;
   border-radius: 56px;
-  background: var(--Background-primary-bg-primary, #000);
+  background: #000;
 }
 
 /* prettier-ignore */

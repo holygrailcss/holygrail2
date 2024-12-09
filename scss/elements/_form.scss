@@ -279,6 +279,7 @@ input::input-placeholder {
 }
 .input-notouch {
   @include font-regular;
+
   pointer-events: none;
   border-color: $c-middle-grey;
   padding: 24px 0;
@@ -558,6 +559,7 @@ input::input-placeholder {
   .textarea,
   .textarea:focus {
     @include font-regular;
+
     padding: 12px 0 4px;
     height: auto;
     border: none;
@@ -565,6 +567,7 @@ input::input-placeholder {
   }
   .input::input-placeholder {
     @include font-regular;
+
     text-overflow: inherit;
     line-height: initial;
     white-space: pre;
@@ -683,7 +686,6 @@ input::input-placeholder {
     width: calc(100% - 60px);
   }
 }
-//a eliminar pickup component
 .form-input-mobile {
   position: absolute;
   z-index: 1;
@@ -739,7 +741,7 @@ input::input-placeholder {
   }
 
   select {
-    padding: 16px 0 8px 0;
+    padding: 16px 0 8px;
   }
 
   label {

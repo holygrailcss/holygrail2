@@ -135,7 +135,7 @@ $max-vw: 1500px !default;
 }
 
 @mixin random-bgr() {
-  background: rgb(random(255), random(255), random(255));
+  background: rgb(random(255) random(255) random(255));
 }
 
 @mixin fixed-bgr() {

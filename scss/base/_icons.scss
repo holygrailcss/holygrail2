@@ -15,15 +15,13 @@ $w-plus: 10px;
     vertical-align: middle;
   }
 }
-// soporte para estilos de color iconos con el componente svg-icon
+
 svg-icon,
 svg-icon2 {
   div {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  path {
   }
 
   &.i-arrow {
@@ -255,7 +253,7 @@ svg-icon2.ico-pre {
   width: 9px;
   height: 9px;
 
-  &:after {
+  &::after {
     position: absolute;
     left: 4px;
     content: '';
@@ -263,7 +261,7 @@ svg-icon2.ico-pre {
     width: 1px;
     height: 9px;
   }
-  &:before {
+  &::before {
     position: absolute;
     left: 0;
     top: 4px;

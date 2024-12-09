@@ -916,7 +916,7 @@ strong {
   margin-right: auto;
   margin-left: auto;
 }
-/*  Todos los idiomas que no tienen uppercase porque son Capital sensitive, lo dejamos en minúsculas */
+
 [lang^="de"],
 //aleman
 [lang^="zh"],
@@ -940,7 +940,7 @@ strong {
 //arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
 [lang^="nl"] {
   body {
-    font-family: Helvetica, 'Arial', sans-serif !important;
+    font-family: Helvetica, Arial, sans-serif !important;
   }
   .ttu,
   .btn-primary,
@@ -972,7 +972,7 @@ strong {
 [lang^="ar"] //arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
 {
   body {
-    font-family: Helvetica, 'Arial', sans-serif !important;
+    font-family: Helvetica, Arial, sans-serif !important;
   }
 }
 .no-scroll-x {

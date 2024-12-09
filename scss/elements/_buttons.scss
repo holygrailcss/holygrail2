@@ -19,7 +19,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 10px 16px 8px 16px;
+  padding: 10px 16px 8px;
   background-color: transparent;
   height: $height-btn;
   @include font-regular;
@@ -336,8 +336,6 @@ button {
   svg {
     circle {
       stroke: $c-primary;
-    }
-    path {
     }
   }
   &:focus,
@@ -1304,7 +1302,7 @@ button {
   }
   &.is-active {
     padding-bottom: 8px;
-    &:after {
+    &::after {
       position: absolute;
       left: 0;
       bottom: -4px;
@@ -1324,7 +1322,7 @@ button {
     position: relative;
     z-index: 15;
   }
-  &:after {
+  &::after {
     content: '';
     position: absolute;
     background-color: $c-secondary-30;
@@ -1337,7 +1335,7 @@ button {
   &.hover,
   &:active,
   &.active {
-    &:after {
+    &::after {
       content: '';
       background-color: $c-dark-grey;
       border: 1px solid $c-dark-grey;
@@ -1384,7 +1382,7 @@ button {
         fill: $c-primary;
       }
     }
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       background-color: $c-secondary-30;
@@ -1397,7 +1395,7 @@ button {
     &.hover,
     &:active,
     &.active {
-      &:after {
+      &::after {
         content: '';
         background-color: $c-dark-grey;
         border: 1px solid $c-dark-grey;
