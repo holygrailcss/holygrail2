@@ -1337,11 +1337,12 @@ button {
   &.active {
     &::after {
       content: '';
-      background-color: $c-dark-grey;
-      border: 1px solid $c-dark-grey;
+      background-color: $c-middle-grey;
+      border: 1px solid $c-middle-grey;
       opacity: 1;
       cursor: pointer;
     }
+
     opacity: 1;
   }
   &[disabled],
@@ -1397,11 +1398,12 @@ button {
     &.active {
       &::after {
         content: '';
-        background-color: $c-dark-grey;
-        border: 1px solid $c-dark-grey;
+        background-color: $c-middle-grey;
+        border: 1px solid $c-middle-grey;
         opacity: 1;
         cursor: pointer;
       }
+
       opacity: 1;
     }
     &[disabled],

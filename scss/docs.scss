@@ -335,7 +335,7 @@ pre[class*='language-'] {
 }
 .grid-6-docs {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   column-gap: 0;
   &:nth-child(even) {
     background-color: #f7f6f6;
