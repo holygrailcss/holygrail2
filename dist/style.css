@@ -3,11 +3,6 @@
   Paquete: holygrail2
   Versión: 1.2.48
 */
-
-/*
-  Paquete: holygrail2
-  Versión: 1.2.48
-*/
 *,
 *::before,
 *::after {
@@ -121,14 +116,12 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* Reset de arrows en inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -267,34 +260,6 @@ button {
   animation: scale-down-top 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .text-center {
   text-align: center;
 }
@@ -594,20 +559,6 @@ button {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .container {
   padding-right: 8px;
   padding-left: 8px;
@@ -1576,20 +1527,6 @@ button {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .h-auto {
   height: auto;
 }
@@ -1717,20 +1654,6 @@ button {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .ico-big {
   width: 48px;
   height: 48px;
@@ -1984,20 +1907,6 @@ svg-icon2.ico-pre {
   background-color: #000;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .rat-16-9 {
   position: relative;
   overflow: hidden;
@@ -2626,20 +2535,6 @@ svg-icon2.ico-pre {
   content: "";
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 body {
   font-family: arial, sans-serif;
   font-weight: 500;
@@ -3440,34 +3335,6 @@ mark {
   font-weight: 900;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .margin-auto {
   margin: 0 auto;
 }
@@ -4914,20 +4781,6 @@ mark {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .c-primary {
   color: #000;
 }
@@ -6196,20 +6049,6 @@ strong {
   flex-grow: 0;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .guide section {
   padding-bottom: 20px;
 }
@@ -6446,21 +6285,6 @@ strong {
   margin: 11px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/*  deprecated no se usan */
 .arrow-cover {
   height: auto;
   padding: 30px;
@@ -6522,20 +6346,6 @@ strong {
   background: #fff;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .marketing-spot {
   display: flex;
   align-items: center;
@@ -6638,20 +6448,6 @@ strong {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 input:is([type=button], [type=submit], [type=reset]),
 input[type=file]::file-selector-button,
 button {
@@ -7949,20 +7745,6 @@ button {
   fill: #666666;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .checkbox-item {
   text-align: center;
   position: relative;
@@ -8582,20 +8364,6 @@ button {
   color: #fff;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .form {
   width: 100%;
 }
@@ -9434,20 +9202,6 @@ input::input-placeholder {
   font-size: 10px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 a:hover {
   opacity: 0.6;
 }
@@ -9683,20 +9437,6 @@ a:hover {
   color: white;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 ul.list-disc {
   list-style: none;
   margin: 16px 0;
@@ -9986,20 +9726,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   border: none;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .progressbar {
   width: 100%;
   height: 8px;
@@ -10018,34 +9744,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   transition: all 0.2s ease;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .tabs ul {
   display: flex;
   margin: 0;
@@ -10336,20 +10034,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   border: 1px solid #a9a9a9;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .tag-warning {
   background-color: #ffce4e;
   color: #fff;
@@ -10407,20 +10091,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   position: absolute;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .tooltip-sm {
   bottom: 0;
   transform: translateY(100%) translateY(10px);
@@ -10616,20 +10286,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   left: 8px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .form-input-label .validation-error-messages,
 .form-input-label-2 .validation-error-messages {
   color: #ed0f2b;
@@ -10699,20 +10355,6 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   left: 4px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .ico-round {
   width: 56px;
   height: 56px;
@@ -10909,20 +10551,6 @@ ul.list-clear li.list-box:last-child {
   margin: 16px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .color-wrap {
   display: inline-block;
   padding: 0;
@@ -11026,20 +10654,6 @@ ul.list-clear li.list-box:last-child {
   border-bottom: 1px dotted #666666;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .modalx-transparent.modalx-backdrop {
   pointer-events: none;
   background: transparent;
@@ -11173,20 +10787,6 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .toast {
   display: flex;
   justify-content: space-between;
@@ -11231,20 +10831,6 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .bottom-sheet::after {
   position: absolute;
   content: "";
@@ -11286,20 +10872,6 @@ ul.list-clear li.list-box:last-child {
   padding-right: 16px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .stepper {
   align-items: center;
   border: 0.5px solid #000;
@@ -11343,20 +10915,6 @@ ul.list-clear li.list-box:last-child {
   align-items: center;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 @keyframes opendrawer {
   from {
     transform: translateX(100%);
@@ -11479,20 +11037,6 @@ body.open-drawer .drawer-overlay {
   pointer-events: auto;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .row1-wrap {
   overflow: hidden;
 }
@@ -11589,20 +11133,6 @@ body.open-drawer .drawer-overlay {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .card {
   width: 100%;
 }
@@ -11621,20 +11151,6 @@ body.open-drawer .drawer-overlay {
   display: inline-block;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .card9 {
   position: relative;
   height: 100%;
@@ -11934,20 +11450,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   width: 100%;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .box3 {
   position: relative;
   width: 100%;
@@ -12002,20 +11504,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   cursor: pointer;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .box4 {
   position: relative;
   display: flex;
@@ -12034,34 +11522,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   left: 20px;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 @media (max-width: 767px) {
   .header-account-logo {
     display: none;
@@ -12197,20 +11657,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .hg-bread {
   background-color: #fff;
   padding: 0;
@@ -12254,20 +11700,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   opacity: 0.4;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .mn-mainmenu {
   width: 100%;
   max-width: 100%;
@@ -12348,20 +11780,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   }
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .nativescroll {
   width: 100%;
   padding: 0;
@@ -12518,20 +11936,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   background: #000;
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .header-new {
   position: fixed;
   top: 0;
@@ -12602,20 +12006,6 @@ div.card9-wrap .rat-content:hover .card9-add {
   height: var(--line-width);
 }
 
-/* prettier-ignore */
-/* functional */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
-/* prettier-ignore */
 .is-rtl .fl-left {
   float: right;
 }
