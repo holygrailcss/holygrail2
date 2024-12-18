@@ -325,7 +325,6 @@ $max-vw: 1500px !default;
       margin-right: 0;
       box-sizing: border-box;
       display: flex;
-      -webkit-box-flex: 0;
       flex: 0 1 auto;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -610,12 +609,6 @@ $spriteWidth: 600;
 $spriteHeight: 400;
 
 @mixin placeholder() {
-  &::input-placeholder {
-    @content;
-  }
-  &:placeholder {
-    @content;
-  }
   &::placeholder {
     @content;
   }

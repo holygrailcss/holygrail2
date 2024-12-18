@@ -1,55 +1,7 @@
 @import '../abstract/_all';
 
 $drawer-width-sm: 425px;
-@keyframes opendrawer {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes closedrawer {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
 
-@keyframes opendrawerRTL {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes closedrawerRTL {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes fadeInOverlay {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.15;
-  }
-}
-@keyframes fadeOutOverlay {
-  from {
-    opacity: 0.15;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .drawer-overlay {
   background-color: rgba(0, 0, 0, 50%);
   height: 100%;

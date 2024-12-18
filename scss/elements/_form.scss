@@ -47,10 +47,11 @@ fieldset[disabled] .form-control {
     color: $c-middle-grey;
   }
 }
-input::input-placeholder {
+input::placeholder {
   color: transparent;
   transform: translate3d(0, 0, 0);
 }
+
 .textarea {
   min-height: 100px;
   padding: 8px 0;
@@ -374,12 +375,6 @@ input::input-placeholder {
     pointer-events: none;
   }
 
-  & input::input-placeholder {
-    color: transparent;
-  }
-  & input:input-placeholder {
-    color: transparent;
-  }
   & input::placeholder {
     color: transparent;
   }
@@ -429,9 +424,6 @@ input::input-placeholder {
   }
   &.input-line .input {
     border: none;
-  }
-  input:-ms-input-placeholder {
-    color: $c-dark-grey !important;
   }
   input {
     background-color: transparent;
@@ -565,7 +557,7 @@ input::input-placeholder {
     border: none;
     border-bottom: var(--line-width) solid $c-primary;
   }
-  .input::input-placeholder {
+  .input::placeholder {
     @include font-regular;
 
     text-overflow: inherit;
@@ -593,12 +585,7 @@ input::input-placeholder {
     & > label {
       color: $c-white;
     }
-    & input::input-placeholder {
-      color: transparent;
-    }
-    & input:input-placeholder {
-      color: transparent;
-    }
+
     & input::placeholder {
       color: transparent;
     }
@@ -631,7 +618,7 @@ input::input-placeholder {
     color: $c-white;
   }
   .input-prefix {
-    input::input-placeholder {
+    input::placeholder {
       color: $c-white;
       transform: translate3d(0, 0, 0);
       opacity: 0.7;

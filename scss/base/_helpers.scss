@@ -819,9 +819,6 @@ strong {
     border-radius: 10px;
     background: $c-middle-grey;
   }
-  &::-webkit-scrollbar-thumb:window-inactive {
-    background: $c-middle-grey;
-  }
 }
 .min-scrollcustom-x.has-dark {
   overflow: auto;
@@ -834,9 +831,6 @@ strong {
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: $c-primary;
-  }
-  &::-webkit-scrollbar-thumb:window-inactive {
     background: $c-primary;
   }
 }

@@ -2,6 +2,7 @@
 @import 'abstract/reset';
 @import 'base/_animations';
 @import 'abstract/_all';
+@import 'base/guide';
 $variable-colors: (
   c-white: #{$c-white},
   c-black: #{$c-black},
