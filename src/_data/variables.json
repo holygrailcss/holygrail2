@@ -1,0 +1,482 @@
+{
+  "espaciados": {
+    "var_name": "$espaciados",
+    "default": false,
+    "value": [
+      0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112, 120, 128,
+      160
+    ]
+  },
+
+  "cols-grids": {
+    "var_name": "$cols-grids",
+    "default": false,
+    "value": [2, 3, 4, 6, 8, 12]
+  },
+
+  "padding-global": {
+    "var_name": "$padding-global",
+    "default": true,
+    "value": "8px"
+  },
+  "padding-mobile": {
+    "var_name": "$padding-mobile",
+    "default": true,
+    "value": "24px"
+  },
+  "padding-desktop": {
+    "var_name": "$padding-desktop",
+    "default": true,
+    "value": "40px"
+  },
+  "padding-button": {
+    "var_name": "$padding-button",
+    "default": true,
+    "value": "8px"
+  },
+  "totalCols": {
+    "var_name": "$totalCols",
+    "default": true,
+    "value": "12"
+  },
+  "totalColsXl": {
+    "var_name": "$totalColsXl",
+    "default": true,
+    "value": "24"
+  },
+
+  "padding-y": {
+    "var_name": "$padding-y",
+    "default": true,
+    "value": []
+  },
+  "padding-x": {
+    "var_name": "$padding-x",
+    "default": true,
+    "value": []
+  },
+  "margin": {
+    "var_name": "$margin",
+    "default": true,
+    "value": []
+  },
+  "margin-x": {
+    "var_name": "$margin-x",
+    "default": true,
+    "value": []
+  },
+  "margin-y": {
+    "var_name": "$margin-y",
+    "default": true,
+    "value": []
+  },
+  "margin-left": {
+    "var_name": "$margin-left",
+    "default": true,
+    "value": []
+  },
+
+  "container": {
+    "var_name": "$container",
+    "default": true,
+    "value": "800px"
+  },
+  "container-2": {
+    "var_name": "$container-2",
+    "default": true,
+    "value": "700px"
+  },
+  "container-3": {
+    "var_name": "$container-3",
+    "default": true,
+    "value": "900px"
+  },
+  "container-4": {
+    "var_name": "$container-4",
+    "default": true,
+    "value": "360px"
+  },
+  "container-5": {
+    "var_name": "$container-5",
+    "default": true,
+    "value": "800px"
+  },
+  "container-6": {
+    "var_name": "$container-6",
+    "default": true,
+    "value": "442px"
+  },
+  "container-7": {
+    "var_name": "$container-7",
+    "default": true,
+    "value": "595px"
+  },
+  "container-8": {
+    "var_name": "$container-8",
+    "default": true,
+    "value": "395px"
+  },
+  "container-9": {
+    "var_name": "$container-9",
+    "default": true,
+    "value": "798px"
+  },
+  "container-10": {
+    "var_name": "$container-10",
+    "default": true,
+    "value": "200px"
+  },
+  "container-11": {
+    "var_name": "$container-11",
+    "default": true,
+    "value": "1080px"
+  },
+  "container-12": {
+    "var_name": "$container-12",
+    "default": true,
+    "value": "1080px"
+  },
+  "container-full": {
+    "var_name": "$container-full",
+    "default": true,
+    "value": "1500px"
+  },
+  "xcontainer-10": {
+    "var_name": "$xcontainer-10",
+    "default": true,
+    "value": "200px"
+  },
+  "xcontainer-4": {
+    "var_name": "$xcontainer-4",
+    "default": true,
+    "value": "360px"
+  },
+  "xcontainer-8": {
+    "var_name": "$xcontainer-8",
+    "default": true,
+    "value": "395px"
+  },
+  "xcontainer-6": {
+    "var_name": "$xcontainer-6",
+    "default": true,
+    "value": "442px"
+  },
+  "xcontainer-7": {
+    "var_name": "$xcontainer-7",
+    "default": true,
+    "value": "595px"
+  },
+  "xcontainer-2": {
+    "var_name": "$xcontainer-2",
+    "default": true,
+    "value": "700px"
+  },
+  "xcontainer-9": {
+    "var_name": "$xcontainer-9",
+    "default": true,
+    "value": "798px"
+  },
+  "xcontainer": {
+    "var_name": "$xcontainer",
+    "default": true,
+    "value": "800px"
+  },
+  "xcontainer-5": {
+    "var_name": "$xcontainer-5",
+    "default": true,
+    "value": "800px"
+  },
+  "xcontainer-3": {
+    "var_name": "$xcontainer-3",
+    "default": true,
+    "value": "900px"
+  },
+  "xcontainer-11": {
+    "var_name": "$xcontainer-11",
+    "default": true,
+    "value": "1080px"
+  },
+  "xcontainer-12": {
+    "var_name": "$xcontainer-12",
+    "default": true,
+    "value": "1080px"
+  },
+  "xcontainer-full": {
+    "var_name": "$xcontainer-full",
+    "default": true,
+    "value": "1500px"
+  },
+  "height-xs": {
+    "var_name": "$height-xs",
+    "default": true,
+    "value": "60px"
+  },
+  "height-sm": {
+    "var_name": "$height-sm",
+    "default": true,
+    "value": "100px"
+  },
+  "height-md": {
+    "var_name": "$height-md",
+    "default": true,
+    "value": "350px"
+  },
+  "height-lg": {
+    "var_name": "$height-lg",
+    "default": true,
+    "value": "400px"
+  },
+  "height-xl": {
+    "var_name": "$height-xl",
+    "default": true,
+    "value": "450px"
+  },
+  "height-full": {
+    "var_name": "$height-full",
+    "default": true,
+    "value": "100vh"
+  },
+  "height-home": {
+    "var_name": "$height-home",
+    "default": true,
+    "value": "calc(100vh - 80px)"
+  },
+  "transition": {
+    "var_name": "$transition",
+    "default": true,
+    "value": "278ms"
+  },
+  "min-width": {
+    "var_name": "$min-width",
+    "default": true,
+    "value": "320px"
+  },
+  "min-vw": {
+    "var_name": "$min-vw",
+    "default": true,
+    "value": "320px"
+  },
+  "max-vw": {
+    "var_name": "$max-vw",
+    "default": true,
+    "value": "1500px"
+  },
+  "svg-size": {
+    "var_name": "$svg-size",
+    "default": false,
+    "value": "16px"
+  },
+  "tooltip-padding": {
+    "var_name": "$tooltip-padding",
+    "default": false,
+    "value": "8px"
+  },
+  "fs": {
+    "var_name": "$fs",
+    "default": false,
+    "value": "'font-size'"
+  },
+  "lh": {
+    "var_name": "$lh",
+    "default": false,
+    "value": "'line-height'"
+  },
+  "mg": {
+    "var_name": "$mg",
+    "default": false,
+    "value": "'margin'"
+  },
+  "mx": {
+    "var_name": "$mx",
+    "default": false,
+    "value": "'margin'"
+  },
+  "my": {
+    "var_name": "$my",
+    "default": false,
+    "value": "'margin'"
+  },
+  "mt": {
+    "var_name": "$mt",
+    "default": false,
+    "value": "'margin-top'"
+  },
+  "mr": {
+    "var_name": "$mr",
+    "default": false,
+    "value": "'margin-right'"
+  },
+  "mb": {
+    "var_name": "$mb",
+    "default": false,
+    "value": "'margin-bottom'"
+  },
+  "p": {
+    "var_name": "$p",
+    "default": false,
+    "value": "'padding'"
+  },
+  "py": {
+    "var_name": "$py",
+    "default": false,
+    "value": "'padding'"
+  },
+  "px": {
+    "var_name": "$px",
+    "default": false,
+    "value": "'padding'"
+  },
+  "pt": {
+    "var_name": "$pt",
+    "default": false,
+    "value": "'padding-top'"
+  },
+  "pl": {
+    "var_name": "$pl",
+    "default": false,
+    "value": "'padding-left'"
+  },
+  "pr": {
+    "var_name": "$pr",
+    "default": false,
+    "value": "'padding-right'"
+  },
+  "pb": {
+    "var_name": "$pb",
+    "default": false,
+    "value": "'padding-bottom'"
+  },
+  "ml": {
+    "var_name": "$ml",
+    "default": false,
+    "value": "'margin-left'"
+  },
+
+  "text-sm": {
+    "var_name": "$text-sm",
+    "default": false,
+    "value": "12px"
+  },
+  "text-md": {
+    "var_name": "$text-md",
+    "default": false,
+    "value": "14px"
+  },
+  "text-lg": {
+    "var_name": "$text-lg",
+    "default": false,
+    "value": "16px"
+  },
+
+
+  "btn-radius": {
+    "var_name": "$btn-radius",
+    "default": false,
+    "value": "0"
+  },
+  "obj-radius": {
+    "var_name": "$obj-radius",
+    "default": false,
+    "value": "0"
+  },
+  "form-radius": {
+    "var_name": "$form-radius",
+    "default": false,
+    "value": "0"
+  },
+  "btn-line-height": {
+    "var_name": "$btn-line-height",
+    "default": false,
+    "value": "1"
+  },
+  "btn-padding": {
+    "var_name": "$btn-padding",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-mini": {
+    "var_name": "$btn-text-mini",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-small": {
+    "var_name": "$btn-text-small",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-medium": {
+    "var_name": "$btn-text-medium",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-large": {
+    "var_name": "$btn-text-large",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-xlarge": {
+    "var_name": "$btn-text-xlarge",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-full": {
+    "var_name": "$btn-text-full",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-r": {
+    "var_name": "$btn-text-r",
+    "default": false,
+    "value": "12px"
+  },
+  "btn-text-m": {
+    "var_name": "$btn-text-m",
+    "default": false,
+    "value": "12px"
+  },
+  "tabs-text": {
+    "var_name": "$tabs-text",
+    "default": false,
+    "value": "12px"
+  },
+  "font-weight-secondary-light": {
+    "var_name": "$font-weight-secondary-light",
+    "default": false,
+    "value": "300"
+  },
+  "font-weight-secondary-medium": {
+    "var_name": "$font-weight-secondary-medium",
+    "default": false,
+    "value": "400"
+  },
+  "font-weight-secondary-bold": {
+    "var_name": "$font-weight-secondary-bold",
+    "default": false,
+    "value": "700"
+  },
+  
+  "height-inputs": {
+    "var_name": "$height-inputs",
+    "default": false,
+    "value": "40px"
+  },
+  "height-btn": {
+    "var_name": "$height-btn",
+    "default": false,
+    "value": "40px"
+  },
+  "text-input-m": {
+    "var_name": "$text-input-m",
+    "default": false,
+    "value": "12px"
+  },
+  "text-input-d": {
+    "var_name": "$text-input-d",
+    "default": false,
+    "value": "12px"
+  }
+
+
+
+
+}

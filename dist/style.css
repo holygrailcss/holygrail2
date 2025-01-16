@@ -1,8 +1,3 @@
-
-/*
-  Paquete: holygrail2
-  Versión: 1.2.49
-*/
 *,
 *::before,
 *::after {
@@ -1501,6 +1496,11 @@ button {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-6 {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1509,6 +1509,11 @@ button {
 .grid-cols-8 {
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 @media (min-width: 1px) {
@@ -1526,6 +1531,13 @@ button {
 }
 
 @media (min-width: 1px) {
+  .xs\:grid-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1px) {
   .xs\:grid-cols-6 {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1536,6 +1548,13 @@ button {
   .xs\:grid-cols-8 {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1px) {
+  .xs\:grid-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -1554,6 +1573,13 @@ button {
 }
 
 @media (min-width: 768px) {
+  .sm\:grid-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
   .sm\:grid-cols-6 {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1564,6 +1590,13 @@ button {
   .sm\:grid-cols-8 {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .sm\:grid-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -1582,6 +1615,13 @@ button {
 }
 
 @media (min-width: 992px) {
+  .md\:grid-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
   .md\:grid-cols-6 {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1592,6 +1632,13 @@ button {
   .md\:grid-cols-8 {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .md\:grid-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -1610,6 +1657,13 @@ button {
 }
 
 @media (min-width: 1280px) {
+  .lg\:grid-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
   .lg\:grid-cols-6 {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1620,6 +1674,13 @@ button {
   .lg\:grid-cols-8 {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .lg\:grid-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -1638,6 +1699,13 @@ button {
 }
 
 @media (min-width: 1440px) {
+  .xl\:grid-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1440px) {
   .xl\:grid-cols-6 {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1648,6 +1716,13 @@ button {
   .xl\:grid-cols-8 {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1440px) {
+  .xl\:grid-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -2256,6 +2331,31 @@ svg-icon2.ico-pre {
   bottom: 0;
 }
 
+.rat-9-20 {
+  position: relative;
+  overflow: hidden;
+}
+.rat-9-20::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 222.2222222222%;
+}
+.rat-9-20 .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.rat-9-20 .rat-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .rat-strech {
   position: relative;
   overflow: hidden;
@@ -2707,7 +2807,7 @@ p {
 }
 @media (min-width: 992px) {
   p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 p.b {
@@ -3069,123 +3169,123 @@ mark {
     line-height: 1.2;
   }
 }
-.fluid-3-l {
+.fluid-1-l {
   font-family: arial, sans-serif;
   font-weight: 100;
 }
-.fluid-3-l {
-  font-size: 20px;
-  line-height: 0.9;
+.fluid-1-l {
+  font-size: 60px;
+  line-height: 0.8;
 }
 @media (min-width: 320px) {
-  .fluid-3-l {
+  .fluid-1-l {
     font-size: calc(
-                20px + 10 *
+                60px + 100 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.9;
+    line-height: 0.8;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-3-l {
-    font-size: 30px;
-    line-height: 0.9;
+  .fluid-1-l {
+    font-size: 160px;
+    line-height: 0.8;
   }
 }
 
-.fluid-3-r {
+.fluid-1-r {
   font-family: arial, sans-serif;
   font-weight: 500;
 }
-.fluid-3-r {
-  font-size: 20px;
-  line-height: 0.9;
+.fluid-1-r {
+  font-size: 60px;
+  line-height: 0.8;
 }
 @media (min-width: 320px) {
-  .fluid-3-r {
+  .fluid-1-r {
     font-size: calc(
-                20px + 10 *
+                60px + 100 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.9;
+    line-height: 0.8;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-3-r {
-    font-size: 30px;
-    line-height: 0.9;
+  .fluid-1-r {
+    font-size: 160px;
+    line-height: 0.8;
   }
 }
 
-.fluid-3-m {
+.fluid-1-m {
   font-family: arial, sans-serif;
   font-weight: 500;
 }
-.fluid-3-m {
-  font-size: 20px;
-  line-height: 0.9;
+.fluid-1-m {
+  font-size: 60px;
+  line-height: 0.8;
 }
 @media (min-width: 320px) {
-  .fluid-3-m {
+  .fluid-1-m {
     font-size: calc(
-                20px + 10 *
+                60px + 100 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.9;
+    line-height: 0.8;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-3-m {
-    font-size: 30px;
-    line-height: 0.9;
+  .fluid-1-m {
+    font-size: 160px;
+    line-height: 0.8;
   }
 }
 
-.fluid-3-sb {
+.fluid-1-sb {
   font-family: arial, sans-serif;
   font-weight: 700;
 }
-.fluid-3-sb {
-  font-size: 20px;
-  line-height: 0.9;
+.fluid-1-sb {
+  font-size: 60px;
+  line-height: 0.8;
 }
 @media (min-width: 320px) {
-  .fluid-3-sb {
+  .fluid-1-sb {
     font-size: calc(
-                20px + 10 *
+                60px + 100 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.9;
+    line-height: 0.8;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-3-sb {
-    font-size: 30px;
-    line-height: 0.9;
+  .fluid-1-sb {
+    font-size: 160px;
+    line-height: 0.8;
   }
 }
 
-.fluid-3-b {
+.fluid-1-b {
   font-family: arial, sans-serif;
   font-weight: 900;
 }
-.fluid-3-b {
-  font-size: 20px;
-  line-height: 0.9;
+.fluid-1-b {
+  font-size: 60px;
+  line-height: 0.8;
 }
 @media (min-width: 320px) {
-  .fluid-3-b {
+  .fluid-1-b {
     font-size: calc(
-                20px + 10 *
+                60px + 100 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.9;
+    line-height: 0.8;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-3-b {
-    font-size: 30px;
-    line-height: 0.9;
+  .fluid-1-b {
+    font-size: 160px;
+    line-height: 0.8;
   }
 }
 
@@ -3309,123 +3409,123 @@ mark {
   }
 }
 
-.fluid-1-l {
+.fluid-3-l {
   font-family: arial, sans-serif;
   font-weight: 100;
 }
-.fluid-1-l {
-  font-size: 60px;
-  line-height: 0.8;
+.fluid-3-l {
+  font-size: 20px;
+  line-height: 0.9;
 }
 @media (min-width: 320px) {
-  .fluid-1-l {
+  .fluid-3-l {
     font-size: calc(
-                60px + 100 *
+                20px + 10 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.8;
+    line-height: 0.9;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-1-l {
-    font-size: 160px;
-    line-height: 0.8;
+  .fluid-3-l {
+    font-size: 30px;
+    line-height: 0.9;
   }
 }
 
-.fluid-1-r {
+.fluid-3-r {
   font-family: arial, sans-serif;
   font-weight: 500;
 }
-.fluid-1-r {
-  font-size: 60px;
-  line-height: 0.8;
+.fluid-3-r {
+  font-size: 20px;
+  line-height: 0.9;
 }
 @media (min-width: 320px) {
-  .fluid-1-r {
+  .fluid-3-r {
     font-size: calc(
-                60px + 100 *
+                20px + 10 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.8;
+    line-height: 0.9;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-1-r {
-    font-size: 160px;
-    line-height: 0.8;
+  .fluid-3-r {
+    font-size: 30px;
+    line-height: 0.9;
   }
 }
 
-.fluid-1-m {
+.fluid-3-m {
   font-family: arial, sans-serif;
   font-weight: 500;
 }
-.fluid-1-m {
-  font-size: 60px;
-  line-height: 0.8;
+.fluid-3-m {
+  font-size: 20px;
+  line-height: 0.9;
 }
 @media (min-width: 320px) {
-  .fluid-1-m {
+  .fluid-3-m {
     font-size: calc(
-                60px + 100 *
+                20px + 10 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.8;
+    line-height: 0.9;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-1-m {
-    font-size: 160px;
-    line-height: 0.8;
+  .fluid-3-m {
+    font-size: 30px;
+    line-height: 0.9;
   }
 }
 
-.fluid-1-sb {
+.fluid-3-sb {
   font-family: arial, sans-serif;
   font-weight: 700;
 }
-.fluid-1-sb {
-  font-size: 60px;
-  line-height: 0.8;
+.fluid-3-sb {
+  font-size: 20px;
+  line-height: 0.9;
 }
 @media (min-width: 320px) {
-  .fluid-1-sb {
+  .fluid-3-sb {
     font-size: calc(
-                60px + 100 *
+                20px + 10 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.8;
+    line-height: 0.9;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-1-sb {
-    font-size: 160px;
-    line-height: 0.8;
+  .fluid-3-sb {
+    font-size: 30px;
+    line-height: 0.9;
   }
 }
 
-.fluid-1-b {
+.fluid-3-b {
   font-family: arial, sans-serif;
   font-weight: 900;
 }
-.fluid-1-b {
-  font-size: 60px;
-  line-height: 0.8;
+.fluid-3-b {
+  font-size: 20px;
+  line-height: 0.9;
 }
 @media (min-width: 320px) {
-  .fluid-1-b {
+  .fluid-3-b {
     font-size: calc(
-                60px + 100 *
+                20px + 10 *
                   ((100vw - 320px) / 1180)
               );
-    line-height: 0.8;
+    line-height: 0.9;
   }
 }
 @media (min-width: 1500px) {
-  .fluid-1-b {
-    font-size: 160px;
-    line-height: 0.8;
+  .fluid-3-b {
+    font-size: 30px;
+    line-height: 0.9;
   }
 }
 
@@ -7627,6 +7727,12 @@ button {
   fill: #666666;
 }
 
+.btn-icon {
+  padding-inline: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .checkbox-item {
   text-align: center;
   position: relative;
@@ -7913,6 +8019,12 @@ button {
 .checkbox-radio label {
   padding-bottom: 0;
 }
+.checkbox-radio.is-error label::before {
+  border: 1px solid #ed0f2b !important;
+}
+.checkbox-radio.is-error span {
+  color: #ed0f2b !important;
+}
 
 .checkbox-item-text {
   min-height: 42px;
@@ -8182,6 +8294,10 @@ button {
 .has-light .checkbox-card [type=radio]:checked + .checkbox-card-label, .has-light .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
   border: 1px solid #fff;
+}
+.checkbox-card.is-error .checkbox-card-label {
+  border: 1px solid #ed0f2b !important;
+  color: #ed0f2b !important;
 }
 
 .is-active.checkbox-radio .border-1, .is-active.checkbox-radio .border-1-grey {
@@ -11384,6 +11500,7 @@ div.card9-wrap .rat-content:hover .card9-add {
   flex-direction: row;
   align-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .header-account-count {
@@ -12486,6 +12603,12 @@ div.card9-wrap .rat-content:hover .card9-add {
 .is-rtl .box3-top {
   padding-right: 16px;
   padding-left: 0;
+}
+
+.box-white {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

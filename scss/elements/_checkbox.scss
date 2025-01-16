@@ -284,6 +284,17 @@
   label {
     padding-bottom: 0;
   }
+
+  &.is-error{
+      label::before {
+        border: 1px solid #ed0f2b!important;
+
+      }
+      span{
+        color:#ed0f2b!important;
+      }
+
+  }
 }
 .checkbox-item-text {
   min-height: 42px;
@@ -574,6 +585,14 @@
         border: 1px solid $c-white;
       }
     }
+  }
+
+  &.is-error{
+   .checkbox-card-label{
+      border: 1px solid #ed0f2b!important;
+      color: #ed0f2b!important;
+    }
+
   }
 }
 .is-active {

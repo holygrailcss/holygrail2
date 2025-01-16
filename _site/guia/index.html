@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guía de variables de Tailwind CSS">
+
+  <link rel="stylesheet" href="../../dist/style.css">
+  <link rel="stylesheet" href="../../dist/docs.css">
+  <title>Variables Cheatsheet</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container text-12-r">
+    <h1>Variables Cheatsheet</h1>
+<section>
+  <section class=" ptr-120 pbr-120">
+    <div class="grid-cols-2 ">
+      <h2> Grid System</h2>
+      <p>
+        The grid system uses a series of containers, rows, and columns to layout and align content.
+      </p>
+    </div>
+  </section>
+  <div class="grid-cols-12 gap-16 grid-examples">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+  <section class=" ptr-120 pbr-120">
+    <h2>Resoluciones</h2>
+    <div class="grid-cols-4 ">
+      <div class="h3 variable-item border-b-grey"> Tamaño de Pantalla</div>
+      <div class="h3 variable-item border-b-grey"> Número de Columnas</div>
+      <div class="h3 variable-item border-b-grey"> Tipo de Resolución</div>
+      <div class="h3 variable-item border-b-grey"> Ancho de Columnado</div>
+      
+      <div class="variable-item border-b-grey">
+        <strong>xs</strong>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">1</span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">
+          Mobile
+        </span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">1px</span>
+      </div>
+      
+      <div class="variable-item border-b-grey">
+        <strong>sm</strong>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">2</span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">
+          Tablet
+        </span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">768px</span>
+      </div>
+      
+      <div class="variable-item border-b-grey">
+        <strong>md</strong>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">3</span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">
+          Desktop
+        </span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">992px</span>
+      </div>
+      
+      <div class="variable-item border-b-grey">
+        <strong>lg</strong>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">4</span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">
+          Large
+          Desktop
+        </span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">1280px</span>
+      </div>
+      
+      <div class="variable-item border-b-grey">
+        <strong>xl</strong>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">5</span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">
+          Extra Large Desktop
+        </span>
+      </div>
+      <div class="variable-item border-b-grey">
+        <span class="code-snippet">1440px</span>
+      </div>
+      
+    </div>
+  </section>
+  <section class="ptr-120 pbr-120">
+    <h2>Variables</h2>
+    <ul class="list-clear color-list">
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #fff;">
+        </div>
+        <div class="variable-info">
+          <div>$c-white</div>
+          <span class="code-snippet">#fff</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$c-black</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #f0f0f0;">
+        </div>
+        <div class="variable-info">
+          <div>$c-light-grey</div>
+          <span class="code-snippet">#f0f0f0</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #a9a9a9;">
+        </div>
+        <div class="variable-info">
+          <div>$c-middle-grey</div>
+          <span class="code-snippet">#a9a9a9</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #666666;">
+        </div>
+        <div class="variable-info">
+          <div>$c-dark-grey</div>
+          <span class="code-snippet">#666666</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(0, 0, 0, 0.3);">
+        </div>
+        <div class="variable-info">
+          <div>$c-primary-3</div>
+          <span class="code-snippet">rgba(0, 0, 0, 0.3)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(0, 0, 0, 0.15);">
+        </div>
+        <div class="variable-info">
+          <div>$c-primary-15</div>
+          <span class="code-snippet">rgba(0, 0, 0, 0.15)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(0, 0, 0, 0.3);">
+        </div>
+        <div class="variable-info">
+          <div>$c-primary-30</div>
+          <span class="code-snippet">rgba(0, 0, 0, 0.3)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(0, 0, 0, 0.6);">
+        </div>
+        <div class="variable-info">
+          <div>$c-primary-60</div>
+          <span class="code-snippet">rgba(0, 0, 0, 0.6)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(0, 0, 0, 0.97);">
+        </div>
+        <div class="variable-info">
+          <div>$c-primary-97</div>
+          <span class="code-snippet">rgba(0, 0, 0, 0.97)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(255, 255, 255, 0.3);">
+        </div>
+        <div class="variable-info">
+          <div>$c-secondary-3</div>
+          <span class="code-snippet">rgba(255, 255, 255, 0.3)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(255, 255, 255, 0.15);">
+        </div>
+        <div class="variable-info">
+          <div>$c-secondary-15</div>
+          <span class="code-snippet">rgba(255, 255, 255, 0.15)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(255, 255, 255, 0.3);">
+        </div>
+        <div class="variable-info">
+          <div>$c-secondary-30</div>
+          <span class="code-snippet">rgba(255, 255, 255, 0.3)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(255, 255, 255, 0.6);">
+        </div>
+        <div class="variable-info">
+          <div>$c-secondary-60</div>
+          <span class="code-snippet">rgba(255, 255, 255, 0.6)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: rgba(255, 255, 255, 0.97);">
+        </div>
+        <div class="variable-info">
+          <div>$c-secondary-97</div>
+          <span class="code-snippet">rgba(255, 255, 255, 0.97)</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$c-primary</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$c-secondary</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #ed0f2b;">
+        </div>
+        <div class="variable-info">
+          <div>$c-accent</div>
+          <span class="code-snippet">#ed0f2b</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #ed0f2b;">
+        </div>
+        <div class="variable-info">
+          <div>$c-error</div>
+          <span class="code-snippet">#ed0f2b</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #ffce4e;">
+        </div>
+        <div class="variable-info">
+          <div>$c-sale</div>
+          <span class="code-snippet">#ffce4e</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #1a32a4;">
+        </div>
+        <div class="variable-info">
+          <div>$c-info</div>
+          <span class="code-snippet">#1a32a4</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #12882c;">
+        </div>
+        <div class="variable-info">
+          <div>$c-valid</div>
+          <span class="code-snippet">#12882c</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #ffce4e;">
+        </div>
+        <div class="variable-info">
+          <div>$c-warning</div>
+          <span class="code-snippet">#ffce4e</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #e5740b;">
+        </div>
+        <div class="variable-info">
+          <div>$c-notice</div>
+          <span class="code-snippet">#e5740b</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #e5740b;">
+        </div>
+        <div class="variable-info">
+          <div>$c-orange</div>
+          <span class="code-snippet">#e5740b</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$c-limited</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #12882c;">
+        </div>
+        <div class="variable-info">
+          <div>$c-success</div>
+          <span class="code-snippet">#12882c</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #ffce4e;">
+        </div>
+        <div class="variable-info">
+          <div>$c-alert</div>
+          <span class="code-snippet">#ffce4e</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #1977f3;">
+        </div>
+        <div class="variable-info">
+          <div>$c-facebook</div>
+          <span class="code-snippet">#1977f3</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #4285f4;">
+        </div>
+        <div class="variable-info">
+          <div>$c-google</div>
+          <span class="code-snippet">#4285f4</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #03cf5d;">
+        </div>
+        <div class="variable-info">
+          <div>$c-naver</div>
+          <span class="code-snippet">#03cf5d</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #2dc100;">
+        </div>
+        <div class="variable-info">
+          <div>$c-wechat</div>
+          <span class="code-snippet">#2dc100</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000000;">
+        </div>
+        <div class="variable-info">
+          <div>$c-feel</div>
+          <span class="code-snippet">#000000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #f0f0f0;">
+        </div>
+        <div class="variable-info">
+          <div>$c-feel-light</div>
+          <span class="code-snippet">#f0f0f0</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #a9a9a9;">
+        </div>
+        <div class="variable-info">
+          <div>$c-feel-dark</div>
+          <span class="code-snippet">#a9a9a9</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #e3e3e3;">
+        </div>
+        <div class="variable-info">
+          <div>$c-tier-silver</div>
+          <span class="code-snippet">#e3e3e3</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #99b0c5;">
+        </div>
+        <div class="variable-info">
+          <div>$c-tier-platinum</div>
+          <span class="code-snippet">#99b0c5</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #dcbe99;">
+        </div>
+        <div class="variable-info">
+          <div>$c-tier-gold</div>
+          <span class="code-snippet">#dcbe99</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #f0f0f0;">
+        </div>
+        <div class="variable-info">
+          <div>$bg-light</div>
+          <span class="code-snippet">#f0f0f0</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$bg-dark</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$bg-black</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000;">
+        </div>
+        <div class="variable-info">
+          <div>$c-bg-light</div>
+          <span class="code-snippet">#000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #fff;">
+        </div>
+        <div class="variable-info">
+          <div>$c-bg-dark</div>
+          <span class="code-snippet">#fff</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #f0f0f0;">
+        </div>
+        <div class="variable-info">
+          <div>$white-smoke</div>
+          <span class="code-snippet">#f0f0f0</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #000000;">
+        </div>
+        <div class="variable-info">
+          <div>$primary</div>
+          <span class="code-snippet">#000000</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #363636;">
+        </div>
+        <div class="variable-info">
+          <div>$primary-guide</div>
+          <span class="code-snippet">#363636</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #6759bb;">
+        </div>
+        <div class="variable-info">
+          <div>$secondary-guide</div>
+          <span class="code-snippet">#6759bb</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #6759bb;">
+        </div>
+        <div class="variable-info">
+          <div>$ternary-guide</div>
+          <span class="code-snippet">#6759bb</span>
+        </div>
+      </li>
+      
+      
+      
+      <li class="variable-item">
+        <div class="variable-box" style="background-color: #1a1a1a;">
+        </div>
+        <div class="variable-info">
+          <div>$list-disc-color</div>
+          <span class="code-snippet">#1a1a1a</span>
+        </div>
+      </li>
+      
+      
+    </ul>
+  </section>
+  <section class="ptr-120 pbr-120">
+    <h2>Typography</h2>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">p-tag</div>
+      <div class="variable-item border-b-grey p-tag"> Aa </div>
+      
+      <div class="variable-item border-b-grey">8px</div>
+      
+      <div class="variable-item border-b-grey">10px</div>
+      
+      <div class="variable-item border-b-grey">1.3</div>
+      
+      <div class="variable-item border-b-grey">&#39;regular&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">h2</div>
+      <div class="variable-item border-b-grey h2"> Aa </div>
+      
+      <div class="variable-item border-b-grey">18px</div>
+      
+      <div class="variable-item border-b-grey">24px</div>
+      
+      <div class="variable-item border-b-grey">1.2</div>
+      
+      <div class="variable-item border-b-grey">&#39;bold&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">title-l</div>
+      <div class="variable-item border-b-grey title-l"> Aa </div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">1.4</div>
+      
+      <div class="variable-item border-b-grey">&#39;regular&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">title-l-l</div>
+      <div class="variable-item border-b-grey title-l-l"> Aa </div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">1.4</div>
+      
+      <div class="variable-item border-b-grey">&#39;light&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">title-l-b</div>
+      <div class="variable-item border-b-grey title-l-b"> Aa </div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">1.4</div>
+      
+      <div class="variable-item border-b-grey">&#39;medium&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">title-m</div>
+      <div class="variable-item border-b-grey title-m"> Aa </div>
+      
+      <div class="variable-item border-b-grey">11px</div>
+      
+      <div class="variable-item border-b-grey">11px</div>
+      
+      <div class="variable-item border-b-grey">1.4</div>
+      
+      <div class="variable-item border-b-grey">&#39;regular&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">title-s</div>
+      <div class="variable-item border-b-grey title-s"> Aa </div>
+      
+      <div class="variable-item border-b-grey">10px</div>
+      
+      <div class="variable-item border-b-grey">10px</div>
+      
+      <div class="variable-item border-b-grey">1.4</div>
+      
+      <div class="variable-item border-b-grey">&#39;regular&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">text-l</div>
+      <div class="variable-item border-b-grey text-l"> Aa </div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">1.5</div>
+      
+      <div class="variable-item border-b-grey">&#39;regular&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">text-l-l</div>
+      <div class="variable-item border-b-grey text-l-l"> Aa </div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">12px</div>
+      
+      <div class="variable-item border-b-grey">1.5</div>
+      
+      <div class="variable-item border-b-grey">&#39;light&#39;</div>
+      
+    </div>
+    
+    <div class="grid-cols-6">
+      <div class="variable-item border-b-grey">text-m</div>
+      <div class="variable-item border-b-grey text-m"> Aa </div>
+      
+      <div class="variable-item border-b-grey">11px</div>
+      
+      <div class="variable-item border-b-grey">11px</div>
+      
+      <div class="variable-item border-b-grey">1.5</div>
+      
+      <div class="variable-item border-b-grey">&#39;regular&#39;</div>
+      
+    </div>
+    
+  </section>
+  <section class="ptr-120 pbr-120">
+    <div class="grid-cols-2 gap-16">
+      <div>
+        <h2>Headers Fixers</h2>
+        
+        <div class="grid-cols-3">
+          <div class="variable-item border-b-grey">12</div>
+          
+          <div class="variable-item border-b-grey">12px</div>
+          
+          <div class="variable-item border-b-grey">1.5</div>
+          
+        </div>
+        
+        <div class="grid-cols-3">
+          <div class="variable-item border-b-grey">14</div>
+          
+          <div class="variable-item border-b-grey">14px</div>
+          
+          <div class="variable-item border-b-grey">1.5</div>
+          
+        </div>
+        
+        <div class="grid-cols-3">
+          <div class="variable-item border-b-grey">16</div>
+          
+          <div class="variable-item border-b-grey">16px</div>
+          
+          <div class="variable-item border-b-grey">1.5</div>
+          
+        </div>
+        
+        <div class="grid-cols-3">
+          <div class="variable-item border-b-grey">18</div>
+          
+          <div class="variable-item border-b-grey">18px</div>
+          
+          <div class="variable-item border-b-grey">1.5</div>
+          
+        </div>
+        
+        <div class="grid-cols-3">
+          <div class="variable-item border-b-grey">20</div>
+          
+          <div class="variable-item border-b-grey">20px</div>
+          
+          <div class="variable-item border-b-grey">1.5</div>
+          
+        </div>
+        
+        <div class="grid-cols-3">
+          <div class="variable-item border-b-grey">24</div>
+          
+          <div class="variable-item border-b-grey">24px</div>
+          
+          <div class="variable-item border-b-grey">1.5</div>
+          
+        </div>
+        
+      </div>
+      <div>
+        <h2>Headers Fluids</h2>
+        
+        <div class="grid-cols-4">
+          <div class="variable-item border-b-grey">1</div>
+          
+          <div class="variable-item border-b-grey">60px</div>
+          
+          <div class="variable-item border-b-grey">160px</div>
+          
+          <div class="variable-item border-b-grey">0.8</div>
+          
+        </div>
+        
+        <div class="grid-cols-4">
+          <div class="variable-item border-b-grey">2</div>
+          
+          <div class="variable-item border-b-grey">40px</div>
+          
+          <div class="variable-item border-b-grey">100px</div>
+          
+          <div class="variable-item border-b-grey">0.9</div>
+          
+        </div>
+        
+        <div class="grid-cols-4">
+          <div class="variable-item border-b-grey">3</div>
+          
+          <div class="variable-item border-b-grey">20px</div>
+          
+          <div class="variable-item border-b-grey">30px</div>
+          
+          <div class="variable-item border-b-grey">0.9</div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>UI Components</h2>
+    <div class="grid-cols-2">
+      <h3>Buttons</h3>
+    </div>
+    <div class="grid-cols-4 gap-16">
+      Enabled
+      <button class="btn btn-primary"> Primary </button>
+      <button class="btn btn-secondary"> Secondary </button>
+      <button class="btn btn-tertiary"> Tertiary </button>
+      hover
+      <button class="btn btn-primary hover"> Primary </button>
+      <button class="btn btn-secondary hover"> Secondary </button>
+      <button class="btn btn-tertiary hover"> Tertiary </button>
+      Disabled
+      <button class="btn btn-primary disabled"> Primary </button>
+      <button class="btn btn-secondary disabled"> Secondary </button>
+      <button class="btn btn-tertiary disabled"> Tertiary </button>
+    </div>
+
+    <div class="demo-section">
+      <h3>Tipos</h3>
+      <button class="btn btn-primary">.btn-primary</button>
+      <button class="btn btn-secondary">.btn-secondary</button>
+      <button class="btn btn-phantom">.btn-phantom</button>
+      <button class="btn btn-default">.btn-default</button>
+      <button class="btn btn-feel">.btn-feel</button>
+      <button class="btn btn-primary-feel">.btn-primary-feel</button>
+      <button class="btn btn-secondary-feel">.btn-secondary-feel</button>
+      <button class="btn btn-limited">.btn-limited</button>
+      <button class="btn btn-invert">.btn-invert</button>
+      <button class="btn btn-invert-light">.btn-invert-light</button>
+      <button class="btn btn-blue">.btn-blue</button>
+      <button class="btn btn-tertiary">.btn-tertiary</button>
+      <button class="btn btn-text">.btn-text</button>
+
+      <button class="btn btn-icon w-100">    .btn-icon    <div> ></div>   </button>
+    </div>
+
+
+
+    </div>
+  </section>
+
+  <section>
+
+
+
+<div class="container mb-64">   
+    <div class="row mb-24">
+      <div class="col-xs-12">
+        <h2>select</h2>
+
+
+               <div class="select select-box">
+                                <select name="" id="630d4db1-b9e9-458f-acc8-d9ba66d44df2">
+                                  <option value="1">99</option>
+                                  <option value="2">88</option>
+                                  <option value="3">77</option>
+                                </select>
+                              </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="stepper">
+          <button class="stepper-btn" aria-label="Decrease" onclick="decreaseValue()">
+            <div class="minus-icon"></div>
+          </button>
+          <div type="number" class="stepper-input title-m" id="stepperValue" value="1" min="0" max="100" step="1" aria-label="Quantity"> 1 </div>
+        <button class="stepper-btn" aria-label="Increase" onclick="increaseValue()">
+          <div class="plus-icon"></div>
+        </button>
+      </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  </section>
+
+  <section class="container">
+<div class="row">
+  <div class="col-xs-12">
+    <h4>Uno o otro</h4>
+    <h2>Radio Button</h2>
+
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="checkbox-item">
+          <input id="checkbox_2" type="checkbox">
+          <label for="checkbox_2">
+            <i as="label" class="icon">
+              <svg-icon src="check-mini" ng-reflect-src="check-mini">
+                <div>
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.05823 0.198273L9.69185 0.801721L3.5417 7.25937L0.308228 3.86422L0.941848 3.26077L3.5417 5.99062L9.05823 0.198273Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </svg-icon>
+            </i>
+            <span class="title-m">
+              checkbox-item <a href="#">legal text</a>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-xs-4 ">
+        <div class="checkbox-item is-error ">
+          <input id="checkbox_2" type="checkbox">
+          <label for="checkbox_2">
+            <i as="label" class="icon">
+              <svg-icon src="check-mini" ng-reflect-src="check-mini">
+                <div>
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.05823 0.198273L9.69185 0.801721L3.5417 7.25937L0.308228 3.86422L0.941848 3.26077L3.5417 5.99062L9.05823 0.198273Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </svg-icon>
+            </i>
+            <span class="title-m">
+              checkbox-item <a href="#">legal text</a>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class=" mb-24 mt-8">
+          <div class="is-flex flex-vcenter" ng-reflect-form="[object Object]">
+            <div class="pr-16">
+              <div class="checkbox-radio">
+                <input id="gender_female" name="gender" formcontrolname="gender" type="radio" value="F" />
+                <label for="gender_female">
+                  <i class="ico-radio"></i>
+                  <span class="title-m">Mujer</span></label>
+              </div>
+            </div>
+            <div class="pr-16">
+              <div class="checkbox-radio"><input id="gender_male" name="gender" formcontrolname="gender" type="radio"
+                  value="M" />
+                <label for="gender_male">
+                  <i class="ico-radio"></i>
+                  <span class="title-m">Hombre</span></label>
+              </div>
+            </div>
+            <div class="has-feel">
+              <svg-icon src="badge"></svg-icon>
+            </div>
+          </div>
+          <div class="validation-error-wrap"></div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-4 is-error">
+        <div class=" mb-24 mt-8">
+          <div class="is-flex flex-vcenter" ng-reflect-form="[object Object]">
+            <div class="pr-16">
+              <div class="checkbox-radio  is-error">
+                <input id="gender_female2" name="gender" formcontrolname="gender" type="radio" value="F" />
+                <label for="gender_female2">
+                  <i class="ico-radio"></i>
+                  <span class="title-m">Mujer</span></label>
+              </div>
+            </div>
+            <div class="pr-16">
+              <div class="checkbox-radio is-error"><input id="gender_male2" name="gender" formcontrolname="gender" type="radio"
+                  value="M" />
+                <label for="gender_male2">
+                  <i class="ico-radio"></i>
+                  <span class="title-m">Hombre</span></label>
+              </div>
+            </div>
+            <div class="has-feel">
+              <svg-icon src="badge"></svg-icon>
+            </div>
+          </div>
+          <div class="validation-error-wrap"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>Si - no </h4>
+        <h2>checkbox si no </h2>
+      
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="grid-4 grid-gap-16">
+          <div class="checkbox-item mb-16">
+            <input id="checkbox_13" name="checkbox_1" type="checkbox" class=" ">
+          <label for="checkbox_13">
+            <i as="label" class="icon">
+              <svg-icon src="check-mini" ng-reflect-src="check-mini">
+                <div>
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05823 0.198273L9.69185 0.801721L3.5417 7.25937L0.308228 3.86422L0.941848 3.26077L3.5417 5.99062L9.05823 0.198273Z" fill="white"></path>
+                  </svg>
+                </div>
+              </svg-icon>
+            </i>
+            <span class="p-xs">MUJER</span></label>
+        </div>
+        <div class="checkbox-item">
+          <input id="checkbox_23" name="checkbox_2" type="checkbox" class=" ">
+          <label for="checkbox_23">
+          <i as="label" class="icon">
+            <svg-icon src="check-mini" ng-reflect-src="check-mini">
+              <div>
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05823 0.198273L9.69185 0.801721L3.5417 7.25937L0.308228 3.86422L0.941848 3.26077L3.5417 5.99062L9.05823 0.198273Z" fill="white"></path>
+                </svg>
+              </div>
+            </svg-icon>
+          </i>
+          <span class="p-xs">HOMBRE</span></label>
+      </div>
+      <div class="checkbox-item-2">
+        <input id="checkbox_33" name="checkbox_3" type="checkbox" class="ng-valid">
+        <label for="checkbox_33">
+          <div class="checkbox-circle"></div>
+          <span class="p-xs">checkbox-item-2</span>
+        </label>
+      </div>
+    </div>      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>checkbox-card</h2>
+      </div>
+    </div>
+
+
+
+<div class="row">
+  <div class="col-xs-4">
+
+ 
+        <div class="checkbox-card mb-16">
+          <input id="17-1" name="gender" type="radio">
+          <label for="17-1" class=" checkbox-card-label">
+            <div class=" title-m">Recoger el 24/09 en la misma tienda</div>
+          </label>
+        </div>
+   
+
+        <div class="checkbox-card  mb-16">
+          <input id="17-2" name="gender" type="radio" value="a">
+          <label for="17-2" class=" checkbox-card-label ">
+            <div class=" title-m">Guardar los artículos en “Comprar más tarde” </div>
+          </label>
+        </div>
+   
+
+        <div class="checkbox-card  mb-16">
+          <input id="17-3" name="gender" type="radio" value="a">
+          <label for="17-3" class=" checkbox-card-label ">
+            <div class=" title-m">Guardar los artículos en “Comprar más tarde” </div>
+          </label>
+        </div>
+   
+
+        <div class="checkbox-card is-error mb-16">
+          <input id="17-4" name="gender" type="radio" value="a">
+          <label for="17-4" class=" checkbox-card-label ">
+            <div class=" title-m">Guardar los artículos en “Comprar más tarde” </div>
+          </label>
+        </div>
+   
+
+  </div>
+</div>
+
+
+
+
+
+  </section>
+
+  </div>
+
+</body>
+</html>

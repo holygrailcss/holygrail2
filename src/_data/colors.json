@@ -1,0 +1,311 @@
+{
+  "c-white": {
+    "type": "value",
+    "var_name": "$c-white",
+    "default": true,
+    "value": "#fff"
+  },
+  "c-black": {
+    "type": "value",
+    "var_name": "$c-black",
+    "default": true,
+    "value": "#000"
+  },
+  "c-light-grey": {
+    "type": "value",
+    "var_name": "$c-light-grey",
+    "default": true,
+    "value": "#f0f0f0"
+  },
+  "c-middle-grey": {
+    "type": "value",
+    "var_name": "$c-middle-grey",
+    "default": true,
+    "value": "#a9a9a9"
+  },
+  "c-dark-grey": {
+    "type": "value",
+    "var_name": "$c-dark-grey",
+    "default": true,
+    "value": "#666666"
+  },
+  "c-primary-3": {
+    "type": "value",
+    "var_name": "$c-primary-3",
+    "default": false,
+    "value": "rgba(0, 0, 0, 0.3)"
+  },
+  "c-primary-15": {
+    "type": "value",
+    "var_name": "$c-primary-15",
+    "default": false,
+    "value": "rgba(0, 0, 0, 0.15)"
+  },
+  "c-primary-30": {
+    "type": "value",
+    "var_name": "$c-primary-30",
+    "default": false,
+    "value": "rgba(0, 0, 0, 0.3)"
+  },
+  "c-primary-60": {
+    "type": "value",
+    "var_name": "$c-primary-60",
+    "default": false,
+    "value": "rgba(0, 0, 0, 0.6)"
+  },
+  "c-primary-97": {
+    "type": "value",
+    "var_name": "$c-primary-97",
+    "default": false,
+    "value": "rgba(0, 0, 0, 0.97)"
+  },
+  "c-secondary-3": {
+    "type": "value",
+    "var_name": "$c-secondary-3",
+    "default": false,
+    "value": "rgba(255, 255, 255, 0.3)"
+  },
+  "c-secondary-15": {
+    "type": "value",
+    "var_name": "$c-secondary-15",
+    "default": false,
+    "value": "rgba(255, 255, 255, 0.15)"
+  },
+  "c-secondary-30": {
+    "type": "value",
+    "var_name": "$c-secondary-30",
+    "default": false,
+    "value": "rgba(255, 255, 255, 0.3)"
+  },
+  "c-secondary-60": {
+    "type": "value",
+    "var_name": "$c-secondary-60",
+    "default": false,
+    "value": "rgba(255, 255, 255, 0.6)"
+  },
+  "c-secondary-97": {
+    "type": "value",
+    "var_name": "$c-secondary-97",
+    "default": false,
+    "value": "rgba(255, 255, 255, 0.97)"
+  },
+
+
+  "c-primary": {
+    "type": "value",
+    "var_name": "$c-primary",
+    "default": true,
+    "value": "#000"
+  },
+  "c-secondary": {
+    "type": "value",
+    "var_name": "$c-secondary",
+    "default": true,
+    "value": "#000"
+  },
+  "c-accent": {
+    "type": "value",
+    "var_name": "$c-accent",
+    "default": true,
+    "value": "#ed0f2b"
+  },
+  "c-error": {
+    "type": "value",
+    "var_name": "$c-error",
+    "default": true,
+    "value": "#ed0f2b"
+  },
+  "c-sale": {
+    "type": "value",
+    "var_name": "$c-sale",
+    "default": true,
+    "value": "#ffce4e"
+  },
+  "c-info": {
+    "type": "value",
+    "var_name": "$c-info",
+    "default": true,
+    "value": "#1a32a4"
+  },
+  "c-valid": {
+    "type": "value",
+    "var_name": "$c-valid",
+    "default": true,
+    "value": "#12882c"
+  },
+  "c-warning": {
+    "type": "value",
+    "var_name": "$c-warning",
+    "default": true,
+    "value": "#ffce4e"
+  },
+  "c-notice": {
+    "type": "value",
+    "var_name": "$c-notice",
+    "default": true,
+    "value": "#e5740b"
+  },
+  "c-orange": {
+    "type": "value",
+    "var_name": "$c-orange",
+    "default": true,
+    "value": "#e5740b"
+  },
+  "c-limited": {
+    "type": "value",
+    "var_name": "$c-limited",
+    "default": true,
+    "value": "#000"
+  },
+  "c-success": {
+    "type": "value",
+    "var_name": "$c-success",
+    "default": true,
+    "value": "#12882c"
+  },
+  "c-alert": {
+    "type": "value",
+    "var_name": "$c-alert",
+    "default": true,
+    "value": "#ffce4e"
+  },
+  "c-facebook": {
+    "type": "value",
+    "var_name": "$c-facebook",
+    "default": true,
+    "value": "#1977f3"
+  },
+  "c-google": {
+    "type": "value",
+    "var_name": "$c-google",
+    "default": true,
+    "value": "#4285f4"
+  },
+  "c-naver": {
+    "type": "value",
+    "var_name": "$c-naver",
+    "default": true,
+    "value": "#03cf5d"
+  },
+  "c-wechat": {
+    "type": "value",
+    "var_name": "$c-wechat",
+    "default": true,
+    "value": "#2dc100"
+  },
+  "c-feel": {
+    "type": "value",
+    "var_name": "$c-feel",
+    "default": true,
+    "value": "#000000"
+  },
+  "c-feel-light": {
+    "type": "value",
+    "var_name": "$c-feel-light",
+    "default": true,
+    "value": "#f0f0f0"
+  },
+  "c-feel-dark": {
+    "type": "value",
+    "var_name": "$c-feel-dark",
+    "default": true,
+    "value": "#a9a9a9"
+  },
+
+
+
+
+  "c-tier-silver": {
+    "type": "value",
+    "var_name": "$c-tier-silver",
+    "default": true,
+    "value": "#e3e3e3"
+  },
+  "c-tier-platinum": {
+    "type": "value",
+    "var_name": "$c-tier-platinum",
+    "default": true,
+    "value": "#99b0c5"
+  },
+  "c-tier-gold": {
+    "type": "value",
+    "var_name": "$c-tier-gold",
+    "default": true,
+    "value": "#dcbe99"
+  },
+
+
+
+
+
+  "bg-light": {
+    "type": "value",
+    "var_name": "$bg-light",
+    "default": true,
+    "value": "#f0f0f0"
+  },
+  "bg-dark": {
+    "type": "value",
+    "var_name": "$bg-dark",
+    "default": true,
+    "value": "#000"
+  },
+  "bg-black": {
+    "type": "value",
+    "var_name": "$bg-black",
+    "default": true,
+    "value": "#000"
+  },
+  "c-bg-light": {
+    "type": "value",
+    "var_name": "$c-bg-light",
+    "default": true,
+    "value": "#000"
+  },
+  "c-bg-dark": {
+    "type": "value",
+    "var_name": "$c-bg-dark",
+    "default": true,
+    "value": "#fff"
+  },
+  "white-smoke": {
+    "type": "value",
+    "var_name": "$white-smoke",
+    "default": true,
+    "value": "#f0f0f0"
+  },
+  "primary": {
+    "type": "value",
+    "var_name": "$primary",
+    "default": true,
+    "value": "#000000"
+  },
+  "primary-guide": {
+    "type": "value",
+    "var_name": "$primary-guide",
+    "default": true,
+    "value": "#363636"
+  },
+  "secondary-guide": {
+    "type": "value",
+    "var_name": "$secondary-guide",
+    "default": true,
+    "value": "#6759bb"
+  },
+  "ternary-guide": {
+    "type": "value",
+    "var_name": "$ternary-guide",
+    "default": true,
+    "value": "#6759bb"
+  },
+  "list-disc-color": {
+    "type": "value",
+    "var_name": "$list-disc-color",
+    "default": true,
+    "value": "#1a1a1a"
+  }
+
+
+
+
+}

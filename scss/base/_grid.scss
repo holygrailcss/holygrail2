@@ -3,7 +3,7 @@
 
 //   -CONTAINERS
 
-$cols: (2, 3, 6, 8);
+
 
 .container-full {
   //0
@@ -467,7 +467,7 @@ $cols: (2, 3, 6, 8);
   }
 }
 
-@each $col in $cols {
+@each $col in $cols-grids {
   .grid-cols-#{$col} {
     display: grid;
     grid-template-columns: repeat(#{$col}, minmax(0, 1fr));
@@ -475,7 +475,7 @@ $cols: (2, 3, 6, 8);
 }
 
 @each $bp, $value in $breakpointscols {
-  @each $col in $cols {
+  @each $col in $cols-grids {
     .#{$bp}\:grid-cols-#{$col} {
       @media (min-width: $value) {
         display: grid;

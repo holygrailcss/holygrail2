@@ -26,6 +26,9 @@
 .rat-4-3 {
   @include ratio(4, 3);
 }
+.rat-9-20 {
+  @include ratio(9, 20);
+}
 .rat-strech {
   @include ratio(275, 445);
 }

@@ -1724,16 +1724,16 @@ button {
 }
 
 .fluids .filas:nth-child(1) .item::after {
-  content: "3";
+  content: "1";
 }
 .fluids .filas:nth-child(1) .item-1::after {
-  content: "20px";
+  content: "60px";
 }
 .fluids .filas:nth-child(1) .item-2::after {
-  content: "30px";
+  content: "160px";
 }
 .fluids .filas:nth-child(1) .item-3::after {
-  content: "0.9";
+  content: "0.8";
 }
 
 .fluids .filas:nth-child(2) .item::after {
@@ -1750,16 +1750,16 @@ button {
 }
 
 .fluids .filas:nth-child(3) .item::after {
-  content: "1";
+  content: "3";
 }
 .fluids .filas:nth-child(3) .item-1::after {
-  content: "60px";
+  content: "20px";
 }
 .fluids .filas:nth-child(3) .item-2::after {
-  content: "160px";
+  content: "30px";
 }
 .fluids .filas:nth-child(3) .item-3::after {
-  content: "0.8";
+  content: "0.9";
 }
 
 .minheaders .filas:nth-child(1) .item::after {
@@ -2156,6 +2156,10 @@ pre[class*=language-] {
 
 .g-16 {
   gap: 16px;
+}
+
+.bg-pink {
+  background-color: rgb(255, 11, 239);
 }
 
 /*# sourceMappingURL=docs.css.map */

@@ -3,460 +3,60 @@
 @import 'base/_animations';
 @import 'abstract/_all';
 @import 'base/guide';
-$variable-colors: (
-  c-white: #{$c-white},
-  c-black: #{$c-black},
-  c-dark-grey: #{$c-dark-grey},
-  c-middle-grey: #{$c-middle-grey},
-  c-light-grey: #{$c-light-grey},
-  c-primary: #{$c-primary},
-  c-secondary: #{$c-secondary},
-  c-accent: #{$c-accent},
-  c-error: #{$c-error},
-  c-sale: #{$c-sale},
-  c-info: #{$c-info},
-  c-valid: #{$c-valid},
-  c-warning: #{$c-warning},
-  c-feel: #{$c-feel},
-  c-feel-dark: #{$c-feel-dark},
-  c-feel-light: #{$c-feel-light},
-  c-limited: #{$c-limited},
-  c-success: #{$c-success},
-  c-alert: #{$c-alert},
-  c-facebook: #{$c-facebook},
-  c-google: #{$c-google},
-  c-naver: #{$c-naver},
-  c-wechat: #{$c-wechat}
-);
-$variable-list: (
-  break-xs: #{$break-xs},
-  break-sm: #{$break-sm},
-  break-md: #{$break-md},
-  break-lg: #{$break-lg},
-  break-xl: #{$break-xl},
-  min-vw: #{$min-vw},
-  height-xs: #{$height-xs},
-  height-sm: #{$height-sm},
-  height-md: #{$height-md},
-  height-lg: #{$height-lg},
-  height-xl: #{$height-xl},
-  height-full: #{$height-full},
-  height-home: #{$height-home},
-  container: #{$container},
-  container-2: #{$container-2},
-  container-3: #{$container-3},
-  container-4: #{$container-4},
-  font-primary: #{$font-family-a-r},
-  font-family-secondary: #{$font-family-b-r},
-  font-primary-weight-light: #{$font-weight-light},
-  font-primary-weight-regular: #{$font-weight-regular},
-  font-primary-weight-medium: #{$font-weight-medium},
-  font-primary-weight-bold: #{$font-weight-bold},
-  font-secondary-weight-light: #{$font-weight-secondary-light},
-  font-secondary-weight-medium: #{$font-weight-secondary-medium},
-  xl: 1500px
-);
-$variabletotals: length($variable-list);
-$variablecolors: length($variable-colors);
-@for $i from 1 through $variabletotals {
-  .var-a-#{nth(map-keys($variable-list), $i)} {
-    &::after {
-      display: inline-block;
-      content: '#{nth(map-keys($variable-list), $i)}';
-    }
-  }
-  .var-b-#{nth(map-keys($variable-list), $i)} {
-    &::after {
-      content: '#{nth(map-values($variable-list), $i)}';
-      display: inline-block;
-    }
-  }
-}
-@for $i from 1 through $variablecolors {
-  .var-a-#{nth(map-keys($variable-colors), $i)} {
-    &::before {
-      display: inline-block;
-      content: '#{nth(map-keys($variable-colors), $i)}';
-    }
-  }
-  .var-b-#{nth(map-keys($variable-colors), $i)} {
-    &::before {
-      content: '#{nth(map-values($variable-colors), $i)}';
-      display: inline-block;
-    }
-  }
-}
-@for $i from 1 through $variablecolors {
-  .bg-#{nth(map-keys($variable-colors), $i)} {
-    background-color: #{nth(map-values($variable-colors), $i)};
-  }
-}
-@mixin tablas($spacingArray, $spacingName, $totalItems) {
-  @each $name, $value in $spacingArray {
-    $i: index(($spacingArray), ($name $value));
-    $spacing0: $name;
-    $spacing1: nth($value, 1);
-    $spacing2: nth($value, 2);
-    $spacing3: nth($value, 3);
-    $spacing4: nth($value, 4);
-    .#{$spacingName} {
-      .filas:nth-child(#{$i}) {
-        .item {
-          &::after {
-            content: '#{$name}';
-          }
-        }
-        .item-0 {
-          word-wrap: break-word;
-        }
-        .item-1 {
-          &::after {
-            content: '#{$spacing1}';
-          }
-        }
-        .item-2 {
-          &::after {
-            content: '#{$spacing2}';
-          }
-        }
-        .item-3 {
-          &::after {
-            content: '#{$spacing3}';
-          }
-        }
-        .item-4 {
-          &::after {
-            content: '#{$spacing4}';
-          }
-        }
-      }
-    }
-  }
-}
-@mixin tablas2($spacingArray, $spacingName, $totalItems) {
-  @each $name, $value in $spacingArray {
-    $i: index(($spacingArray), ($name $value));
-    $spacing0: $name;
-    $spacing1: nth($value, 1);
-    .#{$spacingName} {
-      .filas:nth-child(#{$i}) {
-        .item {
-          &::after {
-            content: '#{$name}';
-          }
-        }
-        .item-0 {
-          word-wrap: break-word;
-        }
-        .item-1 {
-          &::after {
-            content: '#{$spacing1}';
-          }
-        }
-      }
-    }
-  }
-}
-@mixin tablas3($spacingArray, $spacingName, $totalItems) {
-  @each $name, $value in $spacingArray {
-    $i: index(($spacingArray), ($name $value));
-    $spacing0: $name;
-    $spacing1: nth($value, 1);
-    $spacing2: nth($value, 2);
-    $spacing3: nth($value, 3);
-    .#{$spacingName} {
-      .filas:nth-child(#{$i}) {
-        .item {
-          &::after {
-            content: '#{$name}';
-          }
-        }
-        .item-0 {
-          word-wrap: break-word;
-        }
-        .item-1 {
-          &::after {
-            content: '#{$spacing1}';
-          }
-        }
-        .item-2 {
-          &::after {
-            content: '#{$spacing2}';
-          }
-        }
-        .item-3 {
-          &::after {
-            content: '#{$spacing3}';
-          }
-        }
-      }
-    }
-  }
-}
-@mixin muestraArray($nombreArray, $nombreClase, $totalItems) {
-  @each $name, $value in $nombreArray {
-    $i: index($nombreArray, $name $value);
-    .#{$nombreClase} {
-      .filas:nth-child(#{$i}) {
-        .item {
-          &::after {
-            content: '#{$name}';
-          }
-        }
-        @for $j from 1 through $totalItems {
-          .item-#{$j} {
-            &::after {
-              content: '#{nth($value, $j)}';
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@include tablas($margin, 'marginbox', 2);
-@include tablas($margin-y, 'marginbox-y', 2);
-@include tablas($margin-x, 'marginbox-x', 2);
-@include tablas($margin-top, 'marginbox-top', 2);
-@include tablas($margin-right, 'marginbox-right', 2);
-@include tablas($margin-bottom, 'marginbox-bottom', 2);
-@include tablas($margin-left, 'marginbox-left', 2);
-@include tablas($padding, 'paddingbox', 2);
-@include tablas($padding-y, 'paddingbox-y', 2);
-@include tablas($padding-x, 'paddingbox-x', 2);
-@include tablas($padding-top, 'paddingbox-top', 2);
-@include tablas($padding-left, 'paddingbox-left', 2);
-@include tablas($padding-bottom, 'paddingbox-bottom', 2);
-@include tablas($padding-right, 'paddingbox-right', 2);
-@include muestraArray($heights, 'heights', 2);
-@include muestraArray($headersFluids, 'fluids', 3);
-@include muestraArray($minheaders, 'minheaders', 4);
-.font-family-a {
-  &::after {
-    content: '' + $font-family-a-r;
-    position: relative;
-  }
-}
-.font-family-b {
-  &::after {
-    content: '' + $font-family-b-r;
-    position: relative;
-  }
-}
-.font-family-c {
-  &::after {
-    content: '' + $font-family-c-r;
-    position: relative;
-  }
-}
-.mini-site-main {
-  max-width: 1440px;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media (min-width: $break-sm) {
-    padding-left: 200px;
-  }
-}
-.is-rtl {
-  .mini-site-main {
-    padding-right: 200px;
-    padding-left: 20px;
-  }
-}
-.tag-color-wrap {
-  .wrap-item {
-    position: relative;
-    width: 100%;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 10px 10px 0 0;
-    padding: 5px;
-    float: left;
-    box-shadow: 0 9px 25px rgb(0 0 0 / 15%);
-    &::after {
-      position: absolute;
-      margin-top: -50px;
-      bottom: 10px;
-      font-size: 12px;
-      left: 16px;
-    }
-    ::before {
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      z-index: 10;
-      font-size: 12px;
-      margin-top: -40px;
-      left: 0;
-      color: white;
-      bottom: 27px;
-    }
-    .item {
-      height: 100px;
-      margin: 0;
-      position: relative;
-      &::after {
-        font-size: 12px;
-        position: absolute;
-        margin-top: -20px;
-        width: 100%;
-      }
-    }
-  }
-}
-.site-menu-mobile {
-  background-color: #000;
-  position: fixed;
-  height: auto;
-  width: 100%;
-  z-index: 1000;
-  a {
-    float: left;
-  }
-}
-pre[class*='language-'] {
-  margin: 20px 0;
-}
-.mini-box {
-  span {
-    @include font-bold;
 
-    display: block;
-    font-size: 14px;
-  }
+@include space($breakpoints, $padding, $p);
+@include space($breakpoints, $padding-top, $pt);
+@include space($breakpoints, $padding-left, $pl);
+@include space($breakpoints, $padding-bottom, $pb);
+@include space($breakpoints, $padding-right, $pr); 
+
+@include space($breakpoints, $margin-bottom, $mb);
+@include space($breakpoints, $margin-top, $mt);
+
+.color-list{
+  display: flex;
+flex-wrap: wrap;
+flex-direction: row;
 }
-.filas {
-  line-height: 2;
+.variable-box {
+  width: 142px;
+  height: 60px;
+
 }
-.item {
-  white-space: nowrap;
+.variable-item {
+display: flex;
+
+padding-top: 20px;
+padding-bottom:20px;
+
+
+gap: 10px;
+flex-direction: column;
 }
-.bg-docs {
-  background: #fafafa;
-}
-.grid-6-docs {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 0;
-  &:nth-child(even) {
-    background-color: #f7f6f6;
-  }
-  &:nth-child(odd) {
-    background-color: #fff;
-  }
-  div:nth-child(6n + 3),
-  div:nth-child(6n + 4) {
-    background-color: #eaeaea;
-  }
-  div {
-    border-bottom: 1px solid #f6f6f6;
-    padding: 6px;
-  }
-  div:nth-child(6n + 1),
-  div:nth-child(6n + 3),
-  div:nth-child(6n + 5) {
-    font-size: 14px;
-    font-weight: bold;
-  }
+.variable-info{
+  color: gray;
 }
 
-.grid-7-docs {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+h2{
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
-.grid-2-docs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 0;
-  div {
-    border-bottom: 1px solid #f6f6f6;
-    padding: 6px;
-  }
-  div:nth-child(6n + 1),
-  div:nth-child(6n + 3),
-  div:nth-child(6n + 5) {
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
-.grid-8-docs {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  &:nth-child(even) {
-    background-color: #f7f6f6;
-  }
-  &:nth-child(odd) {
-    background-color: #fff;
-  }
-}
-.grid-5-docs {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  &:nth-child(even) {
-    background-color: #f7f6f6;
-  }
-  &:nth-child(odd) {
-    background-color: #fff;
-  }
+h3{
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
-.grid-24-docs {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  gap: 16px;
-  align-items: start;
-}
-.grid-9-docs {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  border-bottom: 1px dashed #d8d8d8;
-  border-left: 1px dashed #d8d8d8;
-  align-items: start;
-  div {
-    padding: 10px;
-    border-top: 1px dashed #d8d8d8;
-    border-right: 1px dashed #d8d8d8;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.grid-88-docs {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  border-bottom: 1px dashed #d8d8d8;
-  border-left: 1px dashed #d8d8d8;
-  align-items: start;
-  div {
-    padding: 10px;
-    border-top: 1px dashed #d8d8d8;
-    border-right: 1px dashed #d8d8d8;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.h3{
+  font-size: 16px;
+font-weight: bold;
 }
 
-.grid-4-docs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-bottom: 1px dashed #d8d8d8;
-  border-left: 1px dashed #d8d8d8;
-  align-items: start;
-  & > div {
-    padding: 10px;
-    border-top: 1px dashed #d8d8d8;
-    border-right: 1px dashed #d8d8d8;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.grid-examples{
+  div{
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
   }
-}
-
-.g-16 {
-  gap: 16px;
 }
