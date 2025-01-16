@@ -8308,17 +8308,18 @@ button {
   transform: scale(1);
 }
 
-.is-error .checkbox-item [type=checkbox]:checked + label::before,
+.is-error.checkbox-item [type=checkbox]:checked + label::before,
+.is-error.checkbox-item [type=checkbox]:not(:checked) + label::before, .is-error .checkbox-item [type=checkbox]:checked + label::before,
 .is-error .checkbox-item [type=checkbox]:not(:checked) + label::before {
   border: 1px solid #ed0f2b !important;
 }
-.is-error .checkbox-item a {
+.is-error.checkbox-item a, .is-error .checkbox-item a {
   color: #ed0f2b !important;
 }
-.is-error .checkbox-item svg g {
+.is-error.checkbox-item svg g, .is-error .checkbox-item svg g {
   fill: #ed0f2b !important;
 }
-.is-error .checkbox-item svg g polyline {
+.is-error.checkbox-item svg g polyline, .is-error .checkbox-item svg g polyline {
   stroke: #ed0f2b !important;
 }
 

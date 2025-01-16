@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       includes: "_includes", // Asegúrate que esta carpeta existe dentro de src
 
-      output: "_site"
+      output: "guia"
     }
   };
 };

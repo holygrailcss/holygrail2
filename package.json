@@ -19,8 +19,8 @@
     "css": "sass scss/style.scss dist/style.css && sass scss/docs.scss dist/docs.css",
     "site": "npx @11ty/eleventy",
     "build": "npm run generate && npm run css && npm run site",
-    "start": "npm run build && npm run open:guide",
-    "open:guide": "open _site/guia/index.html"
+     "start": "npm run build && npm run open:guide",
+    "open:guide": "open guia/index.html"
   },
   "repository": {
     "type": "git",

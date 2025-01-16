@@ -606,7 +606,7 @@
   }
 }
 .is-error {
-  .checkbox-item {
+  &.checkbox-item, .checkbox-item {
     [type='checkbox']:checked + label::before,
     [type='checkbox']:not(:checked) + label::before {
       border: 1px solid $c-error !important;
