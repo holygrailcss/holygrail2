@@ -736,3 +736,21 @@ input::placeholder {
     font-size: 10px;
   }
 }
+
+
+.theme-keyboard-accesible{
+
+  .btn:focus,
+  .stepper-btn:focus,
+  .select select:focus,
+  .checkbox-radio input:focus + label,
+  .checkbox-item input:focus + label,
+  .checkbox-card input:focus + label,
+  .checkbox-item-2 input:focus + label
+
+  {
+        outline: 3px dotted #ccc;
+
+  }
+
+}

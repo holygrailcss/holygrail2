@@ -6833,7 +6833,7 @@ button {
 }
 
 .btn-primary-feel {
-  color: #000;
+  color: #fff;
   background-color: #000000;
 }
 .btn-primary-feel svg g {
@@ -7466,12 +7466,12 @@ button {
 .btn-feel {
   background-color: #000000;
   border: 1px solid #000000;
-  color: #000;
+  color: #fff;
 }
 .btn-feel:hover, .btn-feel.hover, .btn-feel:focus, .btn-feel.focus {
   background-color: #f0f0f0;
   border: 1px solid #f0f0f0;
-  color: #000;
+  color: #fff;
   opacity: 1;
 }
 .btn-feel[disabled], .btn-feel:disabled, .btn-feel.disabled {
@@ -7733,6 +7733,139 @@ button {
   justify-content: space-between;
 }
 
+.quick-purchase .product-size-selector__li:hover:hover {
+  cursor: pointer;
+}
+.quick-purchase .product-size-selector__li:hover:hover .tab-xl .tab-inner-size::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.btn-quick {
+  background-color: transparent;
+  border: 0 solid transparent;
+  height: auto;
+  padding: 16px;
+}
+.btn-quick svg g {
+  fill: #000;
+  stroke: #000;
+}
+.btn-quick svg circle {
+  stroke: #000;
+}
+.btn-quick .icon-sizes {
+  margin-top: -6px;
+  transform: translate(4px, 5px);
+}
+.btn-quick:focus, .btn-quick.focus, .btn-quick:hover, .btn-quick.hover, .btn-quick:active, .btn-quick.active {
+  border: 0 solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-quick:focus .tab-inner-size, .btn-quick.focus .tab-inner-size, .btn-quick:hover .tab-inner-size, .btn-quick.hover .tab-inner-size, .btn-quick:active .tab-inner-size, .btn-quick.active .tab-inner-size {
+  position: relative;
+}
+.btn-quick:focus .tab-inner-size::after, .btn-quick.focus .tab-inner-size::after, .btn-quick:hover .tab-inner-size::after, .btn-quick.hover .tab-inner-size::after, .btn-quick:active .tab-inner-size::after, .btn-quick.active .tab-inner-size::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.btn-quick:disabled, .btn-quick[disabled], .btn-quick.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: #666666;
+  filter: none;
+  opacity: 1;
+}
+.btn-quick:disabled svg-icon,
+.btn-quick:disabled svg-icon2, .btn-quick[disabled] svg-icon,
+.btn-quick[disabled] svg-icon2, .btn-quick.disabled svg-icon,
+.btn-quick.disabled svg-icon2 {
+  background-color: transparent !important;
+  border: 0 solid transparent !important;
+}
+.has-light .btn-quick {
+  color: #fff;
+  border-color: transparent;
+  background-color: transparent;
+}
+.has-light .btn-quick:focus, .has-light .btn-quick.focus, .has-light .btn-quick:hover, .has-light .btn-quick.hover, .has-light .btn-quick:active, .has-light .btn-quick.active {
+  opacity: 0.6;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.btn-tab {
+  background-color: transparent;
+  border: 0 solid transparent;
+  height: auto;
+  padding: 16px;
+}
+.btn-tab svg g {
+  fill: #000;
+  stroke: #000;
+}
+.btn-tab svg circle {
+  stroke: #000;
+}
+.btn-tab .icon-sizes {
+  margin-top: -4px;
+  transform: translate(4px, 5px);
+}
+.is-active .btn-tab .tab-inner-size::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.btn-tab:focus, .btn-tab.focus, .btn-tab:hover, .btn-tab.hover, .btn-tab:active, .btn-tab.active {
+  border: 0 solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-tab:disabled, .btn-tab[disabled], .btn-tab.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: #666666;
+  filter: none;
+  opacity: 1;
+}
+.btn-tab:disabled svg-icon,
+.btn-tab:disabled svg-icon2, .btn-tab[disabled] svg-icon,
+.btn-tab[disabled] svg-icon2, .btn-tab.disabled svg-icon,
+.btn-tab.disabled svg-icon2 {
+  background-color: transparent !important;
+  border: 0 solid transparent !important;
+}
+.has-light .btn-tab {
+  color: #fff;
+  border-color: transparent;
+  background-color: transparent;
+}
+.has-light .btn-tab:focus, .has-light .btn-tab.focus, .has-light .btn-tab:hover, .has-light .btn-tab.hover, .has-light .btn-tab:active, .has-light .btn-tab.active {
+  opacity: 0.6;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
 .checkbox-item {
   text-align: center;
   position: relative;
@@ -7805,9 +7938,14 @@ button {
 }
 .checkbox-item [type=checkbox]:not(:checked),
 .checkbox-item [type=checkbox]:checked {
-  position: absolute;
-  left: -9999px;
-  width: 70px;
+  position: absolute; /* Lo saca del flujo normal */
+  clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 .checkbox-item input[type=checkbox] {
   box-sizing: border-box;
@@ -7902,9 +8040,14 @@ button {
 }
 .checkbox-item-2 [type=checkbox]:not(:checked),
 .checkbox-item-2 [type=checkbox]:checked {
-  position: absolute;
-  left: -9999px;
-  width: 70px;
+  position: absolute; /* Lo saca del flujo normal */
+  clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 .checkbox-item-2 input[type=checkbox] {
   box-sizing: border-box;
@@ -7980,9 +8123,14 @@ button {
 }
 .checkbox-radio [type=radio]:not(:checked),
 .checkbox-radio [type=radio]:checked {
-  position: absolute;
-  left: -9999px;
-  width: 70px;
+  position: absolute; /* Lo saca del flujo normal */
+  clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 .checkbox-radio input[type=radio] {
   box-sizing: border-box;
@@ -8276,9 +8424,14 @@ button {
   transition: all 0.2s ease;
 }
 .checkbox-card [type=radio] {
-  position: absolute;
-  left: -9999px;
-  width: 70px;
+  position: absolute; /* Lo saca del flujo normal */
+  clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 .checkbox-card [type=radio]:checked + .checkbox-card-label, .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
@@ -9175,6 +9328,16 @@ input::placeholder {
 .form-input-select label {
   color: #666666;
   font-size: 10px;
+}
+
+.theme-keyboard-accesible .btn:focus,
+.theme-keyboard-accesible .stepper-btn:focus,
+.theme-keyboard-accesible .select select:focus,
+.theme-keyboard-accesible .checkbox-radio input:focus + label,
+.theme-keyboard-accesible .checkbox-item input:focus + label,
+.theme-keyboard-accesible .checkbox-card input:focus + label,
+.theme-keyboard-accesible .checkbox-item-2 input:focus + label {
+  outline: 3px dotted #ccc;
 }
 
 a:hover {
@@ -10856,6 +11019,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .stepper-btn {
+  position: relative;
   align-items: center;
   background-color: transparent;
   border: none;

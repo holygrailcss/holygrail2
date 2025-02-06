@@ -111,8 +111,11 @@ ncu -u
 
 Es importante inicializar el setup de los elementos
 
+Advertencia:
 
+no usar comentarios del tipo /* */
 
+usar comentarios del tipo //
 
 ## 🤝 Contribuciones [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 

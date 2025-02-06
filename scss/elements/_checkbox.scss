@@ -69,9 +69,14 @@
   }
   [type='checkbox']:not(:checked),
   [type='checkbox']:checked {
-    position: absolute;
-    left: -9999px;
-    width: 70px;
+    position: absolute;  /* Lo saca del flujo normal */
+    clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
   }
   input[type='checkbox'] {
     box-sizing: border-box;
@@ -168,9 +173,14 @@
   }
   [type='checkbox']:not(:checked),
   [type='checkbox']:checked {
-    position: absolute;
-    left: -9999px;
-    width: 70px;
+    position: absolute;  /* Lo saca del flujo normal */
+    clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
   }
   input[type='checkbox'] {
     box-sizing: border-box;
@@ -245,9 +255,14 @@
   }
   [type='radio']:not(:checked),
   [type='radio']:checked {
-    position: absolute;
-    left: -9999px;
-    width: 70px;
+    position: absolute;  /* Lo saca del flujo normal */
+    clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
   }
   input[type='radio'] {
     box-sizing: border-box;
@@ -561,9 +576,14 @@
     transition: all 0.2s ease;
   }
   & [type='radio'] {
-    position: absolute;
-    left: -9999px;
-    width: 70px;
+    position: absolute;  /* Lo saca del flujo normal */
+    clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
   }
   & [type='radio']:checked,
   & :hover {
