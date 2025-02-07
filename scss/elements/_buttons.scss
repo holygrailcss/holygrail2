@@ -1315,19 +1315,38 @@ button {
 }
 .btn-square {
   border: none;
-  width: 37px;
-  height: 37px;
+  width: 33px;
+  height: 33px;
   padding: 12px;
+
+
+  @media (min-width: $break-sm) {
+    width: 37px;
+    height: 37px;
+    padding: 12px;
+  }
+
   svg {
     position: relative;
     z-index: 15;
+    transform: scale(.8);
+    @media (min-width: $break-sm) {
+      transform: scale(1);
+    }
+
   }
   &::after {
     content: '';
     position: absolute;
     background-color: $c-secondary-30;
-    width: 19px;
-    height: 19px;
+    width: 13px;
+    height: 13px;
+    @media (min-width: $break-sm) {
+      width: 19px;
+      height: 19px;
+    }
+
+
   }
   &:focus,
   &.focus,
