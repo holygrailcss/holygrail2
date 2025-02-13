@@ -11255,6 +11255,10 @@ body.open-drawer .drawer-overlay {
   display: grid;
 }
 
+.md-toggle-lines .md-toggle-inner .btn-link, .md-toggle-lines.md-toggle-item .btn-link {
+  border-bottom: 1px solid black;
+}
+
 .md-toggle button {
   align-items: center;
   display: flex;
@@ -11271,10 +11275,6 @@ body.open-drawer .drawer-overlay {
 
 .md-toggle-inner {
   overflow: hidden;
-}
-
-.md-toggle-inner .btn-link, .md-toggle-item .btn-link {
-  border-bottom: 1px solid black;
 }
 
 .is-active.md-toggle-item .md-toggle-content {

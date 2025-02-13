@@ -6,8 +6,14 @@
   list-style: none;
   display: grid;
 }
-
-
+.md-toggle-lines {
+  .md-toggle-inner,
+  &.md-toggle-item {
+    .btn-link {
+      border-bottom: 1px solid black;
+    }
+  }
+}
 .md-toggle button {
   align-items: center;
   display: flex;
@@ -23,15 +29,7 @@
 .md-toggle-inner {
   overflow: hidden;
 }
-
-.md-toggle-inner,.md-toggle-item{
-  .btn-link{
-    border-bottom: 1px solid black;
-  }
-  
-  }
 //extras
-
 .is-active {
   &.md-toggle-item .md-toggle-content {
     grid-template-rows: 1fr;
@@ -44,16 +42,14 @@
   }
 }
 .is-rtl {
-  .md-toggle button,.md-toggle-inner {
+  .md-toggle button,
+  .md-toggle-inner {
     direction: rtl;
     text-align: right;
   }
 }
-
-
-.md-toggle-inner{
-.btn-tertiary{
-  border-bottom: 1px solid black;
-}
-
+.md-toggle-inner {
+  .btn-tertiary {
+    border-bottom: 1px solid black;
+  }
 }
