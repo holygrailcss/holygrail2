@@ -11255,6 +11255,9 @@ body.open-drawer .drawer-overlay {
   display: grid;
 }
 
+.md-toggle-lines {
+  border-top: 1px solid black;
+}
 .md-toggle-lines .md-toggle-inner .btn-link, .md-toggle-lines.md-toggle-item .btn-link {
   border-bottom: 1px solid black;
 }
@@ -11286,13 +11289,10 @@ body.open-drawer .drawer-overlay {
   color: #fff;
 }
 
-.is-rtl .md-toggle button, .is-rtl .md-toggle-inner {
+.is-rtl .md-toggle button,
+.is-rtl .md-toggle-inner {
   direction: rtl;
   text-align: right;
-}
-
-.md-toggle-inner .btn-tertiary {
-  border-bottom: 1px solid black;
 }
 
 .row1-wrap {

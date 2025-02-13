@@ -7,6 +7,7 @@
   display: grid;
 }
 .md-toggle-lines {
+  border-top: 1px solid black;
   .md-toggle-inner,
   &.md-toggle-item {
     .btn-link {
@@ -46,10 +47,5 @@
   .md-toggle-inner {
     direction: rtl;
     text-align: right;
-  }
-}
-.md-toggle-inner {
-  .btn-tertiary {
-    border-bottom: 1px solid black;
   }
 }
