@@ -1869,43 +1869,53 @@ button {
 }
 
 svg-icon div,
-svg-icon2 div {
+svg-icon2 div,
+md-icon div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .is-rtl svg-icon.i-arrow,
-.is-rtl svg-icon2.i-arrow {
+.is-rtl svg-icon2.i-arrow,
+.is-rtl md-icon.i-arrow {
   transform: scaleX(-1);
 }
 svg-icon.c-invert,
-svg-icon2.c-invert {
+svg-icon2.c-invert,
+md-icon.c-invert {
   fill: #fff;
 }
 svg-icon.ico-white path, svg-icon.c-invert path,
 svg-icon2.ico-white path,
-svg-icon2.c-invert path {
+svg-icon2.c-invert path,
+md-icon.ico-white path,
+md-icon.c-invert path {
   fill: #fff;
 }
 svg-icon.ico-error path,
-svg-icon2.ico-error path {
+svg-icon2.ico-error path,
+md-icon.ico-error path {
   fill: #ed0f2b;
 }
 svg-icon.ico-error.ico-reset path,
-svg-icon2.ico-error.ico-reset path {
+svg-icon2.ico-error.ico-reset path,
+md-icon.ico-error.ico-reset path {
   fill: #000;
 }
 svg-icon.ico-success path,
-svg-icon2.ico-success path {
+svg-icon2.ico-success path,
+md-icon.ico-success path {
   fill: #12882c;
 }
 svg-icon.ico-feel path,
-svg-icon2.ico-feel path {
+svg-icon2.ico-feel path,
+md-icon.ico-feel path {
   fill: #a9a9a9;
 }
 
 .icon-white svg-icon path,
-.icon-white svg-icon2 path {
+.icon-white svg-icon2 path,
+.icon-white md-icon path {
   fill: #fff;
 }
 
@@ -2013,7 +2023,9 @@ svg-icon2.ico-feel path {
 svg-icon.ico-post,
 svg-icon.ico-pre,
 svg-icon2.ico-post,
-svg-icon2.ico-pre {
+svg-icon2.ico-pre,
+md-icon.ico-post,
+md-icon.ico-pre {
   margin: 0 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -2628,6 +2640,10 @@ svg-icon2.ico-pre {
 
 .ar-20-9 {
   aspect-ratio: 20/9;
+}
+
+.ar-9-20 {
+  aspect-ratio: 9/20;
 }
 
 .grid-wrap-custom .sk-load::before,
@@ -5371,7 +5387,8 @@ hr {
   align-items: center;
 }
 .ico.ico-l svg-icon,
-.ico.ico-l svg-icon2 {
+.ico.ico-l svg-icon2,
+.ico.ico-l md-icon {
   margin-right: 16px;
 }
 
@@ -6337,7 +6354,8 @@ strong {
   border: 1px solid #000;
 }
 .marketing-spot svg-icon,
-.marketing-spot svg-icon2 {
+.marketing-spot svg-icon2,
+.marketing-spot md-icon {
   margin-right: 8px;
   z-index: -1;
 }
@@ -6861,9 +6879,12 @@ button {
   opacity: 1;
 }
 .btn-primary-feel:disabled svg-icon,
-.btn-primary-feel:disabled svg-icon2, .btn-primary-feel[disabled] svg-icon,
-.btn-primary-feel[disabled] svg-icon2, .btn-primary-feel.disabled svg-icon,
-.btn-primary-feel.disabled svg-icon2 {
+.btn-primary-feel:disabled svg-icon2,
+.btn-primary-feel:disabled md-icon, .btn-primary-feel[disabled] svg-icon,
+.btn-primary-feel[disabled] svg-icon2,
+.btn-primary-feel[disabled] md-icon, .btn-primary-feel.disabled svg-icon,
+.btn-primary-feel.disabled svg-icon2,
+.btn-primary-feel.disabled md-icon {
   background-color: #a9a9a9 !important;
   border: 1px solid #a9a9a9 !important;
 }
@@ -6896,9 +6917,12 @@ button {
   opacity: 1;
 }
 .btn-secondary-feel:disabled svg-icon,
-.btn-secondary-feel:disabled svg-icon2, .btn-secondary-feel[disabled] svg-icon,
-.btn-secondary-feel[disabled] svg-icon2, .btn-secondary-feel.disabled svg-icon,
-.btn-secondary-feel.disabled svg-icon2 {
+.btn-secondary-feel:disabled svg-icon2,
+.btn-secondary-feel:disabled md-icon, .btn-secondary-feel[disabled] svg-icon,
+.btn-secondary-feel[disabled] svg-icon2,
+.btn-secondary-feel[disabled] md-icon, .btn-secondary-feel.disabled svg-icon,
+.btn-secondary-feel.disabled svg-icon2,
+.btn-secondary-feel.disabled md-icon {
   background-color: #a9a9a9 !important;
   border: 1px solid #a9a9a9 !important;
 }
@@ -6942,9 +6966,12 @@ button {
   opacity: 1;
 }
 .btn-tertiary:disabled svg-icon,
-.btn-tertiary:disabled svg-icon2, .btn-tertiary[disabled] svg-icon,
-.btn-tertiary[disabled] svg-icon2, .btn-tertiary.disabled svg-icon,
-.btn-tertiary.disabled svg-icon2 {
+.btn-tertiary:disabled svg-icon2,
+.btn-tertiary:disabled md-icon, .btn-tertiary[disabled] svg-icon,
+.btn-tertiary[disabled] svg-icon2,
+.btn-tertiary[disabled] md-icon, .btn-tertiary.disabled svg-icon,
+.btn-tertiary.disabled svg-icon2,
+.btn-tertiary.disabled md-icon {
   background-color: transparent !important;
   border: 0 solid transparent !important;
 }
@@ -7065,7 +7092,8 @@ button {
   position: relative;
 }
 .btn-social svg-icon,
-.btn-social svg-icon2 {
+.btn-social svg-icon2,
+.btn-social md-icon {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -7077,7 +7105,8 @@ button {
   position: absolute;
 }
 .btn-social svg-icon div,
-.btn-social svg-icon2 div {
+.btn-social svg-icon2 div,
+.btn-social md-icon div {
   display: flex;
 }
 .btn-social:disabled, .btn-social[disabled], .btn-social.disabled {
@@ -7113,11 +7142,13 @@ button {
   border: 1px solid #1977f3;
 }
 .btn-facebook svg-icon,
-.btn-facebook svg-icon2 {
+.btn-facebook svg-icon2,
+.btn-facebook md-icon {
   background-color: transparent;
 }
 .btn-facebook svg-icon path,
-.btn-facebook svg-icon2 path {
+.btn-facebook svg-icon2 path,
+.btn-facebook md-icon path {
   fill: #fff;
 }
 .btn-facebook:focus, .btn-facebook.focus, .btn-facebook:hover, .btn-facebook.hover, .btn-facebook:visited, .btn-facebook:active, .btn-facebook.active {
@@ -7151,8 +7182,10 @@ button {
 }
 .btn-apple svg-icon path,
 .btn-apple svg-icon2 path,
+.btn-apple md-icon path,
 .has-light .btn-apple svg-icon path,
-.has-light .btn-apple svg-icon2 path {
+.has-light .btn-apple svg-icon2 path,
+.has-light .btn-apple md-icon path {
   fill: #fff;
 }
 
@@ -7196,8 +7229,10 @@ button {
 }
 .btn-naver svg-icon path,
 .btn-naver svg-icon2 path,
+.btn-naver md-icon path,
 .has-light .btn-naver svg-icon path,
-.has-light .btn-naver svg-icon2 path {
+.has-light .btn-naver svg-icon2 path,
+.has-light .btn-naver md-icon path {
   fill: #fff;
 }
 
@@ -7222,8 +7257,10 @@ button {
 }
 .btn-wechat svg-icon path,
 .btn-wechat svg-icon2 path,
+.btn-wechat md-icon path,
 .has-light .btn-wechat svg-icon path,
-.has-light .btn-wechat svg-icon2 path {
+.has-light .btn-wechat svg-icon2 path,
+.has-light .btn-wechat md-icon path {
   fill: #fff;
 }
 
@@ -7531,7 +7568,8 @@ button {
 }
 
 .btn-svg svg-icon,
-.btn-svg svg-icon2 {
+.btn-svg svg-icon2,
+.btn-svg md-icon {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -7809,9 +7847,12 @@ button {
   opacity: 1;
 }
 .btn-quick:disabled svg-icon,
-.btn-quick:disabled svg-icon2, .btn-quick[disabled] svg-icon,
-.btn-quick[disabled] svg-icon2, .btn-quick.disabled svg-icon,
-.btn-quick.disabled svg-icon2 {
+.btn-quick:disabled svg-icon2,
+.btn-quick:disabled md-icon, .btn-quick[disabled] svg-icon,
+.btn-quick[disabled] svg-icon2,
+.btn-quick[disabled] md-icon, .btn-quick.disabled svg-icon,
+.btn-quick.disabled svg-icon2,
+.btn-quick.disabled md-icon {
   background-color: transparent !important;
   border: 0 solid transparent !important;
 }
@@ -7868,9 +7909,12 @@ button {
   opacity: 1;
 }
 .btn-tab:disabled svg-icon,
-.btn-tab:disabled svg-icon2, .btn-tab[disabled] svg-icon,
-.btn-tab[disabled] svg-icon2, .btn-tab.disabled svg-icon,
-.btn-tab.disabled svg-icon2 {
+.btn-tab:disabled svg-icon2,
+.btn-tab:disabled md-icon, .btn-tab[disabled] svg-icon,
+.btn-tab[disabled] svg-icon2,
+.btn-tab[disabled] md-icon, .btn-tab.disabled svg-icon,
+.btn-tab.disabled svg-icon2,
+.btn-tab.disabled md-icon {
   background-color: transparent !important;
   border: 0 solid transparent !important;
 }
@@ -9493,7 +9537,8 @@ a:hover {
   background-position-x: 20px;
 }
 .link-svg-pre svg-icon,
-.link-svg-pre svg-icon2 {
+.link-svg-pre svg-icon2,
+.link-svg-pre md-icon {
   position: absolute;
   left: 0;
   top: 2px;
@@ -9516,7 +9561,8 @@ a:hover {
   background-position: calc(100% - 20px);
 }
 .link-svg-post svg-icon,
-.link-svg-post svg-icon2 {
+.link-svg-post svg-icon2,
+.link-svg-post md-icon {
   position: absolute;
   right: 0;
   top: 2px;
@@ -9769,7 +9815,8 @@ ul.list-mini > li::after {
   padding-left: 32px;
 }
 .list-button.list-tertiary svg-icon,
-.list-button.list-tertiary svg-icon2 {
+.list-button.list-tertiary svg-icon2,
+.list-button.list-tertiary md-icon {
   left: 20px;
   opacity: 1;
 }
@@ -12539,7 +12586,8 @@ div.card9-wrap .rat-content:hover .card9-add {
   padding-left: 32px;
 }
 .is-rtl .btn-social svg-icon,
-.is-rtl .btn-social svg-icon2 {
+.is-rtl .btn-social svg-icon2,
+.is-rtl .btn-social md-icon {
   right: 16px;
   left: auto;
 }
@@ -12663,12 +12711,14 @@ div.card9-wrap .rat-content:hover .card9-add {
   left: 0;
 }
 .is-rtl .form-input-label.has-ico-post svg-icon,
-.is-rtl .form-input-label.has-ico-post svg-icon2 {
+.is-rtl .form-input-label.has-ico-post svg-icon2,
+.is-rtl .form-input-label.has-ico-post md-icon {
   position: absolute;
   right: 0;
 }
 .is-rtl .form-input-label.has-ico-post .validation-error-messages svg-icon,
-.is-rtl .form-input-label.has-ico-post .validation-error-messages svg-icon2 {
+.is-rtl .form-input-label.has-ico-post .validation-error-messages svg-icon2,
+.is-rtl .form-input-label.has-ico-post .validation-error-messages md-icon {
   position: relative;
 }
 .is-rtl .form-input-prefix .input-prefix {
@@ -12684,7 +12734,8 @@ div.card9-wrap .rat-content:hover .card9-add {
   left: 0;
 }
 .is-rtl .form-input-label-2.has-ico-post .validation-error-messages svg-icon,
-.is-rtl .form-input-label-2.has-ico-post .validation-error-messages svg-icon2 {
+.is-rtl .form-input-label-2.has-ico-post .validation-error-messages svg-icon2,
+.is-rtl .form-input-label-2.has-ico-post .validation-error-messages md-icon {
   position: relative;
 }
 .is-rtl .form-input-label-2.has-ico-pre .ico-pre {
@@ -12693,7 +12744,8 @@ div.card9-wrap .rat-content:hover .card9-add {
   left: auto;
 }
 .is-rtl .form-input-label-2.has-ico-pre .validation-error-messages svg-icon,
-.is-rtl .form-input-label-2.has-ico-pre .validation-error-messages svg-icon2 {
+.is-rtl .form-input-label-2.has-ico-pre .validation-error-messages svg-icon2,
+.is-rtl .form-input-label-2.has-ico-pre .validation-error-messages md-icon {
   position: relative;
 }
 .is-rtl .form-input-label-2 .info-text {
@@ -12719,8 +12771,10 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 .is-rtl .link-svg-pre svg-icon,
 .is-rtl .link-svg-pre svg-icon2,
+.is-rtl .link-svg-pre md-icon,
 .is-rtl button.link-line.link-svg-pre svg-icon,
-.is-rtl button.link-line.link-svg-pre svg-icon2 {
+.is-rtl button.link-line.link-svg-pre svg-icon2,
+.is-rtl button.link-line.link-svg-pre md-icon {
   left: auto;
   right: 0;
 }
@@ -12735,8 +12789,10 @@ div.card9-wrap .rat-content:hover .card9-add {
 }
 .is-rtl .link-svg-post svg-icon,
 .is-rtl .link-svg-post svg-icon2,
+.is-rtl .link-svg-post md-icon,
 .is-rtl button.link-line.link-svg-post svg-icon,
-.is-rtl button.link-line.link-svg-post svg-icon2 {
+.is-rtl button.link-line.link-svg-post svg-icon2,
+.is-rtl button.link-line.link-svg-post md-icon {
   right: auto;
   left: 0;
 }
@@ -12763,11 +12819,13 @@ div.card9-wrap .rat-content:hover .card9-add {
   right: 0;
 }
 .is-rtl .header-account-back svg-icon svg,
-.is-rtl .header-account-back svg-icon2 svg {
+.is-rtl .header-account-back svg-icon2 svg,
+.is-rtl .header-account-back md-icon svg {
   transform: rotate(180deg);
 }
 .is-rtl .validation-error-messages svg-icon,
-.is-rtl .validation-error-messages svg-icon2 {
+.is-rtl .validation-error-messages svg-icon2,
+.is-rtl .validation-error-messages md-icon {
   padding-right: 0;
   padding-left: 8px;
 }

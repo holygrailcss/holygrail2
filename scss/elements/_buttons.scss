@@ -500,7 +500,8 @@ button {
     filter: none;
     opacity: 1;
     svg-icon,
-    svg-icon2 {
+    svg-icon2 ,
+    md-icon{
       background-color: $c-middle-grey !important;
       border: 1px solid $c-middle-grey !important;
     }
@@ -541,7 +542,8 @@ button {
     filter: none;
     opacity: 1;
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       background-color: $c-middle-grey !important;
       border: 1px solid $c-middle-grey !important;
     }
@@ -598,7 +600,8 @@ button {
     filter: none;
     opacity: 1;
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       background-color: transparent !important;
       border: 0 solid transparent !important;
     }
@@ -745,7 +748,8 @@ button {
   align-items: center;
   position: relative;
   svg-icon,
-  svg-icon2 {
+  svg-icon2,
+  md-icon{
     display: flex;
     align-content: center;
     justify-content: center;
@@ -793,7 +797,8 @@ button {
   color: $c-white;
   border: 1px solid $c-facebook;
   svg-icon,
-  svg-icon2 {
+  svg-icon2,
+  md-icon   {
     background-color: transparent;
     path {
       fill: $c-white;
@@ -833,7 +838,8 @@ button {
     border: 1px solid $c-dark-grey;
   }
   svg-icon path,
-  svg-icon2 path {
+  svg-icon2 path,
+  md-icon path {
     fill: $c-white;
   }
 }
@@ -872,7 +878,8 @@ button {
     border: 1px solid $c-naver;
   }
   svg-icon path,
-  svg-icon2 path {
+  svg-icon2 path,
+  md-icon path {
     fill: $c-white;
   }
 }
@@ -894,7 +901,8 @@ button {
     border: 1px solid $c-wechat;
   }
   svg-icon path,
-  svg-icon2 path {
+  svg-icon2 path,
+  md-icon path {
     fill: $c-white;
   }
 }
@@ -1215,7 +1223,8 @@ button {
   }
 }
 .btn-svg svg-icon,
-.btn-svg svg-icon2 {
+.btn-svg svg-icon2,
+.btn-svg md-icon {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1518,7 +1527,8 @@ position: relative;
     filter: none;
     opacity: 1;
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon{
       background-color: transparent !important;
       border: 0 solid transparent !important;
     }
@@ -1594,7 +1604,8 @@ position: relative;
     filter: none;
     opacity: 1;
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon{
       background-color: transparent !important;
       border: 0 solid transparent !important;
     }

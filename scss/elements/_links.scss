@@ -171,7 +171,8 @@ a {
   background-position-x: 20px;
 
   svg-icon,
-  svg-icon2 {
+  svg-icon2,
+  md-icon{
     position: absolute;
     left: 0;
     top: 2px;
@@ -197,7 +198,8 @@ a {
   background-position: calc(100% - 20px);
 
   svg-icon,
-  svg-icon2 {
+  svg-icon2,
+  md-icon{
     position: absolute;
     right: 0;
     top: 2px;

@@ -154,7 +154,8 @@
     padding-left: 32px;
 
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       right: 16px;
       left: auto;
     }
@@ -317,13 +318,15 @@
     }
     &.has-ico-post {
       svg-icon,
-      svg-icon2 {
+      svg-icon2,
+      md-icon {
         position: absolute;
         right: 0;
       }
       .validation-error-messages {
         svg-icon,
-        svg-icon2 {
+        svg-icon2,
+        md-icon {
           position: relative;
         }
       }
@@ -349,7 +352,8 @@
       }
       .validation-error-messages {
         svg-icon,
-        svg-icon2 {
+        svg-icon2,
+        md-icon {
           position: relative;
         }
       }
@@ -362,7 +366,8 @@
       }
       .validation-error-messages {
         svg-icon,
-        svg-icon2 {
+        svg-icon2,
+        md-icon {
           position: relative;
         }
       }
@@ -396,7 +401,8 @@
       left: 0;
     }
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       left: auto;
       right: 0;
     }
@@ -409,7 +415,8 @@
       right: 0;
     }
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       right: auto;
       left: 0;
     }
@@ -443,7 +450,8 @@
     left: auto;
     right: 0;
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       svg {
         transform: rotate(180deg);
       }
@@ -451,7 +459,8 @@
   }
   .validation-error-messages {
     svg-icon,
-    svg-icon2 {
+    svg-icon2,
+    md-icon {
       padding-right: 0;
       padding-left: 8px;
     }

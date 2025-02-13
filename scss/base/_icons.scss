@@ -17,7 +17,8 @@ $w-plus: 10px;
 }
 
 svg-icon,
-svg-icon2 {
+svg-icon2 ,
+md-icon{
   div {
     display: flex;
     align-items: center;
@@ -62,7 +63,8 @@ svg-icon2 {
 }
 .icon-white {
   svg-icon,
-  svg-icon2 {
+  svg-icon2,
+  md-icon {
     path {
       fill: $c-white;
     }
@@ -180,7 +182,9 @@ svg-icon2 {
 svg-icon.ico-post,
 svg-icon.ico-pre,
 svg-icon2.ico-post,
-svg-icon2.ico-pre {
+svg-icon2.ico-pre,
+md-icon.ico-post,
+md-icon.ico-pre {
   margin: 0 16px;
   top: 50%;
   transform: translateY(-50%);
