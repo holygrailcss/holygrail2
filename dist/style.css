@@ -2118,6 +2118,33 @@ md-icon.ico-pre {
   background-color: #000;
 }
 
+.md-icon-anim {
+  position: relative;
+  width: 12px;
+  height: 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.md-icon-anim:before, .md-icon-anim:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #000;
+  transition: transform 0.2s ease;
+}
+.md-icon-anim:before {
+  transform: rotate(90deg);
+}
+.is-active .md-icon-anim:before {
+  transform: rotate(0deg);
+}
+.has-light .md-icon-anim:before, .has-light .md-icon-anim:after {
+  background-color: #fff;
+}
+
 .rat-16-9 {
   position: relative;
   overflow: hidden;
@@ -11225,6 +11252,7 @@ body.open-drawer .drawer-overlay {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: grid;
 }
 
 .md-toggle button {
@@ -11233,22 +11261,24 @@ body.open-drawer .drawer-overlay {
   gap: 8px;
   height: 40px;
   justify-content: space-between;
-  padding: 0;
 }
 
 .md-toggle-content {
-  display: none;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
 }
 
-.md-toggle-item.is-active .md-toggle-content {
-  display: flex;
-  flex-direction: column;
+.md-toggle-inner {
+  overflow: hidden;
 }
 
-.md-toggle-content .btn-link {
-  max-width: 300px;
-  overflow: visible;
-  min-height: 40px;
+.md-toggle-inner .btn-link, .md-toggle-item .btn-link {
+  border-bottom: 1px solid black;
+}
+
+.is-active.md-toggle-item .md-toggle-content {
+  grid-template-rows: 1fr;
 }
 
 .has-light .md-toggle button {
@@ -11256,9 +11286,13 @@ body.open-drawer .drawer-overlay {
   color: #fff;
 }
 
-.is-rtl .md-toggle button {
+.is-rtl .md-toggle button, .is-rtl .md-toggle-inner {
   direction: rtl;
   text-align: right;
+}
+
+.md-toggle-inner .btn-tertiary {
+  border-bottom: 1px solid black;
 }
 
 .row1-wrap {

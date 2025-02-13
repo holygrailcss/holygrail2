@@ -18,13 +18,18 @@
 .md-toggle-content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
+  transition: grid-template-rows 0.3s ease;
 }
 .md-toggle-inner {
   overflow: hidden;
 }
 
-
+.md-toggle-inner,.md-toggle-item{
+  .btn-link{
+    border-bottom: 1px solid black;
+  }
+  
+  }
 //extras
 
 .is-active {
@@ -39,8 +44,16 @@
   }
 }
 .is-rtl {
-  .md-toggle button {
+  .md-toggle button,.md-toggle-inner {
     direction: rtl;
     text-align: right;
   }
+}
+
+
+.md-toggle-inner{
+.btn-tertiary{
+  border-bottom: 1px solid black;
+}
+
 }

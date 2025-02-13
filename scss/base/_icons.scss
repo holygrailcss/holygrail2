@@ -281,3 +281,46 @@ md-icon.ico-pre {
   height: 1px;
   background-color: $c-primary;
 }
+
+
+
+.md-icon-anim {
+  position: relative;
+  width: 12px;
+  height: 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    background-color: $c-primary;
+    transition: transform 0.2s ease;
+  }
+
+  &:before {
+    transform: rotate(90deg);
+  }
+
+  .is-active &:before {
+    transform: rotate(0deg);
+  }
+
+.has-light &{
+
+  &:before,
+  &:after {
+
+    background-color: $c-white;
+
+  }
+
+
+}
+
+}
