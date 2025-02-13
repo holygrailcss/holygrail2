@@ -1,8 +1,6 @@
 @use 'sass:math';
 @import '../abstract/_all';
 .md-toggle {
-  padding: 0;
-  margin: 0;
   list-style: none;
   display: grid;
 }
@@ -41,7 +39,18 @@
     background-color: transparent;
     color: $c-white;
   }
+  .md-toggle .md-toggle-lines {
+    border-top: 1px solid white;
+    .md-toggle-inner,
+    &.md-toggle-item.md-toggle-lines {
+      .btn-link {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
 }
+
+
 .is-rtl {
   .md-toggle button,
   .md-toggle-inner {

@@ -11249,8 +11249,6 @@ body.open-drawer .drawer-overlay {
 }
 
 .md-toggle {
-  padding: 0;
-  margin: 0;
   list-style: none;
   display: grid;
 }
@@ -11287,6 +11285,12 @@ body.open-drawer .drawer-overlay {
 .has-light .md-toggle button {
   background-color: transparent;
   color: #fff;
+}
+.has-light .md-toggle .md-toggle-lines {
+  border-top: 1px solid white;
+}
+.has-light .md-toggle .md-toggle-lines .md-toggle-inner .btn-link, .has-light .md-toggle .md-toggle-lines.md-toggle-item.md-toggle-lines .btn-link {
+  border-bottom: 1px solid white;
 }
 
 .is-rtl .md-toggle button,
