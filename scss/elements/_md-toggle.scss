@@ -1,0 +1,50 @@
+@use 'sass:math';
+@import '../abstract/_all';
+
+.md-toggle {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.md-toggle-item:first-child {
+    border-top: .5px solid #000;
+}
+
+.md-toggle button {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.md-toggle-content {
+  display: none;
+}
+
+.md-toggle-item.is-active .md-toggle-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.md-toggle-content .btn-link {
+    max-width: 300px;
+    overflow: visible;
+    min-height: 40px;
+}
+
+.has-light {
+  .btn{
+    background-color: transparent;
+    color: $c-white;
+  }
+}
+
+.is-rtl {
+  .md-toggle button {
+    direction: rtl;
+    text-align: right;
+  }
+}

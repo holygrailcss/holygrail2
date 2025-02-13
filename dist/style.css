@@ -11195,13 +11195,13 @@ body.open-drawer .drawer-overlay {
 }
 
 .md-link button {
-  display: flex;
-  padding: 0;
   align-items: center;
+  border-bottom: 0.5px solid #000;
+  display: flex;
   gap: 8px;
   height: 52px;
   justify-content: space-between;
-  border-bottom: 0.5px solid #000;
+  padding: 0;
 }
 
 .md-link:first-child button {
@@ -11209,8 +11209,8 @@ body.open-drawer .drawer-overlay {
 }
 
 .has-light .btn {
-  color: #fff;
   background-color: transparent;
+  color: #fff;
 }
 
 .is-rtl .md-link button {
@@ -11219,6 +11219,50 @@ body.open-drawer .drawer-overlay {
 }
 .is-rtl .md-link button svg {
   transform: rotate(180deg);
+}
+
+.md-toggle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.md-toggle-item:first-child {
+  border-top: 0.5px solid #000;
+}
+
+.md-toggle button {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 52px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.md-toggle-content {
+  display: none;
+}
+
+.md-toggle-item.is-active .md-toggle-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.md-toggle-content .btn-link {
+  max-width: 300px;
+  overflow: visible;
+  min-height: 40px;
+}
+
+.has-light .btn {
+  background-color: transparent;
+  color: #fff;
+}
+
+.is-rtl .md-toggle button {
+  direction: rtl;
+  text-align: right;
 }
 
 .row1-wrap {
