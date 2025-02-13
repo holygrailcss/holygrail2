@@ -1,0 +1,46 @@
+@use 'sass:math';
+@import '../abstract/_all';
+.md-toggle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+}
+
+
+.md-toggle button {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  justify-content: space-between;
+}
+.md-toggle-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+}
+.md-toggle-inner {
+  overflow: hidden;
+}
+
+
+//extras
+
+.is-active {
+  &.md-toggle-item .md-toggle-content {
+    grid-template-rows: 1fr;
+  }
+}
+.has-light {
+  .md-toggle button {
+    background-color: transparent;
+    color: $c-white;
+  }
+}
+.is-rtl {
+  .md-toggle button {
+    direction: rtl;
+    text-align: right;
+  }
+}
