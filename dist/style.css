@@ -11227,15 +11227,11 @@ body.open-drawer .drawer-overlay {
   list-style: none;
 }
 
-.md-toggle-item:first-child {
-  border-top: 0.5px solid #000;
-}
-
 .md-toggle button {
   align-items: center;
   display: flex;
   gap: 8px;
-  height: 52px;
+  height: 40px;
   justify-content: space-between;
   padding: 0;
 }
@@ -11255,7 +11251,7 @@ body.open-drawer .drawer-overlay {
   min-height: 40px;
 }
 
-.has-light .btn {
+.has-light .md-toggle button {
   background-color: transparent;
   color: #fff;
 }

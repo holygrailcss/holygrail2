@@ -7,10 +7,6 @@
     list-style: none;
 }
 
-.md-toggle-item:first-child {
-    border-top: .5px solid #000;
-}
-
 .md-toggle button {
   align-items: center;
   display: flex;
@@ -36,7 +32,7 @@
 }
 
 .has-light {
-  .btn{
+  .md-toggle button {
     background-color: transparent;
     color: $c-white;
   }
