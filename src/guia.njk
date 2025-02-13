@@ -150,16 +150,16 @@ permalink: /
       <button class="btn btn-tertiary">.btn-tertiary</button>
       <button class="btn btn-text">.btn-text</button>
       <button class="btn btn-icon w-100"> .btn-icon <div> ></div> </button>
-
       <button class="btn btn-square show-quickly-button " aria-label="Añadir a la cesta">
-        <svg-icon2 category="common" src="plus-small" class="icon"><div><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5H0V4H9V5Z" fill="black"></path>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.99992 0L4.99992 9H3.99992L3.99992 4.37112e-08L4.99992 0Z" fill="black"></path>
-        </svg>
-        </div>
-      </svg-icon2>
-    </button>
-
+        <svg-icon2 category="common" src="plus-small" class="icon">
+          <div><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5H0V4H9V5Z" fill="black"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.99992 0L4.99992 9H3.99992L3.99992 4.37112e-08L4.99992 0Z" fill="black"></path>
+            </svg>
+          </div>
+        </svg-icon2>
+      </button>
     </div>
     </div>
   </section>
@@ -388,10 +388,8 @@ permalink: /
         </div>
       </div>
     </div>
-
     <div class="row">
       <div class="col-xs-12">
-
         <button aria-label="Select size" class="btn-quick is-flex title-s"><span
             class="tab-inner-size tab-xl">35</span><!----><!---->
           <div class="icon-sizes" data-title="dev.product.soldOut"><svg-icon2 src="info" category="common"
@@ -404,28 +402,89 @@ permalink: /
                 </svg></div><!---->
             </svg-icon2></div><!---->
         </button>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Accesibilidad</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <form class="mb-64">
+          <label for="radio1">
+            <input id="radio1" type="radio" name="opcion" value="opcion1" class="visually-hidden" />
+            <span class="square-radio"></span>
+            Opción 1
+          </label>
+          <label for="radio2">
+            <input id="radio2" type="radio" name="opcion" value="opcion2" class="visually-hidden" />
+            <span class="square-radio"></span>
+            Opción 2
+          </label>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Lista Link</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <a class="md-link" href="">
+          <button  class=" btn btn--full ">
+            <div class="title-m leading-1">
+              Enlace con Icono
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="black" stroke="black"/>
+            </svg>
+          </button>
+        </a>
+
+        <a class="md-link" href="">
+          <button  class=" btn btn--full">
+            <div class="title-m leading-1">
+              Enlace con Icono
+            </div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="black" stroke="black"/>
+            </svg>
+          </button>
+        </a>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Lista Accordion</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+
+      <a href="">
+        <button  class=" btn btn--full md-link">
+          <div class="title-m leading-1">
+            Enlace con Icono
+          </div>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="black" stroke="black"/>
+          </svg>
+        </button>
+      </a>
+
+
 
         
       </div>
     </div>
-
-
   </section>
-  <section>
-
-  </section>
-  <form class="mb-64">
-    <label for="radio1">
-      <input id="radio1" type="radio" name="opcion" value="opcion1" class="visually-hidden" />
-      <span class="square-radio"></span>
-      Opción 1
-    </label>
-    <label for="radio2">
-      <input id="radio2" type="radio" name="opcion" value="opcion2" class="visually-hidden" />
-      <span class="square-radio"></span>
-      Opción 2
-    </label>
-  </form>
   <style>
     /* Clase para ocultar visualmente el input pero seguir siendo accesible para lectores de pantalla */
     .visually-hidden {
@@ -463,5 +522,18 @@ permalink: /
     /* Estilo cuando el radio está “chequeado” */
     .visually-hidden:checked+.square-radio {
       background-color: #000;
+    }
+
+    .md-link:first-child button {
+      border-top: .5px solid #000;
+    }
+    .md-link button {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      gap: 8px;
+      border-bottom: .5px solid #000;
+      height: 52px;
+      justify-content: space-between;
     }
   </style>
