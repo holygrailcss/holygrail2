@@ -1,0 +1,33 @@
+@use 'sass:math';
+@import '../abstract/_all';
+// Estado normal
+.md-link button {
+  align-items: center;
+  border-bottom: .5px solid #000;
+  display: flex;
+  gap: 8px;
+  height: 52px;
+  justify-content: space-between;
+  padding: 0;
+}
+// primera linea
+.md-link:first-child button {
+  border-top: .5px solid #000;
+}
+// Estado version oscura
+.has-light{
+  .btn{
+    background-color: transparent;
+    color: $c-white;
+  }
+}
+// Estado rtl
+.is-rtl{
+  .md-link button {
+    direction: rtl;
+    text-align: right;
+  }
+  .md-link button svg {
+    transform: rotate(180deg);
+  }
+}

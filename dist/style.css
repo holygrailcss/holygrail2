@@ -11194,6 +11194,33 @@ body.open-drawer .drawer-overlay {
   pointer-events: auto;
 }
 
+.md-link button {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  gap: 8px;
+  height: 52px;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #000;
+}
+
+.md-link:first-child button {
+  border-top: 0.5px solid #000;
+}
+
+.has-light .btn {
+  color: #fff;
+  background-color: transparent;
+}
+
+.is-rtl .md-link button {
+  direction: rtl;
+  text-align: right;
+}
+.is-rtl .md-link button svg {
+  transform: rotate(180deg);
+}
+
 .row1-wrap {
   overflow: hidden;
 }
