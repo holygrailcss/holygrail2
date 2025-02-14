@@ -507,6 +507,7 @@ permalink: /
       </div>
     </div>
   </section>
+
   <section class="container mb-64">
     <div class="row">
       <div class="col-xs-12">
@@ -514,13 +515,13 @@ permalink: /
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-4">
-        <p class=" h3 mb-8">Normal</p>
+      <div class="col-xs-6 mb-48">
+        <p class="h3 mb-8">Normal</p>
         <ul class="md-toggle">
-          <li class="md-toggle-item ">
+          <li class="md-toggle-item">
             <button class="btn btn--full btn btn-link ttu">
               Enlace con Botones
-              <div class="md-icon-anim"> </div>
+              <div class="md-toggle-icon-anim"></div>
             </button>
             <div class="md-toggle-content">
               <div class="md-toggle-inner is-flex gap-16">
@@ -533,7 +534,7 @@ permalink: /
           <li class="md-toggle-item">
             <button class="btn btn--full btn-link ttu">
               Enlace con texto
-              <div class="md-icon-anim"> </div>
+              <div class="md-toggle-icon-anim"></div>
             </button>
             <div class="md-toggle-content">
               <div class="md-toggle-inner is-flex gap-16 text-m">
@@ -541,30 +542,67 @@ permalink: /
               </div>
             </div>
           </li>
-          <li class="md-toggle-item ">
+          <li class="md-toggle-item">
             <button class="btn btn--full btn-link ttu">
               Enlace con listado
-              <div class="md-icon-anim"> </div>
+              <div class="md-toggle-icon-anim"> </div>
             </button>
-
-
             <div class="md-toggle-content">
-              <div class="md-toggle-inner ">
+              <div class="md-toggle-inner">
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
               </div>
             </div>
           </li>
-
-
           <li class="md-toggle-item md-toggle-lines">
             <button class="btn btn--full btn-link ttu">
               Enlace con listado con lineas
-              <div class="md-icon-anim"> </div>
+              <div class="md-toggle-icon-anim"></div>
             </button>
+            <div class="md-toggle-content">
+              <div class="md-toggle-inner">
+                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-
+      <div class="col-xs-6 mb-48 is-rtl">
+        <p class="h3 mb-8">is-rtl</p>
+        <ul class="md-toggle">
+          <li class="md-toggle-item">
+            <button class="btn btn--full btn btn-link ttu">
+              Enlace con Botones
+              <div class="md-toggle-icon-anim"> </div>
+            </button>
+            <div class="md-toggle-content">
+              <div class="md-toggle-inner is-flex gap-16">
+                <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                <a href=""><button class="btn btn-secondary">Enlace</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="md-toggle-item">
+            <button class="btn btn--full btn-link ttu">
+              Enlace con texto
+              <div class="md-toggle-icon-anim"></div>
+            </button>
+            <div class="md-toggle-content">
+              <div class="md-toggle-inner is-flex gap-16 text-m">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
+              </div>
+            </div>
+          </li>
+          <li class="md-toggle-item">
+            <button class="btn btn--full btn-link ttu">
+              Enlace con listado
+              <div class="md-toggle-icon-anim"> </div>
+            </button>
             <div class="md-toggle-content">
               <div class="md-toggle-inner ">
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -573,20 +611,32 @@ permalink: /
               </div>
             </div>
           </li>
-
-
+          <li class="md-toggle-item md-toggle-lines">
+            <button class="btn btn--full btn-link ttu">
+              Enlace con listado con lineas
+              <div class="md-toggle-icon-anim"></div>
+            </button>
+            <div class="md-toggle-content">
+              <div class="md-toggle-inner">
+                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
 
-
-      <div class="col-xs-4 ">
-        <p class=" h3 mb-8">has-light</p>
-        <div class="has-light bg-primary">
-          <ul class="md-toggle px-16">
-            <li class="md-toggle-item ">
+      <div class="col-xs-6 mb-48 has-icon-pre">
+        <p class="h3 mb-8">has-icon-pre</p>
+        <ul class="md-toggle">
+            <li class="md-toggle-item">
               <button class="btn btn--full btn btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
                 Enlace con Botones
-                <div class="md-icon-anim"> </div>
+                <div class="md-toggle-icon-anim"></div>
               </button>
               <div class="md-toggle-content">
                 <div class="md-toggle-inner is-flex gap-16">
@@ -598,8 +648,11 @@ permalink: /
             </li>
             <li class="md-toggle-item">
               <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
                 Enlace con texto
-                <div class="md-icon-anim"> </div>
+                <div class="md-toggle-icon-anim"></div>
               </button>
               <div class="md-toggle-content">
                 <div class="md-toggle-inner is-flex gap-16 text-m">
@@ -607,13 +660,14 @@ permalink: /
                 </div>
               </div>
             </li>
-            <li class="md-toggle-item ">
+            <li class="md-toggle-item">
               <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
                 Enlace con listado
-                <div class="md-icon-anim"> </div>
+                <div class="md-toggle-icon-anim"></div>
               </button>
-  
-  
               <div class="md-toggle-content">
                 <div class="md-toggle-inner ">
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -622,96 +676,165 @@ permalink: /
                 </div>
               </div>
             </li>
-  
-  
             <li class="md-toggle-item md-toggle-lines">
               <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
                 Enlace con listado con lineas
-                <div class="md-icon-anim"> </div>
+                <div class="md-toggle-icon-anim"></div>
               </button>
-  
-  
               <div class="md-toggle-content">
-                <div class="md-toggle-inner ">
+                <div class="md-toggle-inner">
                   <a href=""><button class="btn btn-link btn--full">Enlacexx</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 </div>
               </div>
             </li>
-  
-
           </ul>
-        </div>
       </div>
-      <div class="col-xs-4 is-rtl">
-        <p class=" h3 mb-8">is-rtl</p>
- 
-        <ul class="md-toggle ">
-          <li class="md-toggle-item ">
-            <button class="btn btn--full btn btn-link ttu">
-              Enlace con Botones
-              <div class="md-icon-anim"> </div>
-            </button>
-            <div class="md-toggle-content">
-              <div class="md-toggle-inner is-flex gap-16">
-                <a href=""><button class="btn btn-secondary">Enlace</button></a>
-                <a href=""><button class="btn btn-secondary">Enlace</button></a>
-                <a href=""><button class="btn btn-secondary">Enlace</button></a>
+
+      <div class="col-xs-6 mb-48 has-icon-post is-rtl">
+        <p class="h3 mb-8">has-icon-post</p>
+        <ul class="md-toggle">
+            <li class="md-toggle-item">
+              <button class="btn btn--full btn btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con Botones
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner is-flex gap-16">
+                  <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                  <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                  <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="md-toggle-item">
-            <button class="btn btn--full btn-link ttu">
-              Enlace con texto
-              <div class="md-icon-anim"> </div>
-            </button>
-            <div class="md-toggle-content">
-              <div class="md-toggle-inner is-flex gap-16 text-m">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
+            </li>
+            <li class="md-toggle-item">
+              <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con texto
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner is-flex gap-16 text-m">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="md-toggle-item ">
-            <button class="btn btn--full btn-link ttu">
-              Enlace con listado
-              <div class="md-icon-anim"> </div>
-            </button>
-
-
-            <div class="md-toggle-content">
-              <div class="md-toggle-inner ">
-                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
-                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
-                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+            </li>
+            <li class="md-toggle-item">
+              <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con listado
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner ">
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                </div>
               </div>
-            </div>
-          </li>
-
-
-          <li class="md-toggle-item md-toggle-lines">
-            <button class="btn btn--full btn-link ttu">
-              Enlace con listado con lineas
-              <div class="md-icon-anim"> </div>
-            </button>
-
-
-            <div class="md-toggle-content">
-              <div class="md-toggle-inner ">
-                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
-                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
-                <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+            </li>
+            <li class="md-toggle-item md-toggle-lines">
+              <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con listado con lineas
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner">
+                  <a href=""><button class="btn btn-link btn--full">Enlacexx</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+          </ul>
+      </div>
 
-
-
-        </ul>
-
+      <div class="col-xs-12 has-icon-pre">
+        <p class="h3 mb-8">has-icon-pre, has light</p>
+        <div class="p-16 has-light bg-primary">
+          <ul class="md-toggle">
+            <li class="md-toggle-item">
+              <button class="btn btn--full btn btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con Botones
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner is-flex gap-16">
+                  <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                  <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                  <a href=""><button class="btn btn-secondary">Enlace</button></a>
+                </div>
+              </div>
+            </li>
+            <li class="md-toggle-item">
+              <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con texto
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner is-flex gap-16 text-m">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
+                </div>
+              </div>
+            </li>
+            <li class="md-toggle-item">
+              <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con listado
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner ">
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                </div>
+              </div>
+            </li>
+            <li class="md-toggle-item md-toggle-lines">
+              <button class="btn btn--full btn-link ttu">
+                <svg width="16px" height="16px">
+                    <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
+                </svg>
+                Enlace con listado con lineas
+                <div class="md-toggle-icon-anim"></div>
+              </button>
+              <div class="md-toggle-content">
+                <div class="md-toggle-inner">
+                  <a href=""><button class="btn btn-link btn--full">Enlacexx</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                  <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>  
       </div>
     </div>
   </section>
+
   <style>
     /* Clase para ocultar visualmente el input pero seguir siendo accesible para lectores de pantalla */
     .visually-hidden {

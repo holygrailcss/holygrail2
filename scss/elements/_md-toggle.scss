@@ -1,9 +1,11 @@
 @use 'sass:math';
 @import '../abstract/_all';
+
 .md-toggle {
   list-style: none;
   display: grid;
 }
+
 .md-toggle-lines {
   border-top: 1px solid black;
   .md-toggle-inner,
@@ -13,27 +15,76 @@
     }
   }
 }
+
 .md-toggle button {
   align-items: center;
   display: flex;
   gap: 8px;
   height: 40px;
   justify-content: space-between;
+
+  &:hover {
+    opacity: .4;
+  }
 }
+
+.md-toggle-icon-anim {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1px;
+    background-color: $c-primary;
+    transition: transform 0.2s ease;
+  }
+
+  &:before {
+    transform: rotate(90deg);
+  }
+
+  .is-active &:before {
+    transform: rotate(0deg);
+  }
+
+.has-light & {
+
+  &:before,
+  &:after {
+    background-color: $c-white;
+  }
+}
+}
+
 .md-toggle-content {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease;
 }
+
 .md-toggle-inner {
   overflow: hidden;
 }
+
 //extras
 .is-active {
   &.md-toggle-item .md-toggle-content {
     grid-template-rows: 1fr;
   }
+
+  &.md-toggle-item > button {
+    opacity: .4;
+  }
 }
+
 .has-light {
   .md-toggle button {
     background-color: transparent;
@@ -50,6 +101,36 @@
   }
 }
 
+.has-icon-pre {
+  .md-toggle-item > button {
+    padding-left: 22px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .has-light {
+    svg path,
+    svg circle {
+      stroke: white;
+    }
+  }
+}
+
+.has-icon-post {
+  .md-toggle-item > button {
+    padding-right: 22px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
 
 .is-rtl {
   .md-toggle button,

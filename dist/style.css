@@ -11267,6 +11267,36 @@ body.open-drawer .drawer-overlay {
   height: 40px;
   justify-content: space-between;
 }
+.md-toggle button:hover {
+  opacity: 0.4;
+}
+
+.md-toggle-icon-anim {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.md-toggle-icon-anim:before, .md-toggle-icon-anim:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  background-color: #000;
+  transition: transform 0.2s ease;
+}
+.md-toggle-icon-anim:before {
+  transform: rotate(90deg);
+}
+.is-active .md-toggle-icon-anim:before {
+  transform: rotate(0deg);
+}
+.has-light .md-toggle-icon-anim:before, .has-light .md-toggle-icon-anim:after {
+  background-color: #fff;
+}
 
 .md-toggle-content {
   display: grid;
@@ -11281,6 +11311,9 @@ body.open-drawer .drawer-overlay {
 .is-active.md-toggle-item .md-toggle-content {
   grid-template-rows: 1fr;
 }
+.is-active.md-toggle-item > button {
+  opacity: 0.4;
+}
 
 .has-light .md-toggle button {
   background-color: transparent;
@@ -11291,6 +11324,28 @@ body.open-drawer .drawer-overlay {
 }
 .has-light .md-toggle .md-toggle-lines .md-toggle-inner .btn-link, .has-light .md-toggle .md-toggle-lines.md-toggle-item.md-toggle-lines .btn-link {
   border-bottom: 1px solid white;
+}
+
+.has-icon-pre .md-toggle-item > button {
+  padding-left: 22px;
+  position: relative;
+}
+.has-icon-pre .md-toggle-item > button svg {
+  position: absolute;
+  left: 0;
+}
+.has-icon-pre .has-light svg path,
+.has-icon-pre .has-light svg circle {
+  stroke: white;
+}
+
+.has-icon-post .md-toggle-item > button {
+  padding-right: 22px;
+  position: relative;
+}
+.has-icon-post .md-toggle-item > button svg {
+  position: absolute;
+  right: 0;
 }
 
 .is-rtl .md-toggle button,
