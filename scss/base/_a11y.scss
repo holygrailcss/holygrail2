@@ -1,0 +1,23 @@
+@import '../abstract/_all';
+
+
+.theme-keyboard-accesible{
+  a:focus,
+  .form-input-label-2 input:focus ,
+  .form-input-label-2 select:focus  ,
+      button:focus,
+  .btn:focus,
+  .input:focus,
+  .textarea:focus,
+  .stepper-btn:focus,
+  .select select:focus,
+  .input-search:focus,
+  .checkbox-radio input:focus + label,
+  .checkbox-item input:focus + label,
+  .checkbox-card input:focus + label,
+  .checkbox-item-2 input:focus + label,
+  .checkbox-radio.check-no input:focus + label
+  {
+      outline: 3px dotted #ccc;
+  }
+}

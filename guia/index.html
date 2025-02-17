@@ -1774,45 +1774,9 @@
     </div>
   </section>
 
-  <style>
-    /* Clase para ocultar visualmente el input pero seguir siendo accesible para lectores de pantalla */
-    .visually-hidden {
-      position: absolute;
-      /* Lo saca del flujo normal */
-      clip: rect(0 0 0 0);
-      /* Recorta el elemento para que no sea visible */
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0;
-      overflow: hidden;
-    }
-    /* Estilo del “radio” personalizado */
-    .square-radio {
-      display: inline-block;
-      width: 16px;
-      /* Ajusta el tamaño según prefieras */
-      height: 16px;
-      margin-right: 0.5rem;
-      /* Espaciado entre el cuadrado y el texto */
-      background-color: #fff;
-      border: 2px solid #000;
-      border-radius: 0;
-      /* 0 para que sea cuadrado */
-      vertical-align: middle;
-      cursor: pointer;
-    }
-    /* Estilo para el foco (teclado o screen readers que activan focus) */
-    .visually-hidden:focus+.square-radio {
-      outline: 2px dotted #000;
-      outline-offset: 2px;
-    }
-    /* Estilo cuando el radio está “chequeado” */
-    .visually-hidden:checked+.square-radio {
-      background-color: #000;
-    }
-  </style>
+
+
+  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const accordionButtons = document.querySelectorAll('.md-toggle button');
@@ -1825,6 +1789,13 @@
         });
       });
     });
+
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Tab') {
+      document.body.classList.add('theme-keyboard-accesible');
+    }
+  });
   </script>
 
   </div>

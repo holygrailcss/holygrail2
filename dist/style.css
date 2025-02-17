@@ -6311,6 +6311,711 @@ strong {
   flex-grow: 0;
 }
 
+.is-rtl .fl-left {
+  float: right;
+}
+.is-rtl .fl-right {
+  float: left;
+}
+.is-rtl .text-left {
+  text-align: right;
+}
+.is-rtl .text-right {
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .is-rtl .xs\:text-right {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .is-rtl .sm\:text-right {
+    text-align: left;
+  }
+}
+@media (max-width: 991px) {
+  .is-rtl .md\:text-right {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .is-rtl .xs\:text-left {
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .is-rtl .sm\:text-left {
+    text-align: right;
+  }
+}
+@media (max-width: 991px) {
+  .is-rtl .md\:text-left {
+    text-align: right;
+  }
+}
+.is-rtl .select select:not([multiple]) {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.is-rtl .select-size select:not([multiple]) {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.is-rtl .select:not(.is-multiple, .is-loading)::after {
+  right: inherit;
+  left: 0;
+}
+.is-rtl .select.select-label select {
+  padding-right: 100px;
+}
+.is-rtl .select.select-label label {
+  left: inherit;
+  right: 0;
+}
+.is-rtl .select:not(.is-multiple, .is-loading).select-box::after {
+  left: 8px;
+}
+.is-rtl .mr-0 {
+  margin-right: 0;
+  margin-left: 0px;
+}
+.is-rtl .ml-0 {
+  margin-left: 0;
+  margin-right: 0px;
+}
+.is-rtl .pr-0 {
+  padding-right: 0;
+  padding-left: 0px;
+}
+.is-rtl .pl-0 {
+  padding-left: 0;
+  padding-right: 0px;
+}
+.is-rtl .mr-2 {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.is-rtl .ml-2 {
+  margin-left: 0;
+  margin-right: 2px;
+}
+.is-rtl .pr-2 {
+  padding-right: 0;
+  padding-left: 2px;
+}
+.is-rtl .pl-2 {
+  padding-left: 0;
+  padding-right: 2px;
+}
+.is-rtl .mr-4 {
+  margin-right: 0;
+  margin-left: 4px;
+}
+.is-rtl .ml-4 {
+  margin-left: 0;
+  margin-right: 4px;
+}
+.is-rtl .pr-4 {
+  padding-right: 0;
+  padding-left: 4px;
+}
+.is-rtl .pl-4 {
+  padding-left: 0;
+  padding-right: 4px;
+}
+.is-rtl .mr-8 {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.is-rtl .ml-8 {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.is-rtl .pr-8 {
+  padding-right: 0;
+  padding-left: 8px;
+}
+.is-rtl .pl-8 {
+  padding-left: 0;
+  padding-right: 8px;
+}
+.is-rtl .mr-12 {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.is-rtl .ml-12 {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.is-rtl .pr-12 {
+  padding-right: 0;
+  padding-left: 12px;
+}
+.is-rtl .pl-12 {
+  padding-left: 0;
+  padding-right: 12px;
+}
+.is-rtl .mr-16 {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.is-rtl .ml-16 {
+  margin-left: 0;
+  margin-right: 16px;
+}
+.is-rtl .pr-16 {
+  padding-right: 0;
+  padding-left: 16px;
+}
+.is-rtl .pl-16 {
+  padding-left: 0;
+  padding-right: 16px;
+}
+.is-rtl .mr-20 {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.is-rtl .ml-20 {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.is-rtl .pr-20 {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.is-rtl .pl-20 {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.is-rtl .mr-24 {
+  margin-right: 0;
+  margin-left: 24px;
+}
+.is-rtl .ml-24 {
+  margin-left: 0;
+  margin-right: 24px;
+}
+.is-rtl .pr-24 {
+  padding-right: 0;
+  padding-left: 24px;
+}
+.is-rtl .pl-24 {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.is-rtl .mr-32 {
+  margin-right: 0;
+  margin-left: 32px;
+}
+.is-rtl .ml-32 {
+  margin-left: 0;
+  margin-right: 32px;
+}
+.is-rtl .pr-32 {
+  padding-right: 0;
+  padding-left: 32px;
+}
+.is-rtl .pl-32 {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.is-rtl .mr-40 {
+  margin-right: 0;
+  margin-left: 40px;
+}
+.is-rtl .ml-40 {
+  margin-left: 0;
+  margin-right: 40px;
+}
+.is-rtl .pr-40 {
+  padding-right: 0;
+  padding-left: 40px;
+}
+.is-rtl .pl-40 {
+  padding-left: 0;
+  padding-right: 40px;
+}
+.is-rtl .mr-48 {
+  margin-right: 0;
+  margin-left: 48px;
+}
+.is-rtl .ml-48 {
+  margin-left: 0;
+  margin-right: 48px;
+}
+.is-rtl .pr-48 {
+  padding-right: 0;
+  padding-left: 48px;
+}
+.is-rtl .pl-48 {
+  padding-left: 0;
+  padding-right: 48px;
+}
+.is-rtl .mr-56 {
+  margin-right: 0;
+  margin-left: 56px;
+}
+.is-rtl .ml-56 {
+  margin-left: 0;
+  margin-right: 56px;
+}
+.is-rtl .pr-56 {
+  padding-right: 0;
+  padding-left: 56px;
+}
+.is-rtl .pl-56 {
+  padding-left: 0;
+  padding-right: 56px;
+}
+.is-rtl .mr-64 {
+  margin-right: 0;
+  margin-left: 64px;
+}
+.is-rtl .ml-64 {
+  margin-left: 0;
+  margin-right: 64px;
+}
+.is-rtl .pr-64 {
+  padding-right: 0;
+  padding-left: 64px;
+}
+.is-rtl .pl-64 {
+  padding-left: 0;
+  padding-right: 64px;
+}
+.is-rtl .mr-72 {
+  margin-right: 0;
+  margin-left: 72px;
+}
+.is-rtl .ml-72 {
+  margin-left: 0;
+  margin-right: 72px;
+}
+.is-rtl .pr-72 {
+  padding-right: 0;
+  padding-left: 72px;
+}
+.is-rtl .pl-72 {
+  padding-left: 0;
+  padding-right: 72px;
+}
+.is-rtl .mr-80 {
+  margin-right: 0;
+  margin-left: 80px;
+}
+.is-rtl .ml-80 {
+  margin-left: 0;
+  margin-right: 80px;
+}
+.is-rtl .pr-80 {
+  padding-right: 0;
+  padding-left: 80px;
+}
+.is-rtl .pl-80 {
+  padding-left: 0;
+  padding-right: 80px;
+}
+.is-rtl .mr-96 {
+  margin-right: 0;
+  margin-left: 96px;
+}
+.is-rtl .ml-96 {
+  margin-left: 0;
+  margin-right: 96px;
+}
+.is-rtl .pr-96 {
+  padding-right: 0;
+  padding-left: 96px;
+}
+.is-rtl .pl-96 {
+  padding-left: 0;
+  padding-right: 96px;
+}
+.is-rtl .mr-112 {
+  margin-right: 0;
+  margin-left: 112px;
+}
+.is-rtl .ml-112 {
+  margin-left: 0;
+  margin-right: 112px;
+}
+.is-rtl .pr-112 {
+  padding-right: 0;
+  padding-left: 112px;
+}
+.is-rtl .pl-112 {
+  padding-left: 0;
+  padding-right: 112px;
+}
+.is-rtl .mr-120 {
+  margin-right: 0;
+  margin-left: 120px;
+}
+.is-rtl .ml-120 {
+  margin-left: 0;
+  margin-right: 120px;
+}
+.is-rtl .pr-120 {
+  padding-right: 0;
+  padding-left: 120px;
+}
+.is-rtl .pl-120 {
+  padding-left: 0;
+  padding-right: 120px;
+}
+.is-rtl .mr-128 {
+  margin-right: 0;
+  margin-left: 128px;
+}
+.is-rtl .ml-128 {
+  margin-left: 0;
+  margin-right: 128px;
+}
+.is-rtl .pr-128 {
+  padding-right: 0;
+  padding-left: 128px;
+}
+.is-rtl .pl-128 {
+  padding-left: 0;
+  padding-right: 128px;
+}
+.is-rtl .mr-160 {
+  margin-right: 0;
+  margin-left: 160px;
+}
+.is-rtl .ml-160 {
+  margin-left: 0;
+  margin-right: 160px;
+}
+.is-rtl .pr-160 {
+  padding-right: 0;
+  padding-left: 160px;
+}
+.is-rtl .pl-160 {
+  padding-left: 0;
+  padding-right: 160px;
+}
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:checked + label::before,
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked) + label::before {
+  left: initial;
+  right: 0;
+}
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:checked + label .ico-radio,
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  left: initial;
+  right: 5px;
+}
+.is-rtl .btn.btn-world .btn-world-center {
+  text-align: right;
+}
+.is-rtl .btn.btn-world .btn-world-right {
+  transform: rotateY(180deg);
+}
+.is-rtl .btn-group > :not(:first-child, :last-child) {
+  border-radius: 0;
+  margin-right: -1px;
+  margin-left: 0;
+}
+.is-rtl .btn-group .btn:first-child {
+  border-radius: 0 0 0 0;
+}
+.is-rtl .btn-group .btn:last-child {
+  border-radius: 0 0 0 0;
+}
+.is-rtl .btn-group [class^=btn--]:last-child,
+.is-rtl .btn-group [class*=" btn--"]:last-child {
+  margin-right: -1px;
+  margin-left: 0;
+  outline: none;
+}
+.is-rtl .btn-social-login svg {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.is-rtl .btn-social {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.is-rtl .btn-social svg-icon,
+.is-rtl .btn-social svg-icon2,
+.is-rtl .btn-social md-icon {
+  right: 16px;
+  left: auto;
+}
+.is-rtl .checkbox-item [type=checkbox]:not(:checked),
+.is-rtl .checkbox-item [type=checkbox]:checked {
+  left: 0;
+  right: -9999px;
+  position: absolute;
+  width: 70px;
+}
+.is-rtl .checkbox-item [type=checkbox]:not(:checked) + label::before,
+.is-rtl .checkbox-item [type=checkbox]:checked + label::before {
+  left: auto;
+  right: 0;
+  margin: 0 0 0 10px;
+}
+.is-rtl .checkbox-item [type=checkbox]:not(:checked) + label,
+.is-rtl .checkbox-item [type=checkbox]:checked + label {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.is-rtl .checkbox-item [type=checkbox]:not(:checked) + label span.theta,
+.is-rtl .checkbox-item [type=checkbox]:checked + label span.theta {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.is-rtl .checkbox-item [type=checkbox]:not(:checked) + label .icon,
+.is-rtl .checkbox-item [type=checkbox]:checked + label .icon {
+  right: 2px;
+  left: auto;
+  top: 3px;
+}
+.is-rtl .checkbox-item .ma-wrapper-terms-inner span,
+.is-rtl .checkbox-item .ma-wrapper-terms-inner span.legal-text {
+  padding-right: 0;
+  padding-left: 0;
+}
+.is-rtl .check-bleed.checkbox-radio [type=radio]:checked + label .ico-radio, .is-rtl .check-bleed.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  left: 0;
+  right: 17px;
+}
+.is-rtl .check-bleed.checkbox-radio [type=radio]:checked + label::before, .is-rtl .check-bleed.checkbox-radio [type=radio]:not(:checked) + label::before {
+  left: auto;
+  right: 0;
+}
+.is-rtl .check-center.checkbox-radio [type=radio]:checked + label::before, .is-rtl .check-center.checkbox-radio [type=radio]:not(:checked) + label::before {
+  left: auto;
+  right: 16px;
+  margin: 0;
+}
+.is-rtl .check-center.checkbox-radio [type=radio]:checked + label .ico-radio, .is-rtl .check-center.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  left: 0;
+  right: 21px;
+}
+.is-rtl .check-center .box3-content {
+  padding-left: 0;
+  padding-right: 48px;
+}
+.is-rtl .checkbox-radio [type=radio]:not(:checked),
+.is-rtl .checkbox-radio [type=radio]:checked {
+  left: 0;
+  right: -9999px;
+  position: absolute;
+  width: 70px;
+}
+.is-rtl .checkbox-item-text span {
+  margin-left: 0;
+  margin-right: 40px;
+}
+.is-rtl [type=radio]:not(:checked),
+.is-rtl [type=radio]:checked,
+.is-rtl .checkbox-card [type=radio] {
+  left: 9999px;
+}
+.is-rtl .checkbox-item-2 [type=checkbox]:not(:checked),
+.is-rtl .checkbox-item-2 [type=checkbox]:checked {
+  left: 9999px;
+}
+.is-rtl .color-wrap button {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.is-rtl .form-input-label.datalist svg,
+.is-rtl .form-input-label-2.datalist svg {
+  right: auto;
+  left: 16px;
+}
+.is-rtl .form-input-label.datalist .validation-error-messages svg,
+.is-rtl .form-input-label-2.datalist .validation-error-messages svg {
+  left: auto;
+}
+.is-rtl .form-input-label.datalist::after,
+.is-rtl .form-input-label-2.datalist::after {
+  left: 4px;
+}
+.is-rtl .form-prefix input {
+  text-align: right;
+}
+.is-rtl .select.select-box select {
+  padding: 1px 8px 0 20px;
+}
+.is-rtl .select.select-box::after {
+  left: 6px;
+  right: inherit;
+}
+.is-rtl .select.select-flat label {
+  left: auto;
+}
+.is-rtl .select.select-flat select {
+  padding-right: 0;
+}
+.is-rtl .select.select-flat::after {
+  left: 20px;
+  right: auto;
+}
+.is-rtl .form-input-label .info-text {
+  left: 0;
+}
+.is-rtl .form-input-label.icon-right .form-text {
+  right: auto;
+  left: 0;
+}
+.is-rtl .form-input-label.has-ico-post svg-icon,
+.is-rtl .form-input-label.has-ico-post svg-icon2,
+.is-rtl .form-input-label.has-ico-post md-icon {
+  position: absolute;
+  right: 0;
+}
+.is-rtl .form-input-label.has-ico-post .validation-error-messages svg-icon,
+.is-rtl .form-input-label.has-ico-post .validation-error-messages svg-icon2,
+.is-rtl .form-input-label.has-ico-post .validation-error-messages md-icon {
+  position: relative;
+}
+.is-rtl .form-input-prefix .input-prefix {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.is-rtl .form-input-label-2.icon-right .form-text {
+  right: auto;
+  left: 0;
+}
+.is-rtl .form-input-label-2.has-ico-post .ico-post {
+  right: auto;
+  left: 0;
+}
+.is-rtl .form-input-label-2.has-ico-post .validation-error-messages svg-icon,
+.is-rtl .form-input-label-2.has-ico-post .validation-error-messages svg-icon2,
+.is-rtl .form-input-label-2.has-ico-post .validation-error-messages md-icon {
+  position: relative;
+}
+.is-rtl .form-input-label-2.has-ico-pre .ico-pre {
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+.is-rtl .form-input-label-2.has-ico-pre .validation-error-messages svg-icon,
+.is-rtl .form-input-label-2.has-ico-pre .validation-error-messages svg-icon2,
+.is-rtl .form-input-label-2.has-ico-pre .validation-error-messages md-icon {
+  position: relative;
+}
+.is-rtl .form-input-label-2 .info-text {
+  left: 0;
+  right: initial;
+}
+.is-rtl .has-ico-post.btn, .is-rtl .has-ico-post > input, .is-rtl .has-ico-post > label {
+  padding-right: 0;
+  padding-left: 24px;
+}
+.is-rtl .has-ico-pre.btn, .is-rtl .has-ico-pre > input, .is-rtl .has-ico-pre > label {
+  padding-left: 0;
+  padding-right: 28px;
+}
+.is-rtl .link-svg-pre,
+.is-rtl button.link-line.link-svg-pre {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.is-rtl .link-svg-pre::after,
+.is-rtl button.link-line.link-svg-pre::after {
+  left: 0;
+}
+.is-rtl .link-svg-pre svg-icon,
+.is-rtl .link-svg-pre svg-icon2,
+.is-rtl .link-svg-pre md-icon,
+.is-rtl button.link-line.link-svg-pre svg-icon,
+.is-rtl button.link-line.link-svg-pre svg-icon2,
+.is-rtl button.link-line.link-svg-pre md-icon {
+  left: auto;
+  right: 0;
+}
+.is-rtl .link-svg-post,
+.is-rtl button.link-line.link-svg-post {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.is-rtl .link-svg-post::after,
+.is-rtl button.link-line.link-svg-post::after {
+  right: 0;
+}
+.is-rtl .link-svg-post svg-icon,
+.is-rtl .link-svg-post svg-icon2,
+.is-rtl .link-svg-post md-icon,
+.is-rtl button.link-line.link-svg-post svg-icon,
+.is-rtl button.link-line.link-svg-post svg-icon2,
+.is-rtl button.link-line.link-svg-post md-icon {
+  right: auto;
+  left: 0;
+}
+.is-rtl ul.list-disc li::after {
+  right: 0;
+}
+.is-rtl .list-button.list-secundary, .is-rtl .list-button.list-secondary {
+  padding-left: 0;
+  padding-right: 16px;
+}
+.is-rtl .list-button.list-tertiary {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.is-rtl .tabs-mini {
+  float: left;
+}
+.is-rtl .tabs-mini li:first-child a::after {
+  left: 0;
+  right: auto;
+}
+.is-rtl .header-account-back {
+  left: auto;
+  right: 0;
+}
+.is-rtl .header-account-back svg-icon svg,
+.is-rtl .header-account-back svg-icon2 svg,
+.is-rtl .header-account-back md-icon svg {
+  transform: rotate(180deg);
+}
+.is-rtl .validation-error-messages svg-icon,
+.is-rtl .validation-error-messages svg-icon2,
+.is-rtl .validation-error-messages md-icon {
+  padding-right: 0;
+  padding-left: 8px;
+}
+.is-rtl .tag-new {
+  right: auto;
+  left: -30px;
+}
+.is-rtl .box4 ul {
+  margin-left: 0;
+  margin-right: 16px;
+}
+.is-rtl .box4::before {
+  left: initial;
+  top: 47px;
+  right: 20px;
+}
+.is-rtl .box3-top {
+  padding-right: 16px;
+  padding-left: 0;
+}
+
+.theme-keyboard-accesible a:focus,
+.theme-keyboard-accesible .form-input-label-2 input:focus,
+.theme-keyboard-accesible .form-input-label-2 select:focus,
+.theme-keyboard-accesible button:focus,
+.theme-keyboard-accesible .btn:focus,
+.theme-keyboard-accesible .input:focus,
+.theme-keyboard-accesible .textarea:focus,
+.theme-keyboard-accesible .stepper-btn:focus,
+.theme-keyboard-accesible .select select:focus,
+.theme-keyboard-accesible .input-search:focus,
+.theme-keyboard-accesible .checkbox-radio input:focus + label,
+.theme-keyboard-accesible .checkbox-item input:focus + label,
+.theme-keyboard-accesible .checkbox-card input:focus + label,
+.theme-keyboard-accesible .checkbox-item-2 input:focus + label,
+.theme-keyboard-accesible .checkbox-radio.check-no input:focus + label {
+  outline: 3px dotted #ccc;
+}
+
 .arrow-cover {
   height: auto;
   padding: 30px;
