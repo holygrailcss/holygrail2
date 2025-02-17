@@ -11248,20 +11248,17 @@ body.open-drawer .drawer-overlay {
   transform: rotate(180deg);
 }
 
-.has-icon-pre .md-link > button .md-link-icon-container,
-.has-icon-post .md-link > button .md-link-icon-container {
+.has-icon-pre .md-link > button .md-link-icon-container {
   align-items: center;
   display: flex;
   gap: 8px;
 }
 .has-icon-pre .has-light .md-link-icon-container svg path,
-.has-icon-pre .has-light .md-link-icon-container svg circle,
-.has-icon-post .has-light .md-link-icon-container svg path,
-.has-icon-post .has-light .md-link-icon-container svg circle {
+.has-icon-pre .has-light .md-link-icon-container svg circle {
   stroke: white;
 }
 
-.has-icon-post.is-rtl .md-link-icon-container {
+.has-icon-pre.is-rtl .md-link-icon-container {
   direction: ltr;
   text-align: left;
 }
