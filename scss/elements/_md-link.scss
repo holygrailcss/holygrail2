@@ -15,19 +15,44 @@
   border-top: .5px solid #000;
 }
 // Estado version oscura
-.has-light{
-  .btn{
+.has-light {
+  .btn {
     background-color: transparent;
     color: $c-white;
   }
 }
 // Estado rtl
-.is-rtl{
+.is-rtl {
   .md-link button {
     direction: rtl;
     text-align: right;
   }
   .md-link button svg {
     transform: rotate(180deg);
+  }
+}
+// Estado con icono
+.has-icon-pre, 
+.has-icon-post {
+  .md-link > button {
+    .md-link-icon-container {
+      align-items: center;
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  .has-light {
+    .md-link-icon-container svg path,
+    .md-link-icon-container svg circle {
+      stroke: white;
+    }
+  }
+}
+
+.has-icon-post.is-rtl {
+  .md-link-icon-container {
+    direction: ltr;
+    text-align: left;
   }
 }
