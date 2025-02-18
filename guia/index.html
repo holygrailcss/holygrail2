@@ -1410,11 +1410,16 @@
         <p class="h3 mb-8">Normal</p>
         <ul class="md-toggle">
           <li class="md-toggle-item">
-            <button class="btn btn--full btn btn-link ttu">
+            <button 
+              class="btn btn--full btn btn-link ttu" 
+              onclick="toggleContent('md-toggle-content-1')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-1"
+            >
               Enlace con Botones
               <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-1">
               <div class="md-toggle-inner is-flex gap-16">
                 <a href=""><button class="btn btn-secondary">Enlace</button></a>
                 <a href=""><button class="btn btn-secondary">Enlace</button></a>
@@ -1423,22 +1428,30 @@
             </div>
           </li>
           <li class="md-toggle-item">
-            <button class="btn btn--full btn-link ttu">
+            <button class="btn btn--full btn-link ttu"
+              onclick="toggleContent('md-toggle-content-2')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-2"
+            >
               Enlace con texto
               <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-2">
               <div class="md-toggle-inner is-flex gap-16 text-m">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
               </div>
             </div>
           </li>
           <li class="md-toggle-item">
-            <button class="btn btn--full btn-link ttu">
+            <button class="btn btn--full btn-link ttu"
+              onclick="toggleContent('md-toggle-content-3')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-3"
+            >
               Enlace con listado
               <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-3">
               <div class="md-toggle-inner">
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1447,11 +1460,15 @@
             </div>
           </li>
           <li class="md-toggle-item md-toggle-lines">
-            <button class="btn btn--full btn-link ttu">
+            <button class="btn btn--full btn-link ttu"
+              onclick="toggleContent('md-toggle-content-4')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-4"
+            >
               Enlace con listado con lineas
               <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-4">
               <div class="md-toggle-inner">
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1466,11 +1483,15 @@
         <p class="h3 mb-8">is-rtl</p>
         <ul class="md-toggle">
           <li class="md-toggle-item">
-            <button class="btn btn--full btn btn-link ttu">
+            <button class="btn btn--full btn btn-link ttu"
+              onclick="toggleContent('md-toggle-content-5')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-5"
+            >
               Enlace con Botones
-              <div class="md-icon-anim"> </div>
+              <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-5">
               <div class="md-toggle-inner is-flex gap-16">
                 <a href=""><button class="btn btn-secondary">Enlace</button></a>
                 <a href=""><button class="btn btn-secondary">Enlace</button></a>
@@ -1479,23 +1500,31 @@
             </div>
           </li>
           <li class="md-toggle-item">
-            <button class="btn btn--full btn-link ttu">
+            <button class="btn btn--full btn-link ttu"
+              onclick="toggleContent('md-toggle-content-6')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-6"
+            >
               Enlace con texto
               <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-6">
               <div class="md-toggle-inner is-flex gap-16 text-m">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
               </div>
             </div>
           </li>
           <li class="md-toggle-item">
-            <button class="btn btn--full btn-link ttu">
+            <button class="btn btn--full btn-link ttu"
+              onclick="toggleContent('md-toggle-content-7')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-7"
+            >
               Enlace con listado
-              <div class="md-icon-anim"> </div>
+              <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
-              <div class="md-toggle-inner ">
+            <div class="md-toggle-content" id="md-toggle-content-7">
+              <div class="md-toggle-inner">
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1503,11 +1532,15 @@
             </div>
           </li>
           <li class="md-toggle-item md-toggle-lines">
-            <button class="btn btn--full btn-link ttu">
+            <button class="btn btn--full btn-link ttu"
+              onclick="toggleContent('md-toggle-content-8')"
+              aria-expanded="false"
+              aria-controls="md-toggle-content-8"
+            >
               Enlace con listado con lineas
               <div class="md-icon-anim"></div>
             </button>
-            <div class="md-toggle-content">
+            <div class="md-toggle-content" id="md-toggle-content-8">
               <div class="md-toggle-inner">
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                 <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1522,7 +1555,11 @@
         <p class="h3 mb-8">has icon-pre</p>
         <ul class="md-toggle">
             <li class="md-toggle-item">
-              <button class="btn btn--full btn btn-link ttu">
+              <button class="btn btn--full btn btn-link ttu"
+                onclick="toggleContent('md-toggle-content-9')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-9"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1533,7 +1570,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-9">
                 <div class="md-toggle-inner is-flex gap-16">
                   <a href=""><button class="btn btn-secondary">Enlace</button></a>
                   <a href=""><button class="btn btn-secondary">Enlace</button></a>
@@ -1542,7 +1579,11 @@
               </div>
             </li>
             <li class="md-toggle-item">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-10')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-10"
+                >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1553,14 +1594,18 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-10">
                 <div class="md-toggle-inner is-flex gap-16 text-m">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
                 </div>
               </div>
             </li>
             <li class="md-toggle-item">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-11')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-11"
+                >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1571,8 +1616,8 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
-                <div class="md-toggle-inner ">
+              <div class="md-toggle-content" id="md-toggle-content-11">
+                <div class="md-toggle-inner">
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1580,7 +1625,11 @@
               </div>
             </li>
             <li class="md-toggle-item md-toggle-lines">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-12')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-12"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1591,7 +1640,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-12">
                 <div class="md-toggle-inner">
                   <a href=""><button class="btn btn-link btn--full">Enlacexx</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1606,7 +1655,11 @@
         <p class="h3 mb-8">has icon-post, is-rtl</p>
         <ul class="md-toggle">
             <li class="md-toggle-item">
-              <button class="btn btn--full btn btn-link ttu">
+              <button class="btn btn--full btn btn-link ttu"
+                onclick="toggleContent('md-toggle-content-13')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-13"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1617,7 +1670,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-13">
                 <div class="md-toggle-inner is-flex gap-16">
                   <a href=""><button class="btn btn-secondary">Enlace</button></a>
                   <a href=""><button class="btn btn-secondary">Enlace</button></a>
@@ -1626,7 +1679,11 @@
               </div>
             </li>
             <li class="md-toggle-item">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-14')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-14"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1637,14 +1694,18 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-14">
                 <div class="md-toggle-inner is-flex gap-16 text-m">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
                 </div>
               </div>
             </li>
             <li class="md-toggle-item">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-15')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-15"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1655,7 +1716,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-15">
                 <div class="md-toggle-inner ">
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1664,7 +1725,11 @@
               </div>
             </li>
             <li class="md-toggle-item md-toggle-lines">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-16')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-16"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1675,7 +1740,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-16">
                 <div class="md-toggle-inner">
                   <a href=""><button class="btn btn-link btn--full">Enlacexx</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1691,7 +1756,11 @@
         <div class="p-16 has-light bg-primary">
           <ul class="md-toggle">
             <li class="md-toggle-item">
-              <button class="btn btn--full btn btn-link ttu">
+              <button class="btn btn--full btn btn-link ttu"
+                onclick="toggleContent('md-toggle-content-17')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-17"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1702,7 +1771,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-17">
                 <div class="md-toggle-inner is-flex gap-16">
                   <a href=""><button class="btn btn-secondary">Enlace</button></a>
                   <a href=""><button class="btn btn-secondary">Enlace</button></a>
@@ -1711,7 +1780,11 @@
               </div>
             </li>
             <li class="md-toggle-item">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-18')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-18"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1722,14 +1795,18 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-18">
                 <div class="md-toggle-inner is-flex gap-16 text-m">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, eum aliquam ipsa praesentium esse fuga quia animi, corrupti molestiae labore qui nemo sed suscipit culpa, dolorem nihil veritatis unde.
                 </div>
               </div>
             </li>
             <li class="md-toggle-item">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-19')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-19"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1740,8 +1817,8 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
-                <div class="md-toggle-inner ">
+              <div class="md-toggle-content" id="md-toggle-content-19">
+                <div class="md-toggle-inner">
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1749,7 +1826,11 @@
               </div>
             </li>
             <li class="md-toggle-item md-toggle-lines">
-              <button class="btn btn--full btn-link ttu">
+              <button class="btn btn--full btn-link ttu"
+                onclick="toggleContent('md-toggle-content-20')"
+                aria-expanded="false"
+                aria-controls="md-toggle-content-20"
+              >
                 <div class="md-toggle-icon-container">
                   <svg width="16px" height="16px">
                     <circle fill="none" stroke="#000000" cx="8" cy="8" r="6"></circle>
@@ -1760,7 +1841,7 @@
                 </div>
                 <div class="md-icon-anim"></div>
               </button>
-              <div class="md-toggle-content">
+              <div class="md-toggle-content" id="md-toggle-content-20">
                 <div class="md-toggle-inner">
                   <a href=""><button class="btn btn-link btn--full">Enlacexx</button></a>
                   <a href=""><button class="btn btn-link btn--full">Enlace</button></a>
@@ -1774,28 +1855,32 @@
     </div>
   </section>
 
-
-
-  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      function toggleContent(id) {
+        var content = document.getElementById(id);
+        var button = document.querySelector(`[aria-controls="${id}"]`);
+        var parent = button.closest('.md-toggle-item');
+
+        var isOpen = parent.classList.contains("is-active");
+        parent.classList.toggle('is-active', !isOpen);
+        button.setAttribute("aria-expanded", !isOpen);
+      }
+
       const accordionButtons = document.querySelectorAll('.md-toggle button');
       accordionButtons.forEach(button => {
         button.addEventListener('click', function () {
-          const parent = button.closest('.md-toggle-item');
-          if (parent) {
-            parent.classList.toggle('is-active');
-          }
+          const contentId = button.getAttribute('aria-controls');
+          toggleContent(contentId);
         });
       });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Tab') {
+          document.body.classList.add('theme-keyboard-accesible');
+        }
+      });
     });
-
-
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Tab') {
-      document.body.classList.add('theme-keyboard-accesible');
-    }
-  });
   </script>
 
   </div>
