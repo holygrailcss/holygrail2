@@ -11931,7 +11931,7 @@ body.open-drawer .drawer-overlay {
   border-bottom: 0.5px solid #000;
   display: flex;
   gap: 8px;
-  height: 52px;
+  height: 40px;
   justify-content: space-between;
   padding: 0;
 }
@@ -11961,6 +11961,9 @@ body.open-drawer .drawer-overlay {
 .has-icon-pre .has-light .md-link-icon-container svg path,
 .has-icon-pre .has-light .md-link-icon-container svg circle {
   stroke: white;
+}
+.has-icon-pre .has-light .btn:hover, .has-icon-pre .has-light .btn:focus, .has-icon-pre .has-light .btn:visited, .has-icon-pre .has-light .btn:active {
+  background-color: transparent;
 }
 
 .has-icon-pre.is-rtl .md-link-icon-container {

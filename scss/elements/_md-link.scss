@@ -6,7 +6,7 @@
   border-bottom: .5px solid #000;
   display: flex;
   gap: 8px;
-  height: 52px;
+  height: 40px;
   justify-content: space-between;
   padding: 0;
 }
@@ -45,6 +45,12 @@
     .md-link-icon-container svg path,
     .md-link-icon-container svg circle {
       stroke: white;
+    }
+    .btn {
+      &:hover, &:focus, 
+      &:visited, &:active {
+        background-color: transparent;
+      }
     }
   }
 }
