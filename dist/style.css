@@ -11944,6 +11944,14 @@ body.open-drawer .drawer-overlay {
   background-color: transparent;
   color: #fff;
 }
+.has-light .btn:hover, .has-light .btn:focus, .has-light .btn:visited, .has-light .btn:active {
+  background-color: transparent;
+  border-top-color: transparent;
+}
+.has-light .md-link-icon-container svg path,
+.has-light .md-link-icon-container svg circle {
+  stroke: white;
+}
 
 .is-rtl .md-link button {
   direction: rtl;
@@ -11957,14 +11965,6 @@ body.open-drawer .drawer-overlay {
   align-items: center;
   display: flex;
   gap: 8px;
-}
-.has-icon-pre .has-light .md-link-icon-container svg path,
-.has-icon-pre .has-light .md-link-icon-container svg circle {
-  stroke: white;
-}
-.has-icon-pre .has-light .btn:hover, .has-icon-pre .has-light .btn:focus, .has-icon-pre .has-light .btn:visited, .has-icon-pre .has-light .btn:active {
-  background-color: transparent;
-  border-top-color: transparent;
 }
 
 .has-icon-pre.is-rtl .md-link-icon-container {
