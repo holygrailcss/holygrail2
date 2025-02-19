@@ -11984,7 +11984,8 @@ body.open-drawer .drawer-overlay {
   border-bottom: 1px solid black;
 }
 
-.md-toggle button {
+.md-toggle button,
+.md-toggle .btn {
   align-items: center;
   display: flex;
   gap: 8px;
@@ -12006,7 +12007,8 @@ body.open-drawer .drawer-overlay {
   grid-template-rows: 1fr;
 }
 
-.has-light .md-toggle button {
+.has-light .md-toggle button,
+.has-light .md-toggle .btn {
   background-color: transparent;
   color: #fff;
 }
@@ -12017,8 +12019,8 @@ body.open-drawer .drawer-overlay {
   border-bottom: 1px solid white;
 }
 
-.has-icon-pre .md-toggle-item > button .md-toggle-icon-container,
-.has-icon-post .md-toggle-item > button .md-toggle-icon-container {
+.has-icon-pre .md-toggle-item .md-toggle-header > button .md-toggle-icon-container,
+.has-icon-post .md-toggle-item .md-toggle-header > button .md-toggle-icon-container {
   align-items: center;
   display: flex;
   gap: 8px;

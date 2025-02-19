@@ -16,7 +16,8 @@
   }
 }
 
-.md-toggle button {
+.md-toggle button, 
+.md-toggle .btn {
   align-items: center;
   display: flex;
   gap: 8px;
@@ -42,7 +43,8 @@
 }
 
 .has-light {
-  .md-toggle button {
+  .md-toggle button, 
+  .md-toggle .btn {
     background-color: transparent;
     color: $c-white;
   }
@@ -59,7 +61,7 @@
 
 .has-icon-pre, 
 .has-icon-post {
-  .md-toggle-item > button {
+  .md-toggle-item .md-toggle-header > button {
     .md-toggle-icon-container {
       align-items: center;
       display: flex;
