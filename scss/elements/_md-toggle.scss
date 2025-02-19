@@ -16,8 +16,8 @@
   }
 }
 
-.md-toggle button, 
-.md-toggle .btn {
+.md-toggle .md-toggle-button, 
+.md-toggle .btn-link {
   align-items: center;
   display: flex;
   gap: 8px;
@@ -25,7 +25,7 @@
   justify-content: space-between;
 }
 
-.md-toggle-content {
+.md-toggle-panel {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease;
@@ -37,14 +37,13 @@
 
 //extras
 .is-active {
-  &.md-toggle-item .md-toggle-content {
+  &.md-toggle-item .md-toggle-panel {  
     grid-template-rows: 1fr;
   }
 }
 
 .has-light {
-  .md-toggle button, 
-  .md-toggle .btn {
+  .md-toggle .md-toggle-button {
     background-color: transparent;
     color: $c-white;
   }
