@@ -11973,15 +11973,8 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
 }
 
 .md-toggle {
-  list-style: none;
   display: grid;
-}
-
-.md-toggle-lines {
-  border-top: 1px solid black;
-}
-.md-toggle-lines .md-toggle-inner .btn-link, .md-toggle-lines.md-toggle-item .btn-link {
-  border-bottom: 1px solid black;
+  list-style: none;
 }
 
 .md-toggle .md-toggle-button,
@@ -12001,6 +11994,13 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
 
 .md-toggle-inner {
   overflow: hidden;
+}
+
+.md-toggle-lines {
+  border-top: 1px solid black;
+}
+.md-toggle-lines .md-toggle-inner .btn-link, .md-toggle-lines.md-toggle-item .btn-link {
+  border-bottom: 1px solid black;
 }
 
 .is-active.md-toggle-item .md-toggle-panel {

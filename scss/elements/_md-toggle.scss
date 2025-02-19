@@ -1,19 +1,8 @@
-@use 'sass:math';
 @import '../abstract/_all';
 
 .md-toggle {
-  list-style: none;
   display: grid;
-}
-
-.md-toggle-lines {
-  border-top: 1px solid black;
-  .md-toggle-inner,
-  &.md-toggle-item {
-    .btn-link {
-      border-bottom: 1px solid black;
-    }
-  }
+  list-style: none;
 }
 
 .md-toggle .md-toggle-button, 
@@ -35,7 +24,16 @@
   overflow: hidden;
 }
 
-//extras
+.md-toggle-lines {
+  border-top: 1px solid black;
+  .md-toggle-inner,
+  &.md-toggle-item {
+    .btn-link {
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
 .is-active {
   &.md-toggle-item .md-toggle-panel {  
     grid-template-rows: 1fr;
