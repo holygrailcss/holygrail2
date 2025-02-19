@@ -11964,6 +11964,7 @@ body.open-drawer .drawer-overlay {
 }
 .has-icon-pre .has-light .btn:hover, .has-icon-pre .has-light .btn:focus, .has-icon-pre .has-light .btn:visited, .has-icon-pre .has-light .btn:active {
   background-color: transparent;
+  border-top-color: transparent;
 }
 
 .has-icon-pre.is-rtl .md-link-icon-container {
