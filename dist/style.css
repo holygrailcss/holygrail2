@@ -11944,6 +11944,14 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   background-color: transparent;
   color: #fff;
 }
+.has-light .btn:hover, .has-light .btn:focus, .has-light .btn:visited, .has-light .btn:active {
+  background-color: transparent;
+  border-top-color: transparent;
+}
+.has-light .md-link-icon-container svg path,
+.has-light .md-link-icon-container svg circle {
+  stroke: white;
+}
 
 .is-rtl .md-link button {
   direction: rtl;
@@ -11957,14 +11965,6 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   align-items: center;
   display: flex;
   gap: 8px;
-}
-.has-icon-pre .has-light .md-link-icon-container svg path,
-.has-icon-pre .has-light .md-link-icon-container svg circle {
-  stroke: white;
-}
-.has-icon-pre .has-light .btn:hover, .has-icon-pre .has-light .btn:focus, .has-icon-pre .has-light .btn:visited, .has-icon-pre .has-light .btn:active {
-  background-color: transparent;
-  border-top-color: transparent;
 }
 
 .has-icon-pre.is-rtl .md-link-icon-container {
@@ -11984,7 +11984,8 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   border-bottom: 1px solid black;
 }
 
-.md-toggle button {
+.md-toggle button,
+.md-toggle .btn {
   align-items: center;
   display: flex;
   gap: 8px;
@@ -12006,7 +12007,8 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   grid-template-rows: 1fr;
 }
 
-.has-light .md-toggle button {
+.has-light .md-toggle button,
+.has-light .md-toggle .btn {
   background-color: transparent;
   color: #fff;
 }
@@ -12017,8 +12019,8 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   border-bottom: 1px solid white;
 }
 
-.has-icon-pre .md-toggle-item > button .md-toggle-icon-container,
-.has-icon-post .md-toggle-item > button .md-toggle-icon-container {
+.has-icon-pre .md-toggle-item .md-toggle-header > button .md-toggle-icon-container,
+.has-icon-post .md-toggle-item .md-toggle-header > button .md-toggle-icon-container {
   align-items: center;
   display: flex;
   gap: 8px;

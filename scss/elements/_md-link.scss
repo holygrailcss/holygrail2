@@ -19,6 +19,16 @@
   .btn {
     background-color: transparent;
     color: $c-white;
+
+    &:hover, &:focus, 
+    &:visited, &:active {
+      background-color: transparent;
+      border-top-color: transparent;
+    }
+  }
+  .md-link-icon-container svg path,
+  .md-link-icon-container svg circle {
+    stroke: white;
   }
 }
 // Estado rtl
@@ -38,20 +48,6 @@
       align-items: center;
       display: flex;
       gap: 8px;
-    }
-  }
-
-  .has-light {
-    .md-link-icon-container svg path,
-    .md-link-icon-container svg circle {
-      stroke: white;
-    }
-    .btn {
-      &:hover, &:focus, 
-      &:visited, &:active {
-        background-color: transparent;
-        border-top-color: transparent;
-      }
     }
   }
 }
