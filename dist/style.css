@@ -12018,8 +12018,8 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   border-bottom: 1px solid white;
 }
 
-.has-icon-pre .md-toggle-item .md-toggle-header > button .md-toggle-icon-container,
-.has-icon-post .md-toggle-item .md-toggle-header > button .md-toggle-icon-container {
+.has-icon-pre .md-toggle-header .md-toggle-button .md-toggle-icon-container,
+.has-icon-post .md-toggle-header .md-toggle-button .md-toggle-icon-container {
   align-items: center;
   display: flex;
   gap: 8px;
