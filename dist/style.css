@@ -11918,10 +11918,10 @@ ul.list-clear li.list-box:last-child {
   width: 100%;
 }
 
-body.open-drawer .drawer {
+body.open-drawer .drawer, body.body-sidebar-open .drawer {
   transform: translateX(0);
 }
-body.open-drawer .drawer-overlay {
+body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   opacity: 1;
   pointer-events: auto;
 }

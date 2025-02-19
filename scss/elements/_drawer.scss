@@ -62,7 +62,7 @@ $drawer-width-sm: 425px;
   width: 100%;
 }
 body {
-  &.open-drawer {
+  &.open-drawer , &.body-sidebar-open { // body-sidebar-open no se qu
     .drawer {
       transform: translateX(0);
     }
