@@ -12,7 +12,7 @@ $drawer-width-sm: 425px;
   top: 0;
   transition: opacity 0.3s ease-in-out;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
 }
 .drawer {
   background-clip: padding-box;
@@ -26,7 +26,7 @@ $drawer-width-sm: 425px;
   right: 0;
   top: 0;
   transform: translateX(100%);
-  z-index: 1050;
+  z-index: 2050;
 }
 .drawer-header {
   align-items: center;
