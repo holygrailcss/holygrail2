@@ -11899,7 +11899,6 @@ ul.list-clear li.list-box:last-child {
 }
 
 .drawer-sm {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
   max-width: 424px;
   right: 0;
   top: 0;
@@ -11909,7 +11908,6 @@ ul.list-clear li.list-box:last-child {
 }
 
 .drawer-xl {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
   max-width: 720px;
   right: 0;
   top: 0;
