@@ -11926,7 +11926,6 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
 
 .md-link button {
   align-items: center;
-  border-bottom: 0.5px solid #000;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -11934,8 +11933,12 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   padding: 0;
 }
 
-.md-link:first-child button {
+.md-link.line-top button {
   border-top: 0.5px solid #000;
+}
+
+.md-link.line-bottom button {
+  border-bottom: 0.5px solid #000;
 }
 
 .has-light .btn {
@@ -11948,7 +11951,13 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
 }
 .has-light .md-link-icon-container svg path,
 .has-light .md-link-icon-container svg circle {
-  stroke: white;
+  stroke: #fff;
+}
+.has-light .md-link.line-top button {
+  border-top: 0.5px solid #fff;
+}
+.has-light .md-link.line-bottom button {
+  border-bottom: 0.5px solid #fff;
 }
 
 .is-rtl .md-link button {
