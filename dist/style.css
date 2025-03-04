@@ -5838,10 +5838,6 @@ strong {
   display: none !important;
 }
 
-.flex-grow-0 {
-  flex-grow: 0;
-}
-
 .d-block {
   display: block;
 }
@@ -6301,6 +6297,10 @@ strong {
 
 .border-c-middle {
   border-color: #a9a9a9;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
 
 .grow {
@@ -11884,13 +11884,23 @@ ul.list-clear li.list-box:last-child {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 24px 32px;
+  padding: 16px 20px;
+}
+@media (min-width: 768px) {
+  .drawer-header {
+    padding: 24px 40px;
+  }
 }
 
 .drawer-body {
   flex-grow: 1;
   overflow-y: auto;
   padding: 24px 32px;
+}
+@media (min-width: 768px) {
+  .drawer-body {
+    padding: 24px 40px;
+  }
 }
 
 .drawer-footer {

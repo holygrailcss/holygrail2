@@ -635,9 +635,7 @@ strong {
 .hidden {
   display: none !important;
 }
-.flex-grow-0 {
-  flex-grow: 0;
-}
+
 .d-block {
   display: block;
 }
@@ -1006,7 +1004,9 @@ strong {
 .border-c-middle {
   border-color: $c-middle-grey;
 }
-
+.flex-grow-0 {
+  flex-grow: 0;
+}
 .grow {
   flex-grow: 1;
 }

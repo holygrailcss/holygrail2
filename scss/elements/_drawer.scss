@@ -32,12 +32,21 @@ $drawer-width-sm: 425px;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 24px 32px;
+  padding: 16px 20px;
+  @media (min-width: $break-sm) {
+    padding: 24px 40px;
+  }
+
 }
 .drawer-body {
   flex-grow: 1;
   overflow-y: auto;
   padding: 24px 32px;
+  @media (min-width: $break-sm) {
+    padding: 24px 40px;
+  }
+
+
 }
 .drawer-footer {
   align-items: center;

@@ -78,6 +78,8 @@ $max-vw: 1500px !default;
     @include font-regular;
   } @else if $param == 'medium' {
     @include font-medium;
+  } @else if $param == 'semibold' {
+    @include font-semibold;
   } @else if $param == 'bold' {
     @include font-bold;
   } @else if $param == 'regular2' {
