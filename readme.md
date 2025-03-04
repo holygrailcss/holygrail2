@@ -20,6 +20,8 @@ Aquí tienes el README en formato Markdown para que lo copies directamente:
 
 <div align="center">
 
+
+
 Una librería agnóstica de componentes HTML y SCSS.
 
 [![npm package](https://img.shields.io/npm/v/holygrail2.svg?style=flat-square)](https://www.npmjs.com/package/holygrail2)

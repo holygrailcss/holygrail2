@@ -1,6 +1,6 @@
 {
   "name": "holygrail2",
-  "version": "1.2.64",
+  "version": "1.2.65",
   "description": "A minimal, responsive, style-agnostic CSS framework.",
   "main": "scss/style.scss",
   "style": "dist/style.css",
@@ -14,7 +14,7 @@
   "scripts": {
     "watch": "npx @11ty/eleventy --watch",
     "serve": "npx @11ty/eleventy --serve",
-    "deploy": "git add . && (git commit -m 'Commit automático' || echo 'No hay cambios para commit') && git push origin main && npm publish",
+    "deploy": "git add . && (git commit -m \"$(node -p \\\"require('./package.json').version\\\")\" || echo 'No hay cambios para commit') && git push origin main && npm publish",
     "start:watch": "npm-run-all --parallel watch serve open:guide",
     "generate": "node generate-scss-variables.js",
     "css": "sass scss/style.scss dist/style.css && sass scss/docs.scss dist/docs.css",
