@@ -6,8 +6,9 @@ on:
       - opened
 
 jobs:
-  check-label:
+  npm-publish:
     runs-on: ubuntu-latest
+    name: Publish NPM package
     steps:
       - name: Check issue labels
         id: check_labels
@@ -20,8 +21,7 @@ jobs:
           else
             echo "MATCH=false" >> $GITHUB_ENV
             echo "MATCH=false" >> $GITHUB_OUTPUT
-      
+
       - name: Print message if label matches
         if: steps.check_labels.outputs.MATCH == 'true'
-        run: |
-            echo "Hola mundo"
+        run: echo "Hola mundo"
