@@ -88,4 +88,6 @@ jobs:
               body: |
                   ### 🫡 We will publish a new version
   
-                  ➡️ Let's publish the ${{ steps.get_current_version.outputs.CURRENT_VERSION }} version in NPM! 🚀
+                  ➡️ Let's publish the **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in NPM! 🚀
+        
+        # https://github.com/marketplace/actions/npm-publish
