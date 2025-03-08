@@ -1,0 +1,27 @@
+name: NPM Publish
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  check-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check issue labels
+        id: check_labels
+        run: |
+          labels=$(jq -r '.issue.labels[].name' "$GITHUB_EVENT_PATH")
+          echo "Labels found: $labels"
+          if echo "$labels" | grep -q "npm/publish"; then
+            echo "MATCH=true" >> $GITHUB_ENV
+            echo "MATCH=true" >> $GITHUB_OUTPUT
+          else
+            echo "MATCH=false" >> $GITHUB_ENV
+            echo "MATCH=false" >> $GITHUB_OUTPUT
+      
+      - name: Print message if label matches
+        if: steps.check_labels.outputs.MATCH == 'true'
+        run: |
+            echo "Hola mundo"
