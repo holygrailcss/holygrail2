@@ -79,3 +79,13 @@ jobs:
                 ### 😅 Incorrect versions
 
                 ➡️ The version you want to publish is less than the latest version published in NPM.
+                
+        - name: Add comment that we are moving forward
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true'
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+              issue-number: ${{ github.event.issue.number }}
+              body: |
+                  ### 🫡 We will publish a new version
+  
+                  ➡️ Let's publish the ${{ steps.get_current_version.outputs.CURRENT_VERSION }} version in NPM! 🚀
