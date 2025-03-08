@@ -15,12 +15,38 @@ jobs:
   
         - name: Get current package.json version
           if: contains(github.event.issue.labels.*.name, 'npm/publish')
+          id: get_current_version
           run: |
-            VERSION=$(jq -r .version package.json)
-            echo "The current version in package.json is $VERSION"
+            CURRENT_VERSION=$(jq -r .version package.json)
+            echo "The current version in package.json is $CURRENT_VERSION"
+            echo "CURRENT_VERSION=$CURRENT_VERSION" >> $GITHUB_OUTPUT
         
         - name: Get latest published version from NPM
+          id: get_npm_version
           run: |
-              PACKAGE_NAME="holygrail2"
-              LATEST_VERSION=$(curl -s "https://registry.npmjs.org/$PACKAGE_NAME" | jq -r '.["dist-tags"].latest')
-              echo "The latest published version of $PACKAGE_NAME on NPM is $LATEST_VERSION"
+            PACKAGE_NAME="holygrail2"
+            NPM_VERSION=$(curl -s "https://registry.npmjs.org/$PACKAGE_NAME" | jq -r '.["dist-tags"].latest')
+            echo "The latest published version of $PACKAGE_NAME on NPM is $NPM_VERSION"
+            echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_OUTPUT
+
+        - name: Compare versions
+          id: compare_versions
+          run: |
+            CURRENT_VERSION="${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
+            NPM_VERSION="${{ steps.get_npm_version.outputs.NPM_VERSION }}"
+
+            if [ "$CURRENT_VERSION" == "$NPM_VERSION" ]; then
+                echo "The version in package.json is the same as the latest version on NPM. No new publication."
+                echo "IS_SAME_VERSION=true" >> $GITHUB_OUTPUT
+            else
+                echo "Versions are different. Continuing with the next steps."
+                echo "IS_SAME_VERSION=false" >> $GITHUB_OUTPUT
+            fi
+
+        - name: Add comment when versions are the same
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'true'
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                The version in package.json is the same as the latest version on NPM. No new publication is needed.
