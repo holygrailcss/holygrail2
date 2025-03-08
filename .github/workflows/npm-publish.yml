@@ -9,6 +9,9 @@ jobs:
   npm-publish:
     runs-on: ubuntu-latest
     name: Publish NPM package
+    permissions:
+      contents: read
+      issues: write
     steps:
         - name: Checkout repository
           uses: actions/checkout@v4
@@ -47,7 +50,6 @@ jobs:
           if: steps.compare_versions.outputs.IS_SAME_VERSION == 'true'
           uses: peter-evans/create-or-update-comment@v4
           with:
-            token: ${{ secrets.GITHUB_TOKEN }}
             issue-number: ${{ github.event.issue.number }}
             body: |
                 The version in package.json is the same as the latest version on NPM. No new publication is needed.
