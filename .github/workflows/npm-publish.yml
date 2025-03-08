@@ -22,5 +22,5 @@ jobs:
         - name: Get latest published version from NPM
           run: |
               PACKAGE_NAME="holygrail2"
-              LATEST_VERSION=$(curl -s "https://registry.npmjs.org/$PACKAGE_NAME" | jq -r .['dist-tags'].latest)
+              LATEST_VERSION=$(curl -s "https://registry.npmjs.org/$PACKAGE_NAME" | jq -r '.["dist-tags"].latest')
               echo "The latest published version of $PACKAGE_NAME on NPM is $LATEST_VERSION"
