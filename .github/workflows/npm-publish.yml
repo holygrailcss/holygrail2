@@ -55,3 +55,27 @@ jobs:
                 ### 😅 No new publication is needed
 
                 ➡️ The version in package.json is the same as the latest version on NPM.
+                
+        - name: Compare if current version is greater than NPM version
+          id: check_version_greater
+          run: |
+            CURRENT_VERSION="${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
+            NPM_VERSION="${{ steps.get_npm_version.outputs.NPM_VERSION }}"
+
+            if [ "$(echo -e "$CURRENT_VERSION\n$NPM_VERSION" | sort -V | head -n 1)" == "$NPM_VERSION" ]; then
+                echo "Current version is greater than the NPM version."
+                echo "IS_GREATER=true" >> $GITHUB_OUTPUT
+            else
+                echo "Current version is not greater than the NPM version."
+                echo "IS_GREATER=false" >> $GITHUB_OUTPUT
+            fi
+        
+        - name: Add comment when current version is not greater than NPM version
+          if: steps.check_version_greater.outputs.IS_GREATER == 'false'
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                ### 😅 Incorrect versions
+
+                ➡️ The version you want to publish is less than the latest version published in NPM.
