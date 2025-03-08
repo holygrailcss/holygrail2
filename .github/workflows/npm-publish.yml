@@ -52,4 +52,6 @@ jobs:
           with:
             issue-number: ${{ github.event.issue.number }}
             body: |
-                The version in package.json is the same as the latest version on NPM. No new publication is needed.
+                ### 😅 No new publication is needed
+
+                ➡️ The version in package.json is the same as the latest version on NPM.
