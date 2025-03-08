@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish NPM package
     steps:
-        - name: Print message if label matches
+        - name: Checkout repository
+          uses: actions/checkout@v4
+  
+        - name: Get current package.json version
           if: contains(github.event.issue.labels.*.name, 'npm/publish')
           run: |
-            echo "Hola mundo"
+            VERSION=$(jq -r .version package.json)
+            echo "The current version in package.json is $VERSION"
