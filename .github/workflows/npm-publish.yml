@@ -10,18 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish NPM package
     steps:
-      - name: Check issue labels
-        id: check_labels
-        run: |
-          labels=$(jq -r '.issue.labels[].name' "$GITHUB_EVENT_PATH")
-          echo "Labels found: $labels"
-          if echo "$labels" | grep -q "npm/publish"; then
-            echo "Label found"
-            echo "MATCH=true" >> $GITHUB_OUTPUT
-          else
-            echo "Label not found, skipping workflow"
-            echo "MATCH=false" >> $GITHUB_OUTPUT
-
-      - name: Print message if label matches
-        if: steps.check_labels.outputs.MATCH == 'true'
-        run: echo "Hola mundo"
+        - name: Print message if label matches
+          if: contains(github.event.issue.labels.*.name, 'npm/publish')
+          run: |
+            echo "Hola mundo"
