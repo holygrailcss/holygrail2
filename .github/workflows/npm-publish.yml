@@ -16,10 +16,10 @@ jobs:
           labels=$(jq -r '.issue.labels[].name' "$GITHUB_EVENT_PATH")
           echo "Labels found: $labels"
           if echo "$labels" | grep -q "npm/publish"; then
-            echo "MATCH=true" >> $GITHUB_ENV
+            echo "Label found"
             echo "MATCH=true" >> $GITHUB_OUTPUT
           else
-            echo "MATCH=false" >> $GITHUB_ENV
+            echo "Label not found, skipping workflow"
             echo "MATCH=false" >> $GITHUB_OUTPUT
 
       - name: Print message if label matches
