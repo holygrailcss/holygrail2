@@ -130,12 +130,45 @@ jobs:
                           "contentType": "application/vnd.microsoft.card.adaptive",
                           "content":
                           {
+                              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
                               "type": "AdaptiveCard",
+                              "version": "1.4",
                               "body":
                               [
                                   {
                                       "type": "TextBlock",
-                                      "text": "Test title text"
+                                      "size": "Large",
+                                      "weight": "Bolder",
+                                      "text": "🚀 ¡Nueva versión publicada en NPM!"
+                                  },
+                                  {
+                                      "type": "TextBlock",
+                                      "text": "Se ha publicado la versión **ADD VERSION HERE** de *holygrail2* en NPM."
+                                  },
+                                  {
+                                      "type": "TextBlock",
+                                      "text": "📦 [Ver paquete en NPM](https://www.npmjs.com/package/holygrail2)"
+                                  },
+                                  {
+                                      "type": "TextBlock",
+                                      "text": "📄 [Ver cambios en GitHub](https://github.com/${{ github.repository }}/releases/tag/ADD-VERSION-HERE)"
+                                  },
+                                  {
+                                      "type": "TextBlock",
+                                      "text": "🔄 Asegúrate de actualizar tus dependencias."
+                                  }
+                              ],
+                              "actions":
+                              [
+                                  {
+                                      "type": "Action.OpenUrl",
+                                      "title": "📦 Ver en NPM",
+                                      "url": "https://www.npmjs.com/package/holygrail2"
+                                  },
+                                  {
+                                      "type": "Action.OpenUrl",
+                                      "title": "🔍 Ver en GitHub",
+                                      "url": "https://github.com/${{ github.repository }}/releases/tag/ADD-VERSION-HERE"
                                   }
                               ]
                           }
