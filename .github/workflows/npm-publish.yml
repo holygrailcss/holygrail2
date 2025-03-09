@@ -16,105 +16,105 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v4
   
-        #- name: Get current package.json version
-        #  if: contains(github.event.issue.labels.*.name, 'npm/publish')
-        #  id: get_current_version
-        #  run: |
-        #    CURRENT_VERSION=$(jq -r .version package.json)
-        #    echo "The current version in package.json is $CURRENT_VERSION"
-        #    echo "CURRENT_VERSION=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+        - name: Get current package.json version
+          if: contains(github.event.issue.labels.*.name, 'npm/publish')
+          id: get_current_version
+          run: |
+            CURRENT_VERSION=$(jq -r .version package.json)
+            echo "The current version in package.json is $CURRENT_VERSION"
+            echo "CURRENT_VERSION=$CURRENT_VERSION" >> $GITHUB_OUTPUT
         
-        #- name: Get latest published version from NPM
-        #  id: get_npm_version
-        #  run: |
-        #    PACKAGE_NAME="holygrail2"
-        #    NPM_VERSION=$(curl -s "https://registry.npmjs.org/$PACKAGE_NAME" | jq -r '.["dist-tags"].latest')
-        #    echo "The latest published version of $PACKAGE_NAME on NPM is $NPM_VERSION"
-        #    echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_OUTPUT
+        - name: Get latest published version from NPM
+          id: get_npm_version
+          run: |
+            PACKAGE_NAME="holygrail2"
+            NPM_VERSION=$(curl -s "https://registry.npmjs.org/$PACKAGE_NAME" | jq -r '.["dist-tags"].latest')
+            echo "The latest published version of $PACKAGE_NAME on NPM is $NPM_VERSION"
+            echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_OUTPUT
 
-        #- name: Compare versions
-        #  id: compare_versions
-        #  run: |
-        #    CURRENT_VERSION="${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
-        #    NPM_VERSION="${{ steps.get_npm_version.outputs.NPM_VERSION }}"
-#
-        #    if [ "$CURRENT_VERSION" == "$NPM_VERSION" ]; then
-        #        echo "The version in package.json is the same as the latest version on NPM. No new publication."
-        #        echo "IS_SAME_VERSION=true" >> $GITHUB_OUTPUT
-        #    else
-        #        echo "Versions are different. Continuing with the next steps."
-        #        echo "IS_SAME_VERSION=false" >> $GITHUB_OUTPUT
-        #    fi
+        - name: Compare versions
+          id: compare_versions
+          run: |
+            CURRENT_VERSION="${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
+            NPM_VERSION="${{ steps.get_npm_version.outputs.NPM_VERSION }}"
 
-        #- name: Add comment when versions are the same
-        #  if: steps.compare_versions.outputs.IS_SAME_VERSION == 'true'
-        #  uses: peter-evans/create-or-update-comment@v4
-        #  with:
-        #    issue-number: ${{ github.event.issue.number }}
-        #    body: |
-        #        ### 😅 No new publication is needed
-#
-        #        ➡️ The version in package.json is the same as the latest version on NPM.
+            if [ "$CURRENT_VERSION" == "$NPM_VERSION" ]; then
+                echo "The version in package.json is the same as the latest version on NPM. No new publication."
+                echo "IS_SAME_VERSION=true" >> $GITHUB_OUTPUT
+            else
+                echo "Versions are different. Continuing with the next steps."
+                echo "IS_SAME_VERSION=false" >> $GITHUB_OUTPUT
+            fi
+
+        - name: Add comment when versions are the same
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'true'
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                ### 😅 No new publication is needed
+
+                ➡️ The version in package.json is the same as the latest version on NPM.
                 
-        #- name: Compare if current version is greater than NPM version
-        #  id: check_version_greater
-        #  run: |
-        #    CURRENT_VERSION="${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
-        #    NPM_VERSION="${{ steps.get_npm_version.outputs.NPM_VERSION }}"
-#
-        #    if [ "$(echo -e "$CURRENT_VERSION\n$NPM_VERSION" | sort -V | head -n 1)" == "$NPM_VERSION" ]; then
-        #        echo "Current version is greater than the NPM version."
-        #        echo "IS_GREATER=true" >> $GITHUB_OUTPUT
-        #    else
-        #        echo "Current version is not greater than the NPM version."
-        #        echo "IS_GREATER=false" >> $GITHUB_OUTPUT
-        #    fi
+        - name: Compare if current version is greater than NPM version
+          id: check_version_greater
+          run: |
+            CURRENT_VERSION="${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
+            NPM_VERSION="${{ steps.get_npm_version.outputs.NPM_VERSION }}"
+
+            if [ "$(echo -e "$CURRENT_VERSION\n$NPM_VERSION" | sort -V | head -n 1)" == "$NPM_VERSION" ]; then
+                echo "Current version is greater than the NPM version."
+                echo "IS_GREATER=true" >> $GITHUB_OUTPUT
+            else
+                echo "Current version is not greater than the NPM version."
+                echo "IS_GREATER=false" >> $GITHUB_OUTPUT
+            fi
         
-        #- name: Add comment when current version is not greater than NPM version
-        #  if: steps.check_version_greater.outputs.IS_GREATER == 'false'
-        #  uses: peter-evans/create-or-update-comment@v4
-        #  with:
-        #    issue-number: ${{ github.event.issue.number }}
-        #    body: |
-        #        ### 😅 Incorrect versions
-#
-        #        ➡️ The version you want to publish is less than the latest version published in NPM.
+        - name: Add comment when current version is not greater than NPM version
+          if: steps.check_version_greater.outputs.IS_GREATER == 'false'
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                ### 😅 Incorrect versions
+
+                ➡️ The version you want to publish is less than the latest version published in NPM.
                 
-        #- name: Add comment that we are moving forward
-        #  if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true'
-        #  uses: peter-evans/create-or-update-comment@v4
-        #  with:
-        #      issue-number: ${{ github.event.issue.number }}
-        #      body: |
-        #          ### 🫡 We will publish a new version
-  #
-        #          ➡️ Let's publish the **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in NPM! 🚀
+        - name: Add comment that we are moving forward
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true'
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+              issue-number: ${{ github.event.issue.number }}
+              body: |
+                  ### 🫡 We will publish a new version
+  
+                  ➡️ Let's publish the **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in NPM! 🚀
         
         # Step: publicar en NPM https://github.com/marketplace/actions/npm-publish (Necesitamos el token de NPM)
-        #- name: Publish package to NPM
-        #  uses: JS-DevTools/npm-publish@v3
-        #  with:
-        #    token: ${{ secrets.NPM_TOKEN }}
+        - name: Publish package to NPM
+          uses: JS-DevTools/npm-publish@v3
+          with:
+            token: ${{ secrets.NPM_TOKEN }}
 
-        #- name: Add comment that the publication has been successfully completed.
-        #  # if: solo lanzar el step si la publicación ha concluido con éxito
-        #  uses: peter-evans/create-or-update-comment@v4
-        #  with:
-        #    issue-number: ${{ github.event.issue.number }}
-        #    body: |
-        #        ### 😊 Package published!
-#
-        #        ➡️ The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version has been successfully published in the NPM registry.
+        - name: Add comment that the publication has been successfully completed.
+          # if: solo lanzar el step si la publicación ha concluido con éxito
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                ### 😊 Package published!
+
+                ➡️ The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version has been successfully published in the NPM registry.
         
-        #- name: Add comment that the publication has not been successfully completed.
-        #  # if: solo lanzar el step si la publicación ha NO concluido con éxito
-        #  uses: peter-evans/create-or-update-comment@v4
-        #  with:
-        #    issue-number: ${{ github.event.issue.number }}
-        #    body: |
-        #        ### 😰 Package not published!
-#
-        #        ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+        - name: Add comment that the publication has not been successfully completed.
+          # if: solo lanzar el step si la publicación ha NO concluido con éxito
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            issue-number: ${{ github.event.issue.number }}
+            body: |
+                ### 😰 Package not published!
+
+                ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
         
         - name: Notify on Teams channel
           # if: solo lanzar el step si la publicación ha concluido con éxito
@@ -144,14 +144,6 @@ jobs:
                                   {
                                       "type": "TextBlock",
                                       "text": "Se ha publicado la versión **ADD VERSION HERE** de *holygrail2* en NPM."
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "text": "📦 [Ver paquete en NPM](https://www.npmjs.com/package/holygrail2)"
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "text": "📄 [Ver cambios en GitHub](https://github.com/${{ github.repository }}/releases/tag/ADD-VERSION-HERE)"
                                   },
                                   {
                                       "type": "TextBlock",
