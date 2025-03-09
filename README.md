@@ -1,29 +1,21 @@
-![Github](https://img.shields.io/github/v/release/holygrail2/holygrail?logo=HolygrailCSS)
-[![npm](https://img.shields.io/npm/v/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
-[![npm](https://img.shields.io/npm/dm/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
-[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/holygrail2/badge)](https://www.jsdelivr.com/package/npm/holygrail2)
-[![Gitter](https://badges.gitter.im/holygrail2/holygrail.svg)](https://gitter.im/holygrail2/holygrail)
-[![Travis CI](https://travis-ci.org/holygrail2/holygrail.svg?branch=master)](https://travis-ci.org/holygrail2/holygrail)
-
 <p align="center">
   <a href="https://holyguide.es">
     <img width="200" src="https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg" alt="Holygrail logo">
   </a>
 </p>
 
-
-
 <h1 align="center">Holygrail</h1>
 
 <div align="center">
 
-
-
 Una librería agnóstica de componentes HTML y SCSS.
 
-[![npm package](https://img.shields.io/npm/v/holygrail2.svg?style=flat-square)](https://www.npmjs.com/package/holygrail2)
-[![GitHub Actions](https://github.com/holygrailcss/holygrail2/workflows/CI/badge.svg)](https://github.com/holygrailcss/holygrail2/actions/new)
-[![Descargas](https://img.shields.io/npm/dt/holygrail2.svg?style=flat-square)](https://www.npmjs.com/package/holygrail2)
+![Github](https://img.shields.io/github/v/release/holygrail2/holygrail?logo=HolygrailCSS)
+[![npm](https://img.shields.io/npm/v/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
+[![npm](https://img.shields.io/npm/dm/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/holygrail2/badge)](https://www.jsdelivr.com/package/npm/holygrail2)
+[![Gitter](https://badges.gitter.im/holygrail2/holygrail.svg)](https://gitter.im/holygrail2/holygrail)
+[![Travis CI](https://travis-ci.org/holygrail2/holygrail.svg?branch=master)](https://travis-ci.org/holygrail2/holygrail)
 
 </div>
 
@@ -122,11 +114,10 @@ usar comentarios del tipo //
 
 ¡Siéntete libre de abrir un issue o enviar un pull request!
 
-
-
+<hr>
 
 <p align="center">
 Desarrollado con ❤️ desde Barcelona para el mundo.
 </p>
-```
+
 
