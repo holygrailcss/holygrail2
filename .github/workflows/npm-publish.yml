@@ -90,7 +90,7 @@ jobs:
   
                   ➡️ Let's publish the **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in NPM! 🚀
         
-        # Step: publicar en NPM https://github.com/marketplace/actions/npm-publish (Necesitamos el token de NPM)
+        # TODO: publicar en NPM https://github.com/marketplace/actions/npm-publish (Necesitamos el token de NPM)
         - name: Publish package to NPM
           uses: JS-DevTools/npm-publish@v3
           with:
@@ -116,6 +116,7 @@ jobs:
 
                 ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
         
+        # TODO: guardar el canal de teams en secrets
         - name: Notify on Teams channel
           # if: solo lanzar el step si la publicación ha concluido con éxito
           uses: skitionek/notify-microsoft-teams@master
