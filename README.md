@@ -1,6 +1,3 @@
-Aquí tienes el README en formato Markdown para que lo copies directamente:
-
-
 ![Github](https://img.shields.io/github/v/release/holygrail2/holygrail?logo=HolygrailCSS)
 [![npm](https://img.shields.io/npm/v/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
 [![npm](https://img.shields.io/npm/dm/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
