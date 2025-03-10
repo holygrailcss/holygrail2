@@ -91,6 +91,7 @@ jobs:
                   ➡️ Let's publish the **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in NPM! 🚀
         
         - name: Publish package to NPM
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true'
           uses: JS-DevTools/npm-publish@v3
           with:
             token: ${{ secrets.NPM_TOKEN }}
