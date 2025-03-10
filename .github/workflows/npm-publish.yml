@@ -97,7 +97,7 @@ jobs:
             token: ${{ secrets.NPM_TOKEN }}
 
         - name: Add comment that the publication has been successfully completed.
-          if: success()
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true' && success()
           uses: peter-evans/create-or-update-comment@v4
           with:
             issue-number: ${{ github.event.issue.number }}
@@ -107,7 +107,7 @@ jobs:
                 ➡️ The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version has been successfully published in the NPM registry.
         
         - name: Add comment that the publication has not been successfully completed.
-          if: failure()
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true' && failure()
           uses: peter-evans/create-or-update-comment@v4
           with:
             issue-number: ${{ github.event.issue.number }}
@@ -116,9 +116,8 @@ jobs:
 
                 ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
         
-        # TODO: guardar el canal de teams en secrets
         - name: Notify on Teams channel
-          # if: solo lanzar el step si la publicación ha concluido con éxito
+          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true' && success()
           uses: skitionek/notify-microsoft-teams@master
           with:
             webhook_url: ${{ secrets.TEAMS_WEBHOOK }}
