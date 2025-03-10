@@ -139,11 +139,11 @@ jobs:
                                       "type": "TextBlock",
                                       "size": "Large",
                                       "weight": "Bolder",
-                                      "text": "🚀 ¡Nueva versión publicada en NPM!"
+                                      "text": "🚀 ¡Nueva versión de Holygrail!"
                                   },
                                   {
                                       "type": "TextBlock",
-                                      "text": "Se ha publicado la versión **ADD VERSION HERE** de *holygrail2* en NPM."
+                                      "text": "Se ha publicado la versión **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** de *holygrail2* en NPM."
                                   },
                                   {
                                       "type": "TextBlock",
@@ -160,7 +160,7 @@ jobs:
                                   {
                                       "type": "Action.OpenUrl",
                                       "title": "🔍 Ver en GitHub",
-                                      "url": "https://github.com/${{ github.repository }}/releases/tag/ADD-VERSION-HERE"
+                                      "url": "https://github.com/${{ github.repository }}/releases/tag/${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
                                   }
                               ]
                           }
