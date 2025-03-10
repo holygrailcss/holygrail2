@@ -6311,6 +6311,10 @@ strong {
   flex-grow: 0;
 }
 
+.no-cursor {
+  cursor: default;
+}
+
 .is-rtl .fl-left {
   float: right;
 }
