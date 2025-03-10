@@ -96,75 +96,75 @@ jobs:
           with:
             token: ${{ secrets.NPM_TOKEN }}
 
-        - name: Add comment that the publication has been successfully completed.
-          # if: solo lanzar el step si la publicación ha concluido con éxito
-          uses: peter-evans/create-or-update-comment@v4
-          with:
-            issue-number: ${{ github.event.issue.number }}
-            body: |
-                ### 😊 Package published!
-
-                ➡️ The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version has been successfully published in the NPM registry.
+        #- name: Add comment that the publication has been successfully completed.
+        #  # if: solo lanzar el step si la publicación ha concluido con éxito
+        #  uses: peter-evans/create-or-update-comment@v4
+        #  with:
+        #    issue-number: ${{ github.event.issue.number }}
+        #    body: |
+        #        ### 😊 Package published!
+#
+        #        ➡️ The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version has been successfully published in the NPM registry.
         
-        - name: Add comment that the publication has not been successfully completed.
-          # if: solo lanzar el step si la publicación ha NO concluido con éxito
-          uses: peter-evans/create-or-update-comment@v4
-          with:
-            issue-number: ${{ github.event.issue.number }}
-            body: |
-                ### 😰 Package not published!
-
-                ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+        #- name: Add comment that the publication has not been successfully completed.
+        #  # if: solo lanzar el step si la publicación ha NO concluido con éxito
+        #  uses: peter-evans/create-or-update-comment@v4
+        #  with:
+        #    issue-number: ${{ github.event.issue.number }}
+        #    body: |
+        #        ### 😰 Package not published!
+#
+        #        ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
         
         # TODO: guardar el canal de teams en secrets
-        - name: Notify on Teams channel
-          # if: solo lanzar el step si la publicación ha concluido con éxito
-          uses: skitionek/notify-microsoft-teams@master
-          with:
-            webhook_url: https://grupoinditex.webhook.office.com/webhookb2/ee3801a6-9d27-43c2-b78d-6d6baa9286a8@c8e8bdb6-8e7c-41d5-bc41-37fff3c33b75/IncomingWebhook/3a855589ff0e4601b0a53b60970fe6c1/a468c634-1d65-45ea-a699-f0bbb002fe67/V2I-lgaJimz2QGcYSX5AxDVaQTswPBHc-rm0P9knkZfBM1
-            raw: >-
-              {
-                  "type": "message",
-                  "attachments":
-                  [
-                      {
-                          "contentType": "application/vnd.microsoft.card.adaptive",
-                          "content":
-                          {
-                              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-                              "type": "AdaptiveCard",
-                              "version": "1.4",
-                              "body":
-                              [
-                                  {
-                                      "type": "TextBlock",
-                                      "size": "Large",
-                                      "weight": "Bolder",
-                                      "text": "🚀 ¡Nueva versión publicada en NPM!"
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "text": "Se ha publicado la versión **ADD VERSION HERE** de *holygrail2* en NPM."
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "text": "🔄 Asegúrate de actualizar tus dependencias."
-                                  }
-                              ],
-                              "actions":
-                              [
-                                  {
-                                      "type": "Action.OpenUrl",
-                                      "title": "📦 Ver en NPM",
-                                      "url": "https://www.npmjs.com/package/holygrail2"
-                                  },
-                                  {
-                                      "type": "Action.OpenUrl",
-                                      "title": "🔍 Ver en GitHub",
-                                      "url": "https://github.com/${{ github.repository }}/releases/tag/ADD-VERSION-HERE"
-                                  }
-                              ]
-                          }
-                      }
-                  ]
-              }
+        #- name: Notify on Teams channel
+        #  # if: solo lanzar el step si la publicación ha concluido con éxito
+        #  uses: skitionek/notify-microsoft-teams@master
+        #  with:
+        #    webhook_url: https://grupoinditex.webhook.office.com/webhookb2/ee3801a6-9d27-43c2-b78d-6d6baa9286a8@c8e8bdb6-8e7c-41d5-bc41-37fff3c33b75/IncomingWebhook/3a855589ff0e4601b0a53b60970fe6c1/a468c634-1d65-45ea-a699-f0bbb002fe67/V2I-lgaJimz2QGcYSX5AxDVaQTswPBHc-rm0P9knkZfBM1
+        #    raw: >-
+        #      {
+        #          "type": "message",
+        #          "attachments":
+        #          [
+        #              {
+        #                  "contentType": "application/vnd.microsoft.card.adaptive",
+        #                  "content":
+        #                  {
+        #                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        #                      "type": "AdaptiveCard",
+        #                      "version": "1.4",
+        #                      "body":
+        #                      [
+        #                          {
+        #                              "type": "TextBlock",
+        #                              "size": "Large",
+        #                              "weight": "Bolder",
+        #                              "text": "🚀 ¡Nueva versión publicada en NPM!"
+        #                          },
+        #                          {
+        #                              "type": "TextBlock",
+        #                              "text": "Se ha publicado la versión **ADD VERSION HERE** de *holygrail2* en NPM."
+        #                          },
+        #                          {
+        #                              "type": "TextBlock",
+        #                              "text": "🔄 Asegúrate de actualizar tus dependencias."
+        #                          }
+        #                      ],
+        #                      "actions":
+        #                      [
+        #                          {
+        #                              "type": "Action.OpenUrl",
+        #                              "title": "📦 Ver en NPM",
+        #                              "url": "https://www.npmjs.com/package/holygrail2"
+        #                          },
+        #                          {
+        #                              "type": "Action.OpenUrl",
+        #                              "title": "🔍 Ver en GitHub",
+        #                              "url": "https://github.com/${{ github.repository }}/releases/tag/ADD-VERSION-HERE"
+        #                          }
+        #                      ]
+        #                  }
+        #              }
+        #          ]
+        #      }
