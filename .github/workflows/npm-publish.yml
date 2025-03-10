@@ -120,7 +120,7 @@ jobs:
           if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true' && success()
           uses: skitionek/notify-microsoft-teams@master
           with:
-            webhook_url: ${{ secrets.TEAMS_WEBHOOK }}
+            webhook_url: ${{ secrets.WEBHOOK_TEAMS }}
             raw: >-
               {
                   "type": "message",
