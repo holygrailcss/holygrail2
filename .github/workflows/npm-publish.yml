@@ -90,7 +90,6 @@ jobs:
   
                   ➡️ Let's publish the **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in NPM! 🚀
         
-        # TODO: publicar en NPM https://github.com/marketplace/actions/npm-publish (Necesitamos el token de NPM)
         - name: Publish package to NPM
           uses: JS-DevTools/npm-publish@v3
           with:
