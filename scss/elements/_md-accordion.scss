@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 
-.md-accordion-lines {
+.has-lines {
   border-top: 1px solid black;
   .md-accordion-inner,
   &.md-accordion-item {
@@ -45,10 +45,10 @@
     background-color: transparent;
     color: $c-white;
   }
-  .md-accordion .md-accordion-lines {
+  .md-accordion .has-lines {
     border-top: 1px solid white;
     .md-accordion-inner,
-    &.md-accordion-item.md-accordion-lines {
+    &.md-accordion-item.has-lines {
       .btn-link {
         border-bottom: 1px solid white;
       }
