@@ -1,10 +1,8 @@
 @import '../abstract/_all';
-
 .md-accordion {
   display: grid;
   list-style: none;
 }
-
 .md-accordion .md-accordion-button, 
 .md-accordion .btn-link {
   align-items: center;
@@ -13,33 +11,25 @@
   height: 40px;
   justify-content: space-between;
 }
-
 .md-accordion-panel {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease;
 }
-
 .md-accordion-inner {
   overflow: hidden;
 }
-
 .has-lines {
-  border-top: 1px solid black;
-  .md-accordion-inner,
-  &.md-accordion-item {
-    .btn-link {
-      border-bottom: 1px solid black;
-    }
-  }
+  border-top: 1px solid $c-primary;
 }
-
+.has-lines:last-child {
+  border-bottom: 1px solid $c-primary;
+}
 .is-active {
   &.md-accordion-item .md-accordion-panel {  
     grid-template-rows: 1fr;
   }
 }
-
 .has-light {
   .md-accordion .md-accordion-button {
     background-color: transparent;
@@ -55,7 +45,6 @@
     }
   }
 }
-
 .has-icon-pre, 
 .has-icon-post {
   .md-accordion-header .md-accordion-button {
@@ -65,7 +54,6 @@
       gap: 8px;
     }
   }
-
   .has-light {
     .md-accordion-icon-container svg path,
     .md-accordion-icon-container svg circle {
@@ -73,7 +61,6 @@
     }
   }
 }
-
 .is-rtl {
   .md-accordion button,
   .md-accordion-inner {
