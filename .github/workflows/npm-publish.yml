@@ -139,27 +139,27 @@ jobs:
                                       "type": "TextBlock",
                                       "size": "Large",
                                       "weight": "Bolder",
-                                      "text": "🚀 ¡Nueva versión de Holygrail!"
+                                      "text": "🚀 New version of Holygrail!"
                                   },
                                   {
                                       "type": "TextBlock",
-                                      "text": "Se ha publicado la versión **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** de *holygrail2* en NPM."
+                                      "text": "The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version of *holygrail2* has been released on NPM."
                                   },
                                   {
                                       "type": "TextBlock",
-                                      "text": "🔄 Asegúrate de actualizar tus dependencias."
+                                      "text": "🔄 Be sure to update your dependencies."
                                   }
                               ],
                               "actions":
                               [
                                   {
                                       "type": "Action.OpenUrl",
-                                      "title": "📦 Ver en NPM",
+                                      "title": "📦 View on NPM",
                                       "url": "https://www.npmjs.com/package/holygrail2"
                                   },
                                   {
                                       "type": "Action.OpenUrl",
-                                      "title": "🔍 Ver en GitHub",
+                                      "title": "🔍 View on Github",
                                       "url": "https://github.com/${{ github.repository }}/releases/tag/${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
                                   }
                               ]
