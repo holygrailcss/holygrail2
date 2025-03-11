@@ -16,7 +16,7 @@
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease;
 }
-.md-accordion-inner {
+.md-accordion-content {
   overflow: hidden;
 }
 .has-lines {
@@ -37,7 +37,7 @@
   }
   .md-accordion .has-lines {
     border-top: 1px solid white;
-    .md-accordion-inner,
+    .md-accordion-content,
     &.md-accordion-item.has-lines {
       .btn-link {
         border-bottom: 1px solid white;
@@ -63,7 +63,7 @@
 }
 .is-rtl {
   .md-accordion button,
-  .md-accordion-inner {
+  .md-accordion-content {
     direction: rtl;
     text-align: right;
   }
