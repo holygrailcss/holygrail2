@@ -32,6 +32,10 @@ fieldset[disabled] .form-control {
   width: 100%;
   background-color: transparent;
   font-size: 16px;
+
+  @media (min-width: $break-sm) {
+    font-size: 12px;
+  }
   &.validation-error {
     border-color: $c-error;
   }
@@ -370,7 +374,6 @@ input::placeholder {
     margin-bottom: 0;
     line-height: 1.1;
     color: $c-primary;
-    opacity: 0.6;
     border-radius: $obj-radius;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
@@ -714,7 +717,6 @@ input::placeholder {
       margin-bottom: 0;
       line-height: 1.1;
       color: #000;
-      opacity: 0.6;
       border-radius: 0;
       transition: all 0.1s ease-in-out;
       pointer-events: none;
@@ -750,7 +752,8 @@ input::placeholder {
   .checkbox-item-2 input:focus + label
 
   {
-        outline: 3px dotted #ccc;
+        outline: 3px solid #ccc;
+
 
   }
 
