@@ -873,7 +873,7 @@ button {
 }
 
 .var-b-c-accent::before {
-  content: "#ed0f2b";
+  content: "#B40016";
   display: inline-block;
 }
 
@@ -883,7 +883,7 @@ button {
 }
 
 .var-b-c-error::before {
-  content: "#ed0f2b";
+  content: "#B40016";
   display: inline-block;
 }
 
@@ -1056,11 +1056,11 @@ button {
 }
 
 .bg-c-accent {
-  background-color: #ed0f2b;
+  background-color: #B40016;
 }
 
 .bg-c-error {
-  background-color: #ed0f2b;
+  background-color: #B40016;
 }
 
 .bg-c-sale {

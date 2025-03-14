@@ -107,13 +107,13 @@
     "type": "value",
     "var_name": "$c-accent",
     "default": true,
-    "value": "#ed0f2b"
+    "value": "#B40016"
   },
   "c-error": {
     "type": "value",
     "var_name": "$c-error",
     "default": true,
-    "value": "#ed0f2b"
+    "value": "#B40016"
   },
   "c-sale": {
     "type": "value",

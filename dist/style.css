@@ -1895,7 +1895,7 @@ md-icon.c-invert path {
 svg-icon.ico-error path,
 svg-icon2.ico-error path,
 md-icon.ico-error path {
-  fill: #ed0f2b;
+  fill: #B40016;
 }
 svg-icon.ico-error.ico-reset path,
 svg-icon2.ico-error.ico-reset path,
@@ -1934,7 +1934,7 @@ md-icon.ico-feel path {
 }
 
 .has-error svg path {
-  fill: #ed0f2b;
+  fill: #B40016;
 }
 
 .has-feel svg path {
@@ -5081,7 +5081,7 @@ mark {
 }
 
 .c-error {
-  color: #ed0f2b;
+  color: #B40016;
 }
 
 .c-sale {
@@ -5178,7 +5178,7 @@ mark {
 }
 
 .bg-accent {
-  background-color: #ed0f2b;
+  background-color: #B40016;
 }
 
 .bg-white {
@@ -5194,7 +5194,7 @@ mark {
 }
 
 .bg-error {
-  background-color: #ed0f2b;
+  background-color: #B40016;
 }
 
 .bg-info {
@@ -5435,10 +5435,10 @@ hr {
 }
 
 .hg-status-a {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .hg-status-a::before {
-  background-color: #ed0f2b;
+  background-color: #B40016;
 }
 
 .hg-status-b {
@@ -5449,10 +5449,10 @@ hr {
 }
 
 .hg-status-c {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .hg-status-c::before {
-  background-color: #ed0f2b;
+  background-color: #B40016;
 }
 
 .hg-status-d {
@@ -8785,11 +8785,11 @@ button {
   padding-left: 14px;
 }
 .checkbox-item.is-error {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .checkbox-item.is-error [type=checkbox]:checked + label::before,
 .checkbox-item.is-error [type=checkbox]:not(:checked) + label::before {
-  border: 1px solid #ed0f2b;
+  border: 1px solid #B40016;
 }
 
 .check-center.checkbox-radio [type=radio]:checked + label .border-1-grey {
@@ -8965,10 +8965,10 @@ button {
   padding-bottom: 0;
 }
 .checkbox-radio.is-error label::before {
-  border: 1px solid #ed0f2b !important;
+  border: 1px solid #B40016 !important;
 }
 .checkbox-radio.is-error span {
-  color: #ed0f2b !important;
+  color: #B40016 !important;
 }
 
 .checkbox-item-text {
@@ -8991,11 +8991,11 @@ button {
   position: relative;
 }
 .checkbox-item-img.is-error {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .checkbox-item-img.is-error [type=checkbox]:checked + label::before,
 .checkbox-item-img.is-error [type=checkbox]:not(:checked) + label::before {
-  border: 1px solid #ed0f2b;
+  border: 1px solid #B40016;
 }
 .checkbox-item-img .ico-check {
   width: 22px;
@@ -9246,8 +9246,8 @@ button {
   border: 1px solid #fff;
 }
 .checkbox-card.is-error .checkbox-card-label {
-  border: 1px solid #ed0f2b !important;
-  color: #ed0f2b !important;
+  border: 1px solid #B40016 !important;
+  color: #B40016 !important;
 }
 
 .is-active.checkbox-radio .border-1, .is-active.checkbox-radio .border-1-grey {
@@ -9261,16 +9261,16 @@ button {
 .is-error.checkbox-item [type=checkbox]:checked + label::before,
 .is-error.checkbox-item [type=checkbox]:not(:checked) + label::before, .is-error .checkbox-item [type=checkbox]:checked + label::before,
 .is-error .checkbox-item [type=checkbox]:not(:checked) + label::before {
-  border: 1px solid #ed0f2b !important;
+  border: 1px solid #B40016 !important;
 }
 .is-error.checkbox-item a, .is-error .checkbox-item a {
-  color: #ed0f2b !important;
+  color: #B40016 !important;
 }
 .is-error.checkbox-item svg g, .is-error .checkbox-item svg g {
-  fill: #ed0f2b !important;
+  fill: #B40016 !important;
 }
 .is-error.checkbox-item svg g polyline, .is-error .checkbox-item svg g polyline {
-  stroke: #ed0f2b !important;
+  stroke: #B40016 !important;
 }
 
 .has-light .checkbox-item .ico-check::after {
@@ -9357,7 +9357,7 @@ fieldset[disabled] .form-control {
 .input.validation-error,
 .textarea.validation-error,
 .select select.validation-error {
-  border-color: #ed0f2b;
+  border-color: #B40016;
 }
 .input:focus,
 .textarea:focus,
@@ -9592,11 +9592,11 @@ input::placeholder {
 }
 
 .validation-error-messages {
-  color: #ed0f2b;
+  color: #B40016;
   font-weight: 500;
 }
 .validation-error-messages svg path {
-  fill: #ed0f2b;
+  fill: #B40016;
 }
 
 .validation-error-wrap {
@@ -9864,19 +9864,19 @@ input::placeholder {
 
 .is-error .input,
 .is-error .help {
-  color: #ed0f2b !important;
+  color: #B40016 !important;
 }
 .is-error .input {
-  border-bottom: var(--line-width) solid #ed0f2b;
+  border-bottom: var(--line-width) solid #B40016;
 }
 .is-error .input-prefix :nth-child(1)::placeholder {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .is-error svg g {
-  stroke: #ed0f2b !important;
+  stroke: #B40016 !important;
 }
 .is-error svg path {
-  fill: #ed0f2b !important;
+  fill: #B40016 !important;
 }
 .is-error .ico-default svg g {
   stroke: #000 !important;
@@ -10225,10 +10225,10 @@ a:hover {
   background-image: linear-gradient(transparent calc(100% - 1px), #000000 10px);
 }
 .link-line.is-error, .link-line.c-error {
-  background-image: linear-gradient(transparent calc(100% - 1px), #ed0f2b 10px);
+  background-image: linear-gradient(transparent calc(100% - 1px), #B40016 10px);
 }
 .is-error .link-line {
-  background-image: linear-gradient(transparent calc(100% - 1px), #ed0f2b 10px);
+  background-image: linear-gradient(transparent calc(100% - 1px), #B40016 10px);
 }
 .link-linebutton {
   padding-left: 0;
@@ -11222,11 +11222,11 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 
 .form-input-label .validation-error-messages,
 .form-input-label-2 .validation-error-messages {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .form-input-label .validation-error-messages svg path,
 .form-input-label-2 .validation-error-messages svg path {
-  fill: #ed0f2b;
+  fill: #B40016;
 }
 .form-input-label.datalist input:focus + svg,
 .form-input-label-2.datalist input:focus + svg {
@@ -11270,7 +11270,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 .form-input-label.datalist .validation-error-messages,
 .form-input-label-2.datalist .validation-error-messages {
-  color: #ed0f2b;
+  color: #B40016;
 }
 .form-input-label.datalist .validation-error-messages svg,
 .form-input-label-2.datalist .validation-error-messages svg {
@@ -11280,7 +11280,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 .form-input-label.datalist .validation-error-messages svg path,
 .form-input-label-2.datalist .validation-error-messages svg path {
-  fill: #ed0f2b;
+  fill: #B40016;
 }
 .is-rtl .form-input-label.datalist::after,
 .is-rtl .form-input-label-2.datalist::after {

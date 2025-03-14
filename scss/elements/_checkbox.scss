@@ -302,11 +302,11 @@
 
   &.is-error{
       label::before {
-        border: 1px solid #ed0f2b!important;
+        border: 1px solid #B40016!important;
 
       }
       span{
-        color:#ed0f2b!important;
+        color:#B40016!important;
       }
 
   }
@@ -609,8 +609,8 @@
 
   &.is-error{
    .checkbox-card-label{
-      border: 1px solid #ed0f2b!important;
-      color: #ed0f2b!important;
+      border: 1px solid #B40016!important;
+      color: #B40016!important;
     }
 
   }
