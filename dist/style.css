@@ -12058,6 +12058,72 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   text-align: right;
 }
 
+.md-accordion {
+  display: grid;
+  list-style: none;
+}
+
+.md-accordion .md-accordion-button,
+.md-accordion .btn-link {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.md-accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.md-accordion-content {
+  overflow: hidden;
+}
+
+.has-lines {
+  border-top: 1px solid #000;
+}
+
+.has-lines:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.is-active.md-accordion-item .md-accordion-panel {
+  grid-template-rows: 1fr;
+}
+
+.has-light .md-accordion .md-accordion-button {
+  background-color: transparent;
+  color: #fff;
+}
+.has-light .md-accordion .has-lines {
+  border-top: 1px solid white;
+}
+.has-light .md-accordion .has-lines .md-accordion-content .btn-link, .has-light .md-accordion .has-lines.md-accordion-item.has-lines .btn-link {
+  border-bottom: 1px solid white;
+}
+
+.has-icon-pre .md-accordion-header .md-accordion-button .md-accordion-icon-container,
+.has-icon-post .md-accordion-header .md-accordion-button .md-accordion-icon-container {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.has-icon-pre .has-light .md-accordion-icon-container svg path,
+.has-icon-pre .has-light .md-accordion-icon-container svg circle,
+.has-icon-post .has-light .md-accordion-icon-container svg path,
+.has-icon-post .has-light .md-accordion-icon-container svg circle {
+  stroke: white;
+}
+
+.is-rtl .md-accordion button,
+.is-rtl .md-accordion-content {
+  direction: rtl;
+  text-align: right;
+}
+
 .row1-wrap {
   overflow: hidden;
 }
