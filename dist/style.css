@@ -6730,7 +6730,6 @@ strong {
 .is-rtl .btn-group [class*=" btn--"]:last-child {
   margin-right: -1px;
   margin-left: 0;
-  outline: none;
 }
 .is-rtl .btn-social-login svg {
   margin-right: 0;
@@ -8039,7 +8038,6 @@ button {
 .btn-group [class^=btn--]:last-child,
 .btn-group [class*=" btn--"]:last-child {
   margin-left: -1px;
-  outline: none;
 }
 .btn-group .btn {
   border-radius: 0;
@@ -13499,7 +13497,6 @@ div.card9-wrap .rat-content:hover .card9-add {
 .is-rtl .btn-group [class*=" btn--"]:last-child {
   margin-right: -1px;
   margin-left: 0;
-  outline: none;
 }
 .is-rtl .btn-social-login svg {
   margin-right: 0;
