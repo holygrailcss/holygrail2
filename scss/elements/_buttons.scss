@@ -39,7 +39,6 @@ button {
   &:disabled,
   &.disabled {
     pointer-events: none;
-    filter: grayscale(1);
     background-color: $c-light-grey;
     border: 1px solid $c-light-grey;
     color: $c-dark-grey;
@@ -69,7 +68,6 @@ button {
     &.disabled {
       cursor: default;
       pointer-events: none;
-      filter: grayscale(1);
       background-color: $c-light-grey;
       border: 1px solid $c-light-grey;
       color: $c-dark-grey;

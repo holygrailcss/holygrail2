@@ -7017,7 +7017,7 @@ strong {
 .theme-keyboard-accesible .checkbox-card input:focus + label,
 .theme-keyboard-accesible .checkbox-item-2 input:focus + label,
 .theme-keyboard-accesible .checkbox-radio.check-no input:focus + label {
-  outline: 3px dotted #ccc;
+  outline: 3px solid #00e1ff;
 }
 
 .arrow-cover {
@@ -7218,7 +7218,6 @@ button {
 }
 .btn[disabled], .btn:disabled, .btn.disabled {
   pointer-events: none;
-  filter: grayscale(1);
   background-color: #f0f0f0;
   border: 1px solid #f0f0f0;
   color: #666666;
@@ -7241,7 +7240,6 @@ button {
 .has-light .btn[disabled], .has-light .btn:disabled, .has-light .btn.disabled {
   cursor: default;
   pointer-events: none;
-  filter: grayscale(1);
   background-color: #f0f0f0;
   border: 1px solid #f0f0f0;
   color: #666666;
@@ -10133,16 +10131,6 @@ input::placeholder {
 .form-input-select label {
   color: #666666;
   font-size: 10px;
-}
-
-.theme-keyboard-accesible .btn:focus,
-.theme-keyboard-accesible .stepper-btn:focus,
-.theme-keyboard-accesible .select select:focus,
-.theme-keyboard-accesible .checkbox-radio input:focus + label,
-.theme-keyboard-accesible .checkbox-item input:focus + label,
-.theme-keyboard-accesible .checkbox-card input:focus + label,
-.theme-keyboard-accesible .checkbox-item-2 input:focus + label {
-  outline: 3px solid #ccc;
 }
 
 a:hover {
