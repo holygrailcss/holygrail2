@@ -1,5 +1,4 @@
 @import '../abstract/_all';
-
 .is-rtl {
   .fl-left {
     float: right;
@@ -28,7 +27,6 @@
       text-align: left;
     }
   }
-
   .xs\:text-left {
     @media (max-width: #{$break-sm - 1}) {
       text-align: right;
@@ -44,7 +42,6 @@
       text-align: right;
     }
   }
-
   .select select:not([multiple]) {
     padding-right: 0;
     padding-left: 20px;
@@ -86,31 +83,18 @@
       padding-right: #{$espaciado}px;
     }
   }
-  .check-center.check-bleed.checkbox-radio
-    [type='radio']:checked
-    + label::before,
-  .check-center.check-bleed.checkbox-radio
-    [type='radio']:not(:checked)
-    + label::before {
+  .check-center.check-bleed.checkbox-radio [type='radio']:checked+label::before,
+  .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked)+label::before {
     left: initial;
     right: 0;
   }
-  .check-center.check-bleed.checkbox-radio
-    [type='radio']:checked
-    + label
-    .ico-radio,
-  .check-center.check-bleed.checkbox-radio
-    [type='radio']:not(:checked)
-    + label
-    .ico-radio {
+  .check-center.check-bleed.checkbox-radio [type='radio']:checked+label .ico-radio,
+  .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked)+label .ico-radio {
     left: initial;
     right: 5px;
   }
   .btn {
-    &.btn-separate {
-      // svg-icon, svg-icon2 {
-      // }
-    }
+
     &.btn-world {
       .btn-world-center {
         text-align: right;
@@ -121,12 +105,11 @@
     }
   }
   .btn-group {
-    & > :not(:first-child, :last-child) {
+    &> :not(:first-child, :last-child) {
       border-radius: 0;
       margin-right: -1px;
       margin-left: 0;
     }
-
     .btn {
       &:first-child {
         border-radius: 0 $btn-radius $btn-radius 0;
@@ -136,7 +119,6 @@
       }
     }
   }
-
   .btn-group [class^='btn--']:last-child,
   .btn-group [class*=' btn--']:last-child {
     margin-right: -1px;
@@ -151,7 +133,6 @@
   .btn-social {
     padding-right: 32px;
     padding-left: 32px;
-
     svg-icon,
     svg-icon2,
     md-icon {
@@ -167,26 +148,26 @@
       position: absolute;
       width: 70px;
     }
-    [type='checkbox']:not(:checked) + label::before,
-    [type='checkbox']:checked + label::before {
+    [type='checkbox']:not(:checked)+label::before,
+    [type='checkbox']:checked+label::before {
       left: auto;
       right: 0;
       margin: 0 0 0 10px;
     }
-    [type='checkbox']:not(:checked) + label,
-    [type='checkbox']:checked + label {
+    [type='checkbox']:not(:checked)+label,
+    [type='checkbox']:checked+label {
       padding-left: 0;
       padding-right: 24px;
     }
-    [type='checkbox']:not(:checked) + label span,
-    [type='checkbox']:checked + label span {
+    [type='checkbox']:not(:checked)+label span,
+    [type='checkbox']:checked+label span {
       &.theta {
         padding-left: 0;
         padding-right: 24px;
       }
     }
-    [type='checkbox']:not(:checked) + label .icon,
-    [type='checkbox']:checked + label .icon {
+    [type='checkbox']:not(:checked)+label .icon,
+    [type='checkbox']:checked+label .icon {
       right: 2px;
       left: auto;
       top: 3px;
@@ -200,26 +181,26 @@
     }
   }
   .check-bleed {
-    &.checkbox-radio [type='radio']:checked + label .ico-radio,
-    &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
+    &.checkbox-radio [type='radio']:checked+label .ico-radio,
+    &.checkbox-radio [type='radio']:not(:checked)+label .ico-radio {
       left: 0;
       right: 17px;
     }
-    &.checkbox-radio [type='radio']:checked + label::before,
-    &.checkbox-radio [type='radio']:not(:checked) + label::before {
+    &.checkbox-radio [type='radio']:checked+label::before,
+    &.checkbox-radio [type='radio']:not(:checked)+label::before {
       left: auto;
       right: 0;
     }
   }
   .check-center {
-    &.checkbox-radio [type='radio']:checked + label::before,
-    &.checkbox-radio [type='radio']:not(:checked) + label::before {
+    &.checkbox-radio [type='radio']:checked+label::before,
+    &.checkbox-radio [type='radio']:not(:checked)+label::before {
       left: auto;
       right: 16px;
       margin: 0;
     }
-    &.checkbox-radio [type='radio']:checked + label .ico-radio,
-    &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
+    &.checkbox-radio [type='radio']:checked+label .ico-radio,
+    &.checkbox-radio [type='radio']:not(:checked)+label .ico-radio {
       left: 0;
       right: 21px;
     }
@@ -270,7 +251,6 @@
           left: auto;
         }
       }
-
       &::after {
         left: 4px;
       }
@@ -281,7 +261,6 @@
       text-align: right;
     }
   }
-
   .select {
     &.select-box {
       select {
@@ -378,16 +357,16 @@
   }
   .has-ico-post {
     &.btn,
-    & > input,
-    & > label {
+    &>input,
+    &>label {
       padding-right: 0;
       padding-left: $btn-padding * 2;
     }
   }
   .has-ico-pre {
     &.btn,
-    & > input,
-    & > label {
+    &>input,
+    &>label {
       padding-left: 0;
       padding-right: $btn-padding * 2 + 4px;
     }
@@ -464,7 +443,6 @@
       padding-left: 8px;
     }
   }
-
   .tag-new {
     right: auto;
     left: -30px;
@@ -480,9 +458,133 @@
       right: 20px;
     }
   }
-
   .box3-top {
     padding-right: 16px;
     padding-left: 0;
+  }
+  .mn-mainmenu .list-check li.is-active a::before {
+    margin-right: -8px;
+  }
+  @media (min-width: 768px) {
+    .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child a,
+    .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child span {
+      padding: 8px 0 8px 20px;
+    }
+  }
+  .tooltip-sm {
+    left: calc(50% - 16px);
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    &.tooltip-tr,
+    &.tooltip-br {
+      right: calc(50% - 16px);
+      left: auto;
+      &::after {
+        left: auto;
+        right: $tooltip-dist;
+      }
+    }
+    .close {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
+  .tooltip-sm-temp {
+    left: -8px;
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    .close-temp {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
+  .toast {
+    direction: rtl;
+    right: 0;
+    left: 0;
+    @media (min-width: $break-sm) {
+      right: initial;
+      left: 50%;
+    }
+  }
+  .md-toggle button,
+  .md-toggle-inner {
+    direction: rtl;
+    text-align: right;
+  }
+  .md-link button {
+    direction: rtl;
+    text-align: right;
+  }
+  .md-link button svg {
+    transform: rotate(180deg);
+  }
+  &.has-icon-pre {
+    .md-link-icon-container {
+      direction: ltr;
+      text-align: left;
+    }
+  }
+  .md-accordion button,
+  .md-accordion-content {
+    direction: rtl;
+    text-align: right;
+  }
+  .list-state {
+    .list-state-item {
+      position: relative;
+      padding-right: 20px;
+      margin-right: 4px;
+      &::after {
+        right: -5px;
+      }
+      &::before {
+        border-left: none;
+        border-right: 1px dashed black;
+        top: 12px;
+        right: 0;
+      }
+      &:last-child {
+        &::before {
+          content: '';
+          border: none;
+        }
+      }
+    }
+  }
+  .bottom-sheet {
+    .border-clean-l {
+      border-width: var(--line-width) 0 var(--line-width) var(--line-width);
+    }
+    .border-clean-r {
+      border: solid $c-primary;
+      border-width: var(--line-width) 0 var(--line-width) 0;
+    }
+    .bs-group-colors {
+      padding-left: 20px;
+      padding-right: 16px;
+    }
+  }
+  .tag-product {
+    right: 0;
+    left: inherit;
+  }
+  .container-body2 {
+    padding-right: 16px;
+    padding-left: 0;
+    @media (min-width: $break-md) {
+      padding-right: 40px;
+      padding-left: 0;
+    }
   }
 }

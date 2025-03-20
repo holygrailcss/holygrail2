@@ -81,15 +81,6 @@
     padding-left: 40px;
   }
 
-  .is-rtl & {
-    padding-right: 16px;
-    padding-left: 0;
-
-    @media (min-width: $break-md) {
-      padding-right: 40px;
-      padding-left: 0;
-    }
-  }
 
   .swiper-container {
     overflow: inherit;
@@ -484,3 +475,5 @@
     }
   }
 }
+
+

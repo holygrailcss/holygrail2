@@ -323,26 +323,4 @@ ul.list-breadcrumb li {
       }
     }
   }
-  .is-rtl & {
-    .list-state-item {
-      position: relative;
-      padding-right: 20px;
-      margin-right: 4px;
-      &::after {
-        right: -5px;
-      }
-      &::before {
-        border-left: none;
-        border-right: 1px dashed black;
-        top: 12px;
-        right: 0;
-      }
-      &:last-child {
-        &::before {
-          content: '';
-          border: none;
-        }
-      }
-    }
-  }
 }

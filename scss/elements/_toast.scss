@@ -26,14 +26,4 @@
       transform: translate(-50%, 0);
     }
   }
-  .is-rtl & {
-    direction: rtl;
-    right: 0;
-    left: 0;
-
-    @media (min-width: $break-sm) {
-      right: initial;
-      left: 50%;
-    }
-  }
 }

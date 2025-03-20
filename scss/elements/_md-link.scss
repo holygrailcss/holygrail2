@@ -46,16 +46,7 @@
 
 
 }
-// Estado rtl
-.is-rtl {
-  .md-link button {
-    direction: rtl;
-    text-align: right;
-  }
-  .md-link button svg {
-    transform: rotate(180deg);
-  }
-}
+
 // Estado con icono
 .has-icon-pre {
   .md-link > button {
@@ -67,9 +58,6 @@
   }
 }
 
-.has-icon-pre.is-rtl {
-  .md-link-icon-container {
-    direction: ltr;
-    text-align: left;
-  }
-}
+
+
+

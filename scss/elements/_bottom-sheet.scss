@@ -1,5 +1,4 @@
 @import '../abstract/_all';
-
 .bottom-sheet {
   &::after {
     position: absolute;
@@ -11,7 +10,6 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
   .clean-botton {
     border-width: var(--line-width) 0 0 0;
   }
@@ -31,17 +29,5 @@
   .bs-custom-btn {
     border-width: 0 0 var(--line-width) 0;
   }
-  .is-rtl & {
-    .border-clean-l {
-      border-width: var(--line-width) 0 var(--line-width) var(--line-width);
-    }
-    .border-clean-r {
-      border: solid $c-primary;
-      border-width: var(--line-width) 0 var(--line-width) 0;
-    }
-    .bs-group-colors {
-      padding-left: 20px;
-      padding-right: 16px;
-    }
-  }
+
 }

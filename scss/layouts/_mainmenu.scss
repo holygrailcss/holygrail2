@@ -82,14 +82,3 @@
   }
 }
 
-.is-rtl {
-  .mn-mainmenu .list-check li.is-active a::before {
-    margin-right: -8px;
-  }
-  @media (min-width: 768px) {
-    .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child a,
-    .mn-mainmenu .mn-mainbar .tabs ul.mn-list-item li:first-child span {
-      padding: 8px 0 8px 20px;
-    }
-  }
-}
