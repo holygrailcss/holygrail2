@@ -9944,11 +9944,11 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
   width: 100%;
   height: 8px;
   border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   overflow: hidden;
+  border: solid 1px #000;
 }
 .progressbar .progressbar-status {
   min-width: 0;
