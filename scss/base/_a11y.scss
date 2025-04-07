@@ -36,8 +36,8 @@
   .checkbox-radio.check-no input:focus-visible + label,
   .swiper-pagination-bullet:focus,
   .swiper-pagination-bullet:focus-visible {
-    outline: 1px solid $c-white;
-    box-shadow: 0 0 0 5px #383BFF;
+    outline: 5px solid #383BFF;
+    outline-offset: -5px;
   }
 
 

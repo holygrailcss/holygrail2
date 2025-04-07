@@ -6302,21 +6302,41 @@ strong {
 }
 
 .theme-keyboard-accesible a:focus,
+.theme-keyboard-accesible a:focus-visible,
 .theme-keyboard-accesible .form-input-label-2 input:focus,
+.theme-keyboard-accesible .form-input-label-2 input:focus-visible,
 .theme-keyboard-accesible .form-input-label-2 select:focus,
+.theme-keyboard-accesible .form-input-label-2 select:focus-visible,
 .theme-keyboard-accesible button:focus,
+.theme-keyboard-accesible button:focus-visible,
 .theme-keyboard-accesible .btn:focus,
+.theme-keyboard-accesible .btn:focus-visible,
 .theme-keyboard-accesible .input:focus,
+.theme-keyboard-accesible .input:focus-visible,
 .theme-keyboard-accesible .textarea:focus,
+.theme-keyboard-accesible .textarea:focus-visible,
 .theme-keyboard-accesible .stepper-btn:focus,
+.theme-keyboard-accesible .stepper-btn:focus-visible,
 .theme-keyboard-accesible .select select:focus,
+.theme-keyboard-accesible .select select:focus-visible,
 .theme-keyboard-accesible .input-search:focus,
+.theme-keyboard-accesible .input-search:focus-visible,
+.theme-keyboard-accesible .cc-imagen-item:focus,
+.theme-keyboard-accesible .cc-imagen-item:focus-visible,
 .theme-keyboard-accesible .checkbox-radio input:focus + label,
+.theme-keyboard-accesible .checkbox-radio input:focus-visible + label,
 .theme-keyboard-accesible .checkbox-item input:focus + label,
+.theme-keyboard-accesible .checkbox-item input:focus-visible + label,
 .theme-keyboard-accesible .checkbox-card input:focus + label,
+.theme-keyboard-accesible .checkbox-card input:focus-visible + label,
 .theme-keyboard-accesible .checkbox-item-2 input:focus + label,
-.theme-keyboard-accesible .checkbox-radio.check-no input:focus + label {
-  outline: 3px solid #00e1ff;
+.theme-keyboard-accesible .checkbox-item-2 input:focus-visible + label,
+.theme-keyboard-accesible .checkbox-radio.check-no input:focus + label,
+.theme-keyboard-accesible .checkbox-radio.check-no input:focus-visible + label,
+.theme-keyboard-accesible .swiper-pagination-bullet:focus,
+.theme-keyboard-accesible .swiper-pagination-bullet:focus-visible {
+  outline: 5px solid #383BFF;
+  outline-offset: -5px;
 }
 
 .arrow-cover {
