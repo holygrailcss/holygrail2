@@ -116,54 +116,58 @@ jobs:
 
                 ➡️ An error occurred while publishing **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version in the NPM registry. [Check the logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
         
-        - name: Notify on Teams channel
-          if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true' && success()
-          uses: skitionek/notify-microsoft-teams@master
-          with:
-            webhook_url: ${{ secrets.WEBHOOK_TEAMS }}
-            raw: >-
-              {
-                  "type": "message",
-                  "attachments":
-                  [
-                      {
-                          "contentType": "application/vnd.microsoft.card.adaptive",
-                          "content":
-                          {
-                              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-                              "type": "AdaptiveCard",
-                              "version": "1.4",
-                              "body":
-                              [
-                                  {
-                                      "type": "TextBlock",
-                                      "size": "Large",
-                                      "weight": "Bolder",
-                                      "text": "🚀 New version of Holygrail!"
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "text": "The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version of *holygrail2* has been released on NPM."
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "text": "🔄 Be sure to update your dependencies."
-                                  }
-                              ],
-                              "actions":
-                              [
-                                  {
-                                      "type": "Action.OpenUrl",
-                                      "title": "📦 View on NPM",
-                                      "url": "https://www.npmjs.com/package/holygrail2"
-                                  },
-                                  {
-                                      "type": "Action.OpenUrl",
-                                      "title": "🔍 View on Github",
-                                      "url": "https://github.com/${{ github.repository }}/releases/tag/${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
-                                  }
-                              ]
-                          }
-                      }
-                  ]
-              }
+                - name: Notify on Teams channel
+                if: steps.compare_versions.outputs.IS_SAME_VERSION == 'false' && steps.check_version_greater.outputs.IS_GREATER == 'true' && success()
+                uses: skitionek/notify-microsoft-teams@master
+                with:
+                  webhook_url: ${{ secrets.WEBHOOK_TEAMS }}
+                  raw: >-
+                    {
+                        "type": "message",
+                        "attachments": [
+                            {
+                                "contentType": "application/vnd.microsoft.card.adaptive",
+                                "content": {
+                                    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                                    "type": "AdaptiveCard",
+                                    "version": "1.4",
+                                    "body": [
+                                        {
+                                            "type": "TextBlock",
+                                            "size": "Large",
+                                            "weight": "Bolder",
+                                            "text": "🚀 New version of Holygrail!"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Issue: ${{ github.event.issue.title }}"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Description: ${{ github.event.issue.body }}"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version of *holygrail2* has been released on NPM."
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "🔄 Be sure to update your dependencies."
+                                        }
+                                    ],
+                                    "actions": [
+                                        {
+                                            "type": "Action.OpenUrl",
+                                            "title": "📦 View on NPM",
+                                            "url": "https://www.npmjs.com/package/holygrail2"
+                                        },
+                                        {
+                                            "type": "Action.OpenUrl",
+                                            "title": "🔍 View on Github",
+                                            "url": "https://github.com/${{ github.repository }}/releases/tag/${{ steps.get_current_version.outputs.CURRENT_VERSION }}"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
