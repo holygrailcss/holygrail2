@@ -1,44 +1,8 @@
 @import '../abstract/_all';
 
 
-.theme-keyboard-accesible{
-  a:focus,
-  a:focus-visible,
-  .form-input-label-2 input:focus,
-  .form-input-label-2 input:focus-visible,
-  .form-input-label-2 select:focus,
-  .form-input-label-2 select:focus-visible,
-  button:focus,
-  button:focus-visible,
-  .btn:focus,
-  .btn:focus-visible,
-  .input:focus,
-  .input:focus-visible,
-  .textarea:focus,
-  .textarea:focus-visible,
-  .stepper-btn:focus,
-  .stepper-btn:focus-visible,
-  .select select:focus,
-  .select select:focus-visible,
-  .input-search:focus,
-  .input-search:focus-visible,
-  .cc-imagen-item:focus,
-  .cc-imagen-item:focus-visible,
-  .checkbox-radio input:focus + label,
-  .checkbox-radio input:focus-visible + label, 
-  .checkbox-item input:focus + label,
-  .checkbox-item input:focus-visible + label,
-  .checkbox-card input:focus + label,
-  .checkbox-card input:focus-visible + label,
-  .checkbox-item-2 input:focus + label,
-  .checkbox-item-2 input:focus-visible + label,
-  .checkbox-radio.check-no input:focus + label,
-  .checkbox-radio.check-no input:focus-visible + label,
-  .swiper-pagination-bullet:focus,
-  .swiper-pagination-bullet:focus-visible {
-    outline: 5px solid #383BFF;
-    outline-offset: -5px;
-  }
-
-
+.theme-keyboard-accesible *:focus ,
+.theme-keyboard-accesible *:focus-visible {
+    outline: 2px solid #383BFF;
+    outline-offset: 2px;
 }
