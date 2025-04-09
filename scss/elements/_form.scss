@@ -40,7 +40,6 @@ fieldset[disabled] .form-control {
     border-color: $c-error;
   }
   &:focus {
-    outline: none;
     border: var(--line-width) solid transparent;
     border-color: $c-primary;
     border-width: 0 0 var(--line-width) 0;
@@ -76,7 +75,6 @@ input::placeholder {
     cursor: pointer;
     display: block;
     max-width: 100%;
-    outline: 0;
     &:hover {
       opacity: 0.6;
     }
