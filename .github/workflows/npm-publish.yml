@@ -139,15 +139,15 @@ jobs:
                                       "type": "TextBlock",
                                       "size": "Large",
                                       "weight": "Bolder",
-                                      "text": "🚀 New version of Holygrail!"
+                                      "text": "🚀 Nueva versión de Holygrail!"
                                   },
                                   {
                                       "type": "TextBlock",
-                                      "text": "The **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** version of *holygrail2* has been released on NPM."
+                                      "text": "La versión **${{ steps.get_current_version.outputs.CURRENT_VERSION }}** de *holygrail2* acaba de ser actualizada en NPM."
                                   },
                                   {
                                       "type": "TextBlock",
-                                      "text": "🔄 Be sure to update your dependencies."
+                                      "text": "🔄 Actualiza tu holygrail si requieres de esta nueva utilidad"
                                   },
                                   {
                                       "type": "TextBlock",
