@@ -1623,3 +1623,37 @@ position: relative;
     }
   }
 }
+
+.btn-link-tab {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 4px;
+  height: auto;
+  justify-content: space-between;
+  min-height: $height-btn;
+  padding: 12px 0;
+  text-align: initial;
+
+  .btn-prepend,
+  .btn-append {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 0 auto;
+    justify-content: center;
+  }
+
+  .btn-content {
+    align-items: stretch;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  @at-root .is-rtl .btn-icon-arrow-right {
+    transform: rotate(180deg);
+  }
+}
