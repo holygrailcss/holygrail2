@@ -1626,6 +1626,10 @@ position: relative;
 
 .btn-link-tab {
   align-items: flex-start;
+  align-self: flex-start;
+  border-color: transparent;
+  border-style: solid;
+  border-width: var(--line-width) 0;
   display: inline-flex;
   flex-flow: row nowrap;
   gap: 4px;
@@ -1655,5 +1659,24 @@ position: relative;
 
   @at-root .is-rtl .btn-icon-arrow-right {
     transform: rotate(180deg);
+  }
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    border-left: 0;
+    border-right: 0;
+  }
+  
+  &.btn-lines {
+    border-bottom-color: $c-black;
+    border-top-color: $c-black;
+    
+    &:disabled,
+    &[disabled],
+    &.disabled {
+      border-bottom-color: $c-middle-grey;
+      border-top-color: $c-middle-grey;
+    }
   }
 }
