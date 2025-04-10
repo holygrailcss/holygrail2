@@ -9,4 +9,17 @@
         outline: 2px solid #383BFF;
         outline-offset: 2px;
     }
+    .focus\:outside:focus ,
+    .focus\:outside:focus-visible { 
+        outline: 2px solid #383BFF;
+        outline-offset: 2px;
+    }
+
+    .focus\:inset:focus ,
+    .focus\:inset:focus-visible { 
+        outline: 2px solid #383BFF;
+        outline-offset: -2px;
+    }
+
+
 }

@@ -136,6 +136,7 @@ permalink: /
     </div>
     <div class="grid-cols-2">
       <h3>Button link tab</h3>
+      <h4>.btn-link-tab</h4>
     </div>
     <div class="grid-cols-3 gap-16">
 
@@ -1290,4 +1291,34 @@ permalink: /
         }
       });
     });
+
+  // Función para alternar la clase is-rtl y el atributo dir en el body
+  function toggleRTL() {
+    const body = document.body;
+    const isRTL = body.classList.contains('is-rtl');
+    if (isRTL) {
+      body.classList.remove('is-rtl');
+      body.removeAttribute('dir');
+    } else {
+      body.classList.add('is-rtl');
+      body.setAttribute('dir', 'rtl');
+    }
+  }
+
+  // Crear el botón y agregarlo al DOM
+  const rtlButton = document.createElement('button');
+  rtlButton.textContent = 'Toggle RTL';
+  rtlButton.classList.add('btn', 'btn-rtl','btn-primary');
+  rtlButton.addEventListener('click', toggleRTL);
+
+  // Agregar el botón al final del body
+  document.body.appendChild(rtlButton);
   </script>
+
+  <style>
+    .btn-rtl {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
