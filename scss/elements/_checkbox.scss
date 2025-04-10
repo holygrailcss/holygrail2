@@ -146,6 +146,7 @@
     font-size: $text-sm;
     text-align: initial;
     display: flex;
+    height: 26px;
   }
   [type='checkbox']:not(:checked) + label::before,
   [type='checkbox']:checked + label::before {

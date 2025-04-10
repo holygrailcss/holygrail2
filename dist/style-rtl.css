@@ -8154,6 +8154,7 @@ button {
   font-size: 12px;
   text-align: initial;
   display: flex;
+  height: 26px;
 }
 .checkbox-item-2 [type=checkbox]:not(:checked) + label::before,
 .checkbox-item-2 [type=checkbox]:checked + label::before {
