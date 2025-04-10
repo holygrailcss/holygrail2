@@ -844,9 +844,24 @@ button {
   }
 }
 
-.container-375 {
+.container-360 {
   width: 100%;
-  max-width: 375px;
+  max-width: 360px;
+}
+
+.container-496 {
+  width: 100%;
+  max-width: 496px;
+}
+
+.container-512 {
+  width: 100%;
+  max-width: 512px;
+}
+
+.container-640 {
+  width: 100%;
+  max-width: 640px;
 }
 
 .row {
