@@ -6304,14 +6304,16 @@ strong {
 .theme-keyboard-accesible *:focus,
 .theme-keyboard-accesible *:focus-visible,
 .theme-keyboard-accesible [class*=checkbox-]:focus + label,
-.theme-keyboard-accesible [class*=checkbox-]:focus-visible + label {
+.theme-keyboard-accesible [class*=checkbox-]:focus-visible + label,
+.theme-keyboard-accesible [class*=checkbox-] input:focus + label,
+.theme-keyboard-accesible [class*=checkbox-] input:focus-visible + label {
   outline: 2px solid #383BFF;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 .theme-keyboard-accesible .focus\:outside:focus,
 .theme-keyboard-accesible .focus\:outside:focus-visible {
   outline: 2px solid #383BFF;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 .theme-keyboard-accesible .focus\:inset:focus,
 .theme-keyboard-accesible .focus\:inset:focus-visible {
@@ -6511,8 +6513,6 @@ button {
 }
 .btn:focus, .btn.focus, .btn:hover, .btn.hover, .btn:visited, .btn:active, .btn.active {
   text-decoration: none;
-  opacity: 0.6;
-  outline: none;
   cursor: pointer;
 }
 .btn[disabled], .btn:disabled, .btn.disabled {
@@ -6984,7 +6984,6 @@ button {
   stroke: #000;
 }
 .btn-tertiary:focus, .btn-tertiary.focus, .btn-tertiary:hover, .btn-tertiary.hover, .btn-tertiary:active, .btn-tertiary.active {
-  opacity: 0.6;
   border: 0 solid transparent;
   background-color: transparent;
   cursor: pointer;
@@ -7388,7 +7387,6 @@ button {
 .btn-selector [class^=btn--]:last-child,
 .btn-selector [class*=" btn--"]:last-child {
   margin-left: -1px;
-  outline: none;
 }
 .btn-selector [class^=btn--]:hover,
 .btn-selector [class*=" btn--"]:hover {
@@ -7963,6 +7961,10 @@ button {
 
 .btn-link-tab {
   align-items: flex-start;
+  align-self: flex-start;
+  border-color: transparent;
+  border-style: solid;
+  border-width: var(--line-width) 0;
   display: inline-flex;
   flex-flow: row nowrap;
   gap: 4px;
@@ -7990,6 +7992,19 @@ button {
 }
 .is-rtl .btn-icon-arrow-right {
   transform: rotate(180deg);
+}
+
+.btn-link-tab:disabled, .btn-link-tab[disabled], .btn-link-tab.disabled {
+  border-left: 0;
+  border-right: 0;
+}
+.btn-link-tab.btn-lines {
+  border-bottom-color: #000;
+  border-top-color: #000;
+}
+.btn-link-tab.btn-lines:disabled, .btn-link-tab.btn-lines[disabled], .btn-link-tab.btn-lines.disabled {
+  border-bottom-color: #a9a9a9;
+  border-top-color: #a9a9a9;
 }
 
 .checkbox-item {

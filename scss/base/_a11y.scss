@@ -1,25 +1,22 @@
 @import '../abstract/_all';
-
-
 .theme-keyboard-accesible {
-    *:focus ,
+    *:focus,
     *:focus-visible,
-    [class*="checkbox-"]:focus + label,
-    [class*="checkbox-"]:focus-visible + label {
+    [class*="checkbox-"]:focus+label,
+    [class*="checkbox-"]:focus-visible+label,
+    [class*="checkbox-"] input:focus+label,
+    [class*="checkbox-"] input:focus-visible+label {
         outline: 2px solid #383BFF;
-        outline-offset: 2px;
+        outline-offset: 1px;
     }
-    .focus\:outside:focus ,
-    .focus\:outside:focus-visible { 
+    .focus\:outside:focus,
+    .focus\:outside:focus-visible {
         outline: 2px solid #383BFF;
-        outline-offset: 2px;
+        outline-offset: 1px;
     }
-
-    .focus\:inset:focus ,
-    .focus\:inset:focus-visible { 
+    .focus\:inset:focus,
+    .focus\:inset:focus-visible {
         outline: 2px solid #383BFF;
         outline-offset: -2px;
     }
-
-
 }

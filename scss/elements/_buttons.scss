@@ -31,8 +31,6 @@ button {
   &:active,
   &.active {
     text-decoration: none;
-    opacity: 0.6;
-    outline: none;
     cursor: pointer;
   }
   &[disabled],
@@ -138,6 +136,7 @@ button {
   white-space: nowrap;
   cursor: pointer;
   padding: math.div($btn-padding, 2);
+
   &:active,
   &:focus,
   &:visited {
@@ -582,7 +581,6 @@ button {
   &.hover,
   &:active,
   &.active {
-    opacity: 0.6;
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
@@ -983,7 +981,6 @@ button {
     }
     &:last-child {
       margin-left: -1px;
-      outline: none;
     }
     &:hover {
       color: $c-black;
