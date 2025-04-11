@@ -14,9 +14,26 @@
         outline: 2px solid #383BFF;
         outline-offset: 1px;
     }
-    .focus\:inset:focus,
+    .focus\:inset:focus,  
     .focus\:inset:focus-visible {
         outline: 2px solid #383BFF;
         outline-offset: -2px;
     }
+    
+    a:focus .product-card-img::before,
+    .product-media__img:focus::before{
+       content: '';
+       display: block;
+       outline: 2px solid #383BFF;
+       outline-offset: -2px;
+       position: absolute;
+       inset: 0;
+       z-index: 1;
+       width: 100%;
+   
+     }
+   
+   
+  
+
 }
