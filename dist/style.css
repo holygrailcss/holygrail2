@@ -6335,6 +6335,17 @@ strong {
   outline: 2px solid #383BFF;
   outline-offset: -2px;
 }
+.theme-keyboard-accesible a:focus .product-card-img::before,
+.theme-keyboard-accesible .product-media__img:focus::before {
+  content: "";
+  display: block;
+  outline: 2px solid #383BFF;
+  outline-offset: -2px;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+}
 
 .arrow-cover {
   height: auto;
