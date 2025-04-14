@@ -13,11 +13,11 @@
 
 // primera linea
 .md-link.line-top button {
-  border-top: .5px solid $c-primary;
+  border-top: var(--line-width)  solid $c-primary;
 }
 
 .md-link.line-bottom button {
-  border-bottom: .5px solid $c-primary;
+  border-bottom: var(--line-width)  solid $c-primary;
 }
 // Estado version oscura
 .has-light {
@@ -37,11 +37,11 @@
   }
   // primera linea
   .md-link.line-top button {
-    border-top: .5px solid $c-white;
+    border-top: var(--line-width)  solid $c-white;
   }
 
   .md-link.line-bottom button {
-    border-bottom: .5px solid $c-white;
+    border-bottom: var(--line-width)  solid $c-white;
   }
 
 

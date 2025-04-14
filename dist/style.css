@@ -11100,7 +11100,7 @@ ul.list-clear li.list-box:last-child {
 
 .stepper {
   align-items: center;
-  border: 0.5px solid #000;
+  border: var(--line-width) solid #000;
   display: flex;
   height: 32px;
   width: 94px;
@@ -11234,11 +11234,11 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
 }
 
 .md-link.line-top button {
-  border-top: 0.5px solid #000;
+  border-top: var(--line-width) solid #000;
 }
 
 .md-link.line-bottom button {
-  border-bottom: 0.5px solid #000;
+  border-bottom: var(--line-width) solid #000;
 }
 
 .has-light .btn {
@@ -11254,10 +11254,10 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   stroke: #fff;
 }
 .has-light .md-link.line-top button {
-  border-top: 0.5px solid #fff;
+  border-top: var(--line-width) solid #fff;
 }
 .has-light .md-link.line-bottom button {
-  border-bottom: 0.5px solid #fff;
+  border-bottom: var(--line-width) solid #fff;
 }
 
 .has-icon-pre .md-link > button .md-link-icon-container {
