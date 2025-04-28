@@ -729,7 +729,11 @@ input::placeholder {
   }
 
   select {
-    padding: 16px 0 8px;
+    padding: 16px 0 4px;
+    
+    @media (min-width: $break-sm) {
+      padding-bottom: 8px;
+    }
   }
 
   label {
