@@ -1369,8 +1369,8 @@ button {
   &[disabled],
   &:disabled,
   &.disabled {
-    background-color: $c-light-grey;
-    border: 1px solid $c-light-grey;
+    background-color: transparent;
+    border: 1px solid transparent;
     color: $c-dark-grey;
     opacity: 1;
     svg {

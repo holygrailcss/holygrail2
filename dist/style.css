@@ -6346,6 +6346,11 @@ strong {
   z-index: 1;
   width: 100%;
 }
+.theme-keyboard-accesible .btn-grid .btn:focus,
+.theme-keyboard-accesible .btn-grid .btn:focus-visible {
+  outline: 2px solid #383BFF;
+  outline-offset: -2px;
+}
 
 .arrow-cover {
   height: auto;
@@ -6406,6 +6411,13 @@ strong {
 }
 .has-light .line-scrolldown::after {
   background: #fff;
+}
+
+.md-arrow-anim {
+  transition: all ease 0.3s;
+}
+.is-active .md-arrow-anim {
+  transform: rotate(180deg);
 }
 
 .marketing-spot {
@@ -7767,8 +7779,8 @@ button {
   cursor: pointer;
 }
 .btn-square[disabled], .btn-square:disabled, .btn-square.disabled {
-  background-color: #f0f0f0;
-  border: 1px solid #f0f0f0;
+  background-color: transparent;
+  border: 1px solid transparent;
   color: #666666;
   opacity: 1;
 }
@@ -8838,7 +8850,7 @@ input::placeholder {
   min-width: 32px;
   width: 100%;
   height: 32px;
-  border: 0.5px solid #000;
+  border: var(--line-width) solid #000;
   padding: 2px 32px 0 8px;
   font-size: 12px;
   border-radius: 0;
@@ -9495,7 +9507,12 @@ input::placeholder {
   padding-bottom: 4.6666666667px;
 }
 .form-input-select select {
-  padding: 16px 0 8px;
+  padding: 16px 0 4px;
+}
+@media (min-width: 768px) {
+  .form-input-select select {
+    padding-bottom: 8px;
+  }
 }
 .form-input-select label {
   color: #666666;
