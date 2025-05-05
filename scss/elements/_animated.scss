@@ -68,3 +68,12 @@
     }
   }
 }
+
+
+.md-arrow-anim{
+  transition: all ease .3s;
+  .is-active &{
+    transform: rotate(180deg);
+
+  }
+}
