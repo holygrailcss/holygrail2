@@ -696,6 +696,13 @@ strong {
 .pe-none {
   pointer-events: none;
 }
+.pointer-events-none{
+  pointer-events: none;
+}
+.pointer-events-all{
+  pointer-events: all;
+}
+
 .font-l {
   font-family: $font-family-a-l;
 }
