@@ -8722,7 +8722,7 @@ fieldset[disabled] .form-control {
   padding: 8px 0;
   position: relative;
   vertical-align: top;
-  height: 40px;
+  min-height: 40px;
   box-sizing: border-box;
   color: #000;
   max-width: 100%;
