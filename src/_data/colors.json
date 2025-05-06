@@ -27,7 +27,7 @@
     "type": "value",
     "var_name": "$c-dark-grey",
     "default": true,
-    "value": "#666666"
+    "value": "#737373"
   },
   "c-primary-3": {
     "type": "value",

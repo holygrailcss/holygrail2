@@ -25,7 +25,7 @@ fieldset[disabled] .form-control {
   padding: 8px 0;
   position: relative;
   vertical-align: top;
-  height: 40px;
+  min-height: 40px;
   box-sizing: border-box;
   color: $c-primary;
   max-width: 100%;
@@ -357,7 +357,7 @@ input::placeholder {
   & > label,
   & > textarea {
     font-family: $font-family-form;
-    padding: 16px 0;
+    padding: 16px 0 0;
     font-weight: normal;
   }
   & > label {
@@ -383,8 +383,8 @@ input::placeholder {
 
   & input:not(:placeholder-shown),
   & textarea:not(:placeholder-shown) {
-    padding-top: calc(#{$input-padding-y} + #{$input-padding-y} * (2 / 3));
-    padding-bottom: 14px;
+    padding-top: 8px;
+    padding-bottom: 0;
   }
   & input:not(:placeholder-shown) ~ label,
   & textarea:not(:placeholder-shown) ~ label {
@@ -395,8 +395,8 @@ input::placeholder {
   }
   & input:focus,
   & textarea:focus {
-    padding-top: calc(#{$input-padding-y} + #{$input-padding-y} * (2 / 3));
-    padding-bottom: 14px;
+    padding-top: 8px;
+    padding-bottom: 0;
   }
   & input:focus ~ label,
   & textarea:focus ~ label {
