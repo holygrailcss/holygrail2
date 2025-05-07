@@ -50,6 +50,14 @@ fieldset[disabled] .form-control {
     border-color: $c-middle-grey;
     color: $c-middle-grey;
   }
+
+  &.text-l {
+    font-size: 12px;
+  
+    @media (min-width: $break-sm) {
+      font-size: 12px;
+    }
+  }
 }
 input::placeholder {
   color: transparent;
