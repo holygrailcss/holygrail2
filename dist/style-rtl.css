@@ -11422,6 +11422,22 @@ body.open-drawer .drawer-overlay, body.body-sidebar-open .drawer-overlay {
   stroke: white;
 }
 
+.md-skip-to-content {
+  left: 16px;
+  margin-top: -120px;
+  position: absolute;
+  top: 8px;
+  transition: margin 0.2s ease-in-out;
+  z-index: 10000;
+}
+.md-skip-to-content:focus {
+  margin-top: 0;
+}
+.md-skip-to-content:focus.btn-primary {
+  background-color: #000;
+  border-color: #000;
+}
+
 .row1-wrap {
   overflow: hidden;
 }
