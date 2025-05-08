@@ -15,7 +15,7 @@
     "type": "value",
     "var_name": "$c-light-grey",
     "default": true,
-    "value": "#f0f0f0"
+    "value": "#F9F9F9"
   },
   "c-middle-grey": {
     "type": "value",

@@ -21,7 +21,7 @@ button {
   cursor: pointer;
   padding: 10px 16px 8px;
   background-color: transparent;
-  height: $height-btn;
+  min-height: $height-btn;
   @include font-regular;
   &:focus,
   &.focus,
@@ -142,6 +142,9 @@ button {
   &:visited {
     outline: none;
   }
+}
+.btn--wrap {
+  white-space: wrap;
 }
 .btn--mini {
   padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1
@@ -1076,12 +1079,12 @@ button {
   &[disabled],
   &.disabled {
     background-color: $c-light-grey;
-    color: $c-middle-grey;
+    color: $c-dark-grey;
     border-color: transparent;
     opacity: 1;
     svg {
       path {
-        fill: $c-middle-grey;
+        fill: $c-dark-grey;
       }
     }
   }
