@@ -43,6 +43,7 @@ fieldset[disabled] .form-control {
     border: var(--line-width) solid transparent;
     border-color: $c-primary;
     border-width: 0 0 var(--line-width) 0;
+    outline: none;
   }
   &disabled,
   &.disabled {

@@ -6,17 +6,17 @@
     [class*="checkbox-"]:focus-visible+label,
     [class*="checkbox-"] input:focus+label,
     [class*="checkbox-"] input:focus-visible+label {
-        outline: 2px solid #383BFF;
+        outline: 2px solid #383BFF !important;
         outline-offset: 1px;
     }
     .focus\:outside:focus,
     .focus\:outside:focus-visible {
-        outline: 2px solid #383BFF;
+        outline: 2px solid #383BFF !important;
         outline-offset: 1px;
     }
     .focus\:inset:focus,  
     .focus\:inset:focus-visible {
-        outline: 2px solid #383BFF;
+        outline: 2px solid #383BFF !important;
         outline-offset: -2px;
     }
     
@@ -24,7 +24,7 @@
     .product-media__img:focus::before{
        content: '';
        display: block;
-       outline: 2px solid #383BFF;
+       outline: 2px solid #383BFF !important;
        outline-offset: -2px;
        position: absolute;
        inset: 0;
@@ -37,7 +37,7 @@
 
      .btn-grid .btn:focus ,  
      .btn-grid .btn:focus-visible {
-         outline: 2px solid #383BFF;
+         outline: 2px solid #383BFF !important;
          outline-offset: -2px;
      }
      
