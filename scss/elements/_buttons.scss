@@ -155,7 +155,7 @@ button {
   padding-right: $padding-global;
 }
 .btn--small {
-  height: 40px;
+  min-height: 40px;
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
 }
@@ -164,24 +164,24 @@ button {
   padding-left: $padding-global * 5;
   max-width: 272px;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
 }
 .btn--mini-rd {
   padding-right: $padding-global * 3;
   padding-left: $padding-global * 3;
   font-size: $btn-text-mini;
-  height: 32px;
+  min-height: 32px;
   display: inline-flex;
   align-content: center;
   align-items: center;
   @media (min-width: $break-sm) {
     padding: $padding-global * 2;
     font-size: $btn-text-small;
-    height: 40px;
+    min-height: 40px;
   }
 }
 .btn--large {
-  height: 40px;
+  min-height: 40px;
   min-width: 200px;
   max-width: 400px;
   width: 100%;
@@ -204,7 +204,7 @@ button {
 }
 .btn--xxl {
   display: flex;
-  height: 60px;
+  min-height: 60px;
   padding: 10px 40px;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +213,7 @@ button {
   cursor: pointer;
 }
 .btn--search {
-  height: initial;
+  min-height: initial;
   display: flex;
   font-size: 11px;
   line-height: 1;
@@ -1638,7 +1638,6 @@ position: relative;
   flex-flow: row nowrap;
   gap: 4px;
   height: auto;
-  min-height: auto;
   justify-content: space-between;
   min-height: $height-btn;
   padding: 12px 0;
