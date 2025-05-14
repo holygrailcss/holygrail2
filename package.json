@@ -1,6 +1,6 @@
 {
   "name": "holygrail2",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "A minimal, responsive, style-agnostic CSS framework.",
   "main": "scss/style.scss",
   "style": "dist/style.css",
@@ -20,7 +20,7 @@
     "css": "sass scss/style.scss dist/style.css && sass scss/style-rtl.scss dist/style-rtl.css && sass scss/docs.scss dist/docs.css",
     "site": "npx @11ty/eleventy",
     "build": "npm run generate && npm run css && npm run site",
-     "start": "npm run build && npm run open:guide",
+    "start": "npm run build && npm run open:guide",
     "open:guide": "open guia/index.html"
   },
   "repository": {

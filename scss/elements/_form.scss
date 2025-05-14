@@ -144,6 +144,7 @@ input::placeholder {
   }
   &.select-box {
     height: auto;
+    min-height: auto;
     min-width: 60px;
     select {
       background-color: $c-white;

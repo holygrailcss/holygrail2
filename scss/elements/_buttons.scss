@@ -686,6 +686,7 @@ button {
   padding: 0;
   border-radius: $btn-radius;
   height: auto;
+  min-height: auto;
   .has-light & {
     color: $c-white;
     background-color: transparent;
