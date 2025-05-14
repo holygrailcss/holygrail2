@@ -150,7 +150,7 @@ input::placeholder {
       background-color: $c-white;
       min-width: 32px;
       width: 100%;
-      height: 32px;
+      min-height: 32px;
       border: var(--line-width)  solid $c-primary;
       padding: 2px 32px 0 8px;
       font-size: $text-input-d;
