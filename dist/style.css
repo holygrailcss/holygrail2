@@ -7025,6 +7025,7 @@ button {
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
+  min-height: auto;
 }
 .btn-tertiary svg g {
   fill: #000;
@@ -7888,6 +7889,7 @@ button {
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
+  min-height: auto;
   padding: 16px;
 }
 .btn-quick svg g {
@@ -7952,6 +7954,7 @@ button {
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
+  min-height: auto;
   padding: 16px;
 }
 .btn-tab svg g {
@@ -8020,6 +8023,7 @@ button {
   flex-flow: row nowrap;
   gap: 4px;
   height: auto;
+  min-height: auto;
   justify-content: space-between;
   min-height: 40px;
   padding: 12px 0;

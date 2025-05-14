@@ -569,6 +569,7 @@ button {
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
+  min-height: auto;
   svg {
     g {
       fill: $c-primary;
@@ -1478,6 +1479,7 @@ button {
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
+  min-height: auto;
   padding: 16px;
   svg {
     g {
@@ -1555,6 +1557,7 @@ position: relative;
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
+  min-height: auto;
   padding: 16px;
   svg {
     g {
@@ -1635,6 +1638,7 @@ position: relative;
   flex-flow: row nowrap;
   gap: 4px;
   height: auto;
+  min-height: auto;
   justify-content: space-between;
   min-height: $height-btn;
   padding: 12px 0;
