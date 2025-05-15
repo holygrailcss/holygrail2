@@ -118,6 +118,7 @@ a {
   }
   &.is-error,
   &.c-error {
+    color: $c-error;
     background-image: linear-gradient(
       transparent calc(100% - 1px),
       $c-error 10px
@@ -125,6 +126,7 @@ a {
   }
 
   .is-error & {
+    color: $c-error;
     background-image: linear-gradient(
       transparent calc(100% - 1px),
       $c-error 10px
