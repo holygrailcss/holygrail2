@@ -227,7 +227,8 @@ button {
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
   font-size: $btn-text-full;
-  height: 40px;
+  height: auto;
+  min-height: 40px;
 }
 .btn--round {
   border-radius: 50px;
@@ -447,7 +448,8 @@ button {
   }
 }
 .btn-limited {
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   color: $c-white;
   background-color: $c-limited;
   border: 1px solid $c-limited;
@@ -741,7 +743,8 @@ button {
   background-color: transparent;
 }
 .btn-social {
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -1058,7 +1061,8 @@ button {
   }
 }
 .btn-anim {
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
@@ -1240,14 +1244,16 @@ button {
   border-radius: $btn-radius;
   border: 1px solid $c-primary;
   padding: 9px 2px 4px;
-  height: 32px;
+  height: auto;
+  min-height: 32px;
   min-width: 100px;
   text-align: center;
   background: none;
   font-size: $btn-text-r;
   @media (min-width: $break-sm) {
     padding: 16px 2px 14px;
-    height: 40px;
+    height: auto;
+    min-height: 40px;
     font-size: $btn-text-m;
     min-width: 120px;
   }
@@ -1302,8 +1308,10 @@ button {
   }
 }
 .btn--color {
-  width: 42px;
-  height: 42px;
+  width: auto;
+  min-width: 42px;
+  height: auto;
+  min-height: 42px;
   position: relative;
   &:hover {
     opacity: 0.6;
@@ -1323,14 +1331,18 @@ button {
 }
 .btn-square {
   border: none;
-  width: 33px;
-  height: 33px;
+  width: auto;
+  min-width: 33px;
+  height: auto;
+  min-height: 33px;
   padding: 12px;
 
 
   @media (min-width: $break-sm) {
-    width: 37px;
-    height: 37px;
+    width: auto;
+    min-width: 37px;
+    height: auto;
+    min-height: 37px;
     padding: 12px;
   }
 
@@ -1395,8 +1407,10 @@ button {
   }
   .has-light & {
     border: none;
-    width: 37px;
-    height: 37px;
+    width: auto;
+    min-width: 37px;
+    height: auto;
+    min-height: 37px;
     padding: 12px;
     &.btn {
       background-color: transparent;
