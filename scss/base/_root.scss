@@ -1,0 +1,185 @@
+@use "../abstract/all" as *;
+
+$c-white: #ffffff;
+$c-black: #000000;
+$c-neutral: rgb(128, 128, 128) !default;
+$c-blue: #383BFF !default;
+
+/* Core */
+:root {
+    /* Colors */
+    --core-color-neutral-0: #{mix($c-neutral, $c-white, 0%)};
+    --core-color-neutral-50: #{mix($c-neutral, $c-white, 10%)};
+    --core-color-neutral-100: #{mix($c-neutral, $c-white, 20%)};
+    --core-color-neutral-150: #{mix($c-neutral, $c-white, 30%)};
+    --core-color-neutral-200: #{mix($c-neutral, $c-white, 40%)};
+    --core-color-neutral-250: #{mix($c-neutral, $c-white, 50%)};
+    --core-color-neutral-300: #{mix($c-neutral, $c-white, 60%)};
+    --core-color-neutral-350: #{mix($c-neutral, $c-white, 70%)};
+    --core-color-neutral-400: #{mix($c-neutral, $c-white, 80%)};
+    --core-color-neutral-450: #{mix($c-neutral, $c-white, 90%)};
+    --core-color-neutral-500: #{$c-neutral};
+    --core-color-neutral-550: #{mix($c-neutral, $c-black, 90%)};
+    --core-color-neutral-600: #{mix($c-neutral, $c-black, 80%)};
+    --core-color-neutral-650: #{mix($c-neutral, $c-black, 70%)};
+    --core-color-neutral-700: #{mix($c-neutral, $c-black, 60%)};
+    --core-color-neutral-750: #{mix($c-neutral, $c-black, 50%)};
+    --core-color-neutral-800: #{mix($c-neutral, $c-black, 40%)};
+    --core-color-neutral-850: #{mix($c-neutral, $c-black, 30%)};
+    --core-color-neutral-900: #{mix($c-neutral, $c-black, 20%)};
+    --core-color-neutral-950: #{mix($c-neutral, $c-black, 10%)};
+    --core-color-neutral-1000: #{mix($c-neutral, $c-black, 0%)};
+
+    --core-color-blue-500: #{$c-blue};
+    
+    /* Font sizes */
+    --core-font-size-root: 100%;
+    --core-font-size-25: #{toRem(10)};
+    --core-font-size-38: #{toRem(11)};
+    --core-font-size-50: #{toRem(12)};
+    --core-font-size-63: #{toRem(13)};
+    --core-font-size-75: #{toRem(14)};
+    --core-font-size-88: #{toRem(15)};
+    --core-font-size-100: #{toRem(16)};
+    --core-font-size-125: #{toRem(18)};
+    --core-font-size-150: #{toRem(20)};
+    --core-font-size-200: #{toRem(24)};
+    --core-font-size-250: #{toRem(28)};
+    --core-font-size-300: #{toRem(32)};
+    --core-font-size-350: #{toRem(36)};
+    --core-font-size-400: #{toRem(40)};
+    --core-font-size-450: #{toRem(44)};
+    --core-font-size-500: #{toRem(48)};
+    --core-font-size-550: #{toRem(52)};
+    --core-font-size-600: #{toRem(56)};
+    --core-font-size-650: #{toRem(60)};
+    --core-font-size-700: #{toRem(64)};
+    
+    /* Line heights */
+    --core-line-height-root: 1.5;
+    --core-line-height-60: 0.6;
+    --core-line-height-70: 0.7;
+    --core-line-height-80: 0.8;
+    --core-line-height-90: 0.9;
+    --core-line-height-100: 1;
+    --core-line-height-110: 1.1;
+    --core-line-height-120: 1.2;
+    --core-line-height-125: 1.25;
+    --core-line-height-133: 1.33;
+    --core-line-height-140: 1.4;
+    --core-line-height-150: 1.5;
+    --core-line-height-160: 1.6;
+    --core-line-height-175: 1.75;
+    --core-line-height-200: 2;
+
+    /* Field sizes */
+    --core-field-size-50: #{toRem(24)};
+    --core-field-size-75: #{toRem(32)};
+    --core-field-size-100: #{toRem(40)};
+    --core-field-size-150: #{toRem(48)};
+    --core-field-size-200: #{toRem(56)};
+}
+
+/* Semantic */
+:root {
+    /* Colors */
+    @media (prefers-color-scheme: light) {
+        --md-color-surface-0: var(--hg-color-surface-0, var(--core-color-neutral-0));
+        --md-color-surface-50: var(--hg-color-surface-50, var(--core-color-neutral-50));
+        --md-color-surface-100: var(--hg-color-surface-100, var(--core-color-neutral-100));
+        --md-color-surface-150: var(--hg-color-surface-150, var(--core-color-neutral-150));
+        --md-color-surface-200: var(--hg-color-surface-200, var(--core-color-neutral-200));
+        --md-color-surface-250: var(--hg-color-surface-250, var(--core-color-neutral-250));
+        --md-color-surface-300: var(--hg-color-surface-300, var(--core-color-neutral-300));
+        --md-color-surface-350: var(--hg-color-surface-350, var(--core-color-neutral-350));
+        --md-color-surface-400: var(--hg-color-surface-400, var(--core-color-neutral-400));
+        --md-color-surface-450: var(--hg-color-surface-450, var(--core-color-neutral-450));
+        --md-color-surface-500: var(--hg-color-surface-500, var(--core-color-neutral-500));
+        --md-color-surface-550: var(--hg-color-surface-550, var(--core-color-neutral-550));
+        --md-color-surface-600: var(--hg-color-surface-600, var(--core-color-neutral-600));
+        --md-color-surface-650: var(--hg-color-surface-650, var(--core-color-neutral-650));
+        --md-color-surface-700: var(--hg-color-surface-700, var(--core-color-neutral-700));
+        --md-color-surface-750: var(--hg-color-surface-750, var(--core-color-neutral-750));
+        --md-color-surface-800: var(--hg-color-surface-800, var(--core-color-neutral-800));
+        --md-color-surface-850: var(--hg-color-surface-850, var(--core-color-neutral-850));
+        --md-color-surface-900: var(--hg-color-surface-900, var(--core-color-neutral-900));
+        --md-color-surface-950: var(--hg-color-surface-950, var(--core-color-neutral-950));
+        --md-color-surface-1000: var(--hg-color-surface-1000, var(--core-color-neutral-1000));
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --md-color-surface-0: var(--hg-color-surface-0, var(--core-color-neutral-1000));
+        --md-color-surface-50: var(--hg-color-surface-50, var(--core-color-neutral-950));
+        --md-color-surface-100: var(--hg-color-surface-100, var(--core-color-neutral-900));
+        --md-color-surface-150: var(--hg-color-surface-150, var(--core-color-neutral-850));
+        --md-color-surface-200: var(--hg-color-surface-200, var(--core-color-neutral-800));
+        --md-color-surface-250: var(--hg-color-surface-250, var(--core-color-neutral-750));
+        --md-color-surface-300: var(--hg-color-surface-300, var(--core-color-neutral-700));
+        --md-color-surface-350: var(--hg-color-surface-350, var(--core-color-neutral-650));
+        --md-color-surface-400: var(--hg-color-surface-400, var(--core-color-neutral-600));
+        --md-color-surface-450: var(--hg-color-surface-450, var(--core-color-neutral-550));
+        --md-color-surface-500: var(--hg-color-surface-500, var(--core-color-neutral-500));
+        --md-color-surface-550: var(--hg-color-surface-550, var(--core-color-neutral-450));
+        --md-color-surface-600: var(--hg-color-surface-600, var(--core-color-neutral-400));
+        --md-color-surface-650: var(--hg-color-surface-650, var(--core-color-neutral-350));
+        --md-color-surface-700: var(--hg-color-surface-700, var(--core-color-neutral-300));
+        --md-color-surface-750: var(--hg-color-surface-750, var(--core-color-neutral-250));
+        --md-color-surface-800: var(--hg-color-surface-800, var(--core-color-neutral-200));
+        --md-color-surface-850: var(--hg-color-surface-850, var(--core-color-neutral-150));
+        --md-color-surface-900: var(--hg-color-surface-900, var(--core-color-neutral-100));
+        --md-color-surface-950: var(--hg-color-surface-950, var(--core-color-neutral-50));
+        --md-color-surface-1000: var(--hg-color-surface-1000, var(--core-color-neutral-0));
+    }
+
+    /* Body text */
+    --md-text-color-base: var(--hg-text-color-base, var(--md-color-surface-1000));
+    --md-text-color-muted: var(--hg-text-color-muted, var(--md-color-surface-600));
+    
+    --md-text-size-xs: var(--hg-text-size-xs, var(--core-font-size-25));
+    --md-text-size-s: var(--hg-text-size-s, var(--core-font-size-38));
+    --md-text-size-base: var(--hg-text-size-base, var(--core-font-size-50));
+    --md-text-size-l: var(--hg-text-size-l, var(--core-font-size-75));
+    --md-text-size-xl: var(--hg-text-size-xl, var(--core-font-size-100));
+    --md-text-size-2xl: var(--hg-text-size-2xl, var(--core-font-size-150));
+
+    --md-text-line-height-2xs: var(--hg-text-line-height-2xs, var(--core-line-height-100));
+    --md-text-line-height-xs: var(--hg-text-line-height-xs, var(--core-line-height-120));
+    --md-text-line-height-s: var(--hg-text-line-height-s, var(--core-line-height-140));
+    --md-text-line-height-base: var(--hg-text-line-height-base, var(--core-line-height-150));
+    --md-text-line-height-l: var(--hg-text-line-height-l, var(--core-line-height-160));
+    --md-text-line-height-xl: var(--hg-text-line-height-xl, var(--core-line-height-175));
+    --md-text-line-height-2xl: var(--hg-text-line-height-2xl, var(--core-line-height-200));
+
+    /* Body content */
+    --md-content-background: var(--hg-content-background, var(--md-color-surface-0));
+
+    /* Field sizes */
+    --md-field-size-s: var(--hg-field-size-s, var(--core-field-size-75));
+    --md-field-size-base: var(--hg-field-size-s, var(--core-field-size-100));
+    --md-field-size-l: var(--hg-field-size-s, var(--core-field-size-150));
+
+    /* Focus */
+    --md-focus-ring: var(--hg-focus-ring, 2px solid var(--core-color-blue-500));
+    --md-focus-ring-offset: var(--hg-focus-ring-offset, 1px);
+
+    /* Shadow */
+    @media (prefers-color-scheme: light) {
+        --md-shadow-0: var(--hg-shadow-0, 0 0 0);
+        --md-shadow-100: var(--hg-shadow-100, 1px 2px 0 rgba(0, 0, 0, 0.05));
+        --md-shadow-200: var(--hg-shadow-200, 1px 3px 0 rgba(0, 0, 0, 0.1));
+        --md-shadow-300: var(--hg-shadow-300, 1px 5px 0 rgba(0, 0, 0, 0.15));
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --md-shadow-0: var(--hg-shadow-0, 0 0 0);
+        --md-shadow-100: var(--hg-shadow-100, 1px 2px 0 rgba(255, 255, 255, 0.05));
+        --md-shadow-200: var(--hg-shadow-200, 1px 3px 0 rgba(255, 255, 255, 0.1));
+        --md-shadow-300: var(--hg-shadow-300, 1px 5px 0 rgba(255, 255, 255, 0.15));
+    }
+
+    /* Transitions */
+    --md-transition-duration-fast: var(--hg-transition-duration-fast, 0.1s);
+    --md-transition-duration-medium: var(--hg-transition-duration-medium, 0.3s);
+    --md-transition-duration-slow: var(--hg-transition-duration-slow, 0.5s);
+    --md-transition-timing-function: var(--hg-transition-timing-function, ease-in-out);
+}

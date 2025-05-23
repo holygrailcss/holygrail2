@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import '../abstract/_all';
 $input-padding-x: 14px;
 $input-padding-y: 14px;
@@ -751,4 +752,179 @@ input::placeholder {
     font-size: 10px;
   }
 }
+
+/* Input component */
+:root {
+  --md-input-background-color: var(--md-color-surface-0);
+  --md-input-background-image: none;
+  --md-input-background-position: center;
+  --md-input-background-repeat: no-repeat;
+  --md-input-background-size: auto;
+  --md-input-border-color: var(--md-color-surface-1000);
+  --md-input-border-radius: 0;
+  --md-input-border-style: solid;
+  --md-input-border-width: 0 0 var(--line-width) 0;
+  --md-input-box-shadow: var(--md-shadow-0);
+  --md-input-color: var(--md-text-color-base);
+  --md-input-display: inline-block;
+  --md-input-font-family: inherit;
+  --md-input-font-size: var(--md-text-size-base);
+  --md-input-font-weight: inherit;
+  --md-input-line-height: var(--md-text-line-height-base);
+  --md-input-margin-block: 0;
+  --md-input-margin-inline: 0;
+  --md-input-min-height: var(--md-field-size-base);
+  --md-input-padding-block: #{toRem(8)} calc(#{toRem(8)} - var(--line-width));
+  --md-input-padding-inline-end: 0;
+  --md-input-padding-inline-start: 0;
+
+  --md-input-focus-ring: var(--md-focus-ring);
+  --md-input-focus-ring-offset: var(--md-focus-ring-offset);
+}
+
+.md-input {
+  background-color: var(--hg-input-background-color, var(--md-input-background-color));
+  background-image: var(--hg-input-background-image, var(--md-input-background-image));
+  background-position: var(--hg-input-background-position, var(--md-input-background-position));
+  background-repeat: var(--hg-input-background-repeat, var(--md-input-background-repeat));
+  background-size: var(--hg-input-background-size, var(--md-input-background-size));
+  border-color: var(--hg-input-border-color, var(--md-input-border-color));
+  border-radius: var(--hg-input-border-radius, var(--md-input-border-radius));
+  border-style: var(--hg-input-border-style, var(--md-input-border-style));
+  border-width: var(--hg-input-border-width, var(--md-input-border-width));
+  box-shadow: var(--hg-input-box-shadow, var(--md-input-box-shadow));
+  color: var(--hg-input-color, var(--md-input-color));
+  display: var(--hg-input-display, var(--md-input-display));
+  font-family: var(--hg-input-font-family, var(--md-input-font-family));
+  font-size: var(--hg-input-font-size, var(--md-input-font-size));
+  font-weight: var(--hg-input-font-weight, var(--md-input-font-weight));
+  line-height: var(--hg-input-line-height, var(--md-input-line-height));
+  margin-block: var(--hg-input-margin-block, var(--md-input-margin-block));
+  margin-inline: var(--hg-input-margin-inline, var(--md-input-margin-inline));
+  min-height: var(--hg-input-min-height, var(--md-input-min-height));
+  padding-block: var(--hg-input-padding-block, var(--md-input-padding-block));
+  padding-inline-end: var(--hg-input-padding-inline-end, var(--md-input-padding-inline-end));
+  padding-inline-start: var(--hg-input-padding-inline-start, var(--md-input-padding-inline-start));
+
+  &:focus {
+    outline: var(--hg-input-focus-ring, var(--md-input-focus-ring));
+    outline-offset: var(--hg-input-focus-ring-offset, var(--md-input-focus-ring-offset));
+  }
+}
+
+/* Flylabel component */
+:root {
+  --md-flylabel-color: var(--md-text-color-base);
+  --md-flylabel-display: inline-block;
+  --md-flylabel-font-family: inherit;
+  --md-flylabel-font-size: var(--md-text-size-base);
+  --md-flylabel-font-weight: inherit;
+  --md-flylabel-inset-inline-start: var(--md-input-padding-inline-start);
+  --md-flylabel-margin-block: 0;
+  --md-flylabel-margin-inline: 0;
+  --md-flylabel-padding-block: 0;
+  --md-flylabel-padding-inline: 0;
+  --md-flylabel-text-transform: uppercase;
+  --md-flylavel-transition-duration: var(--md-transition-duration-fast);
+  --md-flylavel-transition-timing-function: var(--md-transition-timing-function);
+
+  --md-flylabel-color-active: var(--md-text-color-muted);
+
+  --md-flylavel-on-border-radius-active: #toRem(3);
+  --md-flylavel-on-background-color-active: var(--md-input-background-color);
+  --md-flylavel-on-padding-inline-active: 0 #{toRem(4)};
+}
+
+.md-flylabel {
+  align-items: stretch;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  position: relative;
+
+  .md-input {
+    &::placeholder {
+      color: transparent;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  label {
+    color: var(--hg-flylabel-color, var(--md-flylabel-color));
+    display: var(--hg-flylabel-display, var(--md-flylabel-display));
+    font-family: var(--hg-flylabel-font-family, var(--md-flylabel-font-family));
+    font-size: var(--hg-flylabel-font-size, var(--md-flylabel-font-size));
+    font-weight: var(--hg-flylabel-font-weight, var(--md-flylabel-font-weight));
+    inset-inline-start: var(--hg-flylabel-inset-inline-start, var(--md-flylabel-inset-inline-start));
+    line-height: 1;
+    margin-block: var(--hg-flylabel-margin-block, var(--md-flylabel-margin-block));
+    margin-inline: var(--hg-flylabel-margin-inline, var(--md-flylabel-margin-inline));
+    padding-block: var(--hg-flylabel-padding-block, var(--md-flylabel-padding-block));
+    padding-inline: var(--hg-flylabel-padding-inline, var(--md-flylabel-padding-inline));
+    pointer-events: none;
+    position: absolute;
+    text-transform: var(--hg-flylabel-text-transform, var(--md-flylabel-text-transform));
+    top: 50%;
+    transform: translateY(-50%);
+    transition-duration: var(--hg-flylavel-transition-duration, var(--md-flylavel-transition-duration));
+    transition-property: all;
+    transition-timing-function: var(--hg-flylavel-transition-timing-function, var(--md-flylavel-transition-timing-function));
+  }
+
+  .md-input {
+    &:focus,
+    &.md-input--filled,
+    &:-webkit-autofill,
+    &:not(:placeholder-shown) {
+       ~ label {
+        color: var(--hg-flylabel-color-active, var(--md-flylabel-color-active));
+        top: toRem(-16);
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  /* Variants */
+  &.md-flylabel--in {
+    .md-input {
+      padding-top: toRem(16);
+      
+      &:focus,
+      &.md-input--filled,
+      &:-webkit-autofill,
+      &:not(:placeholder-shown) {
+         ~ label {
+          top: toRem(4);
+        }
+      }
+    }
+  }
+  
+  &.md-flylabel--on {
+    .md-input {      
+      &:focus,
+      &.md-input--filled,
+      &:-webkit-autofill,
+      &:not(:placeholder-shown) {
+         ~ label {
+          background-color: var(--hg-flylavel-on-background-color-active, var(--md-flylavel-on-background-color-active));
+          border-radius: toRem(3);
+          border-radius: var(--hg-flylavel-on-border-radius-active, var(--md-flylavel-on-border-radius-active));
+          padding-inline: var(--hg-flylavel-on-padding-inline-active, var(--md-flylavel-on-padding-inline-active));
+          top: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+/* md-field */
+.md-field {
+  align-items: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
 
