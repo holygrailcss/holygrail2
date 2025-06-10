@@ -8,7 +8,7 @@
 
 <div align="center">
 
-Una librería     agnóstica de componentes HTML y SCSS.
+Una librería       agnóstica de componentes HTML y SCSS.
 
 ![Github](https://img.shields.io/github/v/release/holygrail2/holygrail?logo=HolygrailCSS)
 [![npm](https://img.shields.io/npm/v/holygrail2.svg)](https://www.npmjs.com/package/holygrail2)
