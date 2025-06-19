@@ -1,0 +1,8 @@
+@use './functions' as *;
+
+$hg-breakpoints: (
+  xs: to-rem(1),
+  sm: to-rem(768),
+  md: to-rem(992),
+  lg: to-rem(1280)
+) !default;
