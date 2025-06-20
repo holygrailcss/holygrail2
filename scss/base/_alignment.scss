@@ -56,9 +56,6 @@
   justify-content: center;
 }
 
-.content-sp-between {
-  justify-content: space-between;
-}
 
 .content-sp-around {
   justify-content: space-around;
@@ -297,3 +294,27 @@
     flex-wrap: wrap;
   }
 }
+
+
+  .align-start {
+    align-items: start;
+  }
+  
+  .content-sp-between {
+    justify-content: space-between;
+  }
+  
+  @media (min-width: 992px) {
+    .md\:content-sp-between {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .mdmax\:content-end {
+      justify-content: flex-end;
+    }
+  }
+  
+
+  

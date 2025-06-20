@@ -1014,6 +1014,11 @@ strong {
 .grow {
   flex-grow: 1;
 }
+.flex-grow {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
 .grow-0 {
   flex-grow: 0;
 }
@@ -1022,3 +1027,7 @@ strong {
   cursor: default; 
 }
 
+  .no-relative {
+    position: inherit;
+  }
+  
