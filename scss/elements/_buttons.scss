@@ -622,6 +622,27 @@ button {
     }
   }
 }
+
+
+  .btn-tertiary {
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    line-height: 1;
+    min-width: 24px;
+    padding-inline: 0;
+    font-size: 14px;
+  }
+  .btn-tertiary.active { 
+    border-bottom: 0.5px solid #000000; 
+  }
+  @media (min-width: 992px) {
+    .btn-tertiary {
+      font-size: 12px;
+    }
+  }
+
+
 .btn-text {
   background-color: transparent;
   border-color: transparent;
