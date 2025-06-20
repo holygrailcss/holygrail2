@@ -6662,7 +6662,7 @@ button {
 }
 
 .btn--small {
-  height: 40px;
+  min-height: 40px;
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -6672,14 +6672,14 @@ button {
   padding-left: 40px;
   max-width: 272px;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
 }
 
 .btn--mini-rd {
   padding-right: 24px;
   padding-left: 24px;
   font-size: 12px;
-  height: 32px;
+  min-height: 32px;
   display: inline-flex;
   align-content: center;
   align-items: center;
@@ -6688,12 +6688,12 @@ button {
   .btn--mini-rd {
     padding: 16px;
     font-size: 12px;
-    height: 40px;
+    min-height: 40px;
   }
 }
 
 .btn--large {
-  height: 40px;
+  min-height: 40px;
   min-width: 200px;
   max-width: 400px;
   width: 100%;
@@ -6718,7 +6718,7 @@ button {
 
 .btn--xxl {
   display: flex;
-  height: 60px;
+  min-height: 60px;
   padding: 10px 40px;
   flex-direction: column;
   justify-content: center;
@@ -6728,7 +6728,7 @@ button {
 }
 
 .btn--search {
-  height: initial;
+  min-height: initial;
   display: flex;
   font-size: 11px;
   line-height: 1;
@@ -6743,7 +6743,8 @@ button {
   padding-right: 16px;
   padding-left: 16px;
   font-size: 12px;
-  height: 40px;
+  height: auto;
+  min-height: 40px;
 }
 
 .btn--round {
@@ -6917,7 +6918,8 @@ button {
 }
 
 .btn-limited {
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   color: #fff;
   background-color: #000;
   border: 1px solid #000;
@@ -7167,7 +7169,8 @@ button {
 }
 
 .btn-social {
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -7508,7 +7511,8 @@ button {
 }
 
 .btn-anim {
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
@@ -7669,7 +7673,8 @@ button {
   border-radius: 0;
   border: 1px solid #000;
   padding: 9px 2px 4px;
-  height: 32px;
+  height: auto;
+  min-height: 32px;
   min-width: 100px;
   text-align: center;
   background: none;
@@ -7678,7 +7683,8 @@ button {
 @media (min-width: 768px) {
   .btn.btn-secondary-rd {
     padding: 16px 2px 14px;
-    height: 40px;
+    height: auto;
+    min-height: 40px;
     font-size: 12px;
     min-width: 120px;
   }
@@ -7726,8 +7732,10 @@ button {
 }
 
 .btn--color {
-  width: 42px;
-  height: 42px;
+  width: auto;
+  min-width: 42px;
+  height: auto;
+  min-height: 42px;
   position: relative;
 }
 .btn--color:hover {
@@ -7748,14 +7756,18 @@ button {
 
 .btn-square {
   border: none;
-  width: 33px;
-  height: 33px;
+  width: auto;
+  min-width: 33px;
+  height: auto;
+  min-height: 33px;
   padding: 12px;
 }
 @media (min-width: 768px) {
   .btn-square {
-    width: 37px;
-    height: 37px;
+    width: auto;
+    min-width: 37px;
+    height: auto;
+    min-height: 37px;
     padding: 12px;
   }
 }
@@ -7814,8 +7826,10 @@ button {
 }
 .has-light .btn-square {
   border: none;
-  width: 37px;
-  height: 37px;
+  width: auto;
+  min-width: 37px;
+  height: auto;
+  min-height: 37px;
   padding: 12px;
 }
 .has-light .btn-square.btn {
@@ -8023,7 +8037,6 @@ button {
   flex-flow: row nowrap;
   gap: 4px;
   height: auto;
-  min-height: auto;
   justify-content: space-between;
   min-height: 40px;
   padding: 12px 0;
@@ -9642,9 +9655,11 @@ a:hover {
   background-image: linear-gradient(transparent calc(100% - 1px), #000000 10px);
 }
 .link-line.is-error, .link-line.c-error {
+  color: #B40016;
   background-image: linear-gradient(transparent calc(100% - 1px), #B40016 10px);
 }
 .is-error .link-line {
+  color: #B40016;
   background-image: linear-gradient(transparent calc(100% - 1px), #B40016 10px);
 }
 .link-linebutton {
