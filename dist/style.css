@@ -1,3 +1,7 @@
+[dir=rtl] .md-rtl-flip {
+  transform: scaleX(-1);
+}
+
 *,
 *::before,
 *::after {
