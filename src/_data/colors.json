@@ -219,19 +219,19 @@
     "type": "value",
     "var_name": "$c-tier-silver",
     "default": true,
-    "value": "#e3e3e3"
+    "value": "#87888d"
   },
   "c-tier-platinum": {
     "type": "value",
     "var_name": "$c-tier-platinum",
     "default": true,
-    "value": "#99b0c5"
+    "value": "#5b7fa1"
   },
   "c-tier-gold": {
     "type": "value",
     "var_name": "$c-tier-gold",
     "default": true,
-    "value": "#dcbe99"
+    "value": "#a38a6b"
   },
 
 
