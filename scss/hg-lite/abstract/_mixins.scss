@@ -13,3 +13,35 @@
     }
   }
 }
+
+@mixin generate-utility($utility, $prefix: false) {
+  $values: map-get($utility, values);
+
+  @if not variable-exists(prefix) or $prefix == false or $prefix == null {
+    $prefix: "";
+  }
+
+  @if type-of($values) == "string" or type-of(nth($values, 1)) != "list" {
+    $values: zip($values, $values);
+  }
+
+  @each $key, $value in $values {
+    $properties: map-get($utility, property);
+
+    @if type-of($properties) == "string" {
+      $properties: append((), $properties);
+    }
+
+    $property-class: if(map-has-key($utility, class), map-get($utility, class), nth($properties, 1));
+
+    $property-class-modifier: if($key, if($property-class == "" and $infix == "", "", "-") + $key, "");
+
+    @if $value != null { 
+      .#{$prefix + $property-class + $property-class-modifier} {
+          @each $property in $properties {
+            #{$property}: $value;
+          }
+        }
+    }
+  }
+}
