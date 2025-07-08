@@ -1,0 +1,7 @@
+@use "../abstract" as *;
+
+@each $breakpoint in map-keys($breakpoints) {
+  @each $key, $utility in $utilities {
+    @include generate-utility($utility, $prefix: $prefix);
+  }
+}

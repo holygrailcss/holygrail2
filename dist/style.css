@@ -1,4 +1,289 @@
-[dir=rtl] .md-rtl-flip {
+:root {
+  --hg-transition-duration: .278s;
+  --hg-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hg-opacity-0 {
+  opacity: 0;
+}
+
+.hg-opacity-25 {
+  opacity: 0.25;
+}
+
+.hg-opacity-50 {
+  opacity: 0.5;
+}
+
+.hg-opacity-75 {
+  opacity: 0.75;
+}
+
+.hg-opacity-100 {
+  opacity: 1;
+}
+
+.hg-display-contents {
+  display: contents;
+}
+
+.hg-display-inline {
+  display: inline;
+}
+
+.hg-display-inline-block {
+  display: inline-block;
+}
+
+.hg-display-block {
+  display: block;
+}
+
+.hg-display-grid {
+  display: grid;
+}
+
+.hg-display-inline-grid {
+  display: inline-grid;
+}
+
+.hg-display-flex {
+  display: flex;
+}
+
+.hg-display-inline-flex {
+  display: inline-flex;
+}
+
+.hg-display-none {
+  display: none;
+}
+
+.hg-opacity-0 {
+  opacity: 0;
+}
+
+.hg-opacity-25 {
+  opacity: 0.25;
+}
+
+.hg-opacity-50 {
+  opacity: 0.5;
+}
+
+.hg-opacity-75 {
+  opacity: 0.75;
+}
+
+.hg-opacity-100 {
+  opacity: 1;
+}
+
+.hg-display-contents {
+  display: contents;
+}
+
+.hg-display-inline {
+  display: inline;
+}
+
+.hg-display-inline-block {
+  display: inline-block;
+}
+
+.hg-display-block {
+  display: block;
+}
+
+.hg-display-grid {
+  display: grid;
+}
+
+.hg-display-inline-grid {
+  display: inline-grid;
+}
+
+.hg-display-flex {
+  display: flex;
+}
+
+.hg-display-inline-flex {
+  display: inline-flex;
+}
+
+.hg-display-none {
+  display: none;
+}
+
+.hg-opacity-0 {
+  opacity: 0;
+}
+
+.hg-opacity-25 {
+  opacity: 0.25;
+}
+
+.hg-opacity-50 {
+  opacity: 0.5;
+}
+
+.hg-opacity-75 {
+  opacity: 0.75;
+}
+
+.hg-opacity-100 {
+  opacity: 1;
+}
+
+.hg-display-contents {
+  display: contents;
+}
+
+.hg-display-inline {
+  display: inline;
+}
+
+.hg-display-inline-block {
+  display: inline-block;
+}
+
+.hg-display-block {
+  display: block;
+}
+
+.hg-display-grid {
+  display: grid;
+}
+
+.hg-display-inline-grid {
+  display: inline-grid;
+}
+
+.hg-display-flex {
+  display: flex;
+}
+
+.hg-display-inline-flex {
+  display: inline-flex;
+}
+
+.hg-display-none {
+  display: none;
+}
+
+.hg-opacity-0 {
+  opacity: 0;
+}
+
+.hg-opacity-25 {
+  opacity: 0.25;
+}
+
+.hg-opacity-50 {
+  opacity: 0.5;
+}
+
+.hg-opacity-75 {
+  opacity: 0.75;
+}
+
+.hg-opacity-100 {
+  opacity: 1;
+}
+
+.hg-display-contents {
+  display: contents;
+}
+
+.hg-display-inline {
+  display: inline;
+}
+
+.hg-display-inline-block {
+  display: inline-block;
+}
+
+.hg-display-block {
+  display: block;
+}
+
+.hg-display-grid {
+  display: grid;
+}
+
+.hg-display-inline-grid {
+  display: inline-grid;
+}
+
+.hg-display-flex {
+  display: flex;
+}
+
+.hg-display-inline-flex {
+  display: inline-flex;
+}
+
+.hg-display-none {
+  display: none;
+}
+
+.hg-opacity-0 {
+  opacity: 0;
+}
+
+.hg-opacity-25 {
+  opacity: 0.25;
+}
+
+.hg-opacity-50 {
+  opacity: 0.5;
+}
+
+.hg-opacity-75 {
+  opacity: 0.75;
+}
+
+.hg-opacity-100 {
+  opacity: 1;
+}
+
+.hg-display-contents {
+  display: contents;
+}
+
+.hg-display-inline {
+  display: inline;
+}
+
+.hg-display-inline-block {
+  display: inline-block;
+}
+
+.hg-display-block {
+  display: block;
+}
+
+.hg-display-grid {
+  display: grid;
+}
+
+.hg-display-inline-grid {
+  display: inline-grid;
+}
+
+.hg-display-flex {
+  display: flex;
+}
+
+.hg-display-inline-flex {
+  display: inline-flex;
+}
+
+.hg-display-none {
+  display: none;
+}
+
+[dir=rtl] .hg-rtl-flip {
   transform: scaleX(-1);
 }
 
