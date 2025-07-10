@@ -70,19 +70,19 @@ $hg-spacer-1900: map-get($hg-spacers, 1900) !default;
 $hg-spacer-2000: map-get($hg-spacers, 2000) !default;
 
 $hg-utilities: (
-  "opacity": (
-    property: opacity,
-    values: (
-      0: 0,
-      25: .25,
-      50: .5,
-      75: .75,
-      100: 1,
-      )
-    ),
   "display": (
     property: display,
+    class: "d",
     responsive: true,
-    values: contents inline inline-block block grid inline-grid flex inline-flex none
+    values: contents inline inline-block block flex inline-flex none
+  ),
+  "min-height": (
+    property: min-height,
+    class: "min-h",
+    responsive: true,
+    values: (
+      200: $hg-spacer-200,
+      auto: auto
+    )
   ),
 ) !default;
