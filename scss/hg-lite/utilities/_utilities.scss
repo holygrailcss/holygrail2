@@ -1,7 +1,23 @@
 @use "../abstract" as *;
 
 @each $breakpoint in map-keys($hg-breakpoints) {
-  @each $key, $utility in $hg-utilities {
-    @include generate-utility($utility, $prefix: $hg-prefix);
+  $break: if($breakpoint == nth(map-keys($hg-breakpoints), 1), "", "#{$breakpoint}");
+  $breakpoint-value: map-get($hg-breakpoints, $breakpoint);
+  
+  @if $break != "" {
+    @include mq($min-screen: $breakpoint-value) {
+      @each $key, $utility in $hg-utilities {
+        @if type-of($utility) == "map" and (map-get($utility, responsive)) {
+          @include generate-utility($utility, $break);
+        }
+      }
+    }
+  } @else {
+    @each $key, $utility in $hg-utilities {
+      @if type-of($utility) == "map" {
+        @include generate-utility($utility);
+      }
+    }
   }
+  
 }
