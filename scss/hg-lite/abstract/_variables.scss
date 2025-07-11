@@ -81,7 +81,19 @@ $hg-utilities: (
     class: "min-h",
     responsive: true,
     values: (
+      50: $hg-spacer-50,
+      100: $hg-spacer-100,
+      150: $hg-spacer-150,
       200: $hg-spacer-200,
+      250: $hg-spacer-250,
+      300: $hg-spacer-300,
+      400: $hg-spacer-400,
+      500: $hg-spacer-500,
+      600: $hg-spacer-600,
+      700: $hg-spacer-700,
+      800: $hg-spacer-800,
+      900: $hg-spacer-900,
+      1000: $hg-spacer-1000,
       auto: auto
     )
   ),
