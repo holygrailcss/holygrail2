@@ -21,7 +21,12 @@
     "site": "npx @11ty/eleventy",
     "build": "npm run generate && npm run css && npm run site",
     "start": "npm run build && npm run open:guide",
-    "open:guide": "open guia/index.html"
+    "open:guide": "open guia/index.html",
+    "lint": "stylelint 'scss/**/*.?(s)css'",
+    "lint:fix": "stylelint --fix 'scss/**/*.?(s)css'",
+    "format": "prettier --write 'scss/**/*.+(css|scss)'",
+    "docs": "sass scss/docs.scss doc/docs.css --style expanded && sass scss/docs.scss doc/docs.min.css --style compressed",
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -55,7 +60,5 @@
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^5.1.0"
   },
-  "dependencies": {
-    "stylelint": "^15.10.2"
-  }
+  "dependencies": {}
 }

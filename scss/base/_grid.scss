@@ -1,12 +1,11 @@
 @use 'sass:math';
 @import '../abstract/_all';
-//   -CONTAINERS
+
 .container-full {
   margin-left: auto;
   margin-right: auto;
   max-width: $container-full;
   padding-inline: $padding-global;
-  //0
   position: relative;
   @media (min-width: $break-sm) {
     max-width: nth(map-values($breakpoints), 2);
@@ -26,7 +25,6 @@
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
-  //1
   position: relative;
   width: 100%;
   @media (min-width: $break-md) {
@@ -38,18 +36,15 @@
   margin-left: auto;
   margin-right: auto;
   padding-inline: 0;
-  // 0
   position: relative;
 }
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
   padding-inline: $padding-global;
-  //58
   position: relative;
 }
 .container-body {
-  //0
   padding-left: 16px;
   padding-right: 16px;
   @media (min-width: $break-md) {
@@ -59,7 +54,6 @@
 }
 .container-body2 {
   overflow: hidden;
-  //0
   padding-left: 16px;
   @media (min-width: $break-md) {
     padding-left: 40px;
@@ -98,7 +92,6 @@
   margin-right: auto;
   max-width: $container-2;
   padding-inline: $padding-global;
-  //3
   position: relative;
   width: 90%;
 }
@@ -107,7 +100,6 @@
   margin-right: auto;
   max-width: $container-3;
   padding-inline: $padding-global * 3;
-  //0
   position: relative;
   width: 100%;
   @media (min-width: $break-sm) {
@@ -119,16 +111,13 @@
   margin-right: auto;
   max-width: $container-4;
   padding-inline: $padding-global * 2;
-  //9
   position: relative;
   width: 100%;
 }
-// join life style
 .container-5 {
   margin: 0 auto;
   max-width: $container-5;
   padding: 0 $padding-global;
-  //1
   position: relative;
   width: 100%;
   @media (min-width: $break-lg) {
@@ -140,7 +129,6 @@
   margin: 0 auto;
   max-width: $container-6;
   padding: 0 $padding-global;
-  //3
   position: relative;
   width: 100%;
 }
@@ -148,7 +136,6 @@
   margin: 0 auto;
   max-width: 295px;
   padding: 0 $padding-global * 2;
-  //2
   position: relative;
   width: 100%;
   @media (min-width: $break-sm) {
@@ -167,7 +154,6 @@
   margin: 0 auto;
   max-width: $container-8;
   padding: 0 $padding-global;
-  //8
   position: relative;
   width: 100%;
 }
@@ -175,7 +161,6 @@
   margin: 0 auto;
   max-width: $container-9;
   padding: 0 $padding-mobile;
-  //4
   position: relative;
   width: 100%;
   @media (min-width: $break-sm) {
@@ -184,14 +169,12 @@
 }
 .container-10 {
   max-width: $container-10;
-  //0
   position: relative;
 }
 .container-11 {
   margin: 0 auto;
   max-width: $container-11;
   padding: 0 $padding-mobile;
-  //0
   position: relative;
   width: 100%;
   @media (min-width: $break-sm) {
@@ -201,7 +184,6 @@
 .container-12 {
   max-width: $container-12;
   padding: 0 $padding-mobile;
-  //4
   position: relative;
   width: 100%;
   @media (min-width: $break-sm) {
@@ -217,14 +199,13 @@
   width: 100%;
 }
 .container-512 {
-  max-width: 512px;  
+  max-width: 512px;
   width: 100%;
 }
 .container-640 {
   max-width: 640px;
   width: 100%;
 }
-//   -ROW
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -237,7 +218,6 @@
     }
   }
 }
-//   -COLS
 @for $i from 1 through 4 {
   @media (min-width: nth(map-values($breakpointscols), $i)) {
     @for $c from 1 through $totalCols {
@@ -307,10 +287,10 @@
   max-width: 1200px;
   width: 100%;
 }
-  .grid-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -319,23 +299,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-  .grid-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  
-.colgap-16 {
-  column-gap: 16px;
-}
- .gap-8 {
-    gap: 8px;
-  }
-.colgap-8 {
-  column-gap: 8px;
-}
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.colgap-16 {
+  column-gap: 16px;
+}
+.gap-8 {
+  gap: 8px;
+}
+.colgap-8 {
+  column-gap: 8px;
 }
 .grid-gap-8 {
   gap: 8px;
@@ -362,24 +337,24 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-    .sm\:grid-1 {
-        @media (min-width: $break-sm) {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  }
-.sm\:grid-2 {
+.sm\:grid-1 {
   @media (min-width: $break-sm) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
-    .sm\:grid-3 {
-        @media (min-width: $break-sm) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+.sm\:grid-2 {
+  @media (min-width: $break-sm) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
+.sm\:grid-3 {
+  @media (min-width: $break-sm) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .sm\:grid-4 {
   @media (min-width: $break-sm) {
     display: grid;
