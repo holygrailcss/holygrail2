@@ -8,52 +8,51 @@
 @include space($breakpoints, $padding-top, $pt);
 @include space($breakpoints, $padding-left, $pl);
 @include space($breakpoints, $padding-bottom, $pb);
-@include space($breakpoints, $padding-right, $pr); 
+@include space($breakpoints, $padding-right, $pr);
 
 @include space($breakpoints, $margin-bottom, $mb);
 @include space($breakpoints, $margin-top, $mt);
 
-.color-list{
+.color-list {
   display: flex;
-flex-wrap: wrap;
-flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+
 .variable-box {
   width: 142px;
   height: 60px;
-
 }
+
 .variable-item {
-display: flex;
-
-padding-top: 20px;
-padding-bottom:20px;
-
-
-gap: 10px;
-flex-direction: column;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+  flex-direction: column;
 }
-.variable-info{
+
+.variable-info {
   color: black;
 }
 
-h2{
+h2 {
   font-size: 40px;
   margin-bottom: 40px;
 }
 
-h3{
+h3 {
   font-size: 30px;
   margin-bottom: 40px;
 }
 
-.h3{
+.h3 {
   font-size: 16px;
-font-weight: bold;
+  font-weight: bold;
 }
 
-.grid-examples{
-  div{
+.grid-examples {
+  div {
     background-color: #f0f0f0;
     text-align: center;
     padding: 20px;

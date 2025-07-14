@@ -293,8 +293,8 @@ md-icon.ico-pre {
   align-items: center;
   justify-content: center;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -303,24 +303,18 @@ md-icon.ico-pre {
     transition: transform 0.2s ease;
   }
 
-  &:before {
+  &::before {
     transform: rotate(90deg);
   }
 
-  .is-active &:before {
+  .is-active &::before {
     transform: rotate(0deg);
   }
 
-.has-light &{
-
-  &:before,
-  &:after {
-
-    background-color: $c-white;
-
+  .has-light & {
+    &::before,
+    &::after {
+      background-color: $c-white;
+    }
   }
-
-
-}
-
 }
