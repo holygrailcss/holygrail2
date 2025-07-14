@@ -79,3 +79,16 @@ body {
     }
   }
 }
+
+
+body {
+  &.md-open-drawer { // Nuevo componente drawer
+    drawer .drawer {
+      transform: translateX(0);
+    }
+    drawer .drawer-overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
