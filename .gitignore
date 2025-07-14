@@ -1,3 +1,7 @@
 node_modules/
 .cache/
 .devcontainer
+
+# CSS files
+*.css
+*.css.map
