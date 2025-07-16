@@ -82,11 +82,11 @@ body {
 
 
 body {
-  &.md-open-drawer { // Nuevo componente drawer
-    drawer .drawer {
+  &.md-open-drawer {
+    .md-drawer {
       transform: translateX(0);
     }
-    drawer .drawer-overlay {
+    .md-drawer-overlay {
       opacity: 1;
       pointer-events: auto;
     }
