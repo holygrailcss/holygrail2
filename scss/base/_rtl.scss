@@ -83,18 +83,27 @@
       padding-right: #{$espaciado}px;
     }
   }
-  .check-center.check-bleed.checkbox-radio [type='radio']:checked+label::before,
-  .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked)+label::before {
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:checked
+    + label::before,
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:not(:checked)
+    + label::before {
     left: initial;
     right: 0;
   }
-  .check-center.check-bleed.checkbox-radio [type='radio']:checked+label .ico-radio,
-  .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked)+label .ico-radio {
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:checked
+    + label
+    .ico-radio,
+  .check-center.check-bleed.checkbox-radio
+    [type='radio']:not(:checked)
+    + label
+    .ico-radio {
     left: initial;
     right: 5px;
   }
   .btn {
-
     &.btn-world {
       .btn-world-center {
         text-align: right;
@@ -105,7 +114,7 @@
     }
   }
   .btn-group {
-    &> :not(:first-child, :last-child) {
+    & > :not(:first-child, :last-child) {
       border-radius: 0;
       margin-right: -1px;
       margin-left: 0;
@@ -148,26 +157,26 @@
       position: absolute;
       width: 70px;
     }
-    [type='checkbox']:not(:checked)+label::before,
-    [type='checkbox']:checked+label::before {
+    [type='checkbox']:not(:checked) + label::before,
+    [type='checkbox']:checked + label::before {
       left: auto;
       right: 0;
       margin: 0 0 0 10px;
     }
-    [type='checkbox']:not(:checked)+label,
-    [type='checkbox']:checked+label {
+    [type='checkbox']:not(:checked) + label,
+    [type='checkbox']:checked + label {
       padding-left: 0;
       padding-right: 24px;
     }
-    [type='checkbox']:not(:checked)+label span,
-    [type='checkbox']:checked+label span {
+    [type='checkbox']:not(:checked) + label span,
+    [type='checkbox']:checked + label span {
       &.theta {
         padding-left: 0;
         padding-right: 24px;
       }
     }
-    [type='checkbox']:not(:checked)+label .icon,
-    [type='checkbox']:checked+label .icon {
+    [type='checkbox']:not(:checked) + label .icon,
+    [type='checkbox']:checked + label .icon {
       right: 2px;
       left: auto;
       top: 3px;
@@ -181,26 +190,26 @@
     }
   }
   .check-bleed {
-    &.checkbox-radio [type='radio']:checked+label .ico-radio,
-    &.checkbox-radio [type='radio']:not(:checked)+label .ico-radio {
+    &.checkbox-radio [type='radio']:checked + label .ico-radio,
+    &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
       left: 0;
       right: 17px;
     }
-    &.checkbox-radio [type='radio']:checked+label::before,
-    &.checkbox-radio [type='radio']:not(:checked)+label::before {
+    &.checkbox-radio [type='radio']:checked + label::before,
+    &.checkbox-radio [type='radio']:not(:checked) + label::before {
       left: auto;
       right: 0;
     }
   }
   .check-center {
-    &.checkbox-radio [type='radio']:checked+label::before,
-    &.checkbox-radio [type='radio']:not(:checked)+label::before {
+    &.checkbox-radio [type='radio']:checked + label::before,
+    &.checkbox-radio [type='radio']:not(:checked) + label::before {
       left: auto;
       right: 16px;
       margin: 0;
     }
-    &.checkbox-radio [type='radio']:checked+label .ico-radio,
-    &.checkbox-radio [type='radio']:not(:checked)+label .ico-radio {
+    &.checkbox-radio [type='radio']:checked + label .ico-radio,
+    &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
       left: 0;
       right: 21px;
     }
@@ -357,16 +366,16 @@
   }
   .has-ico-post {
     &.btn,
-    &>input,
-    &>label {
+    & > input,
+    & > label {
       padding-right: 0;
       padding-left: $btn-padding * 2;
     }
   }
   .has-ico-pre {
     &.btn,
-    &>input,
-    &>label {
+    & > input,
+    & > label {
       padding-left: 0;
       padding-right: $btn-padding * 2 + 4px;
     }

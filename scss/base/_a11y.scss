@@ -1,48 +1,40 @@
 @import '../abstract/_all';
 .theme-keyboard-accesible {
-    *:focus,
-    *:focus-visible,
-    [class*="checkbox-"]:focus+label,
-    [class*="checkbox-"]:focus-visible+label,
-    [class*="checkbox-"] input:focus+label,
-    [class*="checkbox-"] input:focus-visible+label {
-        outline: 2px solid #383BFF !important;
-        outline-offset: 1px;
-    }
-    .focus\:outside:focus,
-    .focus\:outside:focus-visible {
-        outline: 2px solid #383BFF !important;
-        outline-offset: 1px;
-    }
-    .focus\:inset:focus,  
-    .focus\:inset:focus-visible {
-        outline: 2px solid #383BFF !important;
-        outline-offset: -2px;
-    }
-    
-    a:focus .product-card-img::before,
-    .product-media__img:focus::before{
-       content: '';
-       display: block;
-       outline: 2px solid #383BFF !important;
-       outline-offset: -2px;
-       position: absolute;
-       inset: 0;
-       z-index: 1;
-       width: 100%;
-   
-     }
+  *:focus,
+  *:focus-visible,
+  [class*='checkbox-']:focus + label,
+  [class*='checkbox-']:focus-visible + label,
+  [class*='checkbox-'] input:focus + label,
+  [class*='checkbox-'] input:focus-visible + label {
+    outline: 2px solid #383bff !important;
+    outline-offset: 1px;
+  }
+  .focus\:outside:focus,
+  .focus\:outside:focus-visible {
+    outline: 2px solid #383bff !important;
+    outline-offset: 1px;
+  }
+  .focus\:inset:focus,
+  .focus\:inset:focus-visible {
+    outline: 2px solid #383bff !important;
+    outline-offset: -2px;
+  }
 
+  a:focus .product-card-img::before,
+  .product-media__img:focus::before {
+    content: '';
+    display: block;
+    outline: 2px solid #383bff !important;
+    outline-offset: -2px;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+  }
 
-
-     .btn-grid .btn:focus ,  
-     .btn-grid .btn:focus-visible {
-         outline: 2px solid #383BFF !important;
-         outline-offset: -2px;
-     }
-     
-   
-   
-  
-
+  .btn-grid .btn:focus,
+  .btn-grid .btn:focus-visible {
+    outline: 2px solid #383bff !important;
+    outline-offset: -2px;
+  }
 }

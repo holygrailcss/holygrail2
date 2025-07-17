@@ -69,7 +69,7 @@
   }
   [type='checkbox']:not(:checked),
   [type='checkbox']:checked {
-    position: absolute;  /* Lo saca del flujo normal */
+    position: absolute; /* Lo saca del flujo normal */
     clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
     width: 1px;
     height: 1px;
@@ -174,7 +174,7 @@
   }
   [type='checkbox']:not(:checked),
   [type='checkbox']:checked {
-    position: absolute;  /* Lo saca del flujo normal */
+    position: absolute; /* Lo saca del flujo normal */
     clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
     width: 1px;
     height: 1px;
@@ -256,7 +256,7 @@
   }
   [type='radio']:not(:checked),
   [type='radio']:checked {
-    position: absolute;  /* Lo saca del flujo normal */
+    position: absolute; /* Lo saca del flujo normal */
     clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
     width: 1px;
     height: 1px;
@@ -301,15 +301,13 @@
     padding-bottom: 0;
   }
 
-  &.is-error{
-      label::before {
-        border: 1px solid #B40016!important;
-
-      }
-      span{
-        color:#B40016!important;
-      }
-
+  &.is-error {
+    label::before {
+      border: 1px solid #b40016 !important;
+    }
+    span {
+      color: #b40016 !important;
+    }
   }
 }
 .checkbox-item-text {
@@ -577,7 +575,7 @@
     transition: all 0.2s ease;
   }
   & [type='radio'] {
-    position: absolute;  /* Lo saca del flujo normal */
+    position: absolute; /* Lo saca del flujo normal */
     clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
     width: 1px;
     height: 1px;
@@ -608,12 +606,11 @@
     }
   }
 
-  &.is-error{
-   .checkbox-card-label{
-      border: 1px solid #B40016!important;
-      color: #B40016!important;
+  &.is-error {
+    .checkbox-card-label {
+      border: 1px solid #b40016 !important;
+      color: #b40016 !important;
     }
-
   }
 }
 .is-active {
@@ -627,7 +624,8 @@
   }
 }
 .is-error {
-  &.checkbox-item, .checkbox-item {
+  &.checkbox-item,
+  .checkbox-item {
     [type='checkbox']:checked + label::before,
     [type='checkbox']:not(:checked) + label::before {
       border: 1px solid $c-error !important;

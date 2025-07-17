@@ -56,7 +56,6 @@
   justify-content: center;
 }
 
-
 .content-sp-around {
   justify-content: space-around;
 }
@@ -295,26 +294,22 @@
   }
 }
 
+.align-start {
+  align-items: start;
+}
 
-  .align-start {
-    align-items: start;
-  }
-  
-  .content-sp-between {
+.content-sp-between {
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .md\:content-sp-between {
     justify-content: space-between;
   }
-  
-  @media (min-width: 992px) {
-    .md\:content-sp-between {
-      justify-content: space-between;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .mdmax\:content-end {
-      justify-content: flex-end;
-    }
-  }
-  
+}
 
-  
+@media (max-width: 992px) {
+  .mdmax\:content-end {
+    justify-content: flex-end;
+  }
+}

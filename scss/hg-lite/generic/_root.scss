@@ -1,7 +1,7 @@
-@use "../abstract" as *;
+@use '../abstract' as *;
 
 :root {
   // Transition durations and timing functions
-  --hg-transition-duration: .278s;
+  --hg-transition-duration: 0.278s;
   --hg-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }

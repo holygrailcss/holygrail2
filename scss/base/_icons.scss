@@ -17,8 +17,8 @@ $w-plus: 10px;
 }
 
 svg-icon,
-svg-icon2 ,
-md-icon{
+svg-icon2,
+md-icon {
   div {
     display: flex;
     align-items: center;
@@ -282,8 +282,6 @@ md-icon.ico-pre {
   background-color: $c-primary;
 }
 
-
-
 .md-icon-anim {
   position: relative;
   width: 12px;
@@ -295,7 +293,7 @@ md-icon.ico-pre {
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 12px;
     height: 1px;

@@ -1,23 +1,26 @@
-@use "../abstract" as *;
+@use '../abstract' as *;
 
 @each $breakpoint in map-keys($hg-breakpoints) {
-  $break: if($breakpoint == nth(map-keys($hg-breakpoints), 1), "", "#{$breakpoint}");
+  $break: if(
+    $breakpoint == nth(map-keys($hg-breakpoints), 1),
+    '',
+    '#{$breakpoint}'
+  );
   $breakpoint-value: map-get($hg-breakpoints, $breakpoint);
-  
-  @if $break != "" {
+
+  @if $break != '' {
     @include mq($min-screen: $breakpoint-value) {
       @each $key, $utility in $hg-utilities {
-        @if type-of($utility) == "map" and (map-get($utility, responsive)) {
+        @if type-of($utility) == 'map' and (map-get($utility, responsive)) {
           @include generate-utility($utility, $break);
         }
       }
     }
   } @else {
     @each $key, $utility in $hg-utilities {
-      @if type-of($utility) == "map" {
+      @if type-of($utility) == 'map' {
         @include generate-utility($utility);
       }
     }
   }
-  
 }

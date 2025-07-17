@@ -287,7 +287,7 @@ hr {
     align-items: center;
     svg-icon,
     svg-icon2,
-    md-icon{
+    md-icon {
       margin-right: 16px;
     }
   }
@@ -696,10 +696,10 @@ strong {
 .pe-none {
   pointer-events: none;
 }
-.pointer-events-none{
+.pointer-events-none {
   pointer-events: none;
 }
-.pointer-events-all{
+.pointer-events-all {
   pointer-events: all;
 }
 
@@ -848,7 +848,6 @@ strong {
   z-index: 10;
   top: 0;
   left: 0;
-
 }
 .m--1 {
   margin-top: -1px;
@@ -1015,19 +1014,18 @@ strong {
   flex-grow: 1;
 }
 .flex-grow {
-    flex-grow: 1;
-    overflow-y: auto;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .grow-0 {
   flex-grow: 0;
 }
 
-.no-cursor{
-  cursor: default; 
+.no-cursor {
+  cursor: default;
 }
 
-  .no-relative {
-    position: inherit;
-  }
-  
+.no-relative {
+  position: inherit;
+}

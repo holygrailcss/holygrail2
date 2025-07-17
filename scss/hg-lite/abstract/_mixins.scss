@@ -20,21 +20,28 @@
   $values: map-get($utility, values);
 
   @if $prefix == false or $prefix == null {
-    $prefix: "";
+    $prefix: '';
   }
 
-  @if type-of($values) == "string" or type-of(nth($values, 1)) != "list" {
+  @if type-of($values) == 'string' or type-of(nth($values, 1)) != 'list' {
     $values: zip($values, $values);
   }
 
   @each $key, $value in $values {
     $property: map-get($utility, property);
-    $property-class: if(map-has-key($utility, class), map-get($utility, class), $property);
-    $property-class-modifier: if($key, "-" + $key,"");
-    $breakpoint-class: if($breakpoint, $breakpoint + '\:', "");
-    
-    @if $value != null { 
-      .#{$breakpoint-class + $prefix + $property-class + $property-class-modifier} {
+    $property-class: if(
+      map-has-key($utility, class),
+      map-get($utility, class),
+      $property
+    );
+    $property-class-modifier: if($key, '-' + $key, '');
+    $breakpoint-class: if($breakpoint, $breakpoint + '\:', '');
+
+    @if $value != null {
+      .#{$breakpoint-class
+        + $prefix
+        + $property-class
+        + $property-class-modifier} {
         #{$property}: $value;
       }
     }

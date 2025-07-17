@@ -1,6 +1,6 @@
 @use './functions' as *;
 
-$hg-prefix: "hg-" !default;
+$hg-prefix: 'hg-' !default;
 
 $hg-breakpoints: (
   xs: 1px,
@@ -17,31 +17,31 @@ $hg-breakpoint-lg: map-get($hg-breakpoints, lg) !default;
 $hg-breakpoint-xl: map-get($hg-breakpoints, xl) !default;
 
 $hg-spacers: (
-  12: to-rem(1), 
-  25: to-rem(2), 
-  50: to-rem(4), 
-  100: to-rem(8), 
-  150: to-rem(12), 
-  200: to-rem(16), 
-  250: to-rem(20), 
-  300: to-rem(24), 
-  400: to-rem(32), 
-  500: to-rem(40), 
-  600: to-rem(48), 
-  700: to-rem(56), 
-  800: to-rem(64), 
-  900: to-rem(72), 
-  1000: to-rem(80), 
-  1100: to-rem(88), 
-  1200: to-rem(96), 
-  1300: to-rem(104), 
-  1400: to-rem(112), 
-  1500: to-rem(120), 
-  1600: to-rem(128), 
-  1700: to-rem(136), 
-  1800: to-rem(144), 
-  1900: to-rem(152), 
-  2000: to-rem(160), 
+  12: to-rem(1),
+  25: to-rem(2),
+  50: to-rem(4),
+  100: to-rem(8),
+  150: to-rem(12),
+  200: to-rem(16),
+  250: to-rem(20),
+  300: to-rem(24),
+  400: to-rem(32),
+  500: to-rem(40),
+  600: to-rem(48),
+  700: to-rem(56),
+  800: to-rem(64),
+  900: to-rem(72),
+  1000: to-rem(80),
+  1100: to-rem(88),
+  1200: to-rem(96),
+  1300: to-rem(104),
+  1400: to-rem(112),
+  1500: to-rem(120),
+  1600: to-rem(128),
+  1700: to-rem(136),
+  1800: to-rem(144),
+  1900: to-rem(152),
+  2000: to-rem(160)
 ) !default;
 
 $hg-spacer-12: map-get($hg-spacers, 12) !default;
@@ -70,15 +70,15 @@ $hg-spacer-1900: map-get($hg-spacers, 1900) !default;
 $hg-spacer-2000: map-get($hg-spacers, 2000) !default;
 
 $hg-utilities: (
-  "display": (
+  'display': (
     property: display,
-    class: "d",
+    class: 'd',
     responsive: true,
     values: contents inline inline-block block flex inline-flex none
   ),
-  "min-height": (
+  'min-height': (
     property: min-height,
-    class: "min-h",
+    class: 'min-h',
     responsive: true,
     values: (
       50: $hg-spacer-50,
@@ -96,5 +96,5 @@ $hg-utilities: (
       1000: $hg-spacer-1000,
       auto: auto
     )
-  ),
+  )
 ) !default;
