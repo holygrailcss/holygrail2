@@ -69,11 +69,9 @@
   }
 }
 
-
-.md-arrow-anim{
-  transition: all ease .3s;
-  .is-active &{
+.md-arrow-anim {
+  transition: all ease 0.3s;
+  .is-active & {
     transform: rotate(180deg);
-
   }
 }

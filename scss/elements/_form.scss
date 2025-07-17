@@ -54,7 +54,7 @@ fieldset[disabled] .form-control {
 
   &.text-l {
     font-size: 12px;
-  
+
     @media (min-width: $break-sm) {
       font-size: 12px;
     }
@@ -151,7 +151,7 @@ input::placeholder {
       min-width: 32px;
       width: 100%;
       min-height: 32px;
-      border: var(--line-width)  solid $c-primary;
+      border: var(--line-width) solid $c-primary;
       padding: 2px 32px 0 8px;
       font-size: $text-input-d;
       border-radius: $form-radius;
@@ -740,7 +740,7 @@ input::placeholder {
 
   select {
     padding: 16px 0 4px;
-    
+
     @media (min-width: $break-sm) {
       padding-bottom: 8px;
     }
@@ -751,4 +751,3 @@ input::placeholder {
     font-size: 10px;
   }
 }
-

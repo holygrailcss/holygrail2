@@ -36,7 +36,6 @@ $drawer-width-sm: 425px;
   @media (min-width: $break-sm) {
     padding: 24px 40px;
   }
-
 }
 .drawer-body {
   flex-grow: 1;
@@ -45,8 +44,6 @@ $drawer-width-sm: 425px;
   @media (min-width: $break-sm) {
     padding: 24px 40px;
   }
-
-
 }
 .drawer-footer {
   align-items: center;
@@ -69,7 +66,9 @@ $drawer-width-sm: 425px;
   width: 100%;
 }
 body {
-  &.open-drawer , &.body-sidebar-open { // body-sidebar-open no se qu
+  &.open-drawer,
+  &.body-sidebar-open {
+    // body-sidebar-open no se qu
     .drawer {
       transform: translateX(0);
     }
@@ -79,7 +78,6 @@ body {
     }
   }
 }
-
 
 body {
   &.md-open-drawer {
