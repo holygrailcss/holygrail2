@@ -1388,6 +1388,8 @@ button {
   &.hover,
   &:active,
   &.active {
+    opacity: 1;
+
     &::after {
       content: '';
       background-color: $c-middle-grey;
@@ -1395,7 +1397,8 @@ button {
       opacity: 1;
       cursor: pointer;
     }
-    opacity: 1;
+
+  
   }
   &[disabled],
   &:disabled,
@@ -1449,14 +1452,17 @@ button {
     &.hover,
     &:active,
     &.active {
+      opacity: 1;
+
       &::after {
         content: '';
         background-color: $c-middle-grey;
         border: 1px solid $c-middle-grey;
         opacity: 1;
         cursor: pointer;
+        
       }
-      opacity: 1;
+
     }
     &[disabled],
     &:disabled,
@@ -1603,7 +1609,7 @@ button {
       position: absolute;
       width: 4px;
       height: 4px;
-      background-color: #000000;
+      background-color: $c-primary;
       bottom: -4px;
       left: 50%;
       transform: translate(-50%, 0);
