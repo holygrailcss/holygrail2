@@ -571,6 +571,13 @@ button {
   border: 0 solid transparent;
   height: auto;
   min-height: auto;
+  font-size: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 1;
+  min-width: 24px;
+  padding-inline: 0;
+
   svg {
     g {
       fill: $c-primary;
@@ -589,6 +596,9 @@ button {
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
+  }
+  &.active {
+    border-bottom: 0.5px solid #000;
   }
   &:disabled,
   &[disabled],
@@ -624,23 +634,6 @@ button {
   }
 }
 
-.btn-tertiary {
-  height: auto;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  line-height: 1;
-  min-width: 24px;
-  padding-inline: 0;
-  font-size: 14px;
-}
-.btn-tertiary.active {
-  border-bottom: 0.5px solid #000;
-}
-@media (min-width: 992px) {
-  .btn-tertiary {
-    font-size: 12px;
-  }
-}
 
 .btn-text {
   background-color: transparent;
@@ -1460,7 +1453,7 @@ button {
         border: 1px solid $c-middle-grey;
         opacity: 1;
         cursor: pointer;
-        
+
       }
 
     }
