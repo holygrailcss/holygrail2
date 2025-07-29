@@ -1,5 +1,9 @@
 @use './variables' as *;
 
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:meta';
+
 @mixin mq($min-screen: false, $max-screen: false, $orientation: false) {
   @if $min-screen and $max-screen {
     @media all and (min-width: $min-screen) and (max-width: $max-screen) {
@@ -17,21 +21,21 @@
 }
 
 @mixin generate-utility($utility, $breakpoint: false, $prefix: $hg-prefix) {
-  $values: map-get($utility, values);
+  $values: map.get($utility, values);
 
   @if not $prefix {
     $prefix: '';
   }
 
-  @if type-of($values) == 'string' or type-of(nth($values, 1)) != 'list' {
-    $values: zip($values, $values);
+  @if meta.type-of($values) == 'string' or meta.type-of(list.nth($values, 1)) != 'list' {
+    $values: list.zip($values, $values);
   }
 
   @each $key, $value in $values {
-    $property: map-get($utility, property);
+    $property: map.get($utility, property);
     $property-class: if(
-      map-has-key($utility, class),
-      map-get($utility, class),
+      map.has-key($utility, class),
+      map.get($utility, class),
       $property
     );
     $property-class-modifier: if($key, '-' + $key, '');

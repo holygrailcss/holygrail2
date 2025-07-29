@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 @import '../abstract/_breakpoints';
 @import '../abstract/_all';
 
@@ -10,8 +12,8 @@ $break-xl: 1200px !default;
   margin: 0 auto;
 }
 
-@for $i from 1 through length($espaciados) {
-  $espaciado: nth($espaciados, $i);
+@for $i from 1 through list.length($espaciados) {
+  $espaciado: list.nth($espaciados, $i);
   .m-#{$espaciado} {
     margin: #{$espaciado}px;
   }
