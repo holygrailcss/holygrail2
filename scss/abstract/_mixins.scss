@@ -1,4 +1,7 @@
+@use 'sass:list';
+@use 'sass:map';
 @use 'sass:math';
+
 @import 'breakpoints';
 
 // Define los puntos de ruptura si no están definidos
@@ -100,8 +103,8 @@ $max-vw: 1500px !default;
 @mixin typesFixers($headersFixers, $cssattr) {
   @for $i from 1 through 1 {
     @each $name, $fsize in $headersFixers {
-      $fontsize: nth($fsize, $i);
-      $fontheight: nth($fsize, 2);
+      $fontsize: list.nth($fsize, $i);
+      $fontheight: list.nth($fsize, 2);
       .text-#{$name}-r {
         @include fonters(regular);
 
@@ -151,14 +154,14 @@ $max-vw: 1500px !default;
 @mixin typesFluids($headersFluids) {
   @for $i from 1 through 1 {
     @each $name, $fsize in $headersFluids {
-      $u1: unit($min-vw);
-      $u2: unit($max-vw);
-      $min-font-size: nth($fsize, $i);
-      $max-font-size: nth($fsize, 2);
-      $fluid-line-height: nth($fsize, 3);
-      $u3: unit($min-font-size);
-      $u4: unit($max-font-size);
-      $u5: nth($fsize, 3);
+      $u1: math.unit($min-vw);
+      $u2: math.unit($max-vw);
+      $min-font-size: list.nth($fsize, $i);
+      $max-font-size: list.nth($fsize, 2);
+      $fluid-line-height: list.nth($fsize, 3);
+      $u3: math.unit($min-font-size);
+      $u4: math.unit($max-font-size);
+      $u5: list.nth($fsize, 3);
 
       .fluid-#{$name}-l {
         @include font-light;
@@ -365,14 +368,14 @@ $max-vw: 1500px !default;
 }
 
 @mixin types($breakpoints, $headers, $cssattr) {
-  @for $i from 1 through length($breakpoints) {
-    @media (min-width: nth(map-values($breakpoints), $i)) {
+  @for $i from 1 through list.length($breakpoints) {
+    @media (min-width: list.nth(map.values($breakpoints), $i)) {
       @each $name, $fsize in $headers {
-        $fontsize: nth($fsize, $i);
-        $fontheight: nth($fsize, 5);
-        $fontweight: nth($fsize, 6);
+        $fontsize: list.nth($fsize, $i);
+        $fontheight: list.nth($fsize, 5);
+        $fontweight: list.nth($fsize, 6);
         .#{$name} {
-          @if nth(map-values($breakpoints), $i) == 1px {
+          @if list.nth(map.values($breakpoints), $i) == 1px {
             @include fonters($fontweight);
           }
 
@@ -385,10 +388,10 @@ $max-vw: 1500px !default;
 }
 
 @mixin space($breakpoints, $paddings, $cssattr) {
-  @for $i from 1 through length($breakpoints) {
-    @media (min-width: nth(map-values($breakpoints), $i)) {
+  @for $i from 1 through list.length($breakpoints) {
+    @media (min-width: list.nth(map.values($breakpoints), $i)) {
       @each $name, $pad in $paddings {
-        $padding: nth($pad, $i);
+        $padding: list.nth($pad, $i);
         .#{$name} {
           #{$cssattr}: $padding;
         }
@@ -644,14 +647,14 @@ $spriteHeight: 400;
 }
 
 @mixin mintypes($minbreakpoints, $headers, $cssattr) {
-  @for $i from 1 through length($minbreakpoints) {
-    @media (min-width: nth(map-values($minbreakpoints), $i)) {
+  @for $i from 1 through list.length($minbreakpoints) {
+    @media (min-width: list.nth(map.values($minbreakpoints), $i)) {
       @each $name, $fsize in $headers {
-        $fontsize: nth($fsize, $i);
-        $fontheight: nth($fsize, 3);
-        $fontweight: nth($fsize, 4);
+        $fontsize: list.nth($fsize, $i);
+        $fontheight: list.nth($fsize, 3);
+        $fontweight: list.nth($fsize, 4);
         .#{$name} {
-          @if nth(map-values($minbreakpoints), $i) == 1px {
+          @if list.nth(map.values($minbreakpoints), $i) == 1px {
             @include fonters($fontweight);
           }
 
@@ -664,13 +667,13 @@ $spriteHeight: 400;
 }
 
 @mixin heights-mix() {
-  @each $height-name in map-keys($heights) {
-    $values: map-get($heights, $height-name);
+  @each $height-name in map.keys($heights) {
+    $values: map.get($heights, $height-name);
     .#{$height-name} {
-      min-height: nth($values, 1);
+      min-height: list.nth($values, 1);
 
       @media (min-width: $break-sm) {
-        min-height: nth($values, 2);
+        min-height: list.nth($values, 2);
       }
     }
   }

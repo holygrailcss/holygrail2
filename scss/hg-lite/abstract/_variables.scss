@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 @use './functions' as *;
 
 $hg-prefix: 'hg-' !default;
@@ -10,11 +12,11 @@ $hg-breakpoints: (
   xl: 1440px
 ) !default;
 
-$hg-breakpoint-xs: map-get($hg-breakpoints, xs) !default;
-$hg-breakpoint-sm: map-get($hg-breakpoints, sm) !default;
-$hg-breakpoint-md: map-get($hg-breakpoints, md) !default;
-$hg-breakpoint-lg: map-get($hg-breakpoints, lg) !default;
-$hg-breakpoint-xl: map-get($hg-breakpoints, xl) !default;
+$hg-breakpoint-xs: map.get($hg-breakpoints, xs) !default;
+$hg-breakpoint-sm: map.get($hg-breakpoints, sm) !default;
+$hg-breakpoint-md: map.get($hg-breakpoints, md) !default;
+$hg-breakpoint-lg: map.get($hg-breakpoints, lg) !default;
+$hg-breakpoint-xl: map.get($hg-breakpoints, xl) !default;
 
 $hg-spacers: (
   12: to-rem(1),
@@ -44,30 +46,30 @@ $hg-spacers: (
   2000: to-rem(160)
 ) !default;
 
-$hg-spacer-12: map-get($hg-spacers, 12) !default;
-$hg-spacer-25: map-get($hg-spacers, 25) !default;
-$hg-spacer-50: map-get($hg-spacers, 50) !default;
-$hg-spacer-100: map-get($hg-spacers, 100) !default;
-$hg-spacer-150: map-get($hg-spacers, 150) !default;
-$hg-spacer-200: map-get($hg-spacers, 200) !default;
-$hg-spacer-250: map-get($hg-spacers, 250) !default;
-$hg-spacer-300: map-get($hg-spacers, 300) !default;
-$hg-spacer-400: map-get($hg-spacers, 400) !default;
-$hg-spacer-500: map-get($hg-spacers, 500) !default;
-$hg-spacer-600: map-get($hg-spacers, 600) !default;
-$hg-spacer-700: map-get($hg-spacers, 700) !default;
-$hg-spacer-800: map-get($hg-spacers, 800) !default;
-$hg-spacer-900: map-get($hg-spacers, 900) !default;
-$hg-spacer-1000: map-get($hg-spacers, 1000) !default;
-$hg-spacer-1200: map-get($hg-spacers, 1200) !default;
-$hg-spacer-1300: map-get($hg-spacers, 1300) !default;
-$hg-spacer-1400: map-get($hg-spacers, 1400) !default;
-$hg-spacer-1500: map-get($hg-spacers, 1500) !default;
-$hg-spacer-1600: map-get($hg-spacers, 1600) !default;
-$hg-spacer-1700: map-get($hg-spacers, 1700) !default;
-$hg-spacer-1800: map-get($hg-spacers, 1800) !default;
-$hg-spacer-1900: map-get($hg-spacers, 1900) !default;
-$hg-spacer-2000: map-get($hg-spacers, 2000) !default;
+$hg-spacer-12: map.get($hg-spacers, 12) !default;
+$hg-spacer-25: map.get($hg-spacers, 25) !default;
+$hg-spacer-50: map.get($hg-spacers, 50) !default;
+$hg-spacer-100: map.get($hg-spacers, 100) !default;
+$hg-spacer-150: map.get($hg-spacers, 150) !default;
+$hg-spacer-200: map.get($hg-spacers, 200) !default;
+$hg-spacer-250: map.get($hg-spacers, 250) !default;
+$hg-spacer-300: map.get($hg-spacers, 300) !default;
+$hg-spacer-400: map.get($hg-spacers, 400) !default;
+$hg-spacer-500: map.get($hg-spacers, 500) !default;
+$hg-spacer-600: map.get($hg-spacers, 600) !default;
+$hg-spacer-700: map.get($hg-spacers, 700) !default;
+$hg-spacer-800: map.get($hg-spacers, 800) !default;
+$hg-spacer-900: map.get($hg-spacers, 900) !default;
+$hg-spacer-1000: map.get($hg-spacers, 1000) !default;
+$hg-spacer-1200: map.get($hg-spacers, 1200) !default;
+$hg-spacer-1300: map.get($hg-spacers, 1300) !default;
+$hg-spacer-1400: map.get($hg-spacers, 1400) !default;
+$hg-spacer-1500: map.get($hg-spacers, 1500) !default;
+$hg-spacer-1600: map.get($hg-spacers, 1600) !default;
+$hg-spacer-1700: map.get($hg-spacers, 1700) !default;
+$hg-spacer-1800: map.get($hg-spacers, 1800) !default;
+$hg-spacer-1900: map.get($hg-spacers, 1900) !default;
+$hg-spacer-2000: map.get($hg-spacers, 2000) !default;
 
 $hg-utilities: (
   'display': (
