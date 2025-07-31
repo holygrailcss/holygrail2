@@ -31,6 +31,13 @@
     z-index: 1;
     width: 100%;
   }
+  .md-mini-logo a:focus::before,
+  .md-maxilogo a:focus::before {
+    content: '';
+    display: block;
+    outline: 2px solid #383bff !important;
+    outline-offset: -2px;
+  }
 
   .btn-grid .btn:focus,
   .btn-grid .btn:focus-visible {
