@@ -21,7 +21,8 @@
   }
 
   a:focus .product-card-img::before,
-  .product-media__img:focus::before {
+  .product-media__img:focus::before,
+  a:focus .media-image::before {
     content: '';
     display: block;
     outline: 2px solid #383bff !important;
