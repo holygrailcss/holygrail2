@@ -1,4 +1,7 @@
+@use 'sass:list';
+
 @import '../abstract/_all';
+
 .is-rtl {
   .fl-left {
     float: right;
@@ -64,8 +67,8 @@
   .select:not(.is-multiple, .is-loading).select-box::after {
     left: 8px;
   }
-  @for $i from 1 through length($espaciados) {
-    $espaciado: nth($espaciados, $i);
+  @for $i from 1 through list.length($espaciados) {
+    $espaciado: list.nth($espaciados, $i);
     .mr-#{$espaciado} {
       margin-right: 0;
       margin-left: #{$espaciado}px;
