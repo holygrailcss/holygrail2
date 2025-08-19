@@ -154,7 +154,7 @@ button {
   padding-right: $padding-global;
 }
 .btn--small {
-  min-height: 40px;
+  min-height: $height-btn;
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
 }
@@ -163,24 +163,24 @@ button {
   padding-left: $padding-global * 5;
   max-width: 272px;
   width: 100%;
-  min-height: 40px;
+  min-height: $height-btn;
 }
 .btn--mini-rd {
   padding-right: $padding-global * 3;
   padding-left: $padding-global * 3;
   font-size: $btn-text-mini;
-  min-height: 32px;
+  min-height: $height-btn;
   display: inline-flex;
   align-content: center;
   align-items: center;
   @media (min-width: $break-sm) {
     padding: $padding-global * 2;
     font-size: $btn-text-small;
-    min-height: 40px;
+    min-height: $height-btn;
   }
 }
 .btn--large {
-  min-height: 40px;
+  min-height: $height-btn;
   min-width: 200px;
   max-width: 400px;
   width: 100%;
@@ -193,7 +193,7 @@ button {
   padding-left: $padding-global * 8;
   position: relative;
   display: inline-flex;
-  min-height: 40px;
+  min-height: $height-btn;
   min-width: 200px;
   max-width: 400px;
   padding: $btn-padding;
@@ -227,7 +227,7 @@ button {
   padding-left: $padding-global * 2;
   font-size: $btn-text-full;
   height: auto;
-  min-height: 40px;
+  min-height: $height-btn;
 }
 .btn--round {
   border-radius: 50px;
@@ -755,7 +755,7 @@ button {
 }
 .btn-social {
   height: auto;
-  min-height: 40px;
+  min-height: $height-btn;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -1073,7 +1073,7 @@ button {
 }
 .btn-anim {
   height: auto;
-  min-height: 40px;
+  min-height: $height-btn;
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
@@ -1256,7 +1256,7 @@ button {
   border: 1px solid $c-primary;
   padding: 9px 2px 4px;
   height: auto;
-  min-height: 32px;
+  min-height: $height-btn;
   min-width: 100px;
   text-align: center;
   background: none;
@@ -1264,7 +1264,7 @@ button {
   @media (min-width: $break-sm) {
     padding: 16px 2px 14px;
     height: auto;
-    min-height: 40px;
+    min-height: $height-btn;
     font-size: $btn-text-m;
     min-width: 120px;
   }
@@ -1345,7 +1345,7 @@ button {
   width: auto;
   min-width: 33px;
   height: auto;
-  min-height: 33px;
+  min-height: $height-btn;
   padding: 12px;
 
   @media (min-width: $break-sm) {
