@@ -1,3 +1,4 @@
+# Purge candidate classes
 
 - hg-d-inline
 - hg-d-inline-block
