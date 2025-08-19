@@ -1,350 +1,350 @@
 
-hg-d-inline. 
-hg-d-inline-block. 
-hg-d-block. 
-hg-d-flex. 
-hg-d-inline-flex. 
-hg-d-none. 
-hg-min-h-50. 
-hg-min-h-100. 
-hg-min-h-150. 
-hg-min-h-250. 
-hg-min-h-300. 
-hg-min-h-400. 
-hg-min-h-500. 
-hg-min-h-600. 
-hg-min-h-700. 
-hg-min-h-800. 
-hg-min-h-900. 
-hg-min-h-1000. 
-hg-min-h-auto. 
-sm:hg-d-contents. 
-sm:hg-d-inline. 
-sm:hg-d-inline-block. 
-sm:hg-d-block. 
-sm:hg-d-flex. 
-sm:hg-d-inline-flex. 
-sm:hg-d-none. 
-sm:hg-min-h-50. 
-sm:hg-min-h-100. 
-sm:hg-min-h-150. 
-sm:hg-min-h-200. 
-sm:hg-min-h-250. 
-sm:hg-min-h-300. 
-sm:hg-min-h-400. 
-sm:hg-min-h-500. 
-sm:hg-min-h-600. 
-sm:hg-min-h-700. 
-sm:hg-min-h-800. 
-sm:hg-min-h-900. 
-sm:hg-min-h-1000. 
-sm:hg-min-h-auto. 
-md:hg-d-contents. 
-md:hg-d-inline. 
-md:hg-d-inline-block. 
-md:hg-d-block. 
-md:hg-d-flex. 
-md:hg-d-inline-flex. 
-md:hg-d-none. 
-md:hg-min-h-50. 
-md:hg-min-h-100. 
-md:hg-min-h-150. 
-md:hg-min-h-200. 
-md:hg-min-h-250. 
-md:hg-min-h-300. 
-md:hg-min-h-500. 
-md:hg-min-h-600. 
-md:hg-min-h-700. 
-md:hg-min-h-800. 
-md:hg-min-h-900. 
-md:hg-min-h-1000. 
-md:hg-min-h-auto. 
-lg:hg-d-contents. 
-lg:hg-d-inline. 
-lg:hg-d-inline-block. 
-lg:hg-d-block. 
-lg:hg-d-flex. 
-lg:hg-d-inline-flex. 
-lg:hg-d-none. 
-lg:hg-min-h-50. 
-lg:hg-min-h-100. 
-lg:hg-min-h-150. 
-lg:hg-min-h-200. 
-lg:hg-min-h-250. 
-lg:hg-min-h-300. 
-lg:hg-min-h-400. 
-lg:hg-min-h-500. 
-lg:hg-min-h-600. 
-lg:hg-min-h-700. 
-lg:hg-min-h-800. 
-lg:hg-min-h-900. 
-lg:hg-min-h-1000. 
-lg:hg-min-h-auto. 
-xl:hg-d-contents. 
-xl:hg-d-inline. 
-xl:hg-d-inline-block. 
-xl:hg-d-block. 
-xl:hg-d-flex. 
-xl:hg-d-inline-flex. 
-xl:hg-d-none. 
-xl:hg-min-h-50. 
-xl:hg-min-h-100. 
-xl:hg-min-h-150. 
-xl:hg-min-h-200. 
-xl:hg-min-h-250. 
-xl:hg-min-h-300. 
-xl:hg-min-h-400. 
-xl:hg-min-h-500. 
-xl:hg-min-h-600. 
-xl:hg-min-h-700. 
-xl:hg-min-h-800. 
-xl:hg-min-h-900. 
-xl:hg-min-h-1000. 
-xl:hg-min-h-auto. 
-duration-50. 
-duration-150. 
-duration-300. 
-duration-400. 
-duration-500. 
-duration-700. 
-duration-800. 
-duration-1000. 
-slide-out. 
-fade-in. 
-fade-out. 
-expand-top. 
-collapse-top. 
-is-inlineflex. 
-content-sp-evenly. 
-align-stretch. 
-align-multi-between. 
-align-multi-around. 
-align-multi-stretch. 
-xs\:text-center. 
-sm\:text-center. 
-md\:text-center. 
-lg\:text-center. 
-md\:min-text-center. 
-lg\:min-text-center. 
-xs\:text-left. 
-md\:text-left. 
-lg\:text-left. 
-sm\:min-text-left. 
-md\:min-text-left. 
-lg\:min-text-left. 
-xs\:text-right. 
-sm\:text-right. 
-md\:text-right. 
-lg\:text-right. 
-sm\:min-text-right. 
-md\:min-text-right. 
-lg\:min-text-right. 
-sm\:min-content-end. 
-sm\:align-middle. 
-md\:align-middle. 
-md\:content-sp-between. 
-mdmax\:content-end. 
-container-full. 
-container-total. 
-container-bleed. 
-container-body. 
-container-body2. 
-container-5. 
-container-10. 
-container-11. 
-container-360. 
-container-512. 
-col-sm-11. 
-col-lg-7. 
-col-lg-10. 
-col-lg-12. 
-col-xl-13. 
-col-xl-14. 
-col-xl-15. 
-col-xl-16. 
-col-xl-17. 
-col-xl-18. 
-col-xl-19. 
-col-xl-20. 
-col-xl-21. 
-col-xl-22. 
-col-xl-23. 
-bleed-4. 
-bleed-8. 
-list-grid. 
-grid-3. 
-colgap-16. 
-grid-gap-8. 
-sm\:grid-1. 
-sm\:grid-2. 
-sm\:grid-3. 
-sm\:grid-8. 
-grid-auto. 
-sm\:grid-gap-16. 
-grid-3-6-8. 
-grid-cols-2. 
-grid-cols-3. 
-grid-cols-4. 
-grid-cols-6. 
-grid-cols-8. 
-grid-cols-12. 
-xs\:grid-cols-2. 
-xs\:grid-cols-3. 
-xs\:grid-cols-4. 
-xs\:grid-cols-6. 
-xs\:grid-cols-8. 
-xs\:grid-cols-12. 
-sm\:grid-cols-2. 
-sm\:grid-cols-3. 
-sm\:grid-cols-4 . 
-sm\:grid-cols-6. 
-sm\:grid-cols-8. 
-sm\:grid-cols-12. 
-md\:grid-cols-3. 
-md\:grid-cols-4. 
-md\:grid-cols-6. 
-md\:grid-cols-8. 
-md\:grid-cols-12. 
-lg\:grid-cols-2. 
-lg\:grid-cols-3. 
-lg\:grid-cols-4. 
-lg\:grid-cols-6. 
-lg\:grid-cols-8. 
-lg\:grid-cols-12. 
-xl\:grid-cols-2. 
-xl\:grid-cols-3. 
-xl\:grid-cols-4. 
-xl\:grid-cols-6. 
-xl\:grid-cols-8. 
-xl\:grid-cols-12. 
-h-16. 
-h-40. 
-height-xs. 
-height-xl. 
-height-big. 
-height-medium. 
-height-mini. 
-height-home. 
-ico-big. 
-i-arrow. 
-ico-error. 
-ico-reset. 
-ico-feel. 
-icon-white. 
-has-error. 
-has-feel. 
-ico-ball. 
-ico-count. 
-x48. 
-x64. 
-rat-4-2. 
-rat-9-20. 
-rat-strech. 
-rat-double. 
-sk-load1. 
-sk-load3. 
-sk-load4. 
-sk-load6. 
-sk-load7. 
-swiper-monoproducto. 
-sk-load9. 
-ar-3-2. 
-ar-16-9. 
-ar-1-1. 
-ar-20-9. 
-ar-9-20. 
-grid-wrap-custom. 
-sk-load-34. 
-sk-load_3-4. 
-sk-load_2-3. 
-sk-load_1-1. 
-sk-load_2-1. 
-sk-load_4-3. 
-sk-load_3-2. 
-sk-load_16-9. 
-h1. 
-h2. 
-h3. 
-h4. 
-h5. 
-h6. 
-p1. 
-secondary. 
-text-12-m. 
-text-12-b. 
-text-12-2r. 
-text-12-2b. 
-text-14-2r. 
-text-14-2b. 
-text-16-m. 
-text-16-b. 
-text-16-2r. 
-text-16-2b. 
-text-18-r. 
-text-18-m. 
-text-18-b. 
-text-18-2r. 
-text-18-2b. 
-text-20-r. 
-text-20-m. 
-text-20-b. 
-text-20-2r. 
-text-20-2b. 
-text-24-r. 
-text-24-m. 
-text-24-b. 
-text-24-2r. 
-text-24-2b. 
-title-l-l. 
-titularbase-m. 
-fluid-1-l. 
-fluid-1-r. 
-fluid-1-m. 
-fluid-1-sb. 
-fluid-1-b. 
-fluid-2-l. 
-fluid-2-r. 
-fluid-2-m. 
-fluid-2-sb. 
-fluid-2-b. 
-fluid-3-l. 
-fluid-3-r. 
-fluid-3-m. 
-fluid-3-sb. 
-fluid-3-b. 
-text-light. 
-text-regular. 
-text-medium. 
-text-semibold. 
-my-0. 
-py-0. 
-mx-4. 
-mx-12. 
-my-12. 
-ml-12. 
-p-12. 
-pt-12. 
-mx-16. 
-mx-20. 
-my-20. 
-ml-20. 
-m-24. 
-m-32. 
-my-32. 
-mr-32. 
-m-40. 
-mx-40. 
-ml-40. 
-px-40. 
-m-48. 
-mx-48. 
-ml-48. 
-px-48. 
-pr-48. 
-pl-48. 
-m-56. 
-mx-56. 
-my-56. 
-p-56. 
-px-56.
-pr-56.
+- hg-d-inline
+- hg-d-inline-block
+- hg-d-block
+- hg-d-flex
+- hg-d-inline-flex
+- hg-d-none
+- hg-min-h-50
+- hg-min-h-100
+- hg-min-h-150
+- hg-min-h-250
+- hg-min-h-300
+- hg-min-h-400
+- hg-min-h-500
+- hg-min-h-600
+- hg-min-h-700
+- hg-min-h-800
+- hg-min-h-900
+- hg-min-h-1000
+- hg-min-h-auto
+- sm:hg-d-contents
+- sm:hg-d-inline
+- sm:hg-d-inline-block
+- sm:hg-d-block
+- sm:hg-d-flex
+- sm:hg-d-inline-flex
+- sm:hg-d-none
+- sm:hg-min-h-50
+- sm:hg-min-h-100
+- sm:hg-min-h-150
+- sm:hg-min-h-200
+- sm:hg-min-h-250
+- sm:hg-min-h-300
+- sm:hg-min-h-400
+- sm:hg-min-h-500
+- sm:hg-min-h-600
+- sm:hg-min-h-700
+- sm:hg-min-h-800
+- sm:hg-min-h-900
+- sm:hg-min-h-1000
+- sm:hg-min-h-auto
+- md:hg-d-contents
+- md:hg-d-inline
+- md:hg-d-inline-block
+- md:hg-d-block
+- md:hg-d-flex
+- md:hg-d-inline-flex
+- md:hg-d-none
+- md:hg-min-h-50
+- md:hg-min-h-100
+- md:hg-min-h-150
+- md:hg-min-h-200
+- md:hg-min-h-250
+- md:hg-min-h-300
+- md:hg-min-h-500
+- md:hg-min-h-600
+- md:hg-min-h-700
+- md:hg-min-h-800
+- md:hg-min-h-900
+- md:hg-min-h-1000
+- md:hg-min-h-auto
+- lg:hg-d-contents
+- lg:hg-d-inline
+- lg:hg-d-inline-block
+- lg:hg-d-block
+- lg:hg-d-flex
+- lg:hg-d-inline-flex
+- lg:hg-d-none
+- lg:hg-min-h-50
+- lg:hg-min-h-100
+- lg:hg-min-h-150
+- lg:hg-min-h-200
+- lg:hg-min-h-250
+- lg:hg-min-h-300
+- lg:hg-min-h-400
+- lg:hg-min-h-500
+- lg:hg-min-h-600
+- lg:hg-min-h-700
+- lg:hg-min-h-800
+- lg:hg-min-h-900
+- lg:hg-min-h-1000
+- lg:hg-min-h-auto
+- xl:hg-d-contents
+- xl:hg-d-inline
+- xl:hg-d-inline-block
+- xl:hg-d-block
+- xl:hg-d-flex
+- xl:hg-d-inline-flex
+- xl:hg-d-none
+- xl:hg-min-h-50
+- xl:hg-min-h-100
+- xl:hg-min-h-150
+- xl:hg-min-h-200
+- xl:hg-min-h-250
+- xl:hg-min-h-300
+- xl:hg-min-h-400
+- xl:hg-min-h-500
+- xl:hg-min-h-600
+- xl:hg-min-h-700
+- xl:hg-min-h-800
+- xl:hg-min-h-900
+- xl:hg-min-h-1000
+- xl:hg-min-h-auto
+- duration-50
+- duration-150
+- duration-300
+- duration-400
+- duration-500
+- duration-700
+- duration-800
+- duration-1000
+- slide-out
+- fade-in
+- fade-out
+- expand-top
+- collapse-top
+- is-inlineflex
+- content-sp-evenly
+- align-stretch
+- align-multi-between
+- align-multi-around
+- align-multi-stretch
+- xs\:text-center
+- sm\:text-center
+- md\:text-center
+- lg\:text-center
+- md\:min-text-center
+- lg\:min-text-center
+- xs\:text-left
+- md\:text-left
+- lg\:text-left
+- sm\:min-text-left
+- md\:min-text-left
+- lg\:min-text-left
+- xs\:text-right
+- sm\:text-right
+- md\:text-right
+- lg\:text-right
+- sm\:min-text-right
+- md\:min-text-right
+- lg\:min-text-right
+- sm\:min-content-end
+- sm\:align-middle
+- md\:align-middle
+- md\:content-sp-between
+- mdmax\:content-end
+- container-full
+- container-total
+- container-bleed
+- container-body
+- container-body2
+- container-5
+- container-10
+- container-11
+- container-360
+- container-512
+- col-sm-11
+- col-lg-7
+- col-lg-10
+- col-lg-12
+- col-xl-13
+- col-xl-14
+- col-xl-15
+- col-xl-16
+- col-xl-17
+- col-xl-18
+- col-xl-19
+- col-xl-20
+- col-xl-21
+- col-xl-22
+- col-xl-23
+- bleed-4
+- bleed-8
+- list-grid
+- grid-3
+- colgap-16
+- grid-gap-8
+- sm\:grid-1
+- sm\:grid-2
+- sm\:grid-3
+- sm\:grid-8
+- grid-auto
+- sm\:grid-gap-16
+- grid-3-6-8
+- grid-cols-2
+- grid-cols-3
+- grid-cols-4
+- grid-cols-6
+- grid-cols-8
+- grid-cols-12
+- xs\:grid-cols-2
+- xs\:grid-cols-3
+- xs\:grid-cols-4
+- xs\:grid-cols-6
+- xs\:grid-cols-8
+- xs\:grid-cols-12
+- sm\:grid-cols-2
+- sm\:grid-cols-3
+- sm\:grid-cols-4 
+- sm\:grid-cols-6
+- sm\:grid-cols-8
+- sm\:grid-cols-12
+- md\:grid-cols-3
+- md\:grid-cols-4
+- md\:grid-cols-6
+- md\:grid-cols-8
+- md\:grid-cols-12
+- lg\:grid-cols-2
+- lg\:grid-cols-3
+- lg\:grid-cols-4
+- lg\:grid-cols-6
+- lg\:grid-cols-8
+- lg\:grid-cols-12
+- xl\:grid-cols-2
+- xl\:grid-cols-3
+- xl\:grid-cols-4
+- xl\:grid-cols-6
+- xl\:grid-cols-8
+- xl\:grid-cols-12
+- h-16
+- h-40
+- height-xs
+- height-xl
+- height-big
+- height-medium
+- height-mini
+- height-home
+- ico-big
+- i-arrow
+- ico-error
+- ico-reset
+- ico-feel
+- icon-white
+- has-error
+- has-feel
+- ico-ball
+- ico-count
+- x48
+- x64
+- rat-4-2
+- rat-9-20
+- rat-strech
+- rat-double
+- sk-load1
+- sk-load3
+- sk-load4
+- sk-load6
+- sk-load7
+- swiper-monoproducto
+- sk-load9
+- ar-3-2
+- ar-16-9
+- ar-1-1
+- ar-20-9
+- ar-9-20
+- grid-wrap-custom
+- sk-load-34
+- sk-load_3-4
+- sk-load_2-3
+- sk-load_1-1
+- sk-load_2-1
+- sk-load_4-3
+- sk-load_3-2
+- sk-load_16-9
+- h1
+- h2
+- h3
+- h4
+- h5
+- h6
+- p1
+- secondary
+- text-12-m
+- text-12-b
+- text-12-2r
+- text-12-2b
+- text-14-2r
+- text-14-2b
+- text-16-m
+- text-16-b
+- text-16-2r
+- text-16-2b
+- text-18-r
+- text-18-m
+- text-18-b
+- text-18-2r
+- text-18-2b
+- text-20-r
+- text-20-m
+- text-20-b
+- text-20-2r
+- text-20-2b
+- text-24-r
+- text-24-m
+- text-24-b
+- text-24-2r
+- text-24-2b
+- title-l-l
+- titularbase-m
+- fluid-1-l
+- fluid-1-r
+- fluid-1-m
+- fluid-1-sb
+- fluid-1-b
+- fluid-2-l
+- fluid-2-r
+- fluid-2-m
+- fluid-2-sb
+- fluid-2-b
+- fluid-3-l
+- fluid-3-r
+- fluid-3-m
+- fluid-3-sb
+- fluid-3-b
+- text-light
+- text-regular
+- text-medium
+- text-semibold
+- my-0
+- py-0
+- mx-4
+- mx-12
+- my-12
+- ml-12
+- p-12
+- pt-12
+- mx-16
+- mx-20
+- my-20
+- ml-20
+- m-24
+- m-32
+- my-32
+- mr-32
+- m-40
+- mx-40
+- ml-40
+- px-40
+- m-48
+- mx-48
+- ml-48
+- px-48
+- pr-48
+- pl-48
+- m-56
+- mx-56
+- my-56
+- p-56
+- px-56 
+- pr-56
