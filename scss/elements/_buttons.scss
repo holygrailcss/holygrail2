@@ -18,7 +18,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 10px 16px 8px;
+  padding: 7px 16px 8px;
   background-color: transparent;
   min-height: $height-btn;
   @include font-regular;
@@ -448,7 +448,7 @@ button {
 }
 .btn-limited {
   height: auto;
-  min-height: 40px;
+  min-height: $height-btn;
   color: $c-white;
   background-color: $c-limited;
   border: 1px solid $c-limited;

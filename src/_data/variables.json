@@ -463,7 +463,7 @@
   "height-btn": {
     "var_name": "$height-btn",
     "default": false,
-    "value": "40px"
+    "value": "32px"
   },
   "text-input-m": {
     "var_name": "$text-input-m",
