@@ -18,7 +18,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 7px 16px 8px;
+  padding: 8px 16px 6px;
   background-color: transparent;
   min-height: $height-btn;
   @include font-regular;
@@ -75,7 +75,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 32px;
+    padding: 6px 32px;
     &.btn--mini,
     &.btn--small {
       width: max-content;
@@ -333,6 +333,7 @@ button {
   color: $c-primary;
   background-color: $c-white;
   border: 1px solid $c-primary;
+  line-height: 1;
   svg {
     circle {
       stroke: $c-primary;
@@ -771,7 +772,6 @@ button {
     align-items: center;
     border-radius: $btn-radius;
     margin-top: -2px;
-    top: 13px;
     left: 16px;
     position: absolute;
     div {
@@ -1391,7 +1391,6 @@ button {
       cursor: pointer;
     }
 
-  
   }
   &[disabled],
   &:disabled,
