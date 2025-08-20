@@ -350,330 +350,330 @@
 - px-56 
 - pr-56
 - pl-56
-m-64
-mx-64
-my-64
-mr-64
-ml-64
-p-64
-px-64
-pr-64
-pl-64
-m-72
-mx-72
-my-72
-mt-72
-mr-72
-ml-72
-p-72
-px-72
-py-72
-pr-72
-pl-72
-m-80
-mx-80
-my-80
-mr-80
-ml-80
-p-80
-px-80
-py-80
-pt-80
-m-96
-mx-96
-my-96
-mr-96
-ml-96
-p-96
-py-96
-pr-96
-pl-96
-m-112
-mx-112
-my-112
-mt-112
-mr-112
-ml-112
-p-112
-px-112
-py-112
-pt-112
-pr-112
-pl-112
-m-120
-mx-120
-my-120
-mr-120
-ml-120
-p-120
-px-120
-py-120
-pt-120
-pr-120
-pb-120
-pl-120
-m-128
-mx-128
-my-128
-mt-128
-mr-128
-ml-128
-p-128
-px-128
-py-128
-pt-128
-pr-128
-pl-128
-m-160
-mx-160
-my-160
-mt-160
-mr-160
-ml-160
-p-160
-px-160
-py-160
-pt-160
-pr-160
-pl-160
-sm\:mb-0
-lg\:mb-0
-xl\:mb-0
-sm\:mt-0
-md\:mt-0
-lg\:mt-0
-xl\:mt-0
-md\:pr-0
-lg\:pr-0
-xl\:pr-0
-md\:pl-0
-lg\:pl-0
-xl\:pl-0
-md\:pt-0
-lg\:pt-0
-xl\:pt-0
-md\:pb-0
-lg\:pb-0
-xl\:pb-0
-smmax\:pb-0
-mdmax\:pb-0
-lgmax\:pb-0
-xlmax\:pb-0
-smmax\:mb-0
-mdmax\:mb-0
-lgmax\:mb-0
-xlmax\:mb-0
-smmax\:pt-0
-mdmax\:pt-0
-lgmax\:pt-0
-xlmax\:pt-0
-smmax\:mt-0
-mdmax\:mt-0
-lgmax\:mt-0
-xlmax\:mt-0
-mdmax\:mb-16
-mdmax\:mb-24
-mdmax\:mb-40
-mdmax\:mb-42
-second-color
-c-feel-light
-c-tier-silver
-c-tier-platinum
-c-tier-gold
-c-limited
-bg-clear
-bg-feel-dark
-bg-sale
-bg-notice
-fl-left
-p-absolute
-banner-zone
-text-uppercase
-has-ellipsis-3
-img-cover
-center-absolute
-ico-r
-ico-l
-hg-status-b
-hg-status-c
-hg-status-d
-block-right
-block-left
-lg\:hidden
-lg\:visible
-xl\:visible
-md\:order-last
-lg\:order-last
-mdmax\:reverse
-mdmax\:px-48
-text-12-l
-bb-line
-border-r2
-opacity-50
-opacity-70
-product-fadein
-video-wrap
-charging
-mw-sm
-mw-lg
-flex-initial
-smmax\:flex
-mdmax\:flex
-lgmax\:flex
-lg\:flex
-pointer-events-none
-pointer-events-all
-max-vw-35
-mdmax\:reset-body
-min-scrollcustom-hover
-btn-group-bleed
-fixed-bottom
-sidebar-overflow
-bg-primary-3
-bg-primary-15
-bg-primary-30
-bg-primary-60
-bg-primary-97
-bg-secondary-3
-bg-secondary-15
-bg-secondary-30
-bg-secondary-60
-bg-secondary-97
-no-relative
-arrow-cover
-line-scrolldown
-line-scrolldown
-banner-warning
-banner-info
-banner-valid
-banner-alert
-banner-feel
-banner-limited
-btn--wrap
-btn--xxl
-btn--search
-btn--round
-btn-primary-feel
-btn-invert-light
-btn-blue
-btn-circle
-btn-apple
-btn-apple-secondary
-btn-wechat
-btn-social-login
-btn-outline-login
-btn-world
-btn-world-left
-btn-world-center
-btn-svg
-btn-secondary-rd
-btn--color
-btn-square
-btn-tab
-btn-prepend
-ico-check
-check-top
-check-clear
-checkbox-card-label
-form
-is-multiple
-select-secondary-rd
-input-notouch
-input-line-v2
-formlabel
-link-button-prev
-inner-button
-link-linebutton
-link-svg-post
-link4-underline
-link5
-link6
-link8
-link9
-link-svg-post
-list-inline-flex
-list-inline-clear
-h-size-selector
-list-mini
-is-missing
-list-table
-list-box
-multiple-table
-list-button
-list-secondary
-list-tertiary
-list-icons
-list-selection
-is-around
-tabs-inline
-tabs-list
-tabs-clear
-tabs-gray
-tabs-mini
-tag-limited
-tag-new
-tooltip-tl-temp
-tooltip-bl-temp
-is-tooltip
-ico-round-sm
-checkbox-ico
-checkbox-box
-list-box
-list-box-label
-checkbox-ico
-checkbox-text
-multiple-table
-two-table
-modalx-centered
-border-clean-l
-border-clean-r
-bs-group-colors
-bs-custom-btn
-drawer-body
-drawer-footer
-drawer-xl
-md-open-drawer
-md-drawer-overlay
-has-lines
-md-accordion-item
-md-skip-to-content
-row1-wrap
-row1
-box-single
-box-single-center
-box-double
-box-super
-explorer
-text-box
-text-box-img
-text-box-inner
-card9-add
-card9-sizes
-card9-video
-js-card9-inner
-card9-slider
-ma-swiper-button-next
-ma-swiper-button-prev
-card9-bottom
-card9-view-details
-template-Carrusel
-product-view-info
-box3-right
-box3-img
-box4
-header-cart-list
-hg-bread-line
-mn-mainmenu
-mn-mainbar
-list-check
-mn-wrap-overlay
-mn-footer
-mn-search-zone
-mn-mainbar-cesta
-btn--macro
-stories-zoom
-header-new
-interior
-menu-mobile
-menu-desktop
-fl-right
+- m-64
+- mx-64
+- my-64
+- mr-64
+- ml-64
+- p-64
+- px-64
+- pr-64
+- pl-64
+- m-72
+- mx-72
+- my-72
+- mt-72
+- mr-72
+- ml-72
+- p-72
+- px-72
+- py-72
+- pr-72
+- pl-72
+- m-80
+- mx-80
+- my-80
+- mr-80
+- ml-80
+- p-80
+- px-80
+- py-80
+- pt-80
+- m-96
+- mx-96
+- my-96
+- mr-96
+- ml-96
+- p-96
+- py-96
+- pr-96
+- pl-96
+- m-112
+- mx-112
+- my-112
+- mt-112
+- mr-112
+- ml-112
+- p-112
+- px-112
+- py-112
+- pt-112
+- pr-112
+- pl-112
+- m-120
+- mx-120
+- my-120
+- mr-120
+- ml-120
+- p-120
+- px-120
+- py-120
+- pt-120
+- pr-120
+- pb-120
+- pl-120
+- m-128
+- mx-128
+- my-128
+- mt-128
+- mr-128
+- ml-128
+- p-128
+- px-128
+- py-128
+- pt-128
+- pr-128
+- pl-128
+- m-160
+- mx-160
+- my-160
+- mt-160
+- mr-160
+- ml-160
+- p-160
+- px-160
+- py-160
+- pt-160
+- pr-160
+- pl-160
+- sm\:mb-0
+- lg\:mb-0
+- xl\:mb-0
+- sm\:mt-0
+- md\:mt-0
+- lg\:mt-0
+- xl\:mt-0
+- md\:pr-0
+- lg\:pr-0
+- xl\:pr-0
+- md\:pl-0
+- lg\:pl-0
+- xl\:pl-0
+- md\:pt-0
+- lg\:pt-0
+- xl\:pt-0
+- md\:pb-0
+- lg\:pb-0
+- xl\:pb-0
+- smmax\:pb-0
+- mdmax\:pb-0
+- lgmax\:pb-0
+- xlmax\:pb-0
+- smmax\:mb-0
+- mdmax\:mb-0
+- lgmax\:mb-0
+- xlmax\:mb-0
+- smmax\:pt-0
+- mdmax\:pt-0
+- lgmax\:pt-0
+- xlmax\:pt-0
+- smmax\:mt-0
+- mdmax\:mt-0
+- lgmax\:mt-0
+- xlmax\:mt-0
+- mdmax\:mb-16
+- mdmax\:mb-24
+- mdmax\:mb-40
+- mdmax\:mb-42
+- second-color
+- c-feel-light
+- c-tier-silver
+- c-tier-platinum
+- c-tier-gold
+- c-limited
+- bg-clear
+- bg-feel-dark
+- bg-sale
+- bg-notice
+- fl-left
+- p-absolute
+- banner-zone
+- text-uppercase
+- has-ellipsis-3
+- img-cover
+- center-absolute
+- ico-r
+- ico-l
+- hg-status-b
+- hg-status-c
+- hg-status-d
+- block-right
+- block-left
+- lg\:hidden
+- lg\:visible
+- xl\:visible
+- md\:order-last
+- lg\:order-last
+- mdmax\:reverse
+- mdmax\:px-48
+- text-12-l
+- bb-line
+- border-r2
+- opacity-50
+- opacity-70
+- product-fadein
+- video-wrap
+- charging
+- mw-sm
+- mw-lg
+- flex-initial
+- smmax\:flex
+- mdmax\:flex
+- lgmax\:flex
+- lg\:flex
+- pointer-events-none
+- pointer-events-all
+- max-vw-35
+- mdmax\:reset-body
+- min-scrollcustom-hover
+- btn-group-bleed
+- fixed-bottom
+- sidebar-overflow
+- bg-primary-3
+- bg-primary-15
+- bg-primary-30
+- bg-primary-60
+- bg-primary-97
+- bg-secondary-3
+- bg-secondary-15
+- bg-secondary-30
+- bg-secondary-60
+- bg-secondary-97
+- no-relative
+- arrow-cover
+- line-scrolldown
+- line-scrolldown
+- banner-warning
+- banner-info
+- banner-valid
+- banner-alert
+- banner-feel
+- banner-limited
+- btn--wrap
+- btn--xxl
+- btn--search
+- btn--round
+- btn-primary-feel
+- btn-invert-light
+- btn-blue
+- btn-circle
+- btn-apple
+- btn-apple-secondary
+- btn-wechat
+- btn-social-login
+- btn-outline-login
+- btn-world
+- btn-world-left
+- btn-world-center
+- btn-svg
+- btn-secondary-rd
+- btn--color
+- btn-square
+- btn-tab
+- btn-prepend
+- ico-check
+- check-top
+- check-clear
+- checkbox-card-label
+- form
+- is-multiple
+- select-secondary-rd
+- input-notouch
+- input-line-v2
+- formlabel
+- link-button-prev
+- inner-button
+- link-linebutton
+- link-svg-post
+- link4-underline
+- link5
+- link6
+- link8
+- link9
+- link-svg-post
+- list-inline-flex
+- list-inline-clear
+- h-size-selector
+- list-mini
+- is-missing
+- list-table
+- list-box
+- multiple-table
+- list-button
+- list-secondary
+- list-tertiary
+- list-icons
+- list-selection
+- is-around
+- tabs-inline
+- tabs-list
+- tabs-clear
+- tabs-gray
+- tabs-mini
+- tag-limited
+- tag-new
+- tooltip-tl-temp
+- tooltip-bl-temp
+- is-tooltip
+- ico-round-sm
+- checkbox-ico
+- checkbox-box
+- list-box
+- list-box-label
+- checkbox-ico
+- checkbox-text
+- multiple-table
+- two-table
+- modalx-centered
+- border-clean-l
+- border-clean-r
+- bs-group-colors
+- bs-custom-btn
+- drawer-body
+- drawer-footer
+- drawer-xl
+- md-open-drawer
+- md-drawer-overlay
+- has-lines
+- md-accordion-item
+- md-skip-to-content
+- row1-wrap
+- row1
+- box-single
+- box-single-center
+- box-double
+- box-super
+- explorer
+- text-box
+- text-box-img
+- text-box-inner
+- card9-add
+- card9-sizes
+- card9-video
+- js-card9-inner
+- card9-slider
+- ma-swiper-button-next
+- ma-swiper-button-prev
+- card9-bottom
+- card9-view-details
+- template-Carrusel
+- product-view-info
+- box3-right
+- box3-img
+- box4
+- header-cart-list
+- hg-bread-line
+- mn-mainmenu
+- mn-mainbar
+- list-check
+- mn-wrap-overlay
+- mn-footer
+- mn-search-zone
+- mn-mainbar-cesta
+- btn--macro
+- stories-zoom
+- header-new
+- interior
+- menu-mobile
+- menu-desktop
+- fl-right
