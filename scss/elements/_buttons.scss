@@ -21,7 +21,8 @@ button {
   padding: 8px 16px 6px;
   background-color: transparent;
   min-height: $height-btn;
-  @include font-regular;
+  @include font-light;
+  letter-spacing: .64px;
   &:focus,
   &.focus,
   &:hover,
