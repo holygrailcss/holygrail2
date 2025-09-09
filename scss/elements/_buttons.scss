@@ -47,6 +47,7 @@ button {
     color: $c-primary;
     border-color: $c-white;
     background-color: $c-white;
+    @include font-regular;
     &::after {
       background-color: $c-white;
     }
@@ -237,6 +238,8 @@ button {
   color: $c-white;
   background-color: $c-primary;
   border: 1px solid $c-primary;
+  @include font-regular;
+
   svg {
     g {
       fill: $c-white;
@@ -454,6 +457,7 @@ button {
   color: $c-white;
   background-color: $c-limited;
   border: 1px solid $c-limited;
+  @include font-regular;
   svg {
     g {
       fill: $c-white;
@@ -681,6 +685,7 @@ button {
   background-color: $c-info;
   color: $c-white;
   border: 1px solid $c-info;
+  @include font-regular;
   &:focus,
   &.focus,
   &:hover,
@@ -812,6 +817,8 @@ button {
   background-color: $c-facebook;
   color: $c-white;
   border: 1px solid $c-facebook;
+  @include font-regular;
+  
   svg-icon,
   svg-icon2,
   md-icon {
@@ -842,6 +849,7 @@ button {
   background-color: $c-black;
   color: $c-white;
   border: 1px solid $c-black;
+  @include font-regular;
   &:focus,
   &.focus,
   &:hover,
@@ -882,6 +890,7 @@ button {
   color: $c-white;
   padding-inline: 40px;
   border: 1px solid $c-naver;
+  @include font-regular;
   &:focus,
   &.focus,
   &:hover,
@@ -905,6 +914,7 @@ button {
   color: $c-white;
   padding-inline: 40px;
   border: 1px solid $c-wechat;
+  @include font-regular;
   &:focus,
   &.focus,
   &:hover,
@@ -1161,6 +1171,7 @@ button {
   background-color: $c-feel;
   border: 1px solid $c-feel;
   color: $c-white;
+  @include font-regular;
   &:hover,
   &.hover,
   &:focus,
