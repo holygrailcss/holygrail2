@@ -75,7 +75,7 @@
   right: auto;
   bottom: 0;
   width: 100%;
-  @media (min-width: 768px) {
+  @media (min-width: $break-sm) {
     max-width: 375px;
     bottom: 0;
     left: 96px;
