@@ -58,7 +58,7 @@
     content: '';
     width: 100%;
     padding-top: calc(133.25% + 74px);
-    @media (min-width: 992px) {
+    @media (min-width: $break-md) {
       padding-top: calc(133.25% + 74px);
     }
   }
@@ -74,7 +74,7 @@
     content: '';
     width: 100%;
     padding-top: calc(133.25% + 74px);
-    @media (min-width: 992px) {
+    @media (min-width: $break-md) {
       padding-top: calc(133.25% + 74px);
     }
   }
@@ -138,7 +138,7 @@
     content: '';
     width: 100%;
     padding-top: 133.25%;
-    @media (min-width: 992px) {
+    @media (min-width: $break-md) {
       padding-top: 133.25%;
     }
   }

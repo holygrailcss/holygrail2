@@ -29,7 +29,7 @@
     transition: opacity 275ms ease;
     opacity: 0;
 
-    @media (max-width: 1280px) {
+    @media (max-width: $break-lg) {
       display: none;
     }
   }

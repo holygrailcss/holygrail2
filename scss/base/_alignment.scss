@@ -302,13 +302,13 @@
   justify-content: space-between;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $break-md) {
   .md\:content-sp-between {
     justify-content: space-between;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: $break-md) {
   .mdmax\:content-end {
     justify-content: flex-end;
   }
