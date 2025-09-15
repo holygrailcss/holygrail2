@@ -707,7 +707,7 @@ input::placeholder {
     color: $c-dark-grey;
   }
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .form-input-label-2 > label {
     display: none;
   }
