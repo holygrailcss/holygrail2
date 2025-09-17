@@ -29,14 +29,16 @@ function formatValue(value) {
   }
 }
 
-let scssContent = '';
+let scssSetup = '';
+let scssColors = '';
 
 /**
  * Procesa cada categoría de variables y agrega al contenido SCSS.
  * @param {Object} categoryData - Las variables de una categoría.
  * @param {string} type - El tipo de variables ('value', 'map', 'list').
  */
-function processCategory(categoryData, type) {
+function processCategory(categoryData, type, target) {
+  const newStyles = [];
   for (const [key, data] of Object.entries(categoryData)) {
     const varName = data.var_name;
     const defaultSuffix = data.default ? ' !default' : '';
@@ -46,7 +48,9 @@ function processCategory(categoryData, type) {
     switch (type) {
       case 'value':
         // Variable simple
-        formatted = `${varName}: ${data.value}${defaultSuffix};`;
+        formatted = data.comment
+            ? `${varName}: ${data.value}${defaultSuffix}; // ${data.comment};`
+            : `${varName}: ${data.value}${defaultSuffix};`;
         break;
       case 'list':
         // Lista SCSS
@@ -60,17 +64,22 @@ function processCategory(categoryData, type) {
         console.warn(`Tipo desconocido: ${type} para la variable ${varName}`);
         continue;
     }
+    newStyles.push(formatted);
 
-    scssContent += formatted + '\n';
   }
+  if (target === 'colors') scssColors += newStyles.join('\n') + '\n';
+  else scssSetup += newStyles.join('\n') + '\n';
 }
 
 // Procesar cada categoría con su tipo correspondiente
-processCategory(colors, 'value');
-processCategory(variables, 'list');
-processCategory(maps, 'map');
+processCategory(colors, 'value', 'colors');
+processCategory(variables, 'list', 'setup');
+processCategory(maps, 'map', 'setup');
 
 // Escribir el contenido SCSS en un archivo
+const colorsPath = path.join(__dirname, 'scss', 'abstract', '_colors.scss');
 const variablesPath = path.join(__dirname, 'scss', 'abstract', '_setup.scss');
-fs.writeFileSync(variablesPath, scssContent);
+fs.writeFileSync(colorsPath, scssColors);
+fs.writeFileSync(variablesPath, scssSetup);
+console.log('SCSS variables de colores generadas en src/scss/abstract/_colors.scss');
 console.log('SCSS variables generadas en src/scss/abstract/_setup.scss');
