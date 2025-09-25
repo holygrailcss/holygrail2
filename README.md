@@ -221,10 +221,8 @@ Holygrail2 incluye soporte completo para RTL (Right-to-Left):
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## 🙏 Agradecimientos
 
-Desarrollado con ❤️ desde Barcelona para el mundo.
-
+Desarrollado por Manuel ruiz redondo. Senior FontEnd UX IT.
 ---
 
 **Holygrail2** - Un framework CSS minimalista y potente para aplicaciones web modernas.
