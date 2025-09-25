@@ -6,6 +6,7 @@
   "rules": {
     "scss/dollar-variable-pattern": null,
     "scss/at-import-no-partial-leading-underscore": null,
+    "scss/load-no-partial-leading-underscore": null,
     "no-invalid-position-at-import-rule": null,
     "no-descending-specificity": null,
     "selector-pseudo-element-no-unknown": null,
@@ -28,11 +29,18 @@
     "media-feature-range-notation": null,
     "color-hex-length": "short",
     "property-no-vendor-prefix": null,
+    "property-no-deprecated": null,
+    "declaration-property-value-keyword-no-deprecated": null,
+    "color-function-alias-notation": null,
     "comment-empty-line-before": "always",
     "scss/at-import-partial-extension": "never",
     "media-query-no-invalid": null,
     "media-feature-name-no-vendor-prefix": null,
     "declaration-block-no-redundant-longhand-properties": null,
-    "media-feature-name-no-unknown": null
+    "media-feature-name-no-unknown": null,
+    "block-no-redundant-nested-style-rules": null,
+    "no-duplicate-selectors": null,
+    "no-irregular-whitespace": null,
+    "declaration-empty-line-before": null
   }
 }
