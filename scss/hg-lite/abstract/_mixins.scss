@@ -39,7 +39,7 @@
       $property
     );
     $property-class-modifier: if($key, '-' + $key, '');
-    $breakpoint-class: if($breakpoint, $breakpoint + '\:', '');
+    $breakpoint-class: if($breakpoint, $breakpoint + '\\:', '');
     $generated-property: $breakpoint-class + $prefix + $property-class + $property-class-modifier;
 
     @if $value {
