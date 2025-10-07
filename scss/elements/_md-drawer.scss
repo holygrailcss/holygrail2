@@ -59,7 +59,7 @@
   }
 }
 
-.btn.btn-drawer-close {
+.btn.md-btn-drawer-close {
   align-self: flex-start;
   margin-inline-start: auto;
   width: auto;
@@ -71,7 +71,8 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin-block: 0;
+  margin-inline:  auto 0;
 }
 
 .md-drawer-body {
@@ -134,7 +135,7 @@
     md-drawer-close,
     md-button {
       flex: 1 1 0;
-      min-width: 0; /* evita overflow si el texto es largo */
+      min-width: 0;
     }
   }
 }
