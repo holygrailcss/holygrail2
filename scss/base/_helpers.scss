@@ -875,9 +875,31 @@ strong {
 .is-through {
   text-decoration: line-through;
 }
+
 .gap-16 {
   gap: 16px;
 }
+
+.gap-8 {
+  gap: 8px;
+}
+
+.column-gap-16 {
+  column-gap: 16px;
+}
+
+.column-gap-8 {
+  column-gap: 8px;
+}
+
+.row-gap-16 {
+  row-gap: 16px;
+}
+
+.row-gap-8 {
+  row-gap: 8px;
+}
+
 .bg-primary-3 {
   background-color: $c-primary-3;
 }
@@ -1020,6 +1042,21 @@ strong {
 
 .grow-0 {
   flex-grow: 0;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.basis-auto {
+  flex-basis: auto;
+}
+
+.basis-full {
+  flex-basis: 100%;
 }
 
 .no-cursor {
