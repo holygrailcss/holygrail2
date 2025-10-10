@@ -474,8 +474,27 @@
     "var_name": "$text-input-d",
     "default": false,
     "value": "12px"
-  }
-
+  },
+  "tooltip-arrow": {
+    "var_name": "$tooltip-arrow",
+    "default": false,
+    "value": "10px"
+  },
+  "tooltip-border-color": {
+    "var_name": "$tooltip-border-color",
+    "default": false,
+    "value": "$c-middle-grey"
+  },
+"tooltip-dist": {
+  "var_name": "$tooltip-dist",
+  "default": false,
+  "value": "10px"
+},
+"tooltip-width": {
+  "var_name": "$tooltip-width",
+  "default": false,
+  "value": "320px"
+}
 
 
 

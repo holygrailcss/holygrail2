@@ -1,4 +1,4 @@
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 @media (max-width: #{$break-sm - 1}) {
   .header-account-logo {
     display: none;

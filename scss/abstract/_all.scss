@@ -1,4 +1,4 @@
-@import 'breakpoints';
-@import 'setup';
-@import 'fonts';
-@import 'mixins';
+@forward 'breakpoints';
+@forward 'setup';
+@forward 'fonts';
+@forward 'mixins';

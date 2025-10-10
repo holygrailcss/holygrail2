@@ -2,7 +2,7 @@
 @use 'sass:map';
 @use 'sass:math';
 
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 
 .container-full {
   margin-left: auto;

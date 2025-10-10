@@ -1,4 +1,4 @@
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 .box3 {
   position: relative;
   width: 100%;

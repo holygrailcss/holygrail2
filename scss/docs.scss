@@ -1,8 +1,8 @@
 @use 'sass:math';
-@import 'abstract/reset';
-@import 'base/_animations';
-@import 'abstract/_all';
-@import 'base/guide';
+@use 'abstract/_all' as *;
+@use 'abstract/reset' as *;
+@use 'base/_animations' as *;
+@use 'base/guide' as *;
 
 @include space($breakpoints, $padding, $p);
 @include space($breakpoints, $padding-top, $pt);

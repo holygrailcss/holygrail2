@@ -1,5 +1,5 @@
 @use 'sass:math';
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 input:is([type='button'], [type='submit'], [type='reset']),
 input[type='file']::file-selector-button,
 button {

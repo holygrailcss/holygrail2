@@ -1,4 +1,4 @@
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 .rat-16-9 {
   @include ratio(16, 9);
 }

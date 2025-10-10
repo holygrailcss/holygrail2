@@ -1,11 +1,5 @@
 @use 'sass:math';
-@import '../abstract/_all';
-
-$tooltip-arrow: 10px;
-$tooltip-border-color: $c-middle-grey;
-$tooltip-dist: 10px;
-$tooltip-padding: 8px;
-$tooltip-width: 320px;
+@use '../abstract/_all' as *;
 
 .tooltip-sm {
   bottom: 0;

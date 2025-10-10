@@ -2,15 +2,16 @@
 @use 'sass:map';
 @use 'sass:math';
 
-@import 'breakpoints';
+@use 'breakpoints' as *;
+@use 'setup' as *;
+@use 'fonts' as *;
 
 // Define los puntos de ruptura si no están definidos
 $break-sm: 576px !default;
 $break-md: 768px !default;
 $break-lg: 992px !default;
 $break-xl: 1200px !default;
-$min-vw: 320px !default;
-$max-vw: 1500px !default;
+
 
 @mixin background-alpha($color: $color-white, $alpha: 1) {
   background-color: hsla(

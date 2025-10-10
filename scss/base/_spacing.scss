@@ -1,7 +1,6 @@
 @use 'sass:list';
 
-@import '../abstract/_breakpoints';
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 
 $break-sm: 576px !default;
 $break-md: 768px !default;

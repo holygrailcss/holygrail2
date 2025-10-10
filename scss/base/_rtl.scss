@@ -1,6 +1,6 @@
 @use 'sass:list';
 
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 
 .is-rtl {
   .fl-left {

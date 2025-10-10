@@ -1,4 +1,4 @@
-@import '../abstract/_all';
+@use '../abstract/_all' as *;
 .form-input-label,
 .form-input-label-2 {
   .validation-error-messages {

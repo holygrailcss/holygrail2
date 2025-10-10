@@ -1,5 +1,6 @@
 @use 'sass:list';
 @use 'sass:map';
+@use './setup' as *;
 
 $minbreakpoints: (
   xs: 1px,
@@ -11,13 +12,6 @@ $breakpoints: (
   sm: 768px,
   md: 992px,
   lg: 1280px
-) !default;
-$breakpointscols: (
-  xs: 1px,
-  sm: 768px,
-  md: 992px,
-  lg: 1280px,
-  xl: 1440px
 ) !default;
 
 $colBreakpoints: list.length($breakpoints) !default;
