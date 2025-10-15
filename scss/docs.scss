@@ -13,6 +13,10 @@
 @include space($breakpoints, $margin-bottom, $mb);
 @include space($breakpoints, $margin-top, $mt);
 
+body {
+  min-width: $min-width;
+}
+
 .color-list {
   display: flex;
   flex-wrap: wrap;

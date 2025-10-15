@@ -32,49 +32,49 @@
   "c-primary-3": {
     "type": "value",
     "var_name": "$c-primary-3",
-    "default": false,
+    "default": true,
     "value": "rgba(0, 0, 0, 0.3)"
   },
   "c-primary-15": {
     "type": "value",
     "var_name": "$c-primary-15",
-    "default": false,
+    "default": true,
     "value": "rgba(0, 0, 0, 0.15)"
   },
   "c-primary-30": {
     "type": "value",
     "var_name": "$c-primary-30",
-    "default": false,
+    "default": true,
     "value": "rgba(0, 0, 0, 0.3)"
   },
   "c-primary-60": {
     "type": "value",
     "var_name": "$c-primary-60",
-    "default": false,
+    "default": true,
     "value": "rgba(0, 0, 0, 0.6)"
   },
   "c-primary-97": {
     "type": "value",
     "var_name": "$c-primary-97",
-    "default": false,
+    "default": true,
     "value": "rgba(0, 0, 0, 0.97)"
   },
   "c-secondary-3": {
     "type": "value",
     "var_name": "$c-secondary-3",
-    "default": false,
+    "default": true,
     "value": "rgba(255, 255, 255, 0.3)"
   },
   "c-secondary-15": {
     "type": "value",
     "var_name": "$c-secondary-15",
-    "default": false,
+    "default": true,
     "value": "rgba(255, 255, 255, 0.15)"
   },
   "c-secondary-30": {
     "type": "value",
     "var_name": "$c-secondary-30",
-    "default": false,
+    "default": true,
     "value": "rgba(255, 255, 255, 0.3)"
   },
   "c-secondary-60": {
@@ -86,7 +86,7 @@
   "c-secondary-97": {
     "type": "value",
     "var_name": "$c-secondary-97",
-    "default": false,
+    "default": true,
     "value": "rgba(255, 255, 255, 0.97)"
   },
 

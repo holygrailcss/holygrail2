@@ -401,27 +401,27 @@
   },
   "btn-text-small": {
     "var_name": "$btn-text-small",
-    "default": false,
+    "default": true,
     "value": "12px"
   },
   "btn-text-medium": {
     "var_name": "$btn-text-medium",
-    "default": false,
+    "default": true,
     "value": "12px"
   },
   "btn-text-large": {
     "var_name": "$btn-text-large",
-    "default": false,
+    "default": true,
     "value": "12px"
   },
   "btn-text-xlarge": {
     "var_name": "$btn-text-xlarge",
-    "default": false,
+    "default": true,
     "value": "12px"
   },
   "btn-text-full": {
     "var_name": "$btn-text-full",
-    "default": false,
+    "default": true,
     "value": "12px"
   },
   "btn-text-r": {

@@ -1,6 +1,7 @@
 @use 'sass:list';
 @use 'sass:map';
 @use 'sass:math';
+@use 'sass:string';
 
 @use 'breakpoints' as *;
 @use 'setup' as *;
@@ -520,63 +521,63 @@ $break-xl: 1200px !default;
   $landscape-2: '(min-width: 1280px) and (max-width: 1560px)';
 
   @if $consulta == xxs {
-    @media #{unquote($media-xxs)} {
+    @media #{string.unquote($media-xxs)} {
       @content;
     }
   } @else if $consulta == max-xs {
-    @media #{unquote($media-max-xs)} {
+    @media #{string.unquote($media-max-xs)} {
       @content;
     }
   } @else if $consulta == max-sm {
-    @media #{unquote($media-max-sm)} {
+    @media #{string.unquote($media-max-sm)} {
       @content;
     }
   } @else if $consulta == max-md {
-    @media #{unquote($media-max-md)} {
+    @media #{string.unquote($media-max-md)} {
       @content;
     }
   } @else if $consulta == max-lg {
-    @media #{unquote($media-max-lg)} {
+    @media #{string.unquote($media-max-lg)} {
       @content;
     }
   } @else if $consulta == xs {
-    @media #{unquote($media-xs)} {
+    @media #{string.unquote($media-xs)} {
       @content;
     }
   } @else if $consulta == sm {
-    @media #{unquote($media-sm)} {
+    @media #{string.unquote($media-sm)} {
       @content;
     }
   } @else if $consulta == md {
-    @media #{unquote($media-md)} {
+    @media #{string.unquote($media-md)} {
       @content;
     }
   } @else if $consulta == md-2 {
-    @media #{unquote($media-md-2)} {
+    @media #{string.unquote($media-md-2)} {
       @content;
     }
   } @else if $consulta == lg {
-    @media #{unquote($media-lg)} {
+    @media #{string.unquote($media-lg)} {
       @content;
     }
   } @else if $consulta == xl {
-    @media #{unquote($media-xl)} {
+    @media #{string.unquote($media-xl)} {
       @content;
     }
   } @else if $consulta == xxl {
-    @media #{unquote($media-xxl)} {
+    @media #{string.unquote($media-xxl)} {
       @content;
     }
   } @else if $consulta == portrait {
-    @media #{unquote($portrait)} {
+    @media #{string.unquote($portrait)} {
       @content;
     }
   } @else if $consulta == land {
-    @media #{unquote($landscape)} {
+    @media #{string.unquote($landscape)} {
       @content;
     }
   } @else if $consulta == land-2 {
-    @media #{unquote($landscape-2)} {
+    @media #{string.unquote($landscape-2)} {
       @content;
     }
   } @else if $consulta == retina {
