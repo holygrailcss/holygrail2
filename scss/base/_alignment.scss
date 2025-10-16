@@ -138,6 +138,22 @@
   text-align: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
 .sticky-bottom {
   width: 100%;
   position: absolute;

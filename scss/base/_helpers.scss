@@ -191,6 +191,9 @@ b {
   flex-flow: row nowrap;
   padding: 16px;
 }
+.text-inherit {
+  font-size: inherit;
+}
 .text-lowercase {
   text-transform: lowercase;
 }

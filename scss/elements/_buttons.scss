@@ -1513,24 +1513,38 @@ button {
   }
 }
 .btn-quick {
+  align-items: center;
   background-color: transparent;
   border: 0 solid transparent;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 4px;
   height: auto;
+  justify-content: space-between;
   min-height: auto;
-  padding: 16px;
-  svg {
-    g {
+  min-width: 36px;
+  padding: 0;
+  width: auto;
+  color: $c-primary;
+  background-color: transparent;
+  line-height: 1;
+
+  .text {
+    line-height: 1;
+  }
+  
+  md-icon,
+  .icon {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    path {
       fill: $c-primary;
-      stroke: $c-primary;
-    }
-    circle {
-      stroke: $c-primary;
     }
   }
-  .icon-sizes {
-    margin-top: -6px;
-    transform: translate(4px, 5px);
-  }
+  
   &:focus,
   &.focus,
   &:hover,
@@ -1540,19 +1554,16 @@ button {
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
-    .tab-inner-size {
-      position: relative;
-    }
-    .tab-inner-size::after {
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: #000;
+    
+  }
+
+  &:hover,
+  &.hover {
+    .text {
+      text-decoration: underline;
     }
   }
+
   &:disabled,
   &[disabled],
   &.disabled {
@@ -1570,6 +1581,7 @@ button {
       border: 0 solid transparent !important;
     }
   }
+  
   .has-light & {
     color: $c-white;
     border-color: transparent;
