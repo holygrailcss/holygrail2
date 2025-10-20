@@ -192,7 +192,10 @@ b {
   padding: 16px;
 }
 .text-inherit {
+  font-weight: inherit;
   font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
 }
 .text-lowercase {
   text-transform: lowercase;
