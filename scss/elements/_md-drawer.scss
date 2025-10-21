@@ -39,8 +39,13 @@
   position: fixed;
   top: 0;
   transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
   width: 424px;
   z-index: 2050;
+
+  [dir='rtl'] & {
+    transform: translateX(-100%);
+  }
 }
 
 .md-drawer-header {
