@@ -139,14 +139,18 @@
   margin: 0;
   [type='checkbox']:not(:checked) + label,
   [type='checkbox']:checked + label {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
-    padding-left: 0;
+    padding-inline-start: 0;
     cursor: pointer;
     font-weight: normal;
     font-size: $text-sm;
     text-align: initial;
     display: flex;
-    height: 26px;
+    min-height: 26px;
   }
   [type='checkbox']:not(:checked) + label::before,
   [type='checkbox']:checked + label::before {
@@ -155,22 +159,22 @@
     width: 62px;
     height: 26px;
     border-radius: 0;
-    left: 0;
+    inset-inline-start: 0;
     border: none;
     border: 1px solid $c-primary;
     outline: 0;
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px 0 0;
+    margin-block: 0;
+    margin-inline: 0 10px;
+    top: 0;
   }
   [type='checkbox']:not(:checked) + label span,
   [type='checkbox']:checked + label span {
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    line-height: 16px;
-    padding-left: 70px;
-    min-height: 20px;
+    padding-inline-start: 70px;
   }
   [type='checkbox']:not(:checked),
   [type='checkbox']:checked {
@@ -187,7 +191,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 4px 0 0;
-    margin-top: 1px \9;
     line-height: normal;
   }
   .checkbox-circle {
@@ -200,19 +203,19 @@
   [type='checkbox']:checked + label .checkbox-circle {
     position: absolute;
     top: 3px;
-    left: 6px;
+    inset-inline-start: 6px;
     color: $c-primary;
     transition: all 0.2s;
   }
   [type='checkbox']:not(:checked) + label .checkbox-circle {
     opacity: 1;
     transform: scale(1);
-    left: 4px;
+    inset-inline-start: 4px;
   }
   [type='checkbox']:checked + label .checkbox-circle {
     opacity: 1;
     transform: scale(1);
-    left: 38px;
+    inset-inline-start: 38px;
   }
 }
 .checkbox-radio {

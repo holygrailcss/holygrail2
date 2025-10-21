@@ -192,6 +192,14 @@
       }
     }
   }
+
+  .checkbox-item-2 {
+    [type='checkbox']:not(:checked) + label span,
+    [type='checkbox']:checked + label span {
+      padding-inline-start: 70px;
+    }
+  }
+
   .check-bleed {
     &.checkbox-radio [type='radio']:checked + label .ico-radio,
     &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
