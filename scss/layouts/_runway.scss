@@ -7,8 +7,7 @@
   .inner-nativescroll {
     position: relative;
     display: inline-flex;
-    div {
-      background: #ccc;
+    > div {
       width: 22vw;
       @media (min-width: $break-md) {
         width: 15vw;
