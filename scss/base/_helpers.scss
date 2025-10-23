@@ -963,7 +963,7 @@ strong {
 [lang^="ar"],
 //arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
 [lang^="nl"] {
-  body {
+  * {
     font-family: Helvetica, Arial, sans-serif !important;
   }
   .ttu,
@@ -994,8 +994,8 @@ strong {
 [lang^="bg"],
 //bulgaro
 [lang^="ar"] //arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
-{
-  body {
+{ 
+  * {
     font-family: Helvetica, Arial, sans-serif !important;
   }
 }
