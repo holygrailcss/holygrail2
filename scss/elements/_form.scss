@@ -12,7 +12,8 @@ fieldset[disabled] .form-control {
 }
 .input,
 .textarea,
-.select select {
+.select select,
+.select .select-ghost {
   border: var(--line-width) solid transparent;
   border-color: $c-primary;
   border-width: 0 0 var(--line-width) 0;
@@ -80,9 +81,10 @@ input::placeholder {
   justify-content: flex-start;
   position: relative;
   vertical-align: top;
-  select {
+  select,
+  .select-ghost {
     cursor: pointer;
-    display: block;
+    display: flex;
     max-width: 100%;
     &:hover {
       opacity: 0.6;
@@ -124,7 +126,8 @@ input::placeholder {
   fieldset[disabled] select:hover {
     border-color: $c-light-grey;
   }
-  select:not([multiple]) {
+  select:not([multiple]),
+  .select-ghost {
     padding-right: 30px;
   }
   select[multiple] {
@@ -146,7 +149,8 @@ input::placeholder {
     height: auto;
     min-height: auto;
     min-width: 60px;
-    select {
+    select,
+    .select-ghost {
       background-color: $c-white;
       min-width: 32px;
       width: 100%;
