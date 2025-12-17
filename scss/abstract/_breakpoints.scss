@@ -28,3 +28,8 @@ $break-md: list.nth(map.values($breakpoints), 3) !default;
 $break-lg: list.nth(map.values($breakpoints), 4) !default;
 $break-xl: list.nth(map.values($breakpointscols), 5) !default;
 $min-width: 320px !default;
+$break-xl: 1440px !default;
+$break-2xl: 1600px !default;
+$break-3xl: 1920px !default;
+
+$min-width: 319px !default;
