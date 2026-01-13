@@ -1,11 +1,11 @@
 @import '../abstract/_all';
 
-.hg-bread {
+.hg0-bread {
   background-color: $c-white;
   padding: 0;
   border-bottom: var(--line-width) solid $c-dark-grey;
 
-  .hg-bread-inner {
+  .hg0-bread-inner {
     display: table;
     text-align: center;
     margin: 0 auto;
@@ -13,7 +13,7 @@
     width: 100%;
   }
 
-  .hg-bread-item {
+  .hg0-bread-item {
     display: inline-table;
     margin-bottom: -1px;
     vertical-align: middle;
@@ -23,14 +23,14 @@
     text-transform: uppercase;
   }
 
-  .hg-bread-num {
+  .hg0-bread-num {
     text-align: center;
     line-height: 1;
     overflow: hidden;
     margin: 0 auto 10px;
   }
 
-  .hg-bread-line {
+  .hg0-bread-line {
     display: inline-table;
     vertical-align: middle;
 
@@ -41,7 +41,7 @@
     }
   }
 
-  .hg-bread-title {
+  .hg0-bread-title {
     line-height: 1;
   }
 

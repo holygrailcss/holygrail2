@@ -72,12 +72,6 @@ $hg-spacer-1900: map.get($hg-spacers, 1900) !default;
 $hg-spacer-2000: map.get($hg-spacers, 2000) !default;
 
 $hg-utilities: (
-  'display': (
-    property: display,
-    class: 'd',
-    responsive: true,
-    values: contents inline inline-block block flex inline-flex none
-  ),
   'min-height': (
     property: min-height,
     class: 'min-h',
