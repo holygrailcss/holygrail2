@@ -18,7 +18,7 @@ button {
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 8px 16px 6px;
+  padding: 2px 16px 0;
   background-color: transparent;
   min-height: $height-btn;
   @include font-light;
@@ -228,9 +228,6 @@ button {
   width: 100%;
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
-  font-size: $btn-text-full;
-  height: auto;
-  min-height: $height-btn;
 }
 .btn--round {
   border-radius: 50px;
@@ -338,7 +335,6 @@ button {
   color: $c-primary;
   background-color: $c-white;
   border: 1px solid $c-primary;
-  line-height: 1;
   svg {
     circle {
       stroke: $c-primary;
@@ -577,10 +573,6 @@ button {
   background-color: transparent;
   border: 0 solid transparent;
   height: auto;
-  min-height: auto;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  line-height: 1;
   min-width: 24px;
   padding-inline: 0;
 
