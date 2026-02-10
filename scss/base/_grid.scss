@@ -241,7 +241,8 @@
     }
   }
 }
-[class*='col-'] {
+[class*=' col-'],
+[class^='col-'] {
   box-sizing: border-box;
   min-height: 1px;
   padding-left: $padding-global;

@@ -337,7 +337,8 @@ $max-vw: 1500px !default;
       flex-wrap: wrap;
     }
 
-    > [class*='col-'],
+    > [class*=' col-'],
+    > [class^='col-'],
     > .col {
       padding: math.div($margin, 2) + px;
       box-sizing: border-box;
