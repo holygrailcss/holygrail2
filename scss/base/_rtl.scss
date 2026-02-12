@@ -499,7 +499,7 @@
     }
     &.checkbox-radio [type='radio']:checked + label .ico-radio,
     &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
-      top: 7px;
+      top: 5px;
       inset-inline-end: 0px;
       right: 5px;
     }

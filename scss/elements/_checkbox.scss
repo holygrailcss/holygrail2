@@ -519,16 +519,19 @@
   &.checkbox-radio [type='radio']:checked + label::before,
   &.checkbox-radio [type='radio']:not(:checked) + label::before {
     position: absolute;
-    top: 16px;
-    inset-inline-start: 16px;
+    top: 0;
+    inset-inline-end: 16px;
   }
   &.checkbox-radio [type='radio']:checked + label .ico-radio,
   &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
-    top: 23px;
-    inset-inline-start: 23px;
+    top: 5px;
+
   }
   .box3-content {
     padding-inline-start: calc(14px + 16px);
+  }
+  .box3{
+    min-height: auto;
   }
   &.checkbox-radio [type='radio']:checked + label .border-1,
   &.checkbox-radio [type='radio']:checked + label .border-1-grey {
