@@ -487,4 +487,29 @@
       padding-left: 0;
     }
   }
+
+  .check-top {
+    &.checkbox-radio [type='radio']:checked + label::before,
+    &.checkbox-radio [type='radio']:not(:checked) + label::before {
+      position: absolute;
+      top: 0;
+      inset-inline-end: 0;
+      left: auto;
+      right: 0;
+    }
+    &.checkbox-radio [type='radio']:checked + label .ico-radio,
+    &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
+      top: 7px;
+      inset-inline-end: 0px;
+      right: 5px;
+    }
+    .box3-content {
+      padding-inline-end: calc(14px + 16px);
+    }
+    &.checkbox-radio [type='radio']:checked + label .border-1,
+    &.checkbox-radio [type='radio']:checked + label .border-1-grey {
+      border: 1px solid $c-primary;
+    }
+  }
+
 }
