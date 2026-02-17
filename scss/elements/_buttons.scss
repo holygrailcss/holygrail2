@@ -649,21 +649,28 @@ button {
       stroke: $c-primary;
     }
   }
+
+  &:hover,
+  &.hover
+ {
+    border: 0 solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: $c-dark-grey;
+
+  }
+
   &:focus,
   &.focus,
-  &:hover,
-  &.hover,
   &:active,
   &.active {
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
+    color: $c-primary;
+
   }
-  &:hover,
-  &.hover ,
-  &.active {
-    @include font-medium;
-  }
+
  
   &:disabled,
   &[disabled],
