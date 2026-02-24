@@ -714,21 +714,26 @@ button {
   height: auto;
   padding: 4px 12px;
   border-radius: 9999px;
-  background-color: transparent;
-  border: 1px solid $c-primary;
-  color: $c-primary;
+  border: 1px solid transparent;
+  background-color: $c-white;
+  color: $c-dark-grey;
   font-size: $text-sm;
   white-space: nowrap;
 
   &:focus,
   &.focus,
   &:hover,
-  &.hover,
+  &.hover {
+    background-color: $c-white;
+    color: $c-primary;
+    border-color: transparent;
+    cursor: pointer;
+  }
   &:active,
   &.active {
-    background-color: $c-primary;
-    color: $c-white;
-    border-color: $c-primary;
+    background-color: $c-white;
+    color: $c-primary;
+    border-color: transparent;
     cursor: pointer;
   }
   &:disabled,
@@ -736,31 +741,31 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    background-color: $c-light-grey;
-    border-color: $c-light-grey;
-    color: $c-dark-grey;
+    background-color: $c-white;
+    border-color: transparent;
+    color: $c-middle-grey;
     opacity: 1;
   }
   .has-light & {
-    color: $c-white;
-    border-color: $c-white;
     background-color: transparent;
+    color: $c-white;
+    border-color: transparent;
     &:focus,
     &.focus,
     &:hover,
     &.hover,
     &:active,
     &.active {
-      background-color: $c-white;
-      color: $c-primary;
-      border-color: $c-white;
+      background-color: transparent;
+      color: $c-white;
+      border-color: transparent;
     }
     &:disabled,
     &[disabled],
     &.disabled {
-      background-color: $c-light-grey;
-      border-color: $c-light-grey;
-      color: $c-dark-grey;
+      background-color: transparent;
+      border-color: transparent;
+      color: $c-light-grey;
     }
   }
 }
