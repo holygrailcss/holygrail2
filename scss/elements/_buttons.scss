@@ -712,28 +712,25 @@ button {
   justify-content: center;
   min-height: auto;
   height: auto;
-  padding: 4px 12px;
-  border-radius: 9999px;
-  border: 1px solid transparent;
-  background-color: $c-white;
   color: $c-dark-grey;
-  font-size: $text-sm;
   white-space: nowrap;
-
+  background-color: transparent;
+  border-color: transparent;
+  
   &:focus,
   &.focus,
   &:hover,
   &.hover {
-    background-color: $c-white;
-    color: $c-primary;
+    color: $c-dark-grey;
     border-color: transparent;
+    background-color: transparent;
     cursor: pointer;
   }
   &:active,
   &.active {
-    background-color: $c-white;
     color: $c-primary;
     border-color: transparent;
+    background-color: transparent;
     cursor: pointer;
   }
   &:disabled,
@@ -741,9 +738,9 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    background-color: $c-white;
-    border-color: transparent;
     color: $c-middle-grey;
+    border-color: transparent;
+    background-color: transparent;
     opacity: 1;
   }
   .has-light & {
