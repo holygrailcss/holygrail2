@@ -706,6 +706,64 @@ button {
   }
 }
 
+.hg-btn-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  height: auto;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: transparent;
+  border: 1px solid $c-primary;
+  color: $c-primary;
+  font-size: $text-sm;
+  white-space: nowrap;
+
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    background-color: $c-primary;
+    color: $c-white;
+    border-color: $c-primary;
+    cursor: pointer;
+  }
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: $c-light-grey;
+    border-color: $c-light-grey;
+    color: $c-dark-grey;
+    opacity: 1;
+  }
+  .has-light & {
+    color: $c-white;
+    border-color: $c-white;
+    background-color: transparent;
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      background-color: $c-white;
+      color: $c-primary;
+      border-color: $c-white;
+    }
+    &:disabled,
+    &[disabled],
+    &.disabled {
+      background-color: $c-light-grey;
+      border-color: $c-light-grey;
+      color: $c-dark-grey;
+    }
+  }
+}
 
 .btn-text {
   background-color: transparent;
