@@ -639,6 +639,7 @@ button {
   min-width: 24px;
   padding: 10px 0;
   min-height: auto;
+  color: $c-dark-grey;
 
   svg {
     g {
@@ -656,7 +657,7 @@ button {
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
-    color: $c-dark-grey;
+    color: $c-primary;
 
   }
 
