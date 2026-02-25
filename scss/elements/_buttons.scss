@@ -639,7 +639,6 @@ button {
   min-width: 24px;
   padding: 10px 0;
   min-height: auto;
-  color: $c-dark-grey;
 
   svg {
     g {
@@ -657,7 +656,7 @@ button {
     border: 0 solid transparent;
     background-color: transparent;
     cursor: pointer;
-    color: $c-primary;
+    color: $c-dark-grey;
 
   }
 
@@ -669,6 +668,7 @@ button {
     background-color: transparent;
     cursor: pointer;
     color: $c-primary;
+    @include font-regular;
 
   }
 
@@ -713,25 +713,22 @@ button {
   justify-content: center;
   min-height: auto;
   height: auto;
-  color: $c-dark-grey;
-  white-space: nowrap;
+  padding: 4px 12px;
   background-color: transparent;
-  border-color: transparent;
-  
+
+  color: $c-primary;
+  font-size: $text-sm;
+  white-space: nowrap;
+
   &:focus,
   &.focus,
   &:hover,
-  &.hover {
-    color: $c-primary;
-    border-color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-  }
+  &.hover,
   &:active,
   &.active {
-    color: $c-primary;
-    border-color: transparent;
-    background-color: transparent;
+    background-color: $c-primary;
+    color: $c-white;
+    border-color: $c-primary;
     cursor: pointer;
   }
   &:disabled,
@@ -739,31 +736,31 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    color: $c-middle-grey;
-    border-color: transparent;
-    background-color: transparent;
+    background-color: $c-light-grey;
+    border-color: $c-light-grey;
+    color: $c-dark-grey;
     opacity: 1;
   }
   .has-light & {
-    background-color: transparent;
     color: $c-white;
-    border-color: transparent;
+    border-color: $c-white;
+    background-color: transparent;
     &:focus,
     &.focus,
     &:hover,
     &.hover,
     &:active,
     &.active {
-      background-color: transparent;
-      color: $c-white;
-      border-color: transparent;
+      background-color: $c-white;
+      color: $c-primary;
+      border-color: $c-white;
     }
     &:disabled,
     &[disabled],
     &.disabled {
-      background-color: transparent;
-      border-color: transparent;
-      color: $c-light-grey;
+      background-color: $c-light-grey;
+      border-color: $c-light-grey;
+      color: $c-dark-grey;
     }
   }
 }
