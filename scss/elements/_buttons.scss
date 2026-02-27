@@ -713,10 +713,8 @@ button {
   justify-content: center;
   min-height: auto;
   height: auto;
-  padding: 4px 12px;
   background-color: transparent;
-
-  color: $c-primary;
+  color: $c-dark-grey;
   font-size: $text-sm;
   white-space: nowrap;
 
@@ -726,9 +724,10 @@ button {
   &.hover,
   &:active,
   &.active {
-    background-color: $c-primary;
-    color: $c-white;
-    border-color: $c-primary;
+    color: $c-primary;
+    border-color: transparent;
+    background-color: transparent;
+
     cursor: pointer;
   }
   &:disabled,
@@ -736,31 +735,35 @@ button {
   &.disabled {
     pointer-events: none;
     cursor: default;
-    background-color: $c-light-grey;
-    border-color: $c-light-grey;
-    color: $c-dark-grey;
+    color: $c-middle-grey;
+    border-color: transparent;
+    background-color: transparent;
+
     opacity: 1;
   }
   .has-light & {
-    color: $c-white;
-    border-color: $c-white;
     background-color: transparent;
+    color: $c-white;
+    border-color: transparent;
+
     &:focus,
     &.focus,
     &:hover,
     &.hover,
     &:active,
     &.active {
-      background-color: $c-white;
-      color: $c-primary;
-      border-color: $c-white;
+      background-color: transparent;
+      color: $c-white;
+      border-color: transparent;
+
     }
     &:disabled,
     &[disabled],
     &.disabled {
-      background-color: $c-light-grey;
-      border-color: $c-light-grey;
-      color: $c-dark-grey;
+      background-color: transparent;
+      border-color: transparent;
+      color: $c-light-grey;
+
     }
   }
 }
@@ -1854,3 +1857,4 @@ button {
     }
   }
 }
+
