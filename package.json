@@ -21,7 +21,7 @@
     "site": "npx @11ty/eleventy",
     "build": "npm run generate && npm run css && npm run site",
     "start": "npm run build && npm run open:guide",
-    "open:guide": "open guia/index.html",
+    "open:guide": "open index.html",
     "lint": "stylelint 'scss/**/*.?(s)css'",
     "lint:fix": "stylelint --fix 'scss/**/*.?(s)css'",
     "format": "prettier --write 'scss/**/*.+(css|scss)'",
