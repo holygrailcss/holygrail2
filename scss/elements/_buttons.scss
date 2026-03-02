@@ -149,12 +149,9 @@ button {
   white-space: wrap;
 }
 .btn--mini {
-  padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1
-    $padding-global * 3;
+  padding: 0 $padding-global * 2;
   font-size: $btn-text-mini;
   min-width: 50px;
-  padding-left: $padding-global;
-  padding-right: $padding-global;
 }
 .btn--small {
   min-height: $height-btn;

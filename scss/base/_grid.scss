@@ -413,3 +413,10 @@
     }
   }
 }
+
+.grid-cols-6-center {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+}

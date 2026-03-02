@@ -59,3 +59,45 @@ h3 {
     border-radius: 10px;
   }
 }
+
+.buttons-hitarea-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+
+  .buttons-hitarea-legend-line {
+    display: inline-block;
+    width: 24px;
+    height: 0;
+    border-top: 2px dashed #ff66cc;
+  }
+}
+
+#md-main-content {
+.buttons-hitarea-grid {
+  .btn-tertiary,
+  .btn-label-m,
+  .hg-btn-badge,
+  .btn-text,
+  .btn-link {
+    border-style: dashed;
+    border-color: #ff66cc;
+    border-width: 1px;
+  }
+}
+
+
+.grid-8-docs {
+  .btn-tertiary,
+  .btn-label-m,
+  .hg-btn-badge,
+  .btn-text,
+  .btn-link {
+    border-style: dashed;
+    border-color: #ff66cc;
+    border-width: 1px;
+  }
+}
+}
