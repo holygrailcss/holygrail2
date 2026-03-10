@@ -4,10 +4,102 @@ title: "Variables Cheatsheet"
 permalink: /
 ---
 <h1>{{ title }}</h1>
+
+<section id="indice" class="ptr-120 pbr-120">
+  <h2>Índice de componentes</h2>
+  <p class="mb-24">Componentes y derivadas de Holygrail2. Enlaces a cada sección de la guía.</p>
+  <div class="grid-cols-2 gap-16">
+    <div>
+      <h3 class="h4 mb-8">Base y sistema</h3>
+      <ul class="list-clear">
+        <li><a href="#grid-system">Grid System</a></li>
+        <li><a href="#resoluciones">Resoluciones</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#headers">Headers (Fixers / Fluids)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Botones y controles</h3>
+      <ul class="list-clear">
+        <li><a href="#buttons">Buttons</a> (Primary, Secondary, Tertiary, Label M, Badge)</li>
+        <li><a href="#button-sizes">Button sizes</a></li>
+        <li><a href="#button-link-tab">Button link tab</a> / btn-lines</li>
+        <li><a href="#select">Select</a></li>
+        <li><a href="#stepper">Stepper</a></li>
+        <li><a href="#button-group">Button group</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Formularios y selección</h3>
+      <ul class="list-clear">
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#radio-button">Radio Button</a></li>
+        <li><a href="#checkbox">Checkbox</a></li>
+        <li><a href="#checkbox-card">Checkbox-card</a> (check-no, check-top, check-center)</li>
+        <li><a href="#accesibilidad">Accesibilidad</a></li>
+        <li><a href="#input">Input</a> / Form</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Contenido y enlaces</h3>
+      <ul class="list-clear">
+        <li><a href="#cards">Cards</a> (box3, checkbox-radio)</li>
+        <li><a href="#md-link">md-link</a> (line-top, line-bottom)</li>
+        <li><a href="#md-toggle">md-toggle</a> / md-toggle-lines</li>
+        <li><a href="#links">Links</a> (link-line, link-raw, link4, link-button-prev)</li>
+        <li><a href="#list">List</a> (list-clear, list-disc, list-inline, list-inline-flex, list-box, list-button, list-state)</li>
+        <li><a href="#tag">Tag</a> (tag-warning, tag-info, tag-valid, tag-alert, tag-feel, tag-limited, tag-new)</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Overlays y feedback</h3>
+      <ul class="list-clear">
+        <li><a href="#tooltip">Tooltip</a> (tooltip-sm, tooltip-sm-temp, posiciones)</li>
+        <li><a href="#progressbar">Progressbar</a></li>
+        <li><a href="#modal">Modal</a> (modalx-xxs, modalx-xs, modalx-sm, modalx-md, modalx-lg, modalx-xl)</li>
+        <li><a href="#toast">Toast</a></li>
+        <li><a href="#bottom-sheet">Bottom-sheet</a></li>
+        <li><a href="#drawer">Drawer</a> (drawer-sm, drawer-xl)</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Navegación y MD</h3>
+      <ul class="list-clear">
+        <li><a href="#sidebar">Sidebar</a></li>
+        <li><a href="#banners">Banners</a> (banner-warning, banner-info, banner-valid, banner-alert, banner-feel, banner-limited, marketing-spot)</li>
+        <li><a href="#md-accordion">md-accordion</a></li>
+        <li><a href="#md-dialog">md-dialog</a></li>
+        <li><a href="#md-drawer">md-drawer</a></li>
+        <li><a href="#md-buttons">md-buttons</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Datos y especiales</h3>
+      <ul class="list-clear">
+        <li><a href="#datalist">Datalist</a></li>
+        <li><a href="#color-selector">Color selector</a></li>
+        <li><a href="#tabs-specials">Tabs specials</a> (checkbox-ico, checkbox-box, list-box, multiple-table)</li>
+        <li><a href="#animated">Animated</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="h4 mb-8">Layouts</h3>
+      <ul class="list-clear">
+        <li><a href="#runway">Runway</a></li>
+        <li><a href="#hgbread">Hgbread</a></li>
+        <li><a href="#header-account">Header account</a></li>
+        <li><a href="#box3">Box3</a> (box3-content, box3-middle, box3-top, box3-img)</li>
+        <li><a href="#card9">Card9</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <section>
   <section class=" ptr-120 pbr-120">
     <div class="grid-cols-2 ">
-      <h2> Grid System xxxx</h2>
+      <h2 id="grid-system"> Grid System xxxx</h2>
       <p>
         The grid system uses a series of containers, rows, and columns to layout and align content.
       </p>
@@ -28,7 +120,7 @@ permalink: /
     <div>12</div>
   </div>
   <section class=" ptr-120 pbr-120">
-    <h2>Resoluciones</h2>
+    <h2 id="resoluciones">Resoluciones</h2>
     <div class="grid-cols-4 ">
       <div class="h3 variable-item border-b-grey"> Tamaño de Pantalla</div>
       <div class="h3 variable-item border-b-grey"> Número de Columnas</div>
@@ -54,7 +146,7 @@ permalink: /
     </div>
   </section>
   <section class="ptr-120 pbr-120">
-    <h2>Variables</h2>
+    <h2 id="variables">Variables</h2>
     <ul class="list-clear color-list">
       {% for key, data in colors %}
       {% if data.type == "value" and data.value.startsWith('#') or data.value.startsWith('rgba') %}
@@ -78,7 +170,7 @@ permalink: /
     </ul>
   </section>
   <section class="ptr-120 pbr-120">
-    <h2>Typography</h2>
+    <h2 id="typography">Typography</h2>
     {% for key, data in maps.minheaders.value %}
     <div class="grid-cols-6">
       <div class="variable-item border-b-grey">{{ key }}</div>
@@ -89,7 +181,7 @@ permalink: /
     </div>
     {% endfor %}
   </section>
-  <section class="ptr-120 pbr-120">
+  <section class="ptr-120 pbr-120" id="headers">
     <div class="grid-cols-2 gap-16">
       <div>
         <h2>Headers Fixers</h2>
@@ -116,9 +208,9 @@ permalink: /
     </div>
   </section>
   <section>
-    <h2>UI Components</h2>
+    <h2 id="ui-components">UI Components</h2>
     <div class="grid-cols-2">
-      <h3>Buttons</h3>
+      <h3 id="buttons">Buttons</h3>
     </div>
     <p class="buttons-hitarea-legend mb-16">
       <span class="buttons-hitarea-legend-line"></span>
@@ -157,7 +249,7 @@ permalink: /
       <button class="btn hg-btn-badge disabled"> Badge </button>
     </div>
     <div class="grid-cols-2">
-      <h3>Button sizes</h3>
+      <h3 id="button-sizes">Button sizes</h3>
       <p class="text-l c-dark-grey mb-16">Clases de tamaño: .btn--mini, .btn--small, .btn--medium, .btn--large, .btn--xlarge, .btn--mini-rd, .btn--full, .btn--round</p>
     </div>
     <div class="is-flex flex-wrap gap-16 align-top mb-48">
@@ -195,7 +287,7 @@ permalink: /
       </div>
     </div>
     <div class="grid-cols-2">
-      <h3>Button link tab</h3>
+      <h3 id="button-link-tab">Button link tab</h3>
       <h4>.btn-link-tab</h4>
     </div>
     <div class="grid-cols-3 gap-16 mb-48">
@@ -359,7 +451,7 @@ permalink: /
     <div class="container mb-64">
       <div class="row mb-24">
         <div class="col-xs-12">
-          <h2>select</h2>
+          <h2 id="select">select</h2>
           <div class="select select-box">
             <select name="" id="630d4db1-b9e9-458f-acc8-d9ba66d44df2">
               <option value="1">99</option>
@@ -374,7 +466,7 @@ permalink: /
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="stepper">
         <div class="col-xs-12">
           <div class="stepper">
             <button class="stepper-btn" aria-label="Decrease" onclick="decreaseValue()">
@@ -398,7 +490,7 @@ permalink: /
     <div class="row">
       <div class="col-xs-12">
 
-        <h2>Button group</h2>
+        <h2 id="button-group">Button group</h2>
       </div>
     </div>
 
@@ -439,7 +531,7 @@ permalink: /
     <div class="row">
       <div class="col-xs-12">
 
-        <h2>Tabs</h2>
+        <h2 id="tabs">Tabs</h2>
       </div>
     </div>
 
@@ -472,7 +564,7 @@ permalink: /
     <div class="row">
       <div class="col-xs-12">
         <h4>Uno o otro</h4>
-        <h2>Radio Button</h2>
+        <h2 id="radio-button">Radio Button</h2>
       </div>
     </div>
     <div class="row">
@@ -536,7 +628,7 @@ permalink: /
     <div class="row">
       <div class="col-xs-12">
         <h4>Si - no </h4>
-        <h2>checkbox </h2>
+        <h2 id="checkbox">checkbox </h2>
       </div>
     </div>
     <div class="row">
@@ -632,7 +724,7 @@ permalink: /
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <h2>checkbox-card</h2>
+        <h2 id="checkbox-card">checkbox-card</h2>
       </div>
     </div>
     <div class="row">
@@ -683,7 +775,7 @@ permalink: /
   <section class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2>Accesibilidad</h2>
+        <h2 id="accesibilidad">Accesibilidad</h2>
       </div>
     </div>
     <div class="row">
@@ -706,7 +798,7 @@ permalink: /
   <section class="container mb-64">
     <div class="row">
       <div class="col-xs-12">
-        <h2>Input</h2>
+        <h2 id="input">Input</h2>
       </div>
     </div>
     <div class="row">
@@ -735,7 +827,7 @@ permalink: /
   <section class="container-3 mb-64">
     <div class="row">
       <div class="col-xs-12">
-        <h2>Cards</h2>
+        <h2 id="cards">Cards</h2>
       </div>
     </div>
     <div class="row">
@@ -836,7 +928,7 @@ permalink: /
   <section class="container mb-64">
     <div class="row">
       <div class="col-xs-12">
-        <h2>md-link</h2>
+        <h2 id="md-link">md-link</h2>
       </div>
     </div>
     <div class="row">
@@ -1063,7 +1155,7 @@ permalink: /
   <section class="container mb-64">
     <div class="row">
       <div class="col-xs-12">
-        <h2>md-toggle</h2>
+        <h2 id="md-toggle">md-toggle</h2>
       </div>
     </div>
     <div class="row">
@@ -1421,7 +1513,255 @@ permalink: /
     </div>
   </section>
 
+  <!-- Componentes adicionales documentados -->
+  <section class="container mb-64" id="links">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Links</h2>
+        <p class="mb-16">Enlaces y variantes. Derivadas: <code>link-line</code>, <code>link-raw</code>, <code>link4</code>, <code>link-button-prev</code>, <code>link-svg-pre</code>, <code>link-svg-post</code>, <code>has-light</code>.</p>
+        <p class="mb-16"><a href="#" class="link-line">link-line</a></p>
+        <p class="mb-16"><a href="#" class="link4">link4</a></p>
+      </div>
+    </div>
+  </section>
 
+  <section class="container mb-64" id="list">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>List</h2>
+        <p class="mb-16">Listas. Derivadas: <code>list-clear</code>, <code>list-disc</code>, <code>list-inline</code>, <code>list-inline-flex</code>, <code>list-inline-clear</code>, <code>list-mini</code>, <code>list-box</code>, <code>list-button</code>, <code>list-selection</code>, <code>list-state</code>, <code>list-breadcrumb</code>, <code>list-table</code>, <code>h-size-selector</code>. Con <code>flex-nowrap</code> / <code>text-nowrap</code> para no salto de línea.</p>
+        <ul class="list-clear mb-16">
+          <li>list-clear 1</li>
+          <li>list-clear 2</li>
+        </ul>
+        <ul class="list-disc mb-16">
+          <li>list-disc 1</li>
+          <li>list-disc 2</li>
+        </ul>
+        <ul class="list-inline-flex flex-nowrap">
+          <li><a href="#">inline 1</a></li>
+          <li><a href="#">inline 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="tag">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Tag</h2>
+        <p class="mb-16">Etiquetas de estado. Derivadas: <code>tag-warning</code>, <code>tag-info</code>, <code>tag-valid</code>, <code>tag-alert</code>, <code>tag-feel</code>, <code>tag-limited</code>, <code>tag-new</code>.</p>
+        <span class="tag-warning mr-8">tag-warning</span>
+        <span class="tag-info mr-8">tag-info</span>
+        <span class="tag-valid mr-8">tag-valid</span>
+        <span class="tag-alert mr-8">tag-alert</span>
+        <span class="tag-feel mr-8">tag-feel</span>
+        <span class="tag-limited mr-8">tag-limited</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="tooltip">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Tooltip</h2>
+        <p class="mb-16">Tooltips. Clases: <code>tooltip-sm</code>, <code>tooltip-sm-temp</code>, <code>tooltip-sm-old</code>, <code>has-tooltip</code>, <code>has-tooltip-temp</code>. Posiciones: <code>tooltip-br</code>, <code>tooltip-tr</code>, <code>tooltip-tl</code>, <code>tooltip-bl-temp</code>, <code>tooltip-tl-temp</code>. <code>store-state</code> para indicador de estado.</p>
+        <div class="has-tooltip" style="display: inline-block;">
+          <button class="btn btn-secondary">Hover para tooltip</button>
+          <div class="tooltip-sm">Contenido del tooltip</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="progressbar">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Progressbar</h2>
+        <p class="mb-16">Barra de progreso. Contenedor <code>.progressbar</code>, barra de estado <code>.progressbar-status</code> (ancho en % o flex).</p>
+        <div class="progressbar mb-16">
+          <div class="progressbar-status" style="width: 60%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="modal">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Modal</h2>
+        <p class="mb-16">Modales (modalx). Tamaños: <code>modalx-xxs</code>, <code>modalx-xs</code>, <code>modalx-sm</code>, <code>modalx-md</code>, <code>modalx-lg</code>, <code>modalx-xl</code>. Padding: <code>modalx-0</code>, <code>modalx-16</code>, <code>modalx-16-16</code>, <code>modalx-24</code>, <code>modalx-32</code>. <code>modalx-transparent</code> para fondo transparente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="toast">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Toast</h2>
+        <p class="mb-16">Notificación fija inferior. Clase <code>.toast</code>; añadir <code>.appear</code> para mostrar. Posición fija abajo (centrado en desktop).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="bottom-sheet">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Bottom-sheet</h2>
+        <p class="mb-16">Panel deslizable desde abajo. Ver <code>elements/_bottom-sheet.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="drawer">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Drawer</h2>
+        <p class="mb-16">Panel lateral. <code>.drawer</code>, <code>.drawer-overlay</code>. Tamaños: <code>drawer-sm</code> (424px), <code>drawer-xl</code> (720px). Partes: <code>drawer-header</code>, <code>drawer-body</code>, <code>drawer-footer</code>. Activar con <code>body.open-drawer</code> o <code>body.body-sidebar-open</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="sidebar">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Sidebar</h2>
+        <p class="mb-16">Barra lateral. Ver <code>elements/_sidebar.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="banners">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Banners</h2>
+        <p class="mb-16">Banners y mensajes. Derivadas: <code>banner-warning</code>, <code>banner-info</code>, <code>banner-valid</code>, <code>banner-alert</code>, <code>banner-feel</code>, <code>banner-limited</code>, <code>banner-app</code>. <code>marketing-spot</code> para bloque con borde.</p>
+        <div class="banner-info mb-16">banner-info</div>
+        <div class="banner-warning mb-16">banner-warning</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="md-accordion">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>md-accordion</h2>
+        <p class="mb-16">Acordeón. <code>.md-accordion</code>, <code>.md-accordion-panel</code>, <code>.md-accordion-content</code>. Modificador <code>.has-lines</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="md-dialog">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>md-dialog</h2>
+        <p class="mb-16">Diálogos. Ver <code>elements/_md-dialog.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="md-drawer">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>md-drawer</h2>
+        <p class="mb-16">Drawer Material Design. Ver <code>elements/_md-drawer.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="md-buttons">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>md-buttons</h2>
+        <p class="mb-16">Contenedor de botones MD. <code>.md-button-wrapper</code>. Ver <code>elements/_md-buttons.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="datalist">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Datalist</h2>
+        <p class="mb-16">Listas de datos. Ver <code>elements/_datalist.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="color-selector">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Color selector</h2>
+        <p class="mb-16">Selector de color. Ver <code>elements/_color_selector.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="tabs-specials">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Tabs specials</h2>
+        <p class="mb-16">Variantes de tabs y listas: <code>ico-round</code>, <code>ico-round-sm</code>, <code>checkbox-ico</code>, <code>checkbox-box</code>, <code>list-box</code>, <code>multiple-table</code>, <code>two-table</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="animated">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Animated</h2>
+        <p class="mb-16">Componentes animados. Ver <code>elements/_animated.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="runway">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Runway</h2>
+        <p class="mb-16">Layout runway. Ver <code>layouts/_runway.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="hgbread">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Hgbread</h2>
+        <p class="mb-16">Breadcrumb. Ver <code>layouts/_hgbread.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="header-account">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Header account</h2>
+        <p class="mb-16">Cabecera de cuenta. Ver <code>layouts/_header_account.scss</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="box3">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Box3</h2>
+        <p class="mb-16">Contenedor flexible en fila. Partes: <code>box3-content</code>, <code>box3-middle</code>, <code>box3-top</code>, <code>box3-right</code>, <code>box3-img</code>, <code>box3-price</code>. Usado en Cards con checkbox-radio (check-no, check-top, check-center).</p>
+        <div class="box3 p-16 border-1-grey">
+          <div class="box3-content"><span class="text-l">box3-content</span></div>
+          <div class="box3-middle"><span class="text-l">box3-middle</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-64" id="card9">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Card9</h2>
+        <p class="mb-16">Card de producto. Partes: <code>card9-image</code>, <code>card9-add</code>, <code>card9-sizes</code>, <code>card9-wrap-details</code>, etc. Ver <code>layouts/_card9.scss</code>.</p>
+      </div>
+    </div>
+  </section>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {

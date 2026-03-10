@@ -975,25 +975,26 @@ strong {
   }
 }
 [lang^="zh"],
-//chino
+// chino
 [lang^="zn"],
-//chino
+// chino (código no estándar)
 [lang^="ko"],
-//coreano ko-KR
+// coreano
 [lang^="vi"],
+// vietnamita
 [lang^="el"],
-//griego
+// griego
 [lang^="tr"],
 // turco
 [lang^="ru"],
-//ruso
+// ruso
 [lang^="sr"],
-//serbio
+// serbio
 [lang^="uk"],
-//ukraniano
+// ucraniano
 [lang^="bg"],
-//bulgaro
-[lang^="ar"] //arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
+// búlgaro
+[lang^="ar"] // árabe (EAU, Egipto, Jordania, Israel, Qatar, Bahréin, Arabia Saudí)
 { 
   * {
     font-family: Helvetica, Arial, sans-serif !important;
