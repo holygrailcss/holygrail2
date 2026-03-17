@@ -33,6 +33,7 @@ button {
   &.active {
     text-decoration: none;
     cursor: pointer;
+    opacity: 1;
   }
   &[disabled],
   &:disabled,
@@ -705,14 +706,14 @@ button {
 }
 
 .hg-btn-badge {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: auto;
-  height: auto;
   background-color: transparent;
   color: $c-dark-grey;
+  display: inline-flex;
   font-size: $text-sm;
+  justify-content: center;
+  min-width: var(--hg-spacing-24, 24px);
+  padding-inline: 0;
   white-space: nowrap;
 
   &:focus,
@@ -735,7 +736,6 @@ button {
     color: $c-middle-grey;
     border-color: transparent;
     background-color: transparent;
-
     opacity: 1;
   }
   .has-light & {

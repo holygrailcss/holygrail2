@@ -20,7 +20,7 @@
     display: block;
     margin: 0;
 
-    a,
+    a:not(.btn),
     span,
     .tab {
       display: flex;
@@ -33,7 +33,7 @@
       line-height: 1;
     }
 
-    &.is-active a,
+    &.is-active a:not(.btn),
     &.is-active span,
     &.is-active .tab {
       position: relative;
@@ -53,7 +53,7 @@
     }
   }
 
-  &.tabs-resetfirst ul li:first-child a {
+  &.tabs-resetfirst ul li:first-child a:not(.btn) {
     padding: 0 20px 0 0;
   }
 
