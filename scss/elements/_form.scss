@@ -35,7 +35,7 @@ fieldset[disabled] .form-control {
   font-size: 16px;
 
   @media (min-width: $break-sm) {
-    font-size: 12px;
+    font-size: 13px;
   }
   &.validation-error {
     border-color: $c-error;
