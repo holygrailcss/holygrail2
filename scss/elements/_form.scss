@@ -397,7 +397,7 @@ input::placeholder {
 
   & input:not(:placeholder-shown),
   & textarea:not(:placeholder-shown) {
-    padding-top: 8px;
+    padding-top: 12px;
     padding-bottom: 0;
   }
   & input:not(:placeholder-shown) ~ label,
@@ -409,7 +409,7 @@ input::placeholder {
   }
   & input:focus,
   & textarea:focus {
-    padding-top: 8px;
+    padding-top: 12px;
     padding-bottom: 0;
   }
   & input:focus ~ label,
