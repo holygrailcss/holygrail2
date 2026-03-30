@@ -127,6 +127,12 @@
     "default": true,
     "value": "#1a32a4"
   },
+  "c-info-light": {
+    "type": "value",
+    "var_name": "$c-info-light",
+    "default": true,
+    "value": "#E5EAFF"
+  },
   "c-valid": {
     "type": "value",
     "var_name": "$c-valid",
