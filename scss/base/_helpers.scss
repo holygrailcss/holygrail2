@@ -945,60 +945,8 @@ strong {
   margin-left: auto;
 }
 
-[lang^="de"],
-//aleman
-[lang^="zh"],
-//chino
-[lang^="zo"],
-[lang^="eu"],
-//euskera
-[lang^="el"],
-//griego
-[lang^="tr"],
-// turco
-[lang^="ru"],
-//ruso
-[lang^="sr"],
-//serbio
-[lang^="uk"],
-//ukraniano
-[lang^="bg"],
-//bulgaro
-[lang^="ar"],
-//arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
-[lang^="nl"] {
-  * {
-    font-family: Helvetica, Arial, sans-serif !important;
-  }
-  .ttu,
-  .btn-primary,
-  .btn--full,
-  .btn-secondary,
-  .form-input-label-2 label {
-    text-transform: none;
-  }
-}
-[lang^="zh"],
-// chino
-[lang^="zn"],
-// chino (código no estándar)
-[lang^="ko"],
-// coreano
-[lang^="vi"],
-// vietnamita
-[lang^="el"],
-// griego
-[lang^="tr"],
-// turco
-[lang^="ru"],
-// ruso
-[lang^="sr"],
-// serbio
-[lang^="uk"],
-// ucraniano
-[lang^="bg"],
-// búlgaro
-[lang^="ar"] // árabe (EAU, Egipto, Jordania, Israel, Qatar, Bahréin, Arabia Saudí)
+[lang^="zh"], // chino
+[lang^="ar"]  // árabe 
 { 
   * {
     font-family: Helvetica, Arial, sans-serif !important;
