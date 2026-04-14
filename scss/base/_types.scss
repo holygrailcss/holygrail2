@@ -104,3 +104,8 @@ mark {
   //2
   @include font-bold;
 }
+
+.text-light-i,
+.font-light-i {
+  @include font-light-italic;
+}

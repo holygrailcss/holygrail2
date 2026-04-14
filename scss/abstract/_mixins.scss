@@ -74,6 +74,12 @@ $max-vw: 1500px !default;
   font-family: $font-family-c-b;
 }
 
+@mixin font-light-italic() {
+  font-family: $font-family-a-li;
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
 @mixin fonters($param) {
   @if $param == 'light' {
     @include font-light;
@@ -85,6 +91,8 @@ $max-vw: 1500px !default;
     @include font-semibold;
   } @else if $param == 'bold' {
     @include font-bold;
+  } @else if $param == 'light-i' {
+    @include font-light-italic;
   } @else if $param == 'regular2' {
     @include font-2-regular;
   } @else if $param == 'medium2' {
