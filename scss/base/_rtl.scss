@@ -9,42 +9,7 @@
   .fl-right {
     float: left;
   }
-  .text-left {
-    text-align: right;
-  }
-  .text-right {
-    text-align: left;
-  }
-  .xs\:text-right {
-    @media (max-width: #{$break-sm - 1}) {
-      text-align: left;
-    }
-  }
-  .sm\:text-right {
-    @media (max-width: #{$break-sm - 1}) {
-      text-align: left;
-    }
-  }
-  .md\:text-right {
-    @media (max-width: #{$break-md - 1}) {
-      text-align: left;
-    }
-  }
-  .xs\:text-left {
-    @media (max-width: #{$break-sm - 1}) {
-      text-align: right;
-    }
-  }
-  .sm\:text-left {
-    @media (max-width: #{$break-sm - 1}) {
-      text-align: right;
-    }
-  }
-  .md\:text-left {
-    @media (max-width: #{$break-md - 1}) {
-      text-align: right;
-    }
-  }
+
   .select select:not([multiple]) {
     padding-right: 0;
     padding-left: 20px;
@@ -88,9 +53,6 @@
   }
   .btn {
     &.btn-world {
-      .btn-world-center {
-        text-align: right;
-      }
       .btn-world-right {
         transform: rotateY(180deg);
       }
@@ -158,7 +120,7 @@
   }
   .form-prefix {
     input {
-      text-align: right;
+      text-align: end;
     }
   }
   .select {
@@ -420,11 +382,11 @@
   .md-toggle button,
   .md-toggle-inner {
     direction: rtl;
-    text-align: right;
+    text-align: end;
   }
   .md-link button {
     direction: rtl;
-    text-align: right;
+    text-align: end;
   }
   .md-link button svg {
     transform: rotate(180deg);
@@ -432,13 +394,13 @@
   &.has-icon-pre {
     .md-link-icon-container {
       direction: ltr;
-      text-align: left;
+      text-align: start;
     }
   }
   .md-accordion button,
   .md-accordion-content {
     direction: rtl;
-    text-align: right;
+    text-align: end;
   }
   .list-state {
     .list-state-item {

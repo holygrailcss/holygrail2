@@ -5,11 +5,11 @@
 }
 
 .text-right {
-  text-align: right;
+  text-align: end;
 }
 
 .text-left {
-  text-align: left;
+  text-align: start;
 }
 
 .text-justify {
@@ -211,85 +211,85 @@
 
 .xs\:text-left {
   @media (max-width: #{$break-sm - 1}) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .sm\:text-left {
   @media (max-width: #{$break-sm - 1}) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .md\:text-left {
   @media (max-width: #{$break-md - 1}) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .lg\:text-left {
   @media (max-width: #{$break-lg - 1}) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .sm\:min-text-left {
   @media (min-width: $break-sm) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .md\:min-text-left {
   @media (min-width: $break-md) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .lg\:min-text-left {
   @media (min-width: $break-lg) {
-    text-align: left;
+    text-align: start;
   }
 }
 
 .xs\:text-right {
   @media (max-width: #{$break-sm - 1}) {
-    text-align: right;
+    text-align: end;
   }
 }
 
 .sm\:text-right {
   @media (max-width: #{$break-sm - 1}) {
-    text-align: right;
+    text-align: end;
   }
 }
 
 .md\:text-right {
   @media (max-width: #{$break-md - 1}) {
-    text-align: right;
+    text-align: end;
   }
 }
 
 .lg\:text-right {
   @media (max-width: #{$break-lg - 1}) {
-    text-align: right;
+    text-align: end;
   }
 }
 
 .sm\:min-text-right {
   @media (min-width: $break-sm) {
-    text-align: right;
+    text-align: end;
   }
 }
 
 .md\:min-text-right {
   @media (min-width: $break-md) {
-    text-align: right;
+    text-align: end;
   }
 }
 
 .lg\:min-text-right {
   @media (min-width: $break-lg) {
-    text-align: right;
+    text-align: end;
   }
 }
 

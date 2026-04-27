@@ -721,13 +721,14 @@ button {
   &:hover,
   &.hover,
   &:active,
-  &.active {
+  &.active,
+  &.is-active {
     color: $c-primary;
     border-color: transparent;
     background-color: transparent;
-
     cursor: pointer;
   }
+
   &:disabled,
   &[disabled],
   &.disabled {
@@ -738,6 +739,13 @@ button {
     background-color: transparent;
     opacity: 1;
   }
+
+  &:active,
+  &.active,
+  &.is-active {
+    @include font-regular;
+  }
+
   .has-light & {
     background-color: transparent;
     color: $c-white;
@@ -824,7 +832,7 @@ button {
 }
 .btn-link {
   border: none;
-  text-align: left;
+  text-align: start;
   text-decoration: none;
   color: $c-primary;
   background-color: transparent;
@@ -1367,7 +1375,7 @@ button {
     overflow: hidden;
     white-space: nowrap;
     vertical-align: middle;
-    text-align: left;
+    text-align: start;
     margin-top: -1px;
   }
 }
