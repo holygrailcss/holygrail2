@@ -12,12 +12,6 @@ $hg-breakpoints: (
   xl: 1440px
 ) !default;
 
-$hg-breakpoint-xs: map.get($hg-breakpoints, xs) !default;
-$hg-breakpoint-sm: map.get($hg-breakpoints, sm) !default;
-$hg-breakpoint-md: map.get($hg-breakpoints, md) !default;
-$hg-breakpoint-lg: map.get($hg-breakpoints, lg) !default;
-$hg-breakpoint-xl: map.get($hg-breakpoints, xl) !default;
-
 $hg-spacers: (
   12: to-rem(1),
   25: to-rem(2),

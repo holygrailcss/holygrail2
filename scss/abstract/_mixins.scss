@@ -12,19 +12,6 @@ $break-xl: 1200px !default;
 $min-vw: 320px !default;
 $max-vw: 1500px !default;
 
-@mixin background-alpha($color: $color-white, $alpha: 1) {
-  background-color: hsla(
-    hue($color),
-    saturation($color),
-    lightness($color),
-    $alpha
-  );
-}
-
-@mixin user-select($select) {
-  user-select: $select;
-}
-
 @mixin font-light() {
   font-family: $font-family-a-l;
   font-weight: $font-weight-light;
@@ -145,10 +132,6 @@ $max-vw: 1500px !default;
       }
     }
   }
-}
-
-@mixin random-bgr() {
-  background: rgb(random(255) random(255) random(255));
 }
 
 @mixin fixed-bgr() {
@@ -409,90 +392,6 @@ $max-vw: 1500px !default;
   }
 }
 
-@mixin button-variant($color, $background, $border) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
-
-  &:focus,
-  &.focus {
-    color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 25%);
-  }
-
-  &:hover {
-    color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 12%);
-  }
-
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
-    color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 12%);
-    &:hover,
-    &:focus,
-    &.focus {
-      color: $color;
-      background-color: darken($background, 17%);
-      border-color: darken($border, 25%);
-    }
-  }
-
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &:hover,
-    &:focus,
-    &.focus {
-      background-color: $background;
-      border-color: $border;
-    }
-  }
-
-  .badge {
-    color: $background;
-    background-color: $color;
-  }
-}
-
-@mixin button-size(
-  $padding-vertical,
-  $padding-horizontal,
-  $font-size,
-  $line-height,
-  $border-radius
-) {
-  padding: $padding-vertical $padding-horizontal;
-  font-size: $font-size;
-  line-height: $line-height;
-  border-radius: $border-radius;
-}
-
-@mixin box-shadow($shadow...) {
-  box-shadow: $shadow;
-}
-
-@mixin box-sizing($boxmodel) {
-  box-sizing: $boxmodel;
-}
-
-@mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
-  column-count: $column-count;
-  column-gap: $column-gap;
-}
-
-@mixin tab-focus() {
-  border-color: transparent;
-  outline: thin dotted;
-  box-shadow: none;
-  outline-offset: -2px;
-}
-
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
   #{$property}: -webkit-calc(#{$expression});
@@ -503,10 +402,6 @@ $max-vw: 1500px !default;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-@mixin appearance() {
-  appearance: none;
 }
 
 @mixin media($consulta) {
@@ -600,19 +495,6 @@ $max-vw: 1500px !default;
   @return $remSize * 1rem;
 }
 
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculate-rem($size);
-}
-
-@mixin opacity($opacity) {
-  opacity: $opacity;
-
-  $opacity-ie: $opacity * 100;
-
-  filter: alpha(opacity=$opacity-ie);
-}
-
 $spritegrid: 32;
 $spriteWidth: 600;
 $spriteHeight: 400;
@@ -630,24 +512,9 @@ $spriteHeight: 400;
   transition: $transition $time $timing;
 }
 
-@mixin absolute-vertical-center() {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-@mixin absolute-vertical-bottom() {
-  position: absolute;
-  bottom: 10%;
-}
-
 @mixin rgba($property, $background: $c-primary, $opacity: 0.75, $mix: white) {
   #{$property}: mix($background, $mix, $opacity * 100%);
   #{$property}: rgba($background, $opacity);
-}
-
-@function unicode($str) {
-  @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
 }
 
 @mixin mintypes($minbreakpoints, $headers, $cssattr) {
