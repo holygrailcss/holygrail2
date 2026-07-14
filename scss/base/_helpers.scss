@@ -945,13 +945,6 @@ strong {
   margin-left: auto;
 }
 
-[lang^="zh"], // chino
-[lang^="ar"]  // árabe 
-{ 
-  * {
-    font-family: Helvetica, Arial, sans-serif !important;
-  }
-}
 .no-scroll-x {
   overflow-x: hidden;
 }

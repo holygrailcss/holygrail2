@@ -1185,20 +1185,6 @@ button {
     vertical-align: middle;
   }
 }
-[lang^="zh"],
-//chino
-[lang^="zn"],
-//chino
-[lang^="ko"] //coreano ko-KR
-{
-  .btn-selector-wrap {
-    &.btn-selector .btn {
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: 500;
-      font-size: 12px;
-    }
-  }
-}
 .btn-group > .btn {
   flex: 1;
 }
