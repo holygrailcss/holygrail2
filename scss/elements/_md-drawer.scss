@@ -2,50 +2,46 @@
 @import '../abstract/_all';
 
 .md-drawer-overlay {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: var(--hg-color-black-60);
   border: none;
-  bottom: 0;
+  height: 100%;
   height: auto;
-  inset-inline-end: 0;
-  inset-inline-start: 0;
+  inset: 0;
   margin: 0;
+  max-height: 100%;
+  max-width: 100%;
   opacity: 0;
   padding: 0;
   pointer-events: none;
   position: fixed;
-  top: 0;
   transition: opacity 0.3s ease-in-out;
-  width: auto;
-  z-index: 2000;
+  width: 100%;
+  z-index: 1999;
 }
 
 .md-drawer {
-  --md-drawer-padding-inline: 20px;
-  
-  @media (min-width: $break-sm) {
-    --md-drawer-padding-inline: 40px;
-  }
+  --md-drawer-width: 26.5rem;
+  --md-drawer-translateX-start: translateX(100%);
+  --md-drawer-translateX-end: translateX(0);
+  --md-drawer-padding-inline: var(--hg-spacing-20);
+  --md-drawer-header-min-height: var(--hg-spacing-48);
+  --md-drawer-close-margin-block: 0 0;
 
   align-items: stretch;
   background-clip: padding-box;
-  background-color: $c-white;
-  bottom: 0;
+  background-color: var(--hg-color-white);
   display: flex;
   flex-flow: column nowrap;
+  inset-block: 0;
   inset-inline-end: 0;
   justify-content: flex-start;
   max-width: 100%;
   outline: 0;
   position: fixed;
-  top: 0;
-  transform: translateX(100%);
+  transform: var(--md-drawer-translateX-start);
   transition: all 0.3s ease-in-out;
-  width: 424px;
+  width: var(--md-drawer-width);
   z-index: 2050;
-
-  [dir='rtl'] & {
-    transform: translateX(-100%);
-  }
 }
 
 .md-drawer-content {
@@ -53,40 +49,31 @@
 }
 
 .md-drawer-header {
-  flex: 0 1 auto;
-  align-items: center;
-  column-gap: 16px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  min-height: 48px;
-  padding-block: 8px;
-  padding-inline-end: calc(var(--md-drawer-padding-inline) - 8px);
+  align-items: center;
+  flex: 0 1 auto;
+  column-gap: var(--hg-spacing-16);
+  min-height: var(--md-drawer-header-min-height);
+  padding-block: var(--hg-spacing-8);
+  padding-inline-end: calc(var(--md-drawer-padding-inline) - var(--hg-spacing-8));
   padding-inline-start: var(--md-drawer-padding-inline);
-
-  @media (min-width: $break-sm) {
-    min-height: 60px; 
-  }
 }
 
 .btn.md-btn-drawer-close {
+  display: flex;
   align-items: center;
   align-self: flex-start;
-  display: flex;
   flex-flow: column nowrap;
-  height: auto;
   justify-content: center;
-  margin-block: 0;
-  margin-inline-start: auto;
+  height: auto;
+  margin-block: var(--md-drawer-close-margin-block);
   margin-inline:  auto 0;
-  min-height: 32px;
-  min-width: 32px;
+  min-height: var(--hg-spacing-32);
+  min-width: var(--hg-spacing-32);
   padding: 0;
   width: auto;
-
-  @media (min-width: $break-sm) {
-    margin-top: 6px;
-  }
 }
 
 .md-drawer-body {
@@ -96,7 +83,7 @@
   flex: 1 1 auto;
   justify-content: flex-start;
   overflow-y: auto;
-  padding-block: 24px;
+  padding-block: var(--hg-spacing-24);
   padding-inline: var(--md-drawer-padding-inline);
 
 }
@@ -107,7 +94,7 @@
   flex-flow: column nowrap;
   flex: 0 0 auto;
   justify-content: flex-start;
-  padding-block: 16px;
+  padding-block: var(--hg-spacing-16);
   padding-inline: var(--md-drawer-padding-inline);
 }
 
@@ -120,29 +107,40 @@
 }
 
 .md-drawer.md-drawer-sm {
-  width: 424px;
+  width: 26.5rem;
+}
+
+.md-drawer.md-drawer-md {
+  width: 40rem;
 }
 
 .md-drawer.md-drawer-xl {
-  width: 720px;
+  width: 45rem;
 }
 
-.md-drawer.md-drawer-reset {
-  .md-drawer-body,
-  .md-drawer-footer {
-    --md-drawer-padding-inline: 0;
-    padding-block: 0;
-  }
+.md-drawer.md-drawer-reset .md-drawer-body,
+.md-drawer.md-drawer-reset .md-drawer-footer {
+  --md-drawer-padding-inline: 0;
+  padding-block: 0;
 }
 
-body {
-  &.md-open-drawer {
-    .md-drawer {
-      transform: translateX(0);
-    }
-    .md-drawer-overlay {
-      opacity: 1;
-      pointer-events: auto;
-    }
+body.md-open-drawer .md-drawer {
+  transform: var(--md-drawer-translateX-end);
+}
+
+body.md-open-drawer .md-drawer-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+[dir='rtl'] .md-drawer {
+  --md-drawer-translateX-start: translateX(-100%);
+}
+
+@media (min-width: 48rem) {
+  .md-drawer {
+    --md-drawer-padding-inline: var(--hg-spacing-40);
+    --md-drawer-header-min-height: var(--hg-spacing-64);
+    --md-drawer-close-margin-block: var(--hg-spacing-8) 0;
   }
 }
