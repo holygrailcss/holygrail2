@@ -1,4 +1,6 @@
 @use 'sass:math';
+@use 'sass:list';
+@use 'sass:map';
 @import 'abstract/reset';
 @import 'base/_animations';
 @import 'abstract/_all';
@@ -100,4 +102,97 @@ h3 {
     border-width: 1px;
   }
 }
+}
+
+/* Andamiaje exclusivo de la guía.
+   El prefijo docs- es deliberado: HolyGrail2 ya no emite contenedores, filas,
+   columnas ni spacing de un solo lado — eso vive ahora en HolyGrail5. Estas
+   clases son del documento, no de la librería, y no deben usarse en un
+   proyecto. Así la guía no enseña nada que el paquete no tenga. */
+
+.docs-container {
+  margin-inline: auto;
+  max-width: $container;
+  padding-inline: $padding-global;
+  position: relative;
+  width: 100%;
+  @media (min-width: $break-sm) {
+    max-width: list.nth(map.values($breakpoints), 2);
+    width: 90%;
+  }
+  @media (min-width: $break-md) {
+    max-width: list.nth(map.values($breakpoints), 3);
+    width: 80%;
+  }
+  @media (min-width: $break-lg) {
+    max-width: list.nth(map.values($breakpoints), 4);
+    width: 80%;
+  }
+}
+
+.docs-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -$padding-global;
+}
+
+.docs-col-12,
+.docs-col-4,
+.docs-col-md-6 {
+  padding-inline: $padding-global;
+  position: relative;
+}
+
+.docs-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.docs-col-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.docs-col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  @media (min-width: $break-md) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.docs-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.docs-grid-6-center {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  justify-items: center;
+}
+
+.docs-gap-8 { gap: 8px; }
+.docs-gap-16 { gap: 16px; }
+
+@each $n in $espaciados {
+  .docs-m-#{$n} { margin: #{$n}px; }
+  .docs-mt-#{$n} { margin-top: #{$n}px; }
+  .docs-mb-#{$n} { margin-bottom: #{$n}px; }
+  .docs-p-#{$n} { padding: #{$n}px; }
+  .docs-pt-#{$n} { padding-top: #{$n}px; }
+  .docs-pb-#{$n} { padding-bottom: #{$n}px; }
+}
+
+/* La guía usa .code-snippet en toda la página para marcar nombres de clase y
+   valores, pero nunca llegó a definirse. */
+.code-snippet {
+  background: #f4f4f4;
+  border-radius: 2px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  padding: 1px 5px;
+  white-space: nowrap;
 }
