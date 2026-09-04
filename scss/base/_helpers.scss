@@ -744,6 +744,9 @@ strong {
   top: 0;
   z-index: 100;
 }
+.m-0 {
+  margin: 0;
+}
 .o-hidden {
   overflow: hidden;
 }
@@ -885,6 +888,10 @@ strong {
 
 .gap-16 {
   gap: 16px;
+}
+
+.gap-8 {
+  gap: 8px;
 }
 
 .column-gap-16 {
